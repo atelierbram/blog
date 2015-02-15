@@ -1,0 +1,54 @@
+---
+    title:          Home
+    type:           home
+    description:    Meta description of the index page
+    sortOrder:      0
+
+---
+
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="arrowBroken" viewBox="0 0 35 10">
+  <polygon points="35,5 25,0 25,4 20,4 20,6 25,6 25,10 "/>
+  <rect x="10" y="4" width="5" height="2"/>
+  <rect y="4" width="5" height="2"/>
+  </symbol>
+</svg>
+<section class="content">
+
+  <ul class="publication-list publication-list--articles"><li class="publication-list__item">
+
+    <h3 class="publication-list__item__title"><a href="http://atelierbram.github.io/blog/interplay-css-javascript">Interplay between CSS and Javascript <span class="initiallyhidden">on Transitions</span></a></h3>
+
+    <p class="publication-list__item__meta">
+    <time datetime="2014-09-23">September 2014</time>
+    </p>
+    <div class="publication-list__item__content">
+      <p>
+      <span class="dropcap">A</span>nimating the height of an element with only `CSS` is possible with the `max-height` property, giving the begin value a `max-height` of zero and (_let's say_) the 'hovered' value some high number _that-will-always-be-higher-then-the-real-height-of-the-highest-animated-element_. The outcome of the <span class="truncate">results can vary quite a bit, depending on the differences between all these values: not satisfying in all scenarios. An alternative way is using `height: 0` in combination with a set value for `padding-bottom`.</span> <a href="http://atelierbram.github.io/blog/interplay-css-javascript" class="read-more">read rest of article <svg class="shape-icon shape-arrow--broken"><use xlink:href="#arrowBroken"></use></svg></a>
+     </p>
+    </div>
+    </li><li class="publication-list__item">
+
+    <h3 class="publication-list__item__title"><a href="http://atelierbram.github.io/blog/select-menu-hashchange">Site-wide Navigation with Select Menu  <span class="initiallyhidden">using window.onhashchange event</span></a></h3>
+
+    <p class="publication-list__item__meta">
+    <time datetime="2014-09-18">September 2014</time>
+    </p>
+    <div class="publication-list__item__content">
+      <p><span class="dropcap">W</span>hen one is already using jQuery, easiest way is to use Ben Alman's great ["hashchange plugin"](https://github.com/cowboy/jquery-hashchange) to get a select-menu to display the right `option` when using a select-menu for site-wide navigation (_maybe for small screens_), for otherwise, with each page refresh, the `select` will <span class="truncate">always jump to the top option when there is no `selected` attribute with a value of `selected` set for the corresponding page on that corresponding option. This is how I would do it, probably could me less verbose, but it works:</span> <a href="http://atelierbram.github.io/blog/select-menu-hashchange" class="read-more">read rest of article <svg class="shape-icon shape-arrow--broken"><use xlink:href="#arrowBroken"></use></svg></a>
+      </p>
+    </div>
+    </li><li class="publication-list__item">
+
+    <h3 class="publication-list__item__title"><a href="http://atelierbram.github.io/blog/css-shapes-in-multi-column-layout">CSS-Shapes in Multi-Column Layout</a></h3>
+
+    <p class="publication-list__item__meta">
+    <time datetime="2014-09-07">September 2014</time>
+    </p>
+    <div class="publication-list__item__content">
+      <p>
+      <span class="dropcap">I</span>n order to avoid breaking up a `CSS-Shape` from the surrounding wrapping text to another column, (_... which is far from pretty_), when using CSS-Shapes (_to make text flow around an image or an object_) within a <strong>multi-column layout</strong>: one can use the property `break-inside` with the value `avoid-column` <span class="truncate">on the wrapping element:</span> <a href="http://atelierbram.github.io/blog/css-shapes-in-multi-column-layout" class="read-more">read rest of article <svg class="shape-icon shape-arrow--broken"><use xlink:href="#arrowBroken"></use></svg></a></p>
+    </div>
+    </li>
+</ul>
+</section>

@@ -1,0 +1,112 @@
+@import
+"mq",
+"color-vars",
+"nav",
+"footer";
+
+$nav-width: 12rem;
+
+
+p {
+  // flex-basis: 32em;
+  padding: .5em 0;
+  @include mq($until: tablet) {
+    // max-width: 32em;
+  }
+   @include mq($from: tablet) {
+    font-size: 1.25em;
+    max-width: 32em;
+  }
+}
+.content h3 {
+  margin-top: 1.5rem;
+  margin-bottom: 0;
+  border-bottom: 2px solid #222;
+  color: #222;
+}
+.content pre + h3 {
+  margin-top: 4rem;
+}
+.content h3 + p {
+  margin-top: 1px;
+  border-top: 1px solid #222;
+}
+.no-flexbox p {
+  max-width: 32em;
+}
+.page-wrap {
+  flex: 1;
+    overflow-x: hidden;
+  @include mq($until: tablet) {
+  }
+}
+
+.content {
+  padding: 1em 2em;
+  background-color: #fff;
+  max-width: 60em;
+  margin: 0 auto;
+
+  @include mq($until: tablet) {
+    flex: 1;
+    z-index: 1;
+  }
+  @include mq($from: tablet) {
+    // display: flex;
+    // flex-direction: row;
+    // flex-wrap: wrap;
+    // justify-content: space-around;
+    // padding-bottom: 3em;
+  }
+}
+.no-flexbox .content {
+  padding-bottom: 5em;
+}
+
+.ui-gutter {
+  text-align: left;
+  @include mq($until: tablet) {
+    background-color: #eee;
+    // margin-top: -3.75rem;
+  }
+}
+
+.truncate {
+  font-size: .5em;
+  max-width: 50%;
+  text-overflow: ellipsis;
+  vertical-align: middle;
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-block;
+}
+.content ul,
+.content ol {
+  margin: 0 0 0 -2.5rem;
+}
+.content ul li {
+  list-style: none;
+  position: relative;
+  margin-left: -.75em;
+  margin-top: 0;
+  padding-left: .75em;
+  max-width: 40em;
+}
+// ul li {
+  // margin-top: 0;
+// }
+.content ul li::before {
+  content: "";
+  position: absolute;
+  top:.55em;left:0;
+  color: #666;
+  padding: 2px;
+  height: 1px;
+  width: 1px;
+  background-color: #3ca555;
+  border: 1px solid #666;
+  border-radius: 50%;
+  display: inline-block;
+  line-height: 1;
+  font-size: 1em;
+}

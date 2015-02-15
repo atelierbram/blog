@@ -1,0 +1,107 @@
+// VARS
+$base00: hsl(10, 1%, 10%);
+$base01: hsl(10, 1%, 15%);
+$base02: hsl(10, 2%, 30%);
+$base03: hsl(10, 2%, 40%);
+$base04: hsl(10, 3%, 50%);
+$base05: hsl(10, 4%, 60%);
+$base06: hsl(10, 9%, 87%);
+$base07: hsl(10, 10%, 97%);
+$base08: hsl(0, 65%, 50%);
+$base09: hsl(20, 80%, 48%);
+$base0A: hsl(40, 100%, 45%);
+$base0B: hsl(170, 100%, 30%);
+$base0C: hsl(190, 70%, 35%);
+$base0D: hsl(220, 65%, 50%);
+$base0E: hsl(295, 60%, 48%);
+$base0F: hsl(340, 80%, 45%);
+
+$red:     $base08;
+$orange:  $base09;
+$yellow:  $base0A;
+$green:   $base0B;
+$cyan:    $base0C;
+$blue:    $base0D;
+$violet:  $base0E;
+$magenta: $base0F;
+
+$yellow-orange: mix($yellow,$orange,50%);
+$orange-red: mix($orange,$red,50%);
+$red-magenta: mix($red,$magenta,50%);
+$magenta-violet: mix($magenta,$violet,50%);
+$violet-blue: mix($violet,$blue,50%);
+$blue-cyan: mix($blue,$cyan,50%);
+$cyan-green: mix($cyan,$green,50%);
+$green-yellow: hsl(120, 50%, 40%); 
+
+$dark01: $base00;
+$dark02: hsl(10, 2%, 12.5%);
+$dark03: $base01;
+$dark04: hsl(10, 1%, 20%);
+$dark05: hsl(10, 2%, 25%);
+$dark06: $base02;
+$dark07: hsl(10, 2%, 35%);
+$dark08: $base03;
+
+$light01 : $base07;
+$light02 : adjust-color($base07,$lightness: -5%);
+$light03 : $base06;
+$light04 : adjust-color($base06,$lightness: -7.5%);
+$light05 : adjust-color($base05,$lightness: 10%);
+$light06 : $base05;
+$light07 : adjust-color($base05,$lightness: -7.5%);
+$light08: hsl(10, 2%, 47.5%); 
+
+$dark_yellow          : adjust-color($yellow,$lightness:-20%);
+$dark_yellow-orange   : adjust-color($yellow-orange,$lightness:-20%);
+$dark_orange          : adjust-color($orange,$lightness:-20%);
+$dark_orange-red      : adjust-color($orange-red,$lightness:-20%);
+$dark_red             : adjust-color($red,$lightness:-28%);
+$dark_red-magenta     : adjust-color($red-magenta,$lightness:-25%);
+$dark_magenta         : adjust-color($magenta,$lightness:-23%);
+$dark_magenta-violet  : adjust-color($magenta-violet,$lightness:-26%);
+$dark_violet          : adjust-color($violet,$lightness:-30%);
+$dark_violet-blue     : adjust-color($violet-blue,$lightness:-30%);
+$dark_blue            : adjust-color($blue,$lightness:-30%);
+$dark_blue-cyan       : adjust-color($blue-cyan,$lightness:-26%);
+$dark_cyan            : adjust-color($cyan,$lightness:-20%);
+$dark_cyan-green      : adjust-color($cyan-green,$lightness:-18%);
+$dark_green           : adjust-color($green,$lightness:-18%);
+$dark_green-yellow   : adjust-color($green-yellow,$lightness: -25%);
+
+$light_yellow         : adjust-color($yellow,$lightness:20%);
+$light_orange         : adjust-color($orange,$lightness:20%);
+$light_yellow-orange  : mix($light_yellow,$light_orange,50%);
+$light_red            : adjust-color($red,$lightness:20%);
+$light_orange-red     : mix($light_orange,$light_red,50%);
+$light_magenta        : adjust-color($magenta,$lightness:20%);
+$light_red-magenta    : mix($light_red,$light_magenta,50%);
+$light_violet         : adjust-color($violet,$lightness:20%);
+$light_magenta-violet : mix($light_magenta,$light_violet,50%);
+$light_blue           : adjust-color($blue,$lightness:20%);
+$light_violet-blue    : mix($light_violet,$light_blue,50%);
+$light_cyan           : adjust-color($cyan,$lightness:20%);
+$light_blue-cyan      : mix($light_blue,$light_cyan,50%);
+$light_green          : adjust-color($green,$saturation:-25%,$lightness:20%);
+$light_cyan-green     : mix($light_cyan,$light_green,50%);
+$light_green-yellow   : adjust-color($green-yellow,$lightness: 25%);
+
+$purple: $violet-blue;
+$dark_purple: $dark_violet-blue;
+$light_purple: $light_violet-blue; 
+
+// $cyan: #0cf;
+$cyan-dark: adjust-color($cyan,$lightness: -30%);
+$cyan-darker: #079;
+
+// $blue: #4183c4;
+$yellow-light: hsl(45, 100%, 80%);
+$grey-light: #f6f6f6;
+$dark-semitransperent: rgba(black,.5);
+$ui-bg-color: $dark-semitransperent;
+$link-color: $blue;
+$header-color: #222;
+$nav-color: $link-color;
+
+
+

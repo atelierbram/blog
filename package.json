@@ -1,0 +1,45 @@
+{
+  "name": "atelierbram-blog",
+  "version": "0.0.1",
+  "private": true,
+  "description": "Blog posts",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/atelierbram/blog.git"
+  },
+  "author": "Bram de Haan <info@atelierbramdehaan.nl>",
+   "licenses": [
+    {
+      "type": "copyright 2015 Bram de Haan",
+      "url": "http://atelierbram.mit-license.org/"
+    }
+  ],
+  "homepage": "http://atelierbramdehaan.nl/blog/",
+  "devDependencies": {
+    "grunt": "~0.4.5",
+    "grunt-contrib-watch": "~0.6.1",
+    "grunt-hashres": "~0.4.1",
+    "matchdep": "~0.3.0",
+    "assemble": "~0.4.42",
+    "grunt-contrib-sass": "~0.9.2",
+    "grunt-contrib-clean": "~0.6.0",
+    "grunt-contrib-connect": "~0.9.0",
+    "pretty": "~1.0.0",
+    "time-grunt": "~1.0.0",
+    "grunt-autoprefixer": "~2.2.0",
+    "grunt-contrib-cssmin": "~0.12.1",
+    "grunt-contrib-uglify": "~0.7.0",
+    "grunt-contrib-concat": "~0.5.0",
+    "grunt-gh-pages": "~0.9.1",
+    "handlebars-helper-isActive": "~0.1.1",
+    "handlebars-helper-autolink":  "~0.1.1"
+  },
+  "keywords": [
+    "Webdesign",
+    "Frontend",
+    "Design",
+    "2D-Design",
+    "Culture"
+  ]
+}

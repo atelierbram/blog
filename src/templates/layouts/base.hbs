@@ -1,0 +1,23 @@
+<!doctype html>
+<html class="no-js core no-flexbox">
+<head>
+    <meta charset="utf-8">
+    <title>{{ title }}</title>
+    {{#if description}}<meta name="description" content="{{description}}"/>{{/if}}
+
+    {{#is type "home" }}<link href="static/prefixed/home.min.css" rel="stylesheet">{{/is}}
+    {{#is type "page" }}<link href="../static/prefixed/style.min.css" rel="stylesheet">{{/is}}
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="index, follow">
+    <link rel="author" href="https://plus.google.com/+BramdeHaan/posts">
+<script>document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js '; if ( 'querySelector' in document && 'addEventListener' in window && Array.prototype.forEach ) { document.documentElement.className = document.documentElement.className.replace(/\bcore\b/g, '') + ' enhanced '; } var s = document.body || document.documentElement, s = s.style; if( s.webkitFlexWrap == '' || s.msFlexWrap == '' || s.flexWrap == '' ) { document.documentElement.className = document.documentElement.className.replace(/\bno-flexbox\b/g, '') + ' flexbox '; }
+</script>
+</head>
+<body>
+{{> body }}
+
+ {{#is type "page" }}<script src="../static/main.min.js"></script>{{/is}}
+ {{#is type "home" }}<script src="static/dropcap.min.js"></script>{{/is}}
+</body>
+</html>

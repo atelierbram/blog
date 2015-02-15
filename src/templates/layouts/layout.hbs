@@ -1,0 +1,8 @@
+---
+layout: base.hbs
+---
+{{> header }}
+{{#is type "page"}}{{> nav }}{{/is}}
+{{#is type "home"}}{{> nav-home }}{{/is}}
+{{# markdown }}{{ body }}{{/ markdown }}
+{{> footer }}
