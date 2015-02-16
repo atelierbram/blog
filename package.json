@@ -2,14 +2,14 @@
   "name": "atelierbram-blog",
   "version": "0.0.1",
   "private": true,
-  "description": "Blog posts",
+  "description": "Documenting a Learning Curve - Blog posts",
   "scripts": {},
   "repository": {
     "type": "git",
     "url": "https://github.com/atelierbram/blog.git"
   },
   "author": "Bram de Haan <info@atelierbramdehaan.nl>",
-   "licenses": [
+  "licenses": [
     {
       "type": "copyright 2015 Bram de Haan",
       "url": "http://atelierbram.mit-license.org/"
@@ -33,13 +33,14 @@
     "grunt-contrib-concat": "~0.5.0",
     "grunt-gh-pages": "~0.9.1",
     "handlebars-helper-isActive": "~0.1.1",
-    "handlebars-helper-autolink":  "~0.1.1"
+    "handlebars-helper-autolink": "~0.1.1"
   },
   "keywords": [
     "Webdesign",
     "Frontend",
     "Design",
     "2D-Design",
+    "Documentation",
     "Culture"
   ]
 }

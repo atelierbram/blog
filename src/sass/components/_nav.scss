@@ -48,7 +48,7 @@ $nav-width: 12rem;
     display: none;
   }
 }
-.js.no-flexbox .nav-active .nav {
+.js.no-flexbox .has-has-nav-active .nav {
   @include mq($until: tablet) {
     display: block;
   }
@@ -115,7 +115,7 @@ $nav-width: 12rem;
     transition: color .5s;
   }
 }
-.nav-active .nav a {
+.has-nav-active .nav a {
   @include mq($from: tablet) {
     color: $nav-color;
   }
@@ -136,7 +136,7 @@ $nav-width: 12rem;
   }
 }
 
-.nav-active .nav {
+.has-nav-active .nav {
   @include mq($until: tablet) {
     flex-basis: $nav-width;
     background-color: #eee;
@@ -148,7 +148,7 @@ $nav-width: 12rem;
   }
 }
 
-.no-js .nav-active .nav {
+.no-js .has-nav-active .nav {
   @include mq($until: tablet) {
     flex-basis: initial;
   }
@@ -188,11 +188,11 @@ $nav-width: 12rem;
   background-color: #bbb;
   border-color: #888 #999 #aaa;
 }
-.nav-active .btn {
+.has-nav-active .btn {
   z-index: 1;
-  background-color: $ui-bg-color;
+  background-color: $base03;
 }
-.nav-active .btn:hover {
+.has-nav-active .btn:hover {
   background-color: #bbb;
 }
 .btn-menu,
@@ -224,7 +224,8 @@ $nav-width: 12rem;
 .btn-menu__text {
   margin-top: -1.25rem;
   font-size: .875rem;
-  color: adjust-color($cyan,$lightness: -40%);
+  // color: adjust-color($cyan,$lightness: -40%);
+  color: $base00;
 }
 .shape-icon {
   width: 16px;
@@ -235,13 +236,15 @@ $nav-width: 12rem;
 
 .shape-hamburger {
   transition: fill .3s;
-  fill: adjust-color($cyan,$lightness: -10%);
+  // fill: adjust-color($cyan,$lightness: -10%);
+//  fill: $dark_cyan06;
 }
-.nav-active .shape-hamburger {
+.has-nav-active .shape-hamburger {
   fill: $light_cyan;
 }
-
+.shape-hamburger,
 .btn-menu:hover .shape-hamburger {
-  fill: adjust-color($cyan,$lightness: 10%);
+  // fill: adjust-color($cyan,$lightness: 10%);
+ fill: $dark_cyan06;
 }
 

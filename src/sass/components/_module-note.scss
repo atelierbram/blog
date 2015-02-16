@@ -1,0 +1,10 @@
+.note {
+  @extend %box-shadow;
+  @extend %rounded;
+  display: block;
+  padding: 1em;
+  // background-color: $light_green01; 
+  background-color: adjust-color($light_yellow01,$lightness: 10%);
+  // border: 1px solid $light_green03;
+  border: 1px solid $light_yellow;
+}

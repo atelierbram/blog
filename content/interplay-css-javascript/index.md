@@ -2,7 +2,7 @@
     title:          Interplay between CSS and Javascript on Transitions
     type:           page
     sortOrder:      1
-    description:    Meta description of the index page
+    description:    Make CSS and Javascript cooperate on your own terms
 ---
 
 ## Interplay between CSS and Javascript on Transitions
@@ -87,14 +87,15 @@ In the `CSS` one should have declarations for the different ‘states’, but th
 One can also provide a fall-back value for `padding-bottom` on the active/hover state (_value should be matching the highest current element, which will then be overridden by the values outputted by the `Sass`-function_) in order to make it always appear, even without javascript (, as shown above).
 
 ### Interplay
-Then there it is: a DIY <sup>3</sup> cooperation between `CSS` and Javascript, responding fast and snappy, because it benefits from modern browser’s native capabilities with using CSS-transitions.
+Then there it is: a DIY <sup>3</sup> cooperation between CSS and Javascript, responding fast and snappy, because it benefits from modern browser’s native capabilities with using CSS-transitions.
 
+<span class="note">This article was also published on [Codepen](http://codepen.io/atelierbram/blog/interplay-css-javascript).</span>
 
 ### Examples
 - [responsive dropdown demo](http://codepen.io/atelierbram/pen/AHwyr) - Disclaimer: this is a prototype: there will be more robust javascript implementations for dropdown menu’s tested on multiple devices out there (like Foundation/Bootstrap).
 - [example build on Bootstrap-3](http://codepen.io/atelierbram/pen/vymHL/) -  extended with [hover-dropdown-plugin](https://github.com/CWSpear/bootstrap-hover-dropdown) by [Cameron Spear](http://cameronspear.com/blog/bootstrap-dropdown-on-hover-plugin/) - [fork of repo on Github](https://github.com/atelierbram/bootstrap-hover-dropdown) - toggle links are clickable, as far as I know works on mobile, but javascript could be improved upon (I am aware that the animation could be done with jQuery `slideDown()` too, I just like the DIY<sup>3</sup> aspect: the tinkering, and the fact the transitions are done by the `CSS`, which has it's own (long-term) advantage.)
 
-
+### Notes
 1. Probably can also use `height` instead of `padding-bottom` since we are not using `height: auto` here, which (_used to?_)
 require `max-height` instead of `height`, but I wanted to be carefull here, avoid confusion by not mixing those concepts.
 2. One of them declarations: it outputs 10 of those, see also [this Github Gist](https://gist.github.com/atelierbram/a88e3811173bb9d75b40), or this [reduced testcase here on CodePen](http://codepen.io/atelierbram/pen/CBLaw)

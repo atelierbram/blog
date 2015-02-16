@@ -1,8 +1,10 @@
 @import
 "mq",
 "color-vars",
+"settings",
 "nav",
-"footer";
+"footer",
+"module-note";
 
 $nav-width: 12rem;
 
@@ -18,15 +20,16 @@ p {
 .content h3 {
   margin-top: 1rem;
   margin-bottom: 0;
-  border-bottom: 2px solid #222;
-  color: #222;
+  // border-bottom: 2px solid #222;
+  border-bottom: 2px solid $base02;
+  // color: #222;
 }
 .content pre + h3 {
   margin-top: 2rem;
 }
 .content h3 + p {
   margin-top: 1px;
-  border-top: 1px solid #222;
+  border-top: 1px solid $base01;
 }
 .no-flexbox p {
   max-width: 32em;
@@ -36,8 +39,7 @@ p {
     overflow-x: hidden;
   @include mq($until: tablet) {
   }
-}
-
+} 
 .content {
   padding: 1em 2em;
   background-color: #fff;
@@ -72,6 +74,12 @@ p {
 .content ul,
 .content ol {
   margin: 0 0 0 -2.5rem;
+  padding-top: 1em;
+  padding-bottom: 1.5em;
+}
+.content h3+ul,
+.content h3+ol {
+  padding-top: .5em;
 }
 .content ul li {
   list-style: none;
@@ -89,10 +97,24 @@ p {
   padding: 2px;
   height: 1px;
   width: 1px;
-  background-color: #3ca555;
-  border: 1px solid #666;
+  // background-color: #3ca555;
+  background-color: $green;
+  // border: 1px solid #666;
+  border: 1px solid $dark_green06;
   border-radius: 50%;
   display: inline-block;
   line-height: 1;
   font-size: 1em;
 }
+figure {
+  margin: 1em auto 1em 0;
+  // max-width: 640px;
+  max-width: 40em;
+}
+figcaption pre {
+  background-color: #f8f8f8;
+  margin-top: -.6em;
+  white-space: pre-line;
+  padding-top: 2em;
+}
+

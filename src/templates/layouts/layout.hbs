@@ -2,7 +2,6 @@
 layout: base.hbs
 ---
 {{> header }}
-{{#is type "page"}}{{> nav }}{{/is}}
-{{#is type "home"}}{{> nav-home }}{{/is}}
+{{#is type "page"}}{{> nav }}{{/is}}{{#is type "home"}}{{> nav-home }}{{/is}}
 {{# markdown }}{{ body }}{{/ markdown }}
-{{> footer }}
+{{#is type "page"}}{{> footer }}{{/is}}{{#is type "home"}}{{> footer-home }}{{/is}}

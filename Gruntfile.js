@@ -5,29 +5,30 @@ module.exports = function(grunt) {
     var devmode = grunt.option('dev');
 
     grunt.initConfig({
-        assemble: {
-            options: {
-                assets: "dist/static",
-                layout: "layout.hbs",
-                partials: "src/templates/partials/**/*.hbs",
-                layoutdir: 'src/templates/layouts',
-                helpers: ['handlebars-helper-autolink','handlebars-helper-isActive','src/helpers/**.js']
-            },
+      assemble: {
+          options: {
+              assets: "dist/static",
+              layout: "layout.hbs",
+              partials: "src/templates/partials/**/*.hbs",
+              layoutdir: 'src/templates/layouts',
+              helpers: ['handlebars-helper-autolink','handlebars-helper-isActive','src/helpers/**.js']
+          },
 
-            site: {
-                options: {
-                    postprocess: devmode ? false : require('pretty')
-                },
-                files: [{
-                    expand: true,
-                    flatten: false,
-                    // cwd: 'content/**/*.md',
-                    cwd: 'content/',
-                    src: ['**/*.{md,hbs,html,xml}'],
-                    dest: 'dist'
-                }]
-            }
+      site: {
+        options: {
+            // postprocess: devmode ? false : require('pretty')
         },
+
+     files: [{
+         expand: true,
+         flatten: false,
+         // cwd: 'content/**/*.md',
+         cwd: 'content/',
+         src: ['**/*.{md,hbs,html,xml}'],
+         dest: 'dist'
+     }]
+  }
+  },
 
         clean: {
             static: ['dist/static/**/*.{css,js}'],
@@ -71,7 +72,7 @@ module.exports = function(grunt) {
         concat: {
            dist: {
              files: {
-               'dist/static/main.js' :  ['src/js/svg-test.js', 'src/js/prism.js'],
+               'dist/static/main.js' :  ['src/js/svg-test.js','src/js/prism-custom.min.js'],
                'dist/static/dropcap.min.js' :  ['src/js/dropcap.min.js'],
              }
            }

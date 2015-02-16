@@ -17,7 +17,7 @@ function insertBtn() {
   header.appendChild(uiGutter);
 
   btnMenu.onclick= function () {
-    document.body.classList.toggle('nav-active');
+    document.body.classList.toggle('has-nav-active');
   };
 
 }

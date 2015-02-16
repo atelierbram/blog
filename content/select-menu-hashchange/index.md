@@ -2,7 +2,7 @@
     title:          Site-wide Navigation with Select Menu using window.onhashchange event
     type:           page
     sortOrder:      2
-    description:    Meta description of the index page
+    description:    Have a select-option with the right value on page refresh
 ---
 
 ## Site-wide Navigation with Select Menu using window.onhashchange event
@@ -13,10 +13,10 @@ When one is already using jQuery, easiest way is to use Ben Alman's great ["hash
 - for the next bit to work, we will have to add the page#target (to the id) to the end of the `url` of the `href`s `option` values, like so `blog/index.html#sm-blog`, or maybe `blog/index.php#sm-blog`
 
 ```markup
-    <select name="menu-items" onchange="location = this.options[this.selectedIndex].value;" id="menu-select-menu" class="select-menu">
-      <option id="sm-menu" value="">Menu</option>
-      <option id="sm-home" value="http://mydomain.com/index.html#sm-home">Home</option>
-      <option id="sm-blog" value="http://mydomain.com/blog/index.html#sm-blog">Blog</option>
+<select name="menu-items" onchange="location = this.options[this.selectedIndex].value;" id="menu-select-menu" class="select-menu">
+  <option id="sm-menu" value="">Menu</option>
+  <option id="sm-home" value="http://mydomain.com/index.html#sm-home">Home</option>
+  <option id="sm-blog" value="http://mydomain.com/blog/index.html#sm-blog">Blog</option>
 ```
 
 -   Bind an event to window.onhashchange (with the help of the plugin) that, when the hash changes, sets a class on the body with the same name as the #hash-tag
@@ -92,6 +92,9 @@ Now also on iOS, we have our current page right in the top of the `select`-menu.
 
 <del>P.S. This doesn't seem to work on iOS, at least on my iPad it always shows the most top option ... but there are all kinds of issues with select-menus on iOS, so well ...</del> Fixed, see above.
 
+<span class="note">This article was also published on [Codepen](http://codepen.io/atelierbram/blog/select-menu-hashchange)</span>
+
+### Examples
 - [demo on Codepen](http://codepen.io/atelierbram/pen/GjLvw)
 - [a demo with the jQuery hashtag plugin](http://bramdeh.home.xs4all.nl/playground/ui-patterns/select-nav/) parked on my provider's site.
 - [a simplified version with some small Jquery javascript](http://bramdeh.home.xs4all.nl/playground/ui-patterns/sitewide-selectnav/) parked on provider's site.
