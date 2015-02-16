@@ -7,9 +7,9 @@ module.exports = function(grunt) {
     grunt.initConfig({
       assemble: {
           options: {
-              assets: "dist/static",
-              layout: "layout.hbs",
-              partials: "src/templates/partials/**/*.hbs",
+              assets: 'dist/static',
+              layout: 'layout.hbs',
+              partials: 'src/templates/partials/**/*.hbs',
               layoutdir: 'src/templates/layouts',
               helpers: ['handlebars-helper-autolink','handlebars-helper-isActive','src/helpers/**.js']
           },
@@ -67,7 +67,32 @@ module.exports = function(grunt) {
             'dist/static/prefixed/home.min.css': 'dist/static/prefixed/home.css'
            }
           }
+
         },
+  htmlmin: {                                     // Task
+    dist: {                                      // Target
+      options: {                                 // Target options
+        removeComments: true,
+        collapseWhitespace: true
+      },
+      files: {                                   // Dictionary of files
+        'dist/index.html': 'dist/index.html',    // 'destination': 'source'
+        'dist/select-menu-hashchange/index.html': 'dist/select-menu-hashchange/index.html',
+        'dist/css-shapes-in-multi-column-layout/index.html': 'dist/css-shapes-in-multi-column-layout/index.html',
+        'dist/interplay-css-javascript/index.html': 'dist/interplay-css-javascript/index.html'
+      }
+    }
+  },
+
+
+ copy: {
+  main: {
+    src: 'dist/static/prefixed/home.min.css',
+    dest: 'src/templates/partials/homeheadstyles.hbs',
+    flatten: true,
+    filter: 'isFile',
+  },
+},
 
         concat: {
            dist: {
@@ -133,6 +158,7 @@ module.exports = function(grunt) {
             }
         },
 
+
         // from the commandline run: grunt gh-pages to build the remote gh-pages branch:
         // https://github.com/tschaub/grunt-gh-pages
         'gh-pages': {
@@ -146,13 +172,13 @@ module.exports = function(grunt) {
 
     });
 
-    grunt.registerTask('build', ['clean', 'concat', 'uglify', 'sass', 'autoprefixer', 'cssmin', 'assemble', 'hashres']);
+    grunt.registerTask('build', ['clean', 'concat', 'uglify', 'sass', 'autoprefixer', 'cssmin', 'assemble', 'htmlmin', 'hashres', 'copy']);
     grunt.registerTask('scss', ['sass', 'autoprefixer', 'cssmin', 'hashres']);
     grunt.registerTask('js', ['uglify', 'concat']);
     grunt.registerTask('html', ['assemble', 'hashres']);
     grunt.registerTask('default', ['build', 'connect', 'watch']);
 
-    grunt.loadNpmTasks('assemble', 'grunt-hashres', 'grunt-gh-pages');
+    grunt.loadNpmTasks('assemble', 'grunt-hashres', 'grunt-gh-pages', 'grunt-contrib-copy', 'grunt-contrib-htmlmin');
     require('matchdep').filterDev('grunt-*').forEach(grunt.loadNpmTasks);
 
 //    if (devmode) {

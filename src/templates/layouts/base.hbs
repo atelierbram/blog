@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>{{ title }}</title>
     {{#if description}}<meta name="description" content="{{description}}"/>{{/if}}
-    {{#is type "home" }}<link href="static/prefixed/home.min.css" rel="stylesheet">{{/is}}
+    {{#is type "home" }}<style>{{> homeheadstyles}}</style>{{/is}}
     {{#is type "page" }}<link href="../static/prefixed/style.min.css" rel="stylesheet">{{/is}}
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">

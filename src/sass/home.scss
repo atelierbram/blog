@@ -2,7 +2,7 @@
 "components/mq",
 "components/color-vars",
 "utilities/utilities",
-"components/elements",
+"components/essentials",
 "components/footer";
 
 $link-color: #4183c4;
@@ -107,19 +107,6 @@ h3 a {
   margin-bottom: .05em;
   transition: margin-left .4s .8s;
 }
-// SVG instead of psuedo-element(= looks ragged in Firefox)
-// .read-more::after {
-//   content:"";
-//   display: inline-block;
-//   width: 0;
-//   height: 0;
-//   border-top: .25em solid transparent;
-//   border-left: .5em solid $link-color;
-//   border-bottom: .25em solid transparent;
-//   margin-left: .75em;
-//   margin-bottom: .05em;
-//   transition: margin-left .4s .8s;
-// }
 .read-more:hover .shape-icon {
   margin-left: 40%;
 }

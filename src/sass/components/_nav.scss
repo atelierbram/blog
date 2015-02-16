@@ -3,34 +3,15 @@ $nav-width: 12rem;
 .nav-content-wrap {
   margin: 0 auto;
   background-color: #fff;
-
-  @include mq($until: tablet) {
-    display: flex;
-  }
 }
-
 .core .nav-content-wrap {
   display: block;
 }
-
-.no-flexbox .nav-content-wrap,
-.no-js .nav-content-wrap {
-  @include mq($until: tablet) {
-    display: block;
-  }
-}
 .nav {
-
-  @include mq($until: tablet) {
-    flex-basis: 0;
-    transition: flex .3s;
-  }
-  @include mq($from: tablet) {
-    padding: 0;
-    height: 0;
-    transition: height, padding .3s;
-    overflow: hidden;
-  }
+  padding: 0;
+  height: 0;
+  transition: height, padding .3s;
+  overflow: hidden;
 }
 .no-js .nav {
   border-top: 5px solid rgba(white,.25);
@@ -43,28 +24,14 @@ $nav-width: 12rem;
   flex-basis: initial;
   display: block;
 }
-.js.no-flexbox .nav {
-  @include mq($until: tablet) {
-    display: none;
-  }
-}
-.js.no-flexbox .has-has-nav-active .nav {
-  @include mq($until: tablet) {
-    display: block;
-  }
-}
-
 .nav ul {
   margin: 0;
   padding: 0;
   list-style: none;
-
-  @include mq($from: tablet) {
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 .no-js .nav ul {
   display: flex;
@@ -73,100 +40,49 @@ $nav-width: 12rem;
 }
 .no-flexbox .nav ul {
   display: block;
-  @include mq($from: tablet) {
-    padding-left: 3rem;
-  }
+  padding-left: 3rem;
 }
-
 .nav ul li {
-  @include mq($from: tablet) {
-    margin: 3px;
-  }
+  margin: 3px;
 }
 .no-js .nav ul li {
   margin-left: 3px;
 }
 .no-flexbox .nav ul li {
-  @include mq($from: tablet) {
-    margin: 0 0 0 .5em;
-    display: inline-block;
-  }
+  margin: 0 0 0 .5em;
+  display: inline-block;
 }
-
 .nav a {
   font-size: 1rem;
-  // color: adjust-color($nav-color,$lightness: -5%);
   text-decoration: none;
   transition: background-color .4s, color .3s, border-color .3s;
   display: block;
-
-  @include mq($until: tablet) {
-  color: $nav-color;
-    padding: 1rem 1.5rem;
-    display: flex;
-    border-top: 1px solid rgba(white,.5);
-    border-bottom: 1px solid rgba(black,.25);
-  }
-  @include mq($from: tablet) {
-    border-radius: .5em;
-    padding: .5em 1em;
-    border: 1px solid transparent;
-    color: transparent;
-    transition: color .5s;
-  }
+  border-radius: .5em;
+  padding: .5em 1em;
+  border: 1px solid transparent;
+  color: transparent;
+  transition: color .5s;
 }
 .has-nav-active .nav a {
-  @include mq($from: tablet) {
-    color: $nav-color;
-  }
-}
-.no-js .nav a {
-  @include mq($until: tablet) {
-    display: inline-block;
-    padding: .5em 1em;
-    border: 1px solid transparent;
-  }
+  color: $nav-color;
 }
 .no-flexbox .nav a,
 .js.no-flexbox .nav a {
   display: inline-block;
-  @include mq($until: tablet) {
-    display: block;
-    padding: 1rem 1.5rem;
-  }
 }
-
 .has-nav-active .nav {
-  @include mq($until: tablet) {
-    flex-basis: $nav-width;
-    background-color: #eee;
-  }
-  @include mq($from: tablet) {
-    height: auto;
-    padding: 1rem 3rem .25rem 0;
-    overflow: visible;
-  }
-}
-
-.no-js .has-nav-active .nav {
-  @include mq($until: tablet) {
-    flex-basis: initial;
-  }
+  height: auto;
+  padding: 1rem 3rem .25rem 0;
+  overflow: visible;
+  position: fixed;
+  background-color: #fff;
+  z-index: 1;
 }
 .nav .active,
 .nav a:hover,
 .nav a:active,
 .nav a:focus {
-  @include mq($until: tablet) {
-    background-color: $nav-color;
-    color: #fff;
-    border-top: 1px solid  adjust-color($nav-color,$lightness: -2.5%);
-    border-bottom: 1px solid adjust-color($nav-color,$lightness: -5%);
-  }
-
-  @include mq($from: tablet) {
-    border-color: adjust-color($nav-color,$lightness: 20%);
-  }
+  border-color: adjust-color($nav-color,$lightness: 20%);
 }
 .nav .active {
   pointer-events: none;
@@ -209,13 +125,8 @@ $nav-width: 12rem;
   position: relative;
   width: 42px;
   height: 32px;
-
-  @include mq($from: tablet) {
-    margin-top: -1.5rem;
-    // display: none;
-  }
+  margin-top: -1.5rem;
 }
-
 .shape-icon,
 .btn-menu__text {
   position: absolute;
@@ -224,27 +135,20 @@ $nav-width: 12rem;
 .btn-menu__text {
   margin-top: -1.25rem;
   font-size: .875rem;
-  // color: adjust-color($cyan,$lightness: -40%);
   color: $base00;
 }
 .shape-icon {
   width: 16px;
   height: 12px;
   margin: .55rem 0 0 .75em;
-  // background: inherit;
 }
-
 .shape-hamburger {
   transition: fill .3s;
-  // fill: adjust-color($cyan,$lightness: -10%);
-//  fill: $dark_cyan06;
 }
 .has-nav-active .shape-hamburger {
   fill: $light_cyan;
 }
 .shape-hamburger,
 .btn-menu:hover .shape-hamburger {
-  // fill: adjust-color($cyan,$lightness: 10%);
- fill: $dark_cyan06;
+  fill: $dark_cyan06;
 }
-
