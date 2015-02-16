@@ -1,5 +1,5 @@
 ---
-    title:          Home
+    title:          Documenting a Learning Curve
     type:           home
     description:    blog articles - documenting the learning process in webdesign
     sortOrder:      0
