@@ -1,7 +1,7 @@
 ---
     title:          Home
     type:           home
-    description:    Meta description of the index page
+    description:    blog articles - documenting the learning process in webdesign
     sortOrder:      0
 
 ---
