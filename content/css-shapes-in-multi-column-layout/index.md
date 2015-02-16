@@ -44,6 +44,10 @@ This is what makes it all work: wrapping the text around the shape.
 
 <span class="note">This article was also published on [Codepen](http://codepen.io/atelierbram/blog/css-shapes-in-multi-column-layout)</span>
 
+### Examples
+- [example markup inserted with jQuery](http://codepen.io/atelierbram/pen/Iujdi)
+- [example markup inserted with plain-vanilla javascript](http://codepen.io/atelierbram/pen/aoKus/)
+
 ### Notes
 1. Disclaimer: the example has many pullquotes: normally one wouldn’t use this many pullquotes on one page, but this is just in order to show it _not breaking the layout_. One can test this by dragging the browser-window, and maybe also see what happens when removing the `.wrap-module` declaration from the `CSS`.
 
