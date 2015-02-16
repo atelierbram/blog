@@ -1,7 +1,7 @@
 ---
     title:          Interplay between CSS and Javascript on Transitions
     type:           page
-    sortOrder:      1
+    sortOrder:      7
     description:    Make CSS and Javascript cooperate on your own terms
 ---
 

@@ -1,7 +1,7 @@
 ---
     title:          Site-wide Navigation with Select Menu using window.onhashchange event
     type:           page
-    sortOrder:      2
+    sortOrder:      8
     description:    Have a select-option with the right value on page refresh
 ---
 
