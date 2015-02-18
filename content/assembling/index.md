@@ -69,8 +69,8 @@ When I suffer from _“horror vacui”_, indecision or what not, from all these 
 
 At [Assemble’s website](http://assemble.io/docs/Resources.html#boilerplates) you can find some very instructive boilerplates, and at the bottom of this article are some links to examples, but make sure to also look at implementations in Github repo’s made by Zurb’s Foundation, and the [Gruntfile for h5bp-Effeckt.css](https://github.com/h5bp/Effeckt.css/blob/master/Gruntfile.js), which may have even more minimal and up to date implementations.
 
-### Optimisation
-To be able to have the minified CSS within style-tags in the `head` of your HTML, for optimisation, one can use the grunt-plugin `grunt-contrib-copy` to automate the hard work. Copy the contents of a minified CSS-file to a handlebars-file as a Grunt-task &hellip;
+### Optimization
+To be able to have the minified CSS within style-tags in the `head` of your HTML, for optimization, one can use the grunt-plugin `grunt-contrib-copy` to automate the hard work. Copy the contents of a minified CSS-file to a handlebars-file as a Grunt-task &hellip;
 
 ```javascript
 copy: {
@@ -94,7 +94,7 @@ Nice!
 Grunt-plugin [grunt-gh-pages](https://www.npmjs.com/package/grunt-gh-pages) makes a gh-pages branch and commits and pushes the output of the `dist` folder to a remote gh-pages branch on Github. Still find it magical how that works from this command in the terminal: `grunt gh-pages`.
 
 ### Styleguides
-When you have read the next quote, (from the [Javascript Jabber podcast](http://devchat.tv/js-jabber/098-jsj-assemble-io-with-brian-woodward-and-jon-schlinkert) featuring the creators of Assemble; Brian Woodward and Jon Schlinkert), it will not come as a suprise that there is also a [converted implementation of Brad Frost’s Patternlab](https://github.com/assemble/assemble-pattern-lab) (orginally in PHP), made with Assemble. Creating live styleguides on top of boilerplates like this are one of those things static site generators are made for.
+When you have read the next quote, (from the [Javascript Jabber podcast](http://devchat.tv/js-jabber/098-jsj-assemble-io-with-brian-woodward-and-jon-schlinkert) featuring the creators of Assemble; Brian Woodward and Jon Schlinkert), it will not come as a suprise that there is also a [converted implementation of Brad Frost’s Patternlab](https://github.com/assemble/assemble-pattern-lab) (originally in PHP), made with Assemble. Creating live styleguides on top of boilerplates like this are one of those things static site generators are made for.
 
 > We built a bunch of models and lorem ipsum type things for the buttons and for placeholder text with all the different components. And Assemble can just essentially iterate over all of those components and build the actual final components. But at the same time, it can also build all of the pages for demoing the components. So, you could for instance build a website with Assemble that is mostly text, like a blog or a regular website. But also then have a component showcase where you’re taking all of the partials or includes that you’ve created for the site and just create another destination path essentially for Assemble to build all of those components individually to showcase them. So, in one build you can build a component showcase and use those same components in the actual site &hellip;
 
