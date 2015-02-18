@@ -87,6 +87,7 @@ module.exports = function(grunt) {
           },
           files: {                                   // Dictionary of files
             'dist/index.html': 'dist/index.html',    // 'destination': 'source'
+            'dist/assembling/index.html': 'dist/assembling/index.html',
             'dist/select-menu-hashchange/index.html': 'dist/select-menu-hashchange/index.html',
             'dist/css-shapes-in-multi-column-layout/index.html': 'dist/css-shapes-in-multi-column-layout/index.html',
             'dist/interplay-css-javascript/index.html': 'dist/interplay-css-javascript/index.html'
