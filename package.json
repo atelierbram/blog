@@ -2,7 +2,7 @@
   "name": "atelierbram-blog",
   "version": "0.0.1",
   "private": true,
-  "description": "Documenting a Learning Curve - Blog posts",
+  "description": "Documenting a Learning Curve - Blog-posts on Frontend Webdesign",
   "scripts": {},
   "repository": {
     "type": "git",
@@ -15,7 +15,7 @@
       "url": "http://atelierbram.mit-license.org/"
     }
   ],
-  "homepage": "http://atelierbramdehaan.nl/blog/",
+  "homepage": "http://atelierbram.github.io/blog/",
   "devDependencies": {
     "grunt": "~0.4.5",
     "grunt-contrib-watch": "~0.6.1",

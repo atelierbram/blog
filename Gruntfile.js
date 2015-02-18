@@ -5,174 +5,173 @@ module.exports = function(grunt) {
     var devmode = grunt.option('dev');
 
     grunt.initConfig({
+      pkg: grunt.file.readJSON('package.json'),
       assemble: {
           options: {
-              assets: 'dist/static',
-              layout: 'layout.hbs',
-              partials: 'src/templates/partials/**/*.hbs',
-              layoutdir: 'src/templates/layouts',
-              helpers: ['handlebars-helper-autolink','handlebars-helper-isActive','src/helpers/**.js']
-          },
-
-      site: {
-        options: {
-            // postprocess: devmode ? false : require('pretty')
+            data: 'src/data/*.json',
+            assets: 'dist/static',
+            layout: 'layout.hbs',
+            partials: 'src/templates/partials/**/*.hbs',
+            layoutdir: 'src/templates/layouts',
+            helpers: ['handlebars-helper-autolink','handlebars-helper-isActive','src/helpers/**.js']
         },
 
-     files: [{
-         expand: true,
-         flatten: false,
-         // cwd: 'content/**/*.md',
-         cwd: 'content/',
-         src: ['**/*.{md,hbs,html,xml}'],
-         dest: 'dist'
-     }]
-  }
-  },
-
-        clean: {
-            static: ['dist/static/**/*.{css,js}'],
-            html: ['dist/**/*.html', '!dist/google*.html']
-        },
-
-
-        sass: {
-          dist: {
-            files: {
-                  'dist/static/style.css': 'src/sass/style.scss',
-                  'dist/static/home.css': 'src/sass/home.scss'
-              }
-            }
-          },
-
-        autoprefixer: {
+        site: {
           options: {
-            browsers: ['last 2 versions', '> 1%']
+              // postprocess: devmode ? false : require('pretty')
           },
 
-          dist: {
-            expand: true,
-            flatten: true,
-            files: {
-              'dist/static/prefixed/style.css': 'dist/static/style.css',
-              'dist/static/prefixed/home.css': 'dist/static/home.css'
-           }
-          }
-        },
-
-        cssmin: {
-          dist: {
-            files: {
-            'dist/static/prefixed/style.min.css': 'dist/static/prefixed/style.css',
-            'dist/static/prefixed/home.min.css': 'dist/static/prefixed/home.css'
-           }
-          }
-
-        },
-  htmlmin: {                                     // Task
-    dist: {                                      // Target
-      options: {                                 // Target options
-        removeComments: true,
-        collapseWhitespace: true
+          files: [{
+              expand: true,
+              flatten: false,
+              // cwd: 'content/**/*.md',
+              cwd: 'content/',
+              src: ['**/*.{md,hbs,html,xml}'],
+              dest: 'dist'
+          }]
+        }
       },
-      files: {                                   // Dictionary of files
-        'dist/index.html': 'dist/index.html',    // 'destination': 'source'
-        'dist/select-menu-hashchange/index.html': 'dist/select-menu-hashchange/index.html',
-        'dist/css-shapes-in-multi-column-layout/index.html': 'dist/css-shapes-in-multi-column-layout/index.html',
-        'dist/interplay-css-javascript/index.html': 'dist/interplay-css-javascript/index.html'
-      }
-    }
-  },
 
+      clean: {
+          static: ['dist/static/**/*.{css,js}'],
+          html: ['dist/**/*.html', '!dist/google*.html']
+      },
 
- copy: {
-  main: {
-    src: 'dist/static/prefixed/home.min.css',
-    dest: 'src/templates/partials/homeheadstyles.hbs',
-    flatten: true,
-    filter: 'isFile',
-  },
-},
-
-        concat: {
-           dist: {
-             files: {
-               'dist/static/main.js' :  ['src/js/svg-test.js','src/js/prism-custom.min.js'],
-               'dist/static/dropcap.min.js' :  ['src/js/dropcap.min.js'],
-             }
-           }
-         },
-
-        uglify: {
-          options: {
-            preserveComments: 'some'
-          },
-          dist: {
-            files: {
-              'dist/static/main.min.js' : 'dist/static/main.js',
-            }
+      sass: {
+        dist: {
+          files: {
+                'dist/static/style.css': 'src/sass/style.scss',
+                'dist/static/home.css': 'src/sass/home.scss'
           }
+        }
+      },
+
+      autoprefixer: {
+        options: {
+          browsers: ['last 2 versions', '> 1%']
         },
 
-        hashres: {
-           options: {
-               fileNameFormat: '${name}.${ext}?${hash}',
-               renameFiles: false
-           },
-           dist: {
-               src: ['dist/static/main.min.js','dist/static/prefixed/style.min.css','dist/static/prefixed/home.min.css'],
-               dest: 'dist/**/*.html'
+        dist: {
+          expand: true,
+          flatten: true,
+          files: {
+            'dist/static/prefixed/style.css': 'dist/static/style.css',
+            'dist/static/prefixed/home.css': 'dist/static/home.css'
           }
+        }
+      },
+
+      cssmin: {
+        dist: {
+          files: {
+          'dist/static/prefixed/style.min.css': 'dist/static/prefixed/style.css',
+          'dist/static/prefixed/home.min.css': 'dist/static/prefixed/home.css'
+          }
+        }
+      },
+
+      copy: {
+        main: {
+          src: 'dist/static/prefixed/home.min.css',
+          dest: 'src/templates/partials/homeheadstyles.hbs',
+          flatten: true,
+          filter: 'isFile',
+        },
+      },
+
+      htmlmin: {                                     // Task
+        dist: {                                      // Target
+          options: {                                 // Target options
+            removeComments: true,
+            collapseWhitespace: true
+          },
+          files: {                                   // Dictionary of files
+            'dist/index.html': 'dist/index.html',    // 'destination': 'source'
+            'dist/select-menu-hashchange/index.html': 'dist/select-menu-hashchange/index.html',
+            'dist/css-shapes-in-multi-column-layout/index.html': 'dist/css-shapes-in-multi-column-layout/index.html',
+            'dist/interplay-css-javascript/index.html': 'dist/interplay-css-javascript/index.html'
+          }
+        }
+      },
+
+      concat: {
+         dist: {
+           files: {
+             'dist/static/main.js' :  ['src/js/svg-test.js','src/js/prism-custom.min.js'],
+             'dist/static/dropcap.min.js' :  ['src/js/dropcap.min.js'],
+           }
+         }
        },
 
-        connect: {
-            dev: {
-                options: {
-                    hostname: '0.0.0.0',
-                    port: 3000,
-                    base: 'dist',
-                    livereload: true
-                }
-            }
+      uglify: {
+        options: {
+          preserveComments: 'some'
         },
-
-        watch: {
-            options: {
-                livereload: true,
-                spawn: false
-            },
-
-            scss: {
-                files: ['src/**/*.scss'],
-                tasks: 'scss'
-            },
-
-            js: {
-                files: ['src/js/**/*.js'],
-                tasks: 'js'
-            },
-
-            html: {
-                files: ['content/**/*', 'src/templates/**/*'],
-                tasks: 'html'
-            }
-        },
-
-
-        // from the commandline run: grunt gh-pages to build the remote gh-pages branch:
-        // https://github.com/tschaub/grunt-gh-pages
-        'gh-pages': {
-          options: {
-            // base: 'dist',
-            // push: false
-            base: 'dist'
-          },
-          src: '**/*'
+        dist: {
+          files: {
+            'dist/static/main.min.js' : 'dist/static/main.js',
+          }
         }
+      },
 
-    });
+      hashres: {
+         options: {
+             fileNameFormat: '${name}.${ext}?${hash}',
+             renameFiles: false
+         },
+         dist: {
+             src: ['dist/static/main.min.js','dist/static/prefixed/style.min.css','dist/static/prefixed/home.min.css'],
+             dest: 'dist/**/*.html'
+        }
+     },
 
-    grunt.registerTask('build', ['clean', 'concat', 'uglify', 'sass', 'autoprefixer', 'cssmin', 'assemble', 'htmlmin', 'hashres', 'copy']);
+      connect: {
+        dev: {
+          options: {
+            hostname: '0.0.0.0',
+            port: 3000,
+            base: 'dist',
+            livereload: true
+          }
+        }
+      },
+
+      watch: {
+        options: {
+          livereload: true,
+          spawn: false
+        },
+
+        scss: {
+            files: ['src/**/*.scss'],
+            tasks: 'scss'
+        },
+
+        js: {
+            files: ['src/js/**/*.js'],
+            tasks: 'js'
+        },
+
+        html: {
+            files: ['content/**/*', 'src/templates/**/*'],
+            tasks: 'html'
+        }
+    },
+
+      // from the commandline run: grunt gh-pages to build the remote gh-pages branch:
+      // https://github.com/tschaub/grunt-gh-pages
+      'gh-pages': {
+        options: {
+          // base: 'dist',
+          // push: false
+          base: 'dist'
+        },
+        src: '**/*'
+      }
+
+  });
+
+    grunt.registerTask('build', ['clean', 'concat', 'uglify', 'sass', 'autoprefixer', 'cssmin', 'copy', 'assemble', 'htmlmin', 'hashres']);
     grunt.registerTask('scss', ['sass', 'autoprefixer', 'cssmin', 'hashres']);
     grunt.registerTask('js', ['uglify', 'concat']);
     grunt.registerTask('html', ['assemble', 'hashres']);

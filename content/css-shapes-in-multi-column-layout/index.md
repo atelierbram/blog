@@ -1,7 +1,8 @@
 ---
     title:          CSS-Shapes in Multi-Column Layout
+    short-title:    CSS-Shapes in Multi-Column Layout
     type:           page
-    sortOrder:      9
+    sortOrder:      12
     description:    Avoid breaking the layout of a multi-column-layout when using CSS-Shapes
 ---
 

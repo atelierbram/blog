@@ -5,7 +5,7 @@
     <title>{{ title }}</title>
     {{#if description}}<meta name="description" content="{{description}}"/>{{/if}}
     {{#is type "home" }}<style>{{> homeheadstyles}}</style>{{/is}}
-    {{#is type "page" }}<link href="../static/prefixed/style.min.css" rel="stylesheet">{{/is}}
+    {{#is type "page" }}<link href="{{assets}}/prefixed/style.min.css" rel="stylesheet">{{/is}}
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="index, follow">
@@ -15,7 +15,7 @@
 </head>
 <body>
 {{> body }}
- {{#is type "page" }}<script src="../static/main.min.js"></script>{{/is}}
- {{#is type "home" }}<script src="static/dropcap.min.js"></script>{{/is}}
+ {{#is type "page" }}<script src="{{assets}}/main.min.js"></script>{{/is}}
+ {{#is type "home" }}<script src="{{assets}}/dropcap.min.js"></script>{{/is}}
 </body>
 </html>

@@ -364,12 +364,17 @@ $light_green-yellow01  : adjust-color($green-yellow,$lightness: 45%);
 // $cyan: #0cf;
 // $cyan-dark: adjust-color($cyan,$lightness: -30%);
 $cyan-dark: $dark_cyan01;
-$cyan-darker: #079;
+// $cyan-darker: #079;
 
-$grey-light: #f6f6f6;
+// $grey-light: #f6f6f6;
+$grey-light: $light04;
+
+$light_yellow00: adjust-color($light_yellow01,$lightness: 10%);
+$light_yellow00-1: adjust-color($light_yellow01,$lightness: 15%);
 $dark-semitransparent: rgba(black,.5);
 $ui-bg-color: $base05;
 $link-color: $blue;
+$link-hover-color: $violet_blue;
 $header-color: #222;
 $nav-color: $link-color;
 

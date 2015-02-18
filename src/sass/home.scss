@@ -5,9 +5,23 @@
 "components/essentials",
 "components/footer";
 
-$link-color: #4183c4;
 %overflow-hidden { overflow: hidden; }
 
+body {
+  min-height: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.no-flexbox body {
+  position: relative;
+  min-height: 100%;
+}
+
+header h1 a {
+  pointer-events: none;
+  cursor: default;
+}
 .page-wrap {
   flex: 1;
   overflow-x: hidden;
@@ -67,15 +81,15 @@ time {
   @extend %overflow-hidden;
 }
 h3 a {
-  color: #222;
+  color: $dark04;
   padding: .6rem;
   display: block;
 }
-.dropcap {
-  font-family: AvenirNextCondensed-Heavy, Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black", Avenir-Black, sans-serif;
-  color: #333;
-  margin-right: .25rem;
+h3 a:hover {
+  text-decoration: none;
+  color: $red;
 }
+
 .truncate {
   width: 40%;
   text-overflow: ellipsis;
@@ -93,6 +107,9 @@ h3 a {
 .read-more:hover,
 .read-more:active {
   text-decoration: none;
+}
+.read-more:hover,
+.read-more:active {
   background-color: rgba(black,.05);
   padding-left: 1em;
 }

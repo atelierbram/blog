@@ -18,7 +18,7 @@ p {
   margin-top: 1rem;
   margin-bottom: 0;
   // border-bottom: 2px solid #222;
-  border-bottom: 2px solid $base02;
+  border-bottom: 2px solid $dark04;
   // color: #222;
 }
 .content pre + h3 {
@@ -36,7 +36,7 @@ p {
     overflow-x: hidden;
   @include mq($until: tablet) {
   }
-} 
+}
 .content {
   padding: 1em 2em;
   background-color: #fff;
@@ -102,6 +102,22 @@ p {
   display: inline-block;
   line-height: 1;
   font-size: 1em;
+}
+blockquote p  {
+  position: relative;
+  z-index: 1;
+}
+blockquote::after {
+  content: "“";
+  position: absolute;
+  top:0;left:0;
+  margin: -16px 0 0 -30%;
+  padding: 0;
+  width: 290px;
+  height: 200px;
+  font: 664px/.8 "Trebuchet MS", Georgia, serif;
+  color: rgba(black,.3);
+  z-index: 0;
 }
 figure {
   margin: 1em auto 1em 0;

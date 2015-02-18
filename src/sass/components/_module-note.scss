@@ -4,7 +4,6 @@
   display: block;
   padding: 1em;
   margin: 1em 0;
-  background-color: adjust-color($light_yellow01,$lightness: 10%);
-  // border: 1px solid $light_green03;
+  background-color: $light_yellow00;
   border: 1px solid $light_yellow;
 }

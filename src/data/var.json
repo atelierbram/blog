@@ -1,0 +1,15 @@
+{
+  "sitetitle": "Documenting a Learning Curve",
+  "description": "Blog-posts on Frontend Webdesign",
+  "author": "Bram de Haan <info@atelierbramdehaan.nl>",
+  "org": "Atelier Bram de Haan",
+  "license-type": "copyright 2015 Atelier Bram de Haan",
+  "license-url": "http://atelierbram.mit-license.org/",
+  "homepage": "http://atelierbram.github.io/blog/",
+  "codepen-blog": "http://codepen.io/atelierbram/blog",
+  "year": "2015",
+  "atelier":"http://atelierbramdehaan.nl/",
+  "repository-url": "https://github.com/atelierbram/blog",
+  "repository-readme-link": "https://github.com/atelierbram/blog/blob/master/README.md", 
+  "keywords": "Webdesign, Frontend, Design, 2D-Design, Documentation, Culture"
+}

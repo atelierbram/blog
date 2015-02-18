@@ -50,21 +50,23 @@ ul code:before,
 ul code:after {
   content: "\00a0";
   letter-spacing: -0.2em;
-} 
-blockquote,
+}
 hr,
 pre {
   @extend %box-shadow;
 }
 blockquote {
-  border-left: .5em solid #ccc;
+  position: relative;
+  border-left: .3px solid #ccc;
   padding: .75em 1.5em;
-  margin: 1em;
-  background-color: #f7f7f7;
-  color: #666;
-  font-family: AvenirNext-Italic, Avenir-Oblique, AvenirMedium-Oblique, serif;
+  margin: 1em 0 1em 20%;
+  // background-color: #f7f7f7;
+  background-color: transparent;
+  color: rgba(black,.8);
+  font-family: AvenirNext-Italic, Avenir-Oblique, AvenirMedium-Oblique, Georgia, serif;
   font-style: italic;
-} 
+  z-index: 1;
+}
 button, input, optgroup, select, textarea { color: inherit; font: inherit; margin: 0; }
 button, select { text-transform: none; }
 button, html input[type="button"], input[type="reset"], input[type="submit"] { -webkit-appearance: button; cursor: pointer; }

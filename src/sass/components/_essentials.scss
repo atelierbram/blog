@@ -19,25 +19,26 @@ body {
 }
 body {
   margin: 0;
-  font: 100%/1.4 AvenirNext-Regular, Corbel, "Segoe Ui", "Lucida Grande", "Lucida Unicode", "Trebuchet Ms", Verdana, sans-serif;
+  font: 100%/1.4 AvenirNext-Regular, Corbel, "Segoe Ui", "Lucida Grande", "Lucida Unicode", "Trebuchet Ms", Verdana, "DejaVu Sans", "Bitstream Vera Sans","Liberation Sans", sans-serif;
   background: inherit;
   color: $base00;
-  min-height: 100%;
   box-sizing: border-box;
-  display: flex;
-  min-height: 100vh;
-  flex-direction: column;
+  // min-height: 100%;
+  // min-height: 100vh;
+  // display: flex;
+  // flex-direction: column;
 }
-.no-flexbox body {
-  position: relative;
-  min-height: 100%;
-}
+// .no-flexbox body {
+//   position: relative;
+//   min-height: 100%;
+// }
 article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary { display: block; }
 
 a {
   background: transparent;
   color: $link-color;
   text-decoration: none;
+  transition: color, text-decoration .3s;
 }
 a:active,
 a:hover {
@@ -47,7 +48,14 @@ a:hover,
 a:focus,
 a:active {
   text-decoration: underline;
+  color: $link-hover-color;
 }
+header h1 a:hover {
+  text-decoration: none;
+  color: $red;
+}
+
+
 abbr[title] { border-bottom: 1px dotted; }
 b, strong { font-weight: bold; }
 dfn { font-style: italic; }
@@ -62,18 +70,18 @@ figure { margin: 1em 40px; }
 hr { padding: 1px; border: 1px solid #ccc; box-sizing: content-box; height: 0; }
 
 h2, h3, h4, h5, h6 {
-  font-family: AvenirNextCondensed-DemiBold, Corbel, "Trebuchet Ms", "Segoe Ui", sans-serif;
+  font-family: AvenirNextCondensed-DemiBold, Corbel, "Trebuchet Ms", "Segoe Ui", "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", sans-serif;
   margin: 0;
   padding: 1rem 0 0;
 }
 h2 {
- color: $yellow-orange;
+  color: $yellow-orange;
 }
 h3, h4, h5, h6 {
- color: $base01;
+  color: $base01;
 }
 
-b, strong, thead th, button {
+b, strong, thead th, button, footer a {
   font-family: AvenirNextCondensed-DemiBold, "Lucida Grande","Segoe Ui","Trebuchet Ms", Verdana, sans-serif;
 }
 strong em {
@@ -101,12 +109,15 @@ header h1 {
   margin: 0;
   padding: .5rem 3rem .25rem 1rem;
   text-align: right;
-  color: $dark04;
   font-weight: normal;
 
   @include mq($until: tablet) {
     margin-left: 1em;
   }
+}
+header h1,
+header h1 a{
+  color: $dark04;
 }
 h2 {
   font-size: 2.25rem;
@@ -129,6 +140,14 @@ p {
 i {
   font-family:  AvenirNext-Italic, Avenir-Oblique, TrebuchetMS-Italic, "Lucida Grande", Corbel,  "Trebuchet Ms", Verdana, sans-serif;
   font-style: italic;
+}
+.dropcap,
+blockquote::after {
+  font-family: AvenirNextCondensed-Heavy, Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black", Avenir-Black, sans-serif;
+}
+.dropcap {
+  color: #333;
+  margin-right: .25rem;
 }
 ::selection, ::moz-selection {
   text-shadow: none;

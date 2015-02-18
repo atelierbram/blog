@@ -7,16 +7,18 @@ lib-cov
 *.pid
 *.gz
 *.rar
+*.ai
+
 npm-debug.log
 node_modules
 pids
 logs
 
-
 release
 /tmp/
 /temp/
 dist
+vector
 
 TODO.md
 
