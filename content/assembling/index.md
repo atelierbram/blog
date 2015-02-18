@@ -38,7 +38,7 @@ description: My Homepage
 
 ### Templating
 
-Besides that you can put variables in the top of your content-files as YMF<sup>2</sup>, another way to get data into your templates is to [store custom variables as “key-value-pairs” in an external file](http://assemble.io/docs/options-data.html), for example a JSON or YML - file. The way to let the javascript rendering-engine know about this file, is to link it up (as a value for `data`) in the the options-section for Assemble within the Gruntfile.
+Besides that you can put variables in the top of your content-files as YMF<sup>2</sup>, another way to get data into your templates is to [store custom variables as “key-value-pairs” in an external file](http://assemble.io/docs/options-data.html), for example a JSON or YML - file. The way to let the javascript rendering-engine know about this file, is to link it up (as a value for `data`) in the options-section for Assemble within the Gruntfile.
 
 
 ```javascript
