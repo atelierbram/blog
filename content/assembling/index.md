@@ -23,7 +23,7 @@ One of the first problems to solve, when wanting to generate a website from flat
 </nav>
 ```
 
-HTML mixed with handlebars’ template tags, spitting out<sup>1</sup> a complete ordered list of the content folder files in the HTML-output.  In the markup are references to these two handlebar-helper plugins: “handlebars-helper-autolink” and “handlebars-helper-isActive”. The sort-order of the linked files can be set in the versatile [Yaml front matter](http://assemble.io/docs/YAML-front-matter.html) in the content-file itself. So when generating pages from markdown,  let’s say `index.md`, in the YFM<sup>2</sup>, right in the head of the file, one can set these variables:
+HTML mixed with handlebars’ template tags, spitting out<sup>1</sup> a complete _“ordered”_ unordered list of the content folder files in the HTML-output.  In the markup are references to these two handlebar-helper plugins: “handlebars-helper-autolink” and “handlebars-helper-isActive”. The sort-order of the linked files can be set in the versatile [Yaml front matter](http://assemble.io/docs/YAML-front-matter.html) in the content-file itself. So when generating pages from markdown,  let’s say `index.md`, in the YFM<sup>2</sup>, right in the head of the file, one can set these variables:
 
 ```markup
 ---

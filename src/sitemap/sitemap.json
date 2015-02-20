@@ -1,0 +1,38 @@
+{
+  "domain": "https://github.com/atelierbram/blog",
+  "lastmod": { "year": "2015", "month": "02", "day": "18" },
+  "filetype": "html",
+
+  "pages": [
+    {
+      "page": "index",
+      "update-frequency": "monthly",
+      "lastmod": { "year": "2015", "month": "02", "day": "18" },
+      "priority": "1"
+    },
+    {
+      "page": "css-shapes-in-multi-column-layout",
+      "update-frequency": "monthly",
+      "lastmod": {"year": "2015", "month": "02", "day": "18" },
+      "priority": "1"
+    },
+    {
+      "page": "select-menu-hashchange",
+      "update-frequency": "monthly",
+      "lastmod": { "year": "2015", "month": "02", "day": "18" },
+      "priority": "1"
+    },
+    {
+      "page": "interplay-css-javascript",
+      "update-frequency": "monthly",
+      "lastmod": { "year": "2015", "month": "02", "day": "18" },
+      "priority": "1"
+    },
+    {
+      "page": "assembling",
+      "update-frequency": "monthly",
+      "lastmod": {"year": "2015", "month": "02", "day": "18" },
+      "priority": "1"
+    }
+  ]
+}

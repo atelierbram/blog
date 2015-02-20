@@ -2,5 +2,5 @@
   <div class="nav-content-wrap" id="navContentWrap">
     <nav class="nav" id="nav">
    <!--   http://www.prototype-generator.com/templating-in-pg/template-helpers.html http://stackoverflow.com/questions/25878099/assemble-handlebars-sort-order -->
-   <ul>{{#withSort pages 'data.sortOrder'}}<li><a href="{{autolink}}" {{isActive}}>{{data.short-title}}</a></li>{{/withSort}}</ul></nav>
+   <ul class="ul-nav">{{#withSort pages 'data.sortOrder'}}<li><a href="{{autolink}}" {{isActive}}>{{data.short-title}}</a></li>{{/withSort}}</ul></nav>
     <article class="content" id="content">

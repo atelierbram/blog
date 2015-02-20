@@ -7,8 +7,32 @@ module.exports = function(grunt) {
     grunt.initConfig({
       pkg: grunt.file.readJSON('package.json'),
       assemble: {
+      // options: grunt.file.readYAML('config.yml'),
           options: {
-            data: 'src/data/*.json',
+            data: ['src/data/*.json'],
+            // sitemap not working ...
+            // sitemap: {
+            //   options: { ext: '.xml' },
+            //   files: {
+            //     '.': ['src/sitemap/sitemap.hbs' ]
+            //   }
+            // },
+            // plugins: ['assemble-middleware-sitemap'],
+            // files: {
+            // '.': ['src/templates/partials/**/*.hbs']
+            // },
+            // sitemap: {
+            //   homepage: 'http://atelierbram.github.io/blog/',
+            //   changefreq: 'daily',
+            //   priority: '0.8',
+            //   // exclude: ['50x', 'foo'],
+            //   robot: false
+            // },
+            // component: {
+            //   files: {
+            //     'Sitemap.xml': ['src/sitemap.hbs']
+            //   }
+            // },
             assets: 'dist/static',
             layout: 'layout.hbs',
             partials: 'src/templates/partials/**/*.hbs',
@@ -177,12 +201,16 @@ module.exports = function(grunt) {
     grunt.registerTask('js', ['uglify', 'concat']);
     grunt.registerTask('html', ['assemble', 'hashres']);
     grunt.registerTask('default', ['build', 'connect', 'watch']);
+    // grunt.registerTask('default', ['build', 'connect', 'watch', 'assemble:component']);
+    // grunt.registerTask('default', ['assemble:component']);
 
-    grunt.loadNpmTasks('assemble', 'grunt-hashres', 'grunt-gh-pages', 'grunt-contrib-copy', 'grunt-contrib-htmlmin');
+    grunt.loadNpmTasks('assemble', 'grunt-verb', 'grunt-hashres', 'grunt-gh-pages', 'grunt-contrib-copy', 'grunt-contrib-htmlmin');
     require('matchdep').filterDev('grunt-*').forEach(grunt.loadNpmTasks);
 
+  // Default tasks to be run.
+};
 //    if (devmode) {
 //        grunt.task.registerTask('hashres', function(){ console.log('Skipping hashres task because of --dev flag'); });
 //        grunt.task.registerTask('uncss', function(){ console.log('Skipping uncss task because of --dev flag'); });
 //    }
-};
+// };
