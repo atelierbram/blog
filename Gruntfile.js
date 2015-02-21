@@ -96,8 +96,12 @@ module.exports = function(grunt) {
 
       copy: {
         main: {
-          src: 'dist/static/prefixed/home.min.css',
-          dest: 'src/templates/partials/homeheadstyles.hbs',
+          // src: 'dist/static/prefixed/home.min.css',
+          // dest: 'src/templates/partials/homeheadstyles.hbs',
+          files: {
+          'src/templates/partials/homeheadstyles.hbs' : 'dist/static/prefixed/home.min.css',
+          'src/templates/partials/head-detect-js.hbs' : 'dist/static/head-detect.min.js'
+          },
           flatten: true,
           filter: 'isFile',
         },
@@ -135,6 +139,7 @@ module.exports = function(grunt) {
         dist: {
           files: {
             'dist/static/main.min.js' : 'dist/static/main.js',
+            'dist/static/head-detect.min.js' : 'src/js/head-detect.js',
           }
         }
       },

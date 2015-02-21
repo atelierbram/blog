@@ -19,19 +19,16 @@ body {
 }
 body {
   margin: 0;
-  font: 100%/1.4 AvenirNext-Regular, Corbel, "Segoe Ui", "Lucida Grande", "Lucida Unicode", "Trebuchet Ms", Verdana, "DejaVu Sans", "Bitstream Vera Sans","Liberation Sans", sans-serif;
+  font-size: 100%;
+  line-height: 1.5;
+  font-family: AvenirNext-Regular, Corbel, "Segoe Ui", "Lucida Grande", "Lucida Unicode", "Trebuchet Ms", Verdana, "DejaVu Sans", "Bitstream Vera Sans","Liberation Sans", sans-serif;
   background: inherit;
   color: $base00;
   box-sizing: border-box;
-  // min-height: 100%;
-  // min-height: 100vh;
-  // display: flex;
-  // flex-direction: column;
 }
-// .no-flexbox body {
-//   position: relative;
-//   min-height: 100%;
-// }
+html[data-useragent*='Firefox/35.0'] body {
+  font-family: Europa, AvenirNext-Regular, Corbel, "Segoe Ui", "Lucida Grande", "Lucida Unicode", "Trebuchet Ms", Verdana, "DejaVu Sans", "Bitstream Vera Sans","Liberation Sans", sans-serif;
+}
 article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary { display: block; }
 
 a {

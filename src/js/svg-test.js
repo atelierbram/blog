@@ -19,9 +19,9 @@ function insertBtn() {
   btnMenu.onclick= function () {
     document.body.classList.toggle('has-nav-active');
   };
-
 }
 insertBtn();
+
 function supportsSVG() {
   "use strict";
   return !! document.createElementNS && !! document.createElementNS('http://www.w3.org/2000/svg','svg').createSVGRect;
