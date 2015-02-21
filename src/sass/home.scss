@@ -107,9 +107,11 @@ time {
   line-height: 1.4;
 }
 h3 a {
-  color: $dark04;
+  // color: $dark04;
+  color: #3c3c3c;
   padding: .6rem;
   display: block;
+  transition: color .3s;
 }
 h3 a:hover {
   text-decoration: none;
