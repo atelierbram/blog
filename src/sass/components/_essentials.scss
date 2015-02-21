@@ -26,8 +26,15 @@ body {
   color: $base00;
   box-sizing: border-box;
 }
-html[data-useragent*='Firefox/35.0'] body {
+// .wf-active[data-useragent*='Firefox'] body,
+// .wf-active body,
+.wf-active body,
+.wf-active:not[data-useragent*='Chrome'][data-platform='MacIntel'] body,
+.wf-active:not[data-useragent*='Safari'] body,
+.wf-active:not[data-platform='iPad'] body,
+.wf-active:not[data-platform='iPhone'] body {
   font-family: Europa, AvenirNext-Regular, Corbel, "Segoe Ui", "Lucida Grande", "Lucida Unicode", "Trebuchet Ms", Verdana, "DejaVu Sans", "Bitstream Vera Sans","Liberation Sans", sans-serif;
+  font-weight: 300;
 }
 article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary { display: block; }
 
@@ -66,11 +73,25 @@ svg:not(:root) { overflow: hidden; }
 figure { margin: 1em 40px; }
 hr { padding: 1px; border: 1px solid #ccc; box-sizing: content-box; height: 0; }
 
-h2, h3, h4, h5, h6 {
+h2, h3 {
   font-family: AvenirNextCondensed-DemiBold, Corbel, "Trebuchet Ms", "Segoe Ui", "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", sans-serif;
   margin: 0;
   padding: 1rem 0 0;
 }
+
+.wf-active h2,
+.wf-active:not[data-useragent*='Chrome'][data-platform='MacIntel'] h2,
+.wf-active:not[data-useragent*='Chrome'][data-platform='MacIntel'] h3,
+.wf-active:not[data-useragent*='Safari'] h2,
+.wf-active:not[data-useragent*='Safari'] h3,
+.wf-active:not[data-platform='iPad'] h2,
+.wf-active:not[data-platform='iPad'] h3,
+.wf-active:not[data-platform='iPhone'] h2,
+.wf-active:not[data-platform='iPhone'] h3 {
+  font-family: Europa, AvenirNextCondensed-DemiBold, Corbel, "Trebuchet Ms", "Segoe Ui", "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", sans-serif;
+  font-weight: 700;
+}
+
 h2 {
   color: $yellow-orange;
 }
