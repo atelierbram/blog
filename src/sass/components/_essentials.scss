@@ -29,7 +29,7 @@ body {
 // .wf-active[data-useragent*='Firefox'] body,
 // .wf-active body,
 .wf-active body,
-.wf-active:not[data-useragent*='Chrome'][data-platform='MacIntel'] body,
+// .wf-active:not[data-useragent*='Chrome'][data-platform='MacIntel'] body,
 .wf-active:not[data-useragent*='Safari'] body,
 .wf-active:not[data-platform='iPad'] body,
 .wf-active:not[data-platform='iPhone'] body {
@@ -80,8 +80,8 @@ h2, h3 {
 }
 
 .wf-active h2,
-.wf-active:not[data-useragent*='Chrome'][data-platform='MacIntel'] h2,
-.wf-active:not[data-useragent*='Chrome'][data-platform='MacIntel'] h3,
+// .wf-active:not[data-useragent*='Chrome'][data-platform='MacIntel'] h2,
+// .wf-active:not[data-useragent*='Chrome'][data-platform='MacIntel'] h3,
 .wf-active:not[data-useragent*='Safari'] h2,
 .wf-active:not[data-useragent*='Safari'] h3,
 .wf-active:not[data-platform='iPad'] h2,
