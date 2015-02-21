@@ -65,6 +65,6 @@ if (supportsSVG()) {
 }
 else {
   document.documentElement.className += ' no-svg';
-  btnMenu.style.background = "url(img/hamburger-menu_42x32.png) 0 0 no-repeat"
+  btnMenu.style.background = "url(http://atelierbram.github.io/blog/static/img/ui/hamburger-menu_42x32.png) 0 0 no-repeat"
 }
 supportsSVG();
