@@ -58,6 +58,8 @@ if (supportsSVG()) {
 
   svgMenu.appendChild(symbolHamburgerIcon);
 
+  var header = document.getElementById("header");
+  var btnMenu = document.getElementById("btnMenu");
   var targetEl = header.firstChild;
   header.insertBefore(svgMenu, targetEl);
 
@@ -65,6 +67,6 @@ if (supportsSVG()) {
 }
 else {
   document.documentElement.className += ' no-svg';
-  btnMenu.style.background = "url(http://atelierbram.github.io/blog/static/img/ui/hamburger-menu_42x32.png) 0 0 no-repeat"
+  btnMenu.style.background = "url(https://lh4.googleusercontent.com/-2kq22Bju9mw/VFQHsrbt-aI/AAAAAAAABC0/C_QHkvw91xo/s800/hamburger-menu_42x32.png) 0 0 no-repeat";
 }
 supportsSVG();
