@@ -35,7 +35,8 @@ pre code:after {
   content: normal;
 }
 p code,
-ul code {
+ul code,
+ol code {
   @extend %monospace;
   font-size: .875em;
   margin: 0;
@@ -47,7 +48,9 @@ ul code {
 p code:before,
 p code:after,
 ul code:before,
-ul code:after {
+ul code:after,
+ol code:before,
+ol code:after {
   content: "\00a0";
   letter-spacing: -0.2em;
 }
@@ -74,27 +77,6 @@ button, select { text-transform: none; }
 button, html input[type="button"], input[type="reset"], input[type="submit"] { -webkit-appearance: button; cursor: pointer; }
 // moved to .btn
 // button {
-//   -webkit-appearance: none;
-//   overflow: visible;
-//   border-radius: 4px;
-//   background-clip: padding-box;
-//   background-color: #ddd;
-//   background-image: linear-gradient(to bottom, white, #ddd);
-//   border: 1px solid;
-//   border-color: #ccc #bbb #b3b3b3;
-//   cursor: pointer;
-//   color: #333;
-//   display: inline-block;
-//   outline: 0;
-//   overflow: visible;
-//   margin: 0 0 .5em .75em;
-//   padding: 1em 2em;
-//   text-shadow: white 0 1px 1px;
-//   text-decoration: none;
-//   vertical-align: top;
-//   width: auto;
-//   font-size: 16px;
-//   line-height: 1.3;
 // }
 button:invalid {
   box-shadow:none;
@@ -151,13 +133,3 @@ th, td {
 tr:nth-of-type(even) {
   background: rgba(0,0,0,.125);
 }
-
-@include mq($from: desktop) {
-  h2 {
-    font-size: 2.5rem;
-  }
-  p {
-    padding: .5em 0 .5em 1em;
-  }
-}
-

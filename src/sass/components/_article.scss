@@ -7,13 +7,18 @@ $nav-width: 12rem;
 
 p {
   padding: .5em 0;
-  @include mq($until: tablet) {
-  }
    @include mq($from: tablet) {
     font-size: 1.25em;
     max-width: 34em;
   }
 }
+li p {
+   @include mq($from: tablet) {
+    font-size: 1rem;
+    max-width: 100%;
+  }
+}
+
 .content h3 {
   margin-top: 1rem;
   margin-bottom: 0;

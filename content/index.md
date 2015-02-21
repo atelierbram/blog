@@ -14,12 +14,8 @@
   <rect y="4" width="5" height="2"/>
   </symbol>
 </svg>
-<section class="content">
-
-  <ul class="publication-list publication-list--articles"><li class="publication-list__item">
-
+<section class="content"><ul class="publication-list publication-list--articles"><li class="publication-list__item">
     <h3 class="publication-list__item__title"><a href="http://atelierbram.github.io/blog/assembling">Assembling</a></h3>
-
     <p class="publication-list__item__meta">
     <time datetime="2015-02-18">February 2015</time>
     </p>
@@ -28,9 +24,7 @@
      </p>
     </div>
     </li><li class="publication-list__item">
-
     <h3 class="publication-list__item__title"><a href="http://atelierbram.github.io/blog/interplay-css-javascript">Interplay between CSS and Javascript <span class="visuallyhidden">on Transitions</span></a></h3>
-
     <p class="publication-list__item__meta">
     <time datetime="2014-09-23">September 2014</time>
     </p>
@@ -40,9 +34,7 @@
      </p>
     </div>
     </li><li class="publication-list__item">
-
     <h3 class="publication-list__item__title"><a href="http://atelierbram.github.io/blog/select-menu-hashchange">Site-wide Navigation with Select Menu  <span class="visuallyhidden">using window.onhashchange event</span></a></h3>
-
     <p class="publication-list__item__meta">
     <time datetime="2014-09-18">September 2014</time>
     </p>
@@ -51,9 +43,7 @@
       </p>
     </div>
     </li><li class="publication-list__item">
-
     <h3 class="publication-list__item__title"><a href="http://atelierbram.github.io/blog/css-shapes-in-multi-column-layout">CSS-Shapes in Multi-Column Layout</a></h3>
-
     <p class="publication-list__item__meta">
     <time datetime="2014-09-07">September 2014</time>
     </p>

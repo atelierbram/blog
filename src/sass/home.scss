@@ -28,18 +28,21 @@ header h1 a {
   @include mq($until: tablet) {
   }
 }
+// Dropcap
+// .publication-list__item__content::first-letter {
 .dropcap {
   font-family: Impact, Charcoal, "Helvetica Inserat", "Arial Black", sans-serif;
   color: #333;
-  margin: -5px 4px 0 0;
+  margin: -5px 4px 6px 1px;
   padding: 0;
   float: left;
   font-size: 160px;
   line-height: .9;
   height: 120px;
 }
+// .wf-active .publication-list__item__content::first-letter {
 .wf-active .dropcap {
-  font-family: poplar-std, Impact, Charcoal, "Helvetica Inserat", "Arial Black", sans-serif;
+  font-family: Poplar-std, Impact, Charcoal, "Helvetica Inserat", "Arial Black", sans-serif;
   margin-top: 0;
 }
 .content {
