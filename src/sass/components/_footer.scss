@@ -3,9 +3,11 @@ footer {
   background-color: $ui-bg-color;
   border-top: 1px solid $base04;
 }
+.no-js footer,
 .no-flexbox footer {
-  position: absolute;
+  position: fixed;
   bottom:0;left:0;right:0;
+  z-index: 1;
 }
 footer a {
   color: $dark_green-yellow01;
@@ -16,6 +18,5 @@ footer a {
 }
 footer a:hover {
   color: $light_green-yellow02;
-  // color: $yellow;
   text-decoration: none;
 }
