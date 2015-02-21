@@ -22,7 +22,8 @@ li p {
 .content h3 {
   margin-top: 1rem;
   margin-bottom: 0;
-  border-bottom: 2px solid $dark04;
+  // border-bottom: 2px solid $dark04;
+  border-bottom: 2px solid #3c3c3c;
 }
 .content pre + h3 {
   margin-top: 2rem;
@@ -30,6 +31,11 @@ li p {
 .content h3 + p {
   margin-top: 1px;
   border-top: 1px solid $base01;
+}
+#examples,
+#resources,
+#notes {
+  border-bottom: none;
 }
 .no-flexbox p {
   max-width: 32em;
@@ -87,7 +93,10 @@ li p {
   margin-left: -.75em;
   margin-top: 0;
   padding-left: .75em;
-  max-width: 40em;
+}
+.content ul li,
+.content ol li {
+  max-width: 43em;
 }
 .content ul li::before {
   content: "";
