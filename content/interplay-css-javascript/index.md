@@ -9,7 +9,7 @@
 ## Interplay between CSS and Javascript on Transitions
 
 ### Animating height in CSS
-Animating the height of an element with only `CSS` is possible with the `max-height` property, giving the begin value a `max-height` of zero and (_let's say_) the 'hovered' value some high number _that-will-always-be-higher-then-the-real-height-of-the-highest-animated-element_. The outcome of the results can vary quite a bit, depending on the differences between all these values: not satisfying in all scenarios. An alternative way is using `height: 0` in combination with a set value for `padding-bottom`.
+Animating the height of an element with only `CSS` is possible with the `max-height` property, giving the begin value a `max-height` of zero and (_let's say_) the 'hovered' value some high number _“that will always be higher then the real height of the highest animated element”_. The outcome of the results can vary quite a bit, depending on the differences between all these values: not satisfying in all scenarios. An alternative way is using `height: 0` in combination with a set value for `padding-bottom`.
 
 ### Animating padding-bottom with CSS-Transitions
 But to know these values for `padding-bottom` <sup>1</sup> one will have to know the height of each element. With only a small amount of dropdown-lists to be styled, one might be tempted to hardcode those values in. But what if someone (, and maybe even not you) wants to add an item to one of these lists in the future? Now one will have to change this value in the `CSS` _every time again_ when the number of items in the `HTML` changes, which can be anoying.

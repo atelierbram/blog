@@ -26,16 +26,13 @@ body {
   color: $base00;
   box-sizing: border-box;
 }
-// .wf-active[data-useragent*='Firefox'] body,
-// .wf-active body,
-.wf-active body,
-// .wf-active:not[data-useragent*='Chrome'][data-platform='MacIntel'] body,
-.wf-active:not[data-useragent*='Safari'] body,
-.wf-active:not[data-platform='iPad'] body,
-.wf-active:not[data-platform='iPhone'] body {
+// .wf-active:not[data-platform='iPad'] body {}
+// this will not work with child-selectors
+.wf-active body {
   font-family: Europa, AvenirNext-Regular, Corbel, "Segoe Ui", "Lucida Grande", "Lucida Unicode", "Trebuchet Ms", Verdana, "DejaVu Sans", "Bitstream Vera Sans","Liberation Sans", sans-serif;
   font-weight: 300;
 }
+
 article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary { display: block; }
 
 a {
@@ -59,7 +56,6 @@ header h1 a:hover {
   color: $red;
 }
 
-
 abbr[title] { border-bottom: 1px dotted; }
 b, strong { font-weight: bold; }
 dfn { font-style: italic; }
@@ -79,17 +75,24 @@ h2, h3 {
   padding: 1rem 0 0;
 }
 
-.wf-active h2,
 // .wf-active:not[data-useragent*='Chrome'][data-platform='MacIntel'] h2,
 // .wf-active:not[data-useragent*='Chrome'][data-platform='MacIntel'] h3,
-.wf-active:not[data-useragent*='Safari'] h2,
-.wf-active:not[data-useragent*='Safari'] h3,
-.wf-active:not[data-platform='iPad'] h2,
-.wf-active:not[data-platform='iPad'] h3,
-.wf-active:not[data-platform='iPhone'] h2,
-.wf-active:not[data-platform='iPhone'] h3 {
+// .wf-active:not[data-useragent*='Safari'] h2,
+// .wf-active:not[data-useragent*='Safari'] h3,
+// .wf-active:not[data-platform='iPad'] h2,
+// .wf-active:not[data-platform='iPad'] h3,
+// .wf-active:not[data-platform='iPhone'] h2,
+// .wf-active:not[data-platform='iPhone'] h3,
+// this will not work with child-selectors
+.wf-active h2,
+.wf-active h3 {
   font-family: Europa, AvenirNextCondensed-DemiBold, Corbel, "Trebuchet Ms", "Segoe Ui", "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", sans-serif;
+}
+.wf-active h2 {
   font-weight: 700;
+}
+.wf-active h3 {
+  font-weight: 400;
 }
 
 h2 {
@@ -102,19 +105,42 @@ h3, h4, h5, h6 {
 b, strong, thead th, button, footer a {
   font-family: AvenirNextCondensed-DemiBold, "Lucida Grande","Segoe Ui","Trebuchet Ms", Verdana, sans-serif;
 }
+.wf-active b, .wf-active strong, .wf-active thead th, .wf-active button, .wf-active footer a {
+  font-family: Europa, AvenirNextCondensed-DemiBold, "Lucida Grande","Segoe Ui","Trebuchet Ms", Verdana, sans-serif;
+  font-weight: 400;
+}
 strong em {
   font-family:  AvenirNext-BoldItalic, Avenir-HeavyOblique, Trebuchet-BoldItalic, "Lucida Grande", Corbel, "Segoe Ui", "Trebuchet Ms", Verdana, sans-serif;
   font-weight: bold;
 }
-em {
-  font-family: AvenirNext-MediumItalic, Avenir-HeavyOblique, Trebuchet-BoldItalic, "Lucida Grande", Corbel, "Segoe Ui", "Trebuchet Ms", Verdana, sans-serif;
+.wf-active strong em {
+  font-family:  Europa, AvenirNext-BoldItalic, Avenir-HeavyOblique, Trebuchet-BoldItalic, "Lucida Grande", Corbel, "Segoe Ui", "Trebuchet Ms", Verdana, sans-serif;
+  font-weight: 400;
 }
+// em {
+//   font-family: AvenirNext-MediumItalic, Avenir-HeavyOblique, Trebuchet-BoldItalic, "Lucida Grande", Corbel, "Segoe Ui", "Trebuchet Ms", Verdana, sans-serif;
+// }
+// .wf-active em {
+//   font-family: Europa, AvenirNext-MediumItalic, Avenir-HeavyOblique, Trebuchet-BoldItalic, "Lucida Grande", Corbel, "Segoe Ui", "Trebuchet Ms", Verdana, sans-serif;
+//   font-weight: 400;
+// }
+i,em {
+  font-family:  AvenirNext-Italic, Avenir-Oblique, TrebuchetMS-Italic, "Lucida Grande", Corbel,  "Trebuchet Ms", Verdana, sans-serif;
+  font-style: italic;
+}
+.wf-active i,
+.wf-active em {
+  font-family:  Europa, AvenirNext-Italic, Avenir-Oblique, TrebuchetMS-Italic, "Lucida Grande", Corbel,  "Trebuchet Ms", Verdana, sans-serif;
+  font-weight: 300;
+}
+
 header,
 footer {
   text-align: center;
 }
 header {
   background-color: adjust-color($base07,$lightness: 1.5%);
+  min-height: 3.5rem;
   @include mq($from: tablet) {
     border-bottom: 1px solid $base07;
   }
@@ -122,7 +148,7 @@ header {
 
 header h1 {
   @extend %monospace;
-  font-size: 2rem;
+  font-size: 1.75rem;
   line-height: 1.25;
   margin: 0;
   padding: .5rem 3rem .25rem 1rem;
@@ -137,6 +163,11 @@ header h1,
 header h1 a{
   color: $dark04;
 }
+.wf-active header h1 {
+  font-family: Europa, Consolas, Menlo, Monaco, monospace;
+  font-weight: 300;
+}
+
 h2 {
   font-size: 2.25rem;
 }
@@ -152,20 +183,6 @@ h5 {
 p {
   margin: 0;
   padding: .5em 0;
-}
-
-/* http://atelierbram.github.com/typeface-tester/ */
-i {
-  font-family:  AvenirNext-Italic, Avenir-Oblique, TrebuchetMS-Italic, "Lucida Grande", Corbel,  "Trebuchet Ms", Verdana, sans-serif;
-  font-style: italic;
-}
-.dropcap,
-blockquote::after {
-  font-family: AvenirNextCondensed-Heavy, Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black", Avenir-Black, sans-serif;
-}
-.dropcap {
-  color: #333;
-  margin-right: .25rem;
 }
 ::selection, ::moz-selection {
   text-shadow: none;

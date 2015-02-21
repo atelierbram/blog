@@ -65,32 +65,37 @@ blockquote {
   font-style: italic;
   z-index: 1;
 }
+.wf-active blockquote {
+  font-family: Europa, AvenirNext-Italic, Avenir-Oblique, AvenirMedium-Oblique, Georgia, serif;
+}
+
 button, input, optgroup, select, textarea { color: inherit; font: inherit; margin: 0; }
 button, select { text-transform: none; }
 button, html input[type="button"], input[type="reset"], input[type="submit"] { -webkit-appearance: button; cursor: pointer; }
-button {
-  -webkit-appearance: none;
-  overflow: visible;
-  border-radius: 4px;
-  background-clip: padding-box;
-  background-color: #ddd;
-  // background-image: linear-gradient(to bottom, white, #ddd);
-  border: 1px solid;
-  border-color: #ccc #bbb #b3b3b3;
-  cursor: pointer;
-  color: #333;
-  display: inline-block;
-  outline: 0;
-  overflow: visible;
-  margin: 0 0 .5em .75em;
-  padding: 1em 2em;
-  text-shadow: white 0 1px 1px;
-  text-decoration: none;
-  vertical-align: top;
-  width: auto;
-  font-size: 16px;
-  line-height: 1.3;
-}
+// moved to .btn
+// button {
+//   -webkit-appearance: none;
+//   overflow: visible;
+//   border-radius: 4px;
+//   background-clip: padding-box;
+//   background-color: #ddd;
+//   background-image: linear-gradient(to bottom, white, #ddd);
+//   border: 1px solid;
+//   border-color: #ccc #bbb #b3b3b3;
+//   cursor: pointer;
+//   color: #333;
+//   display: inline-block;
+//   outline: 0;
+//   overflow: visible;
+//   margin: 0 0 .5em .75em;
+//   padding: 1em 2em;
+//   text-shadow: white 0 1px 1px;
+//   text-decoration: none;
+//   vertical-align: top;
+//   width: auto;
+//   font-size: 16px;
+//   line-height: 1.3;
+// }
 button:invalid {
   box-shadow:none;
 }

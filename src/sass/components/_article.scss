@@ -11,15 +11,13 @@ p {
   }
    @include mq($from: tablet) {
     font-size: 1.25em;
-    max-width: 32em;
+    max-width: 34em;
   }
 }
 .content h3 {
   margin-top: 1rem;
   margin-bottom: 0;
-  // border-bottom: 2px solid #222;
   border-bottom: 2px solid $dark04;
-  // color: #222;
 }
 .content pre + h3 {
   margin-top: 2rem;
@@ -54,9 +52,9 @@ p {
 
 .ui-gutter {
   text-align: left;
-  @include mq($until: tablet) {
-    background-color: #eee;
-  }
+//   @include mq($until: tablet) {
+//     background-color: #eee;
+//   }
 }
 
 .truncate {
@@ -119,9 +117,14 @@ blockquote::after {
   color: rgba(black,.3);
   z-index: 0;
 }
+.wf-active blockquote::after {
+  font-family: Europa, "Trebuchet MS", Georgia, serif;
+  font-weight: 700;
+  font-style: italic;
+  margin: -40px 0 0 -40%;
+}
 figure {
   margin: 1em auto 1em 0;
-  // max-width: 640px;
   max-width: 40em;
 }
 figcaption pre {

@@ -28,7 +28,20 @@ header h1 a {
   @include mq($until: tablet) {
   }
 }
-
+.dropcap {
+  font-family: Impact, Charcoal, "Helvetica Inserat", "Arial Black", sans-serif;
+  color: #333;
+  margin: -5px 4px 0 0;
+  padding: 0;
+  float: left;
+  font-size: 160px;
+  line-height: .9;
+  height: 120px;
+}
+.wf-active .dropcap {
+  font-family: poplar-std, Impact, Charcoal, "Helvetica Inserat", "Arial Black", sans-serif;
+  margin-top: 0;
+}
 .content {
   padding: 0 1em;
   margin-bottom: 3em;
@@ -71,7 +84,10 @@ header h1 a {
   top:0;bottom:0;left:.6em;right:.6em;
   z-index: -1;
   border-top: 1px solid #aaa;
-  margin-top: .6em;
+  margin-top: .78em;
+}
+.wf-active .publication-list__item__meta:after {
+  margin-top: .8em;
 }
 time {
   background-color: #fff;
@@ -79,6 +95,10 @@ time {
 }
 .publication-list__item__content {
   @extend %overflow-hidden;
+}
+
+.wf-active .publication-list__item__content p {
+  line-height: 1.4;
 }
 h3 a {
   color: $dark04;
