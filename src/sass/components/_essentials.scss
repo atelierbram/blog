@@ -28,7 +28,7 @@ body {
 }
 // .wf-active:not[data-platform='iPad'] body {}
 // this will not work with child-selectors
-.wf-active body {
+.wf-europa-n3-active body {
   font-family: Europa, AvenirNext-Regular, Corbel, "Segoe Ui", "Lucida Grande", "Lucida Unicode", "Trebuchet Ms", Verdana, "DejaVu Sans", "Bitstream Vera Sans","Liberation Sans", sans-serif;
   font-weight: 300;
 }
@@ -63,6 +63,57 @@ sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: b
 sup { top: -0.5em; }
 sub { bottom: -0.25em; }
 
+code, pre {
+  @extend %monospace;
+}
+
+.wf-sourcecodepro-n4-active pre[class*="language-"],
+.wf-sourcecodepro-n4-active code,
+.wf-sourcecodepro-n4-active pre {
+  @extend %wf-monospace;
+}
+code { font-size: 1em; }
+pre code {
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  word-wrap: normal;
+  max-width: initial;
+  display: inline;
+  overflow: initial;
+  line-height: inherit;
+}
+pre code:before,
+pre code:after {
+  content: normal;
+}
+p code,
+ul code,
+ol code {
+  @extend %monospace;
+  font-size: .875em;
+  margin: 0;
+  border: 1px solid #ddd;
+  background-color: #f8f8f8;
+  border-radius: 3px;
+  padding: 2px 0 0 0;
+}
+p code:before,
+p code:after,
+ul code:before,
+ul code:after,
+ol code:before,
+ol code:after {
+  content: "\00a0";
+  letter-spacing: -0.2em;
+}
+
+.wf-sourcecodepro-n4-active p code,
+.wf-sourcecodepro-n4-active ul code,
+.wf-sourcecodepro-n4-active ol code {
+  @extend %wf-monospace;
+}
 .publication-list__item__title,
 .page h2 {
   font-family: AvenirNextCondensed-DemiBold, Corbel, "Trebuchet Ms", "Segoe Ui", "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", sans-serif;
@@ -71,20 +122,20 @@ sub { bottom: -0.25em; }
 // .wf-active:not[data-platform='iPhone'] h3,
 // this will not work with child-selectors
 //
-.wf-active .publication-list__item__title,
-.wf-active .page h2 { font-family: Europa, AvenirNextCondensed-DemiBold, Corbel, "Trebuchet Ms", "Segoe Ui", "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", sans-serif;
+//js enhanced flexbox svg wf-sourcecodepro-n4-active wf-active wf-europa-i3-inactive wf-europa-i4-inactive wf-europa-i7-inactive wf-europa-n3-inactive wf-europa-n4-inactive wf-europa-n7-inactive wf-poplarstd-n4-inactive
+.wf-europa-n4-active .publication-list__item__title,
+.wf-europa-n7-active .page h2 { font-family: Europa, AvenirNextCondensed-DemiBold, Corbel, "Trebuchet Ms", "Segoe Ui", "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", sans-serif;
 }
-.wf-active .publication-list__item__title {
+.wf-europa-n4-active .publication-list__item__title {
   font-weight: 400;
 }
-.wf-active .page h2 {
-  font-weight: 700;
-}
+.wf-europa-n7-active .page h2 {
+  font-weight: 700; }
 
 b, strong, thead th, button, footer a {
   font-family: AvenirNextCondensed-DemiBold, "Lucida Grande","Segoe Ui","Trebuchet Ms", Verdana, sans-serif;
 }
-.wf-active b, .wf-active strong, .wf-active thead th, .wf-active button, .wf-active footer a {
+.wf-eruopa-n4-active b, .wf-eruopa-n4-active strong, .wf-eruopa-n4-active thead th, .wf-eruopa-n4-active button, .wf-eruopa-n4-active footer a {
   font-family: Europa, AvenirNextCondensed-DemiBold, "Lucida Grande","Segoe Ui","Trebuchet Ms", Verdana, sans-serif;
   font-weight: 400;
 }
@@ -92,23 +143,16 @@ strong em {
   font-family:  AvenirNext-BoldItalic, Avenir-HeavyOblique, Trebuchet-BoldItalic, "Lucida Grande", Corbel, "Segoe Ui", "Trebuchet Ms", Verdana, sans-serif;
   font-weight: bold;
 }
-.wf-active strong em {
+.wf-eruopa-i4-active strong em {
   font-family:  Europa, AvenirNext-BoldItalic, Avenir-HeavyOblique, Trebuchet-BoldItalic, "Lucida Grande", Corbel, "Segoe Ui", "Trebuchet Ms", Verdana, sans-serif;
   font-weight: 400;
 }
-// em {
-//   font-family: AvenirNext-MediumItalic, Avenir-HeavyOblique, Trebuchet-BoldItalic, "Lucida Grande", Corbel, "Segoe Ui", "Trebuchet Ms", Verdana, sans-serif;
-// }
-// .wf-active em {
-//   font-family: Europa, AvenirNext-MediumItalic, Avenir-HeavyOblique, Trebuchet-BoldItalic, "Lucida Grande", Corbel, "Segoe Ui", "Trebuchet Ms", Verdana, sans-serif;
-//   font-weight: 400;
-// }
 i,em {
   font-family:  AvenirNext-Italic, Avenir-Oblique, TrebuchetMS-Italic, "Lucida Grande", Corbel,  "Trebuchet Ms", Verdana, sans-serif;
   font-style: italic;
 }
-.wf-active i,
-.wf-active em {
+.wf-europa-i3-active i,
+.wf-europa-i3-active em {
   font-family:  Europa, AvenirNext-Italic, Avenir-Oblique, TrebuchetMS-Italic, "Lucida Grande", Corbel,  "Trebuchet Ms", Verdana, sans-serif;
   font-weight: 300;
 }
@@ -142,7 +186,7 @@ header h1,
 header h1 a {
   color: $dark04;
 }
-.wf-active header h1 {
+.wf-europa-n3-active header h1 {
   font-family: Europa, Consolas, Menlo, Monaco, monospace;
   font-weight: 300;
 }

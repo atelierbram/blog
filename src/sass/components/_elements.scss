@@ -21,45 +21,7 @@ pre {
   word-wrap: normal;
   white-space: pre-wrap;
 }
-code, kbd, pre, samp {
-  @extend %monospace;
-}
-code, kbd, samp { font-size: 1em; }
-pre code {
-  margin: 0;
-  padding: 0;
-  background-color: transparent;
-  border: none;
-  word-wrap: normal;
-  max-width: initial;
-  display: inline;
-  overflow: initial;
-  line-height: inherit;
-}
-pre code:before,
-pre code:after {
-  content: normal;
-}
-p code,
-ul code,
-ol code {
-  @extend %monospace;
-  font-size: .875em;
-  margin: 0;
-  border: 1px solid #ddd;
-  background-color: #f8f8f8;
-  border-radius: 3px;
-  padding: 2px 0 0 0;
-}
-p code:before,
-p code:after,
-ul code:before,
-ul code:after,
-ol code:before,
-ol code:after {
-  content: "\00a0";
-  letter-spacing: -0.2em;
-}
+
 hr,
 pre {
   @extend %box-shadow;
@@ -115,9 +77,13 @@ optgroup { font-weight: bold; }
 table {
   border-collapse: collapse;
   border-spacing: 0;
-  font-family: Consolas, Menlo, Monaco, monospace;
+  @extend %monospace;
   background: #f7f7f7;
 }
+.wf-sourcecodepro-n4-active table {
+  @extend %wf-monospace;
+}
+
 thead {
   display: table-header-group;
 }
@@ -135,7 +101,7 @@ thead th:nth-of-type(1) {
 th, td {
   padding: .5em 1em;
 }
-/* zebra stripes */
+// zebra stripes
 tr:nth-of-type(even) {
   background: rgba(0,0,0,.125);
 }

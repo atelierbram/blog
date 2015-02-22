@@ -67,6 +67,6 @@ if (supportsSVG()) {
 }
 else {
   document.documentElement.className += ' no-svg';
-  btnMenu.style.background = "url(https://lh4.googleusercontent.com/-2kq22Bju9mw/VFQHsrbt-aI/AAAAAAAABC0/C_QHkvw91xo/s800/hamburger-menu_42x32.png) 0 0 no-repeat";
+  btnMenu.style.background = "#ddd url(https://lh4.googleusercontent.com/-2kq22Bju9mw/VFQHsrbt-aI/AAAAAAAABC0/C_QHkvw91xo/s800/hamburger-menu_42x32.png) 0 0 no-repeat";
 }
 supportsSVG();

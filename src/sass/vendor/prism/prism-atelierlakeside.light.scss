@@ -8,7 +8,9 @@ Original Base16 color scheme by Chris Kempson (https://github.com/chriskempson/b
 
  */
 
-@import '../../components/color-vars';
+@import
+"../../components/color-vars",
+"../../components/settings";
 
 code[class*="language-"],
 pre[class*="language-"] {
@@ -57,7 +59,7 @@ code[class*="language-"]::selection, code[class*="language-"] ::selection {
 /* Code blocks */
 pre[class*="language-"] {
   padding: 1em;
-  margin: .5em 0;
+  margin: 2em 0;
   overflow: auto;
 }
 

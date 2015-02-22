@@ -19,6 +19,7 @@ release
 /temp/
 dist
 vector
+_vector
 _test
 _patternlab
 

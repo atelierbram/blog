@@ -13,7 +13,7 @@ p {
   }
 }
 li p {
-   @include mq($from: tablet) {
+  @include mq($from: tablet) {
     font-size: 1rem;
     max-width: 100%;
   }
@@ -32,14 +32,15 @@ li p {
   margin-left: -.35rem;
   padding-left: .35rem;
 }
-.wf-active .page h3,
-.wf-active .page h4 {
+
+.wf-europa-n4-active h3,
+.wf-europa-n3-active h4 {
   font-family: Europa, AvenirNextCondensed-Regular, Corbel, "Trebuchet Ms", "Segoe Ui", "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", sans-serif;
 }
-.wf-active h3 {
+.wf-europa-n4-active h3 {
   font-weight: 400;
 }
-.wf-active h4 {
+.wf-europa-n3-active h4 {
   font-weight: 300;
 }
 h2 {
@@ -94,87 +95,82 @@ h4 {
 
 .ui-gutter {
   text-align: left;
-  //   @include mq($until: tablet) {
-    //     background-color: #eee;
-    //   }
-  }
+}
 
-  .truncate {
-    font-size: .5em;
-    max-width: 50%;
-    text-overflow: ellipsis;
-    vertical-align: middle;
-    white-space: nowrap;
-    overflow: hidden;
-    display: inline-block;
-  }
-  .page ul,
-  .page ol {
-    margin: 0 0 0 -2.5rem;
-    padding-top: 1em;
-    padding-bottom: 1.5em;
-  }
-  .page h4 + ul,
-  .page h4 + ol {
-    padding-top: .25em;
-  }
-  .page ul li {
-    list-style: none;
-    position: relative;
-    margin-left: -.75em;
-    margin-top: 0;
-    padding-left: .75em;
-  }
-  .page ul li,
-  .page ol li {
-    max-width: 43em;
-  }
-  .page ul li::before {
-    content: "";
-    position: absolute;
-    top:.55em;left:0;
-    color: #666;
-    padding: 2px;
-    height: 1px;
-    width: 1px;
-    // background-color: #3ca555;
-    background-color: $green;
-    // border: 1px solid #666;
-    border: 1px solid $dark_green06;
-    border-radius: 50%;
-    display: inline-block;
-    line-height: 1;
-    font-size: 1em;
-  }
-  blockquote p  {
-    position: relative;
-    z-index: 1;
-  }
-  blockquote::after {
-    content: "“";
-    position: absolute;
-    top:0;left:0;
-    margin: -16px 0 0 -30%;
-    padding: 0;
-    width: 290px;
-    height: 200px;
-    font: 664px/.8 "Trebuchet MS", Georgia, serif;
-    color: rgba(black,.3);
-    z-index: 0;
-  }
-  .wf-active blockquote::after {
-    font-family: Europa, "Trebuchet MS", Georgia, serif;
-    font-weight: 700;
-    font-style: italic;
-    margin: -40px 0 0 -40%;
-  }
-  figure {
-    margin: 1em auto 1em 0;
-    max-width: 40em;
-  }
-  figcaption pre {
-    background-color: #f8f8f8;
-    margin-top: -.6em;
-    white-space: pre-line;
-    padding-top: 2em;
-  }
+.truncate {
+  font-size: .5em;
+  max-width: 50%;
+  text-overflow: ellipsis;
+  vertical-align: middle;
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-block;
+}
+.page ul,
+.page ol {
+  margin: 0 0 0 -2.5rem;
+  padding-top: 1em;
+  padding-bottom: 1.5em;
+}
+.page h4 + ul,
+.page h4 + ol {
+  padding-top: .25em;
+}
+.page ul li {
+  list-style: none;
+  position: relative;
+  margin-left: -.75em;
+  margin-top: 0;
+  padding-left: .75em;
+}
+.page ul li,
+.page ol li {
+  max-width: 43em;
+}
+.page ul li::before {
+  content: "";
+  position: absolute;
+  top:.55em;left:0;
+  color: #666;
+  padding: 2px;
+  height: 1px;
+  width: 1px;
+  background-color: $green;
+  border: 1px solid $dark_green06;
+  border-radius: 50%;
+  display: inline-block;
+  line-height: 1;
+  font-size: 1em;
+}
+blockquote p  {
+  position: relative;
+  z-index: 1;
+}
+blockquote::after {
+  content: "“";
+  position: absolute;
+  top:0;left:0;
+  margin: -16px 0 0 -30%;
+  padding: 0;
+  width: 290px;
+  height: 200px;
+  font: 664px/.8 "Trebuchet MS", Georgia, serif;
+  color: rgba(black,.3);
+  z-index: 0;
+}
+.wf-europa-n7-active blockquote::after {
+  font-family: Europa, "Trebuchet MS", Georgia, serif;
+  font-weight: 700;
+  font-style: italic;
+  margin: -40px 0 0 -40%;
+}
+figure {
+  margin: 1em auto 1em 0;
+  max-width: 40em;
+}
+figcaption pre {
+  background-color: #f8f8f8;
+  margin-top: -.6em;
+  white-space: pre-line;
+  padding-top: 2em;
+}
