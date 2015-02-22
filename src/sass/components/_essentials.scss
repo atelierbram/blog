@@ -51,7 +51,8 @@ a:active {
   text-decoration: underline;
   color: $link-hover-color;
 }
-header h1 a:hover {
+header h1 a:hover,
+footer  a:hover {
   text-decoration: none;
   color: $red;
 }
@@ -63,7 +64,7 @@ sup { top: -0.5em; }
 sub { bottom: -0.25em; }
 
 .publication-list__item__title,
-.content h2 {
+.page h2 {
   font-family: AvenirNextCondensed-DemiBold, Corbel, "Trebuchet Ms", "Segoe Ui", "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", sans-serif;
 }
 
@@ -71,10 +72,12 @@ sub { bottom: -0.25em; }
 // this will not work with child-selectors
 //
 .wf-active .publication-list__item__title,
-.wf-active .content h2 { font-family: Europa, AvenirNextCondensed-DemiBold, Corbel, "Trebuchet Ms", "Segoe Ui", "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", sans-serif;
+.wf-active .page h2 { font-family: Europa, AvenirNextCondensed-DemiBold, Corbel, "Trebuchet Ms", "Segoe Ui", "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", sans-serif;
 }
-
-.wf-active h2 {
+.wf-active .publication-list__item__title {
+  font-weight: 400;
+}
+.wf-active .page h2 {
   font-weight: 700;
 }
 
@@ -136,7 +139,7 @@ header h1 {
   }
 }
 header h1,
-header h1 a{
+header h1 a {
   color: $dark04;
 }
 .wf-active header h1 {
@@ -146,6 +149,9 @@ header h1 a{
 
 h2 {
   font-size: 2.25rem;
+}
+.page h2 {
+  margin: .5rem 0 .75em;
 }
 h3 {
   font-size: 1.75rem;
@@ -165,11 +171,16 @@ p {
   text-shadow: none;
   background: $base06;
 }
+.page h2 {
+  @include mq($from: desktop) {
+    font-size: 3rem;
+  }
+  @include mq($from: wide) {
+    font-size: 4rem;
+  }
+}
 
 @include mq($from: desktop) {
-  h2 {
-    font-size: 2.5rem;
-  }
   p {
     padding: .5em 0 .5em 1em;
   }
