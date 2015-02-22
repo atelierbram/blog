@@ -100,17 +100,17 @@ When you have read the next quote, (from the [Javascript Jabber podcast](http://
 
 <span class="note">This article was also published on [Codepen](http://codepen.io/atelierbram/blog/assembling)</span>
 
-### Examples
+#### Examples
 - [static-site-boilerplate](https://github.com/bdadam/static-site-boilerplate) by Adam Beres-Deak
 - [build-boilerplate](https://github.com/atelierbram/build-boilerplate) fork of static-site-boilerplate by Adam Beres-Deak, with some modifications
 
-### Resources
+#### Resources
 - [Assemble Docs](http://assemble.io/docs/)
 - [Embed Github Gists](http://assemble.github.io/assemble-gist-blog/)
 - [Create a Sitemap](https://github.com/assemble/boilerplate-sitemap)
 - [Front-End Process - Flat Builds and Automation, part 3: Grunt Tasks](http://www.gpmd.co.uk/blog/front-end-process-flat-builds-and-automation-part-3-grunt-tasks/)
 
-### Notes
+#### Notes
 1. on the `grunt build` command, depending on the existing files in your `src/content` folder _(or whatever the name of that folder is: can be anything you like), also: can have subfolders too, it’s smart about that)_
 1. YAML-front-matter
 1. By _“boilerplate”_, I mean a complete folder structure with a `Gruntfile.js` and `package.json` files. With this being a Grunt-plugin, this also means a git-repo, _(you can do yourself a big favor by making yourself familiar with that as well, if you haven't already)_. In the `.gitignore` file _(in the root of the project-folder)_  you can add the output-folder, often called `dist`, to the list there: no need to keep this in the repo.

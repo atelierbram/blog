@@ -95,7 +95,7 @@ Now also on iOS, we have our current page right in the top of the `select`-menu.
 
 <span class="note">This article was also published on [Codepen](http://codepen.io/atelierbram/blog/select-menu-hashchange)</span>
 
-### Examples
+#### Examples
 - [demo on Codepen](http://codepen.io/atelierbram/pen/GjLvw)
 - [a demo with the jQuery hashtag plugin](http://bramdeh.home.xs4all.nl/playground/ui-patterns/select-nav/) parked on my provider's site.
 - [a simplified version with some small Jquery javascript](http://bramdeh.home.xs4all.nl/playground/ui-patterns/sitewide-selectnav/) parked on provider's site.

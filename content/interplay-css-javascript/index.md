@@ -14,7 +14,7 @@ Animating the height of an element with only `CSS` is possible with the `max-hei
 ### Animating padding-bottom with CSS-Transitions
 But to know these values for `padding-bottom` <sup>1</sup> one will have to know the height of each element. With only a small amount of dropdown-lists to be styled, one might be tempted to hardcode those values in. But what if someone (, and maybe even not you) wants to add an item to one of these lists in the future? Now one will have to change this value in the `CSS` _every time again_ when the number of items in the `HTML` changes, which can be anoying.
 
-### Javascript to the rescue.
+### Javascript to the rescue
 Since one can know the height of one individual list-item in the dropdown, (because we have a set `font-size`, `padding`, and even use a web-font), one can calculate the height of each list by multiplying this value with the number of list-items that are in the list. To count the number of list-items in each dropdown list with javascript one can use the `length` method.
 
 
@@ -92,11 +92,11 @@ Then there it is: a DIY <sup>3</sup> cooperation between CSS and Javascript, res
 
 <span class="note">This article was also published on [Codepen](http://codepen.io/atelierbram/blog/interplay-css-javascript).</span>
 
-### Examples
+#### Examples
 - [responsive dropdown demo](http://codepen.io/atelierbram/pen/AHwyr) - Disclaimer: this is a prototype: there will be more robust javascript implementations for dropdown menu’s tested on multiple devices out there (like Foundation/Bootstrap).
 - [example build on Bootstrap-3](http://codepen.io/atelierbram/pen/vymHL/) -  extended with [hover-dropdown-plugin](https://github.com/CWSpear/bootstrap-hover-dropdown) by [Cameron Spear](http://cameronspear.com/blog/bootstrap-dropdown-on-hover-plugin/) - [fork of repo on Github](https://github.com/atelierbram/bootstrap-hover-dropdown) - toggle links are clickable, as far as I know works on mobile, but javascript could be improved upon (I am aware that the animation could be done with jQuery `slideDown()` too, I just like the DIY<sup>3</sup> aspect: the tinkering, and the fact the transitions are done by the `CSS`, which has it's own (long-term) advantage.)
 
-### Notes
+#### Notes
 1. Probably can also use `height` instead of `padding-bottom` since we are not using `height: auto` here, which (_used to?_)
 require `max-height` instead of `height`, but I wanted to be carefull here, avoid confusion by not mixing those concepts.
 2. One of them declarations: it outputs 10 of those, see also [this Github Gist](https://gist.github.com/atelierbram/a88e3811173bb9d75b40), or this [reduced testcase here on CodePen](http://codepen.io/atelierbram/pen/CBLaw)

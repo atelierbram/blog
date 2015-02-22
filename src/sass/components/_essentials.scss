@@ -62,30 +62,20 @@ sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: b
 sup { top: -0.5em; }
 sub { bottom: -0.25em; }
 
-h2, h3 {
+.publication-list__item__title,
+.content h2 {
   font-family: AvenirNextCondensed-DemiBold, Corbel, "Trebuchet Ms", "Segoe Ui", "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", sans-serif;
-  margin: 0;
-  padding: 1rem 0 0;
 }
 
 // .wf-active:not[data-platform='iPhone'] h3,
 // this will not work with child-selectors
-.wf-active h2,
-.wf-active h3 {
-  font-family: Europa, AvenirNextCondensed-DemiBold, Corbel, "Trebuchet Ms", "Segoe Ui", "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", sans-serif;
-}
-.wf-active h2 {
-  font-weight: 700;
-}
-.wf-active h3 {
-  font-weight: 400;
+//
+.wf-active .publication-list__item__title,
+.wf-active .content h2 { font-family: Europa, AvenirNextCondensed-DemiBold, Corbel, "Trebuchet Ms", "Segoe Ui", "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", sans-serif;
 }
 
-h2 {
-  color: $yellow-orange;
-}
-h3, h4, h5, h6 {
-  color: $base01;
+.wf-active h2 {
+  font-weight: 700;
 }
 
 b, strong, thead th, button, footer a {
