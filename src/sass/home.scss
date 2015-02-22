@@ -33,7 +33,7 @@ header h1 a {
 .dropcap {
   font-family: Impact, AvenirNextCondensed-Heavy, Charcoal, "Arial Black", sans-serif;
   color: #333;
-  margin: -5px 4px 6px 1px;
+  margin: -5px 4px 8px 1px;
   padding: 0;
   float: left;
   font-size: 160px;
@@ -55,6 +55,8 @@ header h1 a {
 }
 .publication-list {
   list-style: none;
+  margin: 0;
+  padding: 0;
   display: flex;
   justify-content: space-around;
   flex-flow: row wrap;
@@ -73,7 +75,10 @@ header h1 a {
     flex: 1 1 30em;
   }
 }
-
+.no-flexbox .publication-list__item {
+  display: inline-block;
+  margin-right: 1em;
+}
 .publication-list__item__meta {
   font-size: 1rem;
   font-size: .875em;
@@ -102,7 +107,6 @@ time {
 .publication-list__item__content {
   @extend %overflow-hidden;
 }
-
 .wf-active .publication-list__item__content p {
   line-height: 1.4;
 }
@@ -117,7 +121,6 @@ h3 a:hover {
   text-decoration: none;
   color: $red;
 }
-
 .truncate {
   width: 40%;
   text-overflow: ellipsis;
@@ -155,4 +158,3 @@ h3 a:hover {
 .read-more:hover .shape-icon {
   margin-left: 40%;
 }
-
