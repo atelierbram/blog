@@ -64,11 +64,11 @@ h4 {
   font-weight: normal;
 }
 
-#examples,
-#resources,
-#notes {
-  border-bottom: none;
-}
+// #examples,
+// #resources,
+// #notes {
+//   border-bottom: none;
+// }
 .no-flexbox p {
   max-width: 32em;
 }
@@ -130,9 +130,8 @@ h4 {
 .page ul li::before {
   content: "";
   position: absolute;
-  top:.55em;left:0;
-  color: #666;
-  padding: 2px;
+  top:.665em;left:0;
+  padding: 1px;
   height: 1px;
   width: 1px;
   background-color: $green;
@@ -140,7 +139,6 @@ h4 {
   border-radius: 50%;
   display: inline-block;
   line-height: 1;
-  font-size: 1em;
 }
 blockquote p  {
   position: relative;

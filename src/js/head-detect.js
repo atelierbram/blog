@@ -12,15 +12,6 @@ function featureDetect() {
 }
 featureDetect();
 
-function useragentDetect() {
-    "use strict";
-    var b = document.documentElement;
-    b.setAttribute('data-useragent', navigator.userAgent);
-    b.setAttribute('data-platform', navigator.platform);
-    b.className += ((!!('ontouchstart' in window) || !!('onmsgesturechange' in window)) ? ' touch' : '');
-}
-useragentDetect();
-
 // Typekit loads Europa
 (function(d) {
     "use strict";
@@ -56,6 +47,7 @@ WebFontConfig = {
   google: { families: [ 'Source+Code+Pro::latin' ] }
 };
 (function() {
+    "use strict";
   var wf = document.createElement('script');
   wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
     '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';

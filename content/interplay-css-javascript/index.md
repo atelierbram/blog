@@ -90,8 +90,6 @@ One can also provide a fall-back value for `padding-bottom` on the active/hover 
 ### Interplay
 Then there it is: a DIY <sup>3</sup> cooperation between CSS and Javascript, responding fast and snappy, because it benefits from modern browser’s native capabilities with using CSS-transitions.
 
-<span class="note">This article was also published on [Codepen](http://codepen.io/atelierbram/blog/interplay-css-javascript).</span>
-
 #### Examples
 - [responsive dropdown demo](http://codepen.io/atelierbram/pen/AHwyr) - Disclaimer: this is a prototype: there will be more robust javascript implementations for dropdown menu’s tested on multiple devices out there (like Foundation/Bootstrap).
 - [example build on Bootstrap-3](http://codepen.io/atelierbram/pen/vymHL/) -  extended with [hover-dropdown-plugin](https://github.com/CWSpear/bootstrap-hover-dropdown) by [Cameron Spear](http://cameronspear.com/blog/bootstrap-dropdown-on-hover-plugin/) - [fork of repo on Github](https://github.com/atelierbram/bootstrap-hover-dropdown) - toggle links are clickable, as far as I know works on mobile, but javascript could be improved upon (I am aware that the animation could be done with jQuery `slideDown()` too, I just like the DIY<sup>3</sup> aspect: the tinkering, and the fact the transitions are done by the `CSS`, which has it's own (long-term) advantage.)
@@ -101,3 +99,6 @@ Then there it is: a DIY <sup>3</sup> cooperation between CSS and Javascript, res
 require `max-height` instead of `height`, but I wanted to be carefull here, avoid confusion by not mixing those concepts.
 2. One of them declarations: it outputs 10 of those, see also [this Github Gist](https://gist.github.com/atelierbram/a88e3811173bb9d75b40), or this [reduced testcase here on CodePen](http://codepen.io/atelierbram/pen/CBLaw)
 3.  do it yourself
+
+<span class="note">This article was also published on [Codepen](http://codepen.io/atelierbram/blog/interplay-css-javascript).</span>
+

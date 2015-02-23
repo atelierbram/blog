@@ -91,12 +91,12 @@ Now we can insert some text in this option with javascript, using the same class
 
 Now also on iOS, we have our current page right in the top of the `select`-menu. On desktop it still goes to the `option` with the `selected` attribute, so having this extra option on top there may be redundant, but it wouldn't bother me that much.
 
-<del>P.S. This doesn't seem to work on iOS, at least on my iPad it always shows the most top option ... but there are all kinds of issues with select-menus on iOS, so well ...</del> Fixed, see above.
-
-<span class="note">This article was also published on [Codepen](http://codepen.io/atelierbram/blog/select-menu-hashchange)</span>
+~~P.S. This doesn't seem to work on iOS, at least on my iPad it always shows the most top option ... but there are all kinds of issues with select-menus on iOS, so well ...~~ Fixed, see above.
 
 #### Examples
 - [demo on Codepen](http://codepen.io/atelierbram/pen/GjLvw)
 - [a demo with the jQuery hashtag plugin](http://bramdeh.home.xs4all.nl/playground/ui-patterns/select-nav/) parked on my provider's site.
 - [a simplified version with some small Jquery javascript](http://bramdeh.home.xs4all.nl/playground/ui-patterns/sitewide-selectnav/) parked on provider's site.
 - [a Github Gist](https://gist.github.com/atelierbram/18d7489b81dc9acf0747)
+
+<span class="note">This article was also published on [Codepen](http://codepen.io/atelierbram/blog/select-menu-hashchange)</span>

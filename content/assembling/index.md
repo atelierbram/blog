@@ -98,8 +98,6 @@ When you have read the next quote, (from the [Javascript Jabber podcast](http://
 
 > We built a bunch of models and lorem ipsum type things for the buttons and for placeholder text with all the different components. And Assemble can just essentially iterate over all of those components and build the actual final components. But at the same time, it can also build all of the pages for demoing the components. So, you could for instance build a website with Assemble that is mostly text, like a blog or a regular website. But also then have a component showcase where you’re taking all of the partials or includes that you’ve created for the site and just create another destination path essentially for Assemble to build all of those components individually to showcase them. So, in one build you can build a component showcase and use those same components in the actual site &hellip;
 
-<span class="note">This article was also published on [Codepen](http://codepen.io/atelierbram/blog/assembling)</span>
-
 #### Examples
 - [static-site-boilerplate](https://github.com/bdadam/static-site-boilerplate) by Adam Beres-Deak
 - [build-boilerplate](https://github.com/atelierbram/build-boilerplate) fork of static-site-boilerplate by Adam Beres-Deak, with some modifications
@@ -114,3 +112,6 @@ When you have read the next quote, (from the [Javascript Jabber podcast](http://
 1. on the `grunt build` command, depending on the existing files in your `src/content` folder _(or whatever the name of that folder is: can be anything you like), also: can have subfolders too, it’s smart about that)_
 1. YAML-front-matter
 1. By _“boilerplate”_, I mean a complete folder structure with a `Gruntfile.js` and `package.json` files. With this being a Grunt-plugin, this also means a git-repo, _(you can do yourself a big favor by making yourself familiar with that as well, if you haven't already)_. In the `.gitignore` file _(in the root of the project-folder)_  you can add the output-folder, often called `dist`, to the list there: no need to keep this in the repo.
+
+<span class="note">This article was also published on [Codepen](http://codepen.io/atelierbram/blog/assembling)</span>
+
