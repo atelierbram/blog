@@ -9,7 +9,7 @@ Webdesign-related blogposts [hosted here on Github](http://atelierbram.github.io
 
 ### Template and Design
 This blog runs on [Assemble](http://assemble.io), the static-site generator, which is [awesome and fun to use](http://atelierbram.github.io/blog/assembling).
-It was generated from a template called [Flex-Starter](http://github.com/atelierbram/flex-starter), which in turn is based on [build-boilerplate](https://github.com/atelierbram/build-boilerplate), which in turn is a fork of [static-site-boilerplate](https://github.com/bdadam/static-site-boilerplate) by Adam Beres-Deak, with some modifications:
+It was generated from a template called [Flex-Starter](http://github.com/atelierbram/flex-starter), which in turn is based on [build-boilerplate](https://github.com/atelierbram/build-boilerplate), which in turn is a fork of [static-site-boilerplate](https://github.com/bdadam/static-site-boilerplate) by Adam Beres-Deak, with some modifications.
 
 #### License
 

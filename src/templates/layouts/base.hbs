@@ -14,6 +14,10 @@
 </head>
 <body>
 {{> body }}
- {{#is type "page" }}<script src="{{assets}}/main.min.js"></script>{{/is}}
+{{#is page-id "id-01" }}<script>{{> script-id-01-js}}</script>{{/is}}
+{{#is page-id "id-02" }}<script>{{> script-id-02-js}}</script>{{/is}}
+{{#is page-id "id-03" }}<script>{{> script-id-03-js}}</script>{{/is}}
+{{#is page-id "id-04" }}<script>{{> script-id-04-js}}</script>{{/is}}
+ {{#is type "page" }}<script defer src="{{assets}}/main.min.js"></script>{{/is}}
 </body>
 </html>

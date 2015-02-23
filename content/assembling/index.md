@@ -2,6 +2,7 @@
     title:          Generate a Static Website with Assemble
     short-title:    Assembling
     type:           page
+    page-id:        id-04   
     sortOrder:      9
     description:    Generate a Static Website with Assemble
 ---

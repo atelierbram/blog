@@ -25,9 +25,9 @@ body {
   background: inherit;
   color: $base00;
   box-sizing: border-box;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: subpixel-antialiased !important;
 }
-// .wf-active:not[data-platform='iPad'] body {}
-// this will not work with child-selectors
 .wf-europa-n3-active body {
   font-family: Europa, AvenirNext-Regular, Corbel, "Segoe Ui", "Lucida Grande", "Lucida Unicode", "Trebuchet Ms", Verdana, "DejaVu Sans", "Bitstream Vera Sans","Liberation Sans", sans-serif;
   font-weight: 300;
@@ -116,22 +116,16 @@ ol code:after {
   padding: 1px 0;
 }
 .publication-list__item__title,
-.page h2 {
+h2 {
   font-family: AvenirNextCondensed-DemiBold, Corbel, "Trebuchet Ms", "Segoe Ui", "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", sans-serif;
 }
 
-// .wf-active:not[data-platform='iPhone'] h3,
-// this will not work with child-selectors
-//
-//js enhanced flexbox svg wf-sourcecodepro-n4-active wf-active wf-europa-i3-inactive wf-europa-i4-inactive wf-europa-i7-inactive wf-europa-n3-inactive wf-europa-n4-inactive wf-europa-n7-inactive wf-poplarstd-n4-inactive
 .wf-europa-n4-active .publication-list__item__title,
-.wf-europa-n7-active .page h2 { font-family: Europa, AvenirNextCondensed-DemiBold, Corbel, "Trebuchet Ms", "Segoe Ui", "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", sans-serif;
+.wf-europa-n7-active h2 { font-family: Europa, AvenirNextCondensed-DemiBold, Corbel, "Trebuchet Ms", "Segoe Ui", "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", sans-serif;
 }
 .wf-europa-n4-active .publication-list__item__title {
   font-weight: 400;
 }
-.wf-europa-n7-active .page h2 {
-  font-weight: 700; }
 
 b, strong, thead th, button, footer a {
   font-family: AvenirNextCondensed-DemiBold, "Lucida Grande","Segoe Ui","Trebuchet Ms", Verdana, sans-serif;
@@ -181,6 +175,8 @@ header h1 {
 
   @include mq($until: tablet) {
     margin-left: 1em;
+    padding-right: 1rem;
+    font-size: 1.25rem;
   }
 }
 header h1,
@@ -195,9 +191,7 @@ header h1 a {
 h2 {
   font-size: 2.25rem;
 }
-.page h2 {
-  margin: .5rem 0 .75em;
-}
+
 h3 {
   font-size: 1.75rem;
 }
@@ -211,23 +205,15 @@ p {
   margin: 0;
   padding: .5em 0;
 }
-::selection,
-::moz-selection {
-  text-shadow: none;
-  background: $base06;
-}
-.page h2 {
-  @include mq($from: desktop) {
-    font-size: 3rem;
-  }
-  @include mq($from: wide) {
-    font-size: 4rem;
-  }
-}
+
 
 @include mq($from: desktop) {
   p {
     padding: .5em 0 .5em 1em;
   }
 }
-
+::selection,
+::moz-selection {
+  text-shadow: none;
+  background: $base06;
+}

@@ -21,6 +21,48 @@ li p {
 h2 {
   color: $yellow-orange;
 }
+.wf-europa-n7-active h2 {
+  font-weight: 700;
+}
+.page h2 {
+  margin: .5rem 0 .75em;
+}
+// moved with javascript to .innerwrap for large and wide heading ...
+.has-moved-h2 {
+  -webkit-font-smoothing: antialiased;
+  text-align: center;
+}
+
+.fs-3_75 {
+    font-size: 3.75rem;
+}
+@include mq($from: desktop) {
+  .has-moved-h2 {
+    margin: 1rem 1rem 0;
+  }
+  .fs-desktop-vw-3_75 {
+    font-size: 3.75vw;
+  }
+  .fs-desktop-vw-4_75 {
+    font-size: 4.75vw;
+  }
+  .fs-desktop-vw-5_75 {
+    font-size: 5.75vw;
+  }
+  .fs-desktop-vw-15_75 {
+    font-size: 15.75vw;
+  }
+}
+.page h2 {
+  @include mq($from: desktop) {
+    font-size: 3rem;
+    -webkit-font-smoothing: antialiased;
+  }
+  @include mq($from: wide) {
+    font-size: 4rem;
+  }
+}
+
 h3 {
   font-family: AvenirNextCondensed-Regular, Corbel, "Trebuchet Ms", "Segoe Ui", "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", sans-serif;
   margin: 1rem 0 0 0;
@@ -71,6 +113,7 @@ h4 {
   background-color: #fff;
   max-width: 60em;
   margin: 0 auto;
+  line-height: 1.6;
 
   @include mq($until: tablet) {
     flex: 1;
@@ -128,6 +171,9 @@ h4 + ol {
   border-radius: 50%;
   display: inline-block;
   line-height: 1;
+}
+.wf-europa-n4-active .page ul li::before {
+  top: .8em;
 }
 blockquote p  {
   position: relative;

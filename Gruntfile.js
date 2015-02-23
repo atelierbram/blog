@@ -100,7 +100,11 @@ module.exports = function(grunt) {
           // dest: 'src/templates/partials/homeheadstyles.hbs',
           files: {
           'src/templates/partials/homeheadstyles.hbs' : 'dist/static/prefixed/home.min.css',
-          'src/templates/partials/head-detect-js.hbs' : 'dist/static/head-detect.min.js'
+          'src/templates/partials/head-detect-js.hbs' : 'dist/static/head-detect.min.js',
+          'src/templates/partials/script-id-01-js.hbs' : 'dist/static/script-id-01.min.js',
+          'src/templates/partials/script-id-02-js.hbs' : 'dist/static/script-id-02.min.js',
+          'src/templates/partials/script-id-03-js.hbs' : 'dist/static/script-id-03.min.js',
+          'src/templates/partials/script-id-04-js.hbs' : 'dist/static/script-id-04.min.js'
           },
           flatten: true,
           filter: 'isFile',
@@ -140,6 +144,10 @@ module.exports = function(grunt) {
           files: {
             'dist/static/main.min.js' : 'dist/static/main.js',
             'dist/static/head-detect.min.js' : 'src/js/head-detect.js',
+            'dist/static/script-id-01.min.js' : 'src/js/script-id-01.js',
+            'dist/static/script-id-02.min.js' : 'src/js/script-id-02.js',
+            'dist/static/script-id-03.min.js' : 'src/js/script-id-03.js',
+            'dist/static/script-id-04.min.js' : 'src/js/script-id-04.js'
           }
         }
       },
