@@ -1,16 +1,21 @@
 <!doctype html>
-<html class="no-js core no-flexbox">
+<html class="no-js core no-flexbox" lang="en">
 <head>
     <meta charset="utf-8">
     <title>{{ title }}</title>
     {{#if description}}<meta name="description" content="{{description}}"/>{{/if}}
     {{#is type "home" }}<style>{{> homeheadstyles}}</style>{{/is}}
-    {{#is type "page" }}<link href="{{assets}}/prefixed/style.min.css" rel="stylesheet">{{/is}}
+    {{#is type "home" }}<link rel="prefetch" href="{{assets}}/main.min.js">{{/is}}
+    {{#is type "home" }}<link rel="prefetch" href="{{assets}}/prefixed/style.min.css">{{/is}}
+    {{#is type "page" }}<style>{{> critical-css}}</style>{{/is}}
+
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="index, follow">
     <link rel="author" href="https://plus.google.com/+BramdeHaan/posts">
-    <script>{{> head-detect-js}}</script>
+    <script async>{{> head-detect-js}}</script>
+ {{#is type "page" }}<script>{{> load-css-js}} loadCSS( "{{assets}}/prefixed/style.min.css" );</script>{{/is}}
+{{#is type "page" }}<noscript><link href="{{assets}}/prefixed/style.min.css" rel="stylesheet"></noscript>{{/is}}
 </head>
 <body>
 {{> body }}

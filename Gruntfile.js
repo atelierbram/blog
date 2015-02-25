@@ -64,6 +64,7 @@ module.exports = function(grunt) {
       sass: {
         dist: {
           files: {
+                'dist/static/critical.css': 'src/sass/critical.scss',
                 'dist/static/style.css': 'src/sass/style.scss',
                 'dist/static/home.css': 'src/sass/home.scss'
           }
@@ -79,6 +80,7 @@ module.exports = function(grunt) {
           expand: true,
           flatten: true,
           files: {
+            'dist/static/prefixed/critical.css': 'dist/static/critical.css',
             'dist/static/prefixed/style.css': 'dist/static/style.css',
             'dist/static/prefixed/home.css': 'dist/static/home.css'
           }
@@ -88,6 +90,7 @@ module.exports = function(grunt) {
       cssmin: {
         dist: {
           files: {
+          'dist/static/prefixed/critical.min.css': 'dist/static/prefixed/critical.css',
           'dist/static/prefixed/style.min.css': 'dist/static/prefixed/style.css',
           'dist/static/prefixed/home.min.css': 'dist/static/prefixed/home.css'
           }
@@ -99,8 +102,9 @@ module.exports = function(grunt) {
           // src: 'dist/static/prefixed/home.min.css',
           // dest: 'src/templates/partials/homeheadstyles.hbs',
           files: {
-          'src/templates/partials/homeheadstyles.hbs' : 'dist/static/prefixed/home.min.css',
-          'src/templates/partials/head-detect-js.hbs' : 'dist/static/head-detect.min.js',
+          'src/templates/partials/critical-css.hbs'    : 'dist/static/prefixed/critical.min.css',
+          'src/templates/partials/homeheadstyles.hbs'  : 'dist/static/prefixed/home.min.css',
+          'src/templates/partials/head-detect-js.hbs'  : 'dist/static/head-detect.min.js',
           'src/templates/partials/script-id-01-js.hbs' : 'dist/static/script-id-01.min.js',
           'src/templates/partials/script-id-02-js.hbs' : 'dist/static/script-id-02.min.js',
           'src/templates/partials/script-id-03-js.hbs' : 'dist/static/script-id-03.min.js',

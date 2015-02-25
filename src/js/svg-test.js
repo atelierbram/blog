@@ -63,7 +63,7 @@ if (supportsSVG()) {
   var targetEl = header.firstChild;
   header.insertBefore(svgMenu, targetEl);
 
-  btnMenu.innerHTML="<svg class='shape-icon shape-hamburger'><use xlink:href='#hamburgerIcon'></use></svg><span class='btn-menu__text'>Menu</span>";
+  btnMenu.innerHTML="<svg class='shape-icon shape-hamburger'><use xlink:href='#hamburgerIcon'></use></svg>";
 }
 else {
   document.documentElement.className += ' no-svg';

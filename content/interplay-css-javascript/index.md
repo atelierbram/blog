@@ -20,24 +20,24 @@ Since one can know the height of one individual list-item in the dropdown, (beca
 
 
 ```javascript
-  var itms = {
-  home    : ($("#tt-home li").length),
-  blog    : ($("#tt-blog li").length),
-  books   : ($("#tt-books li").length),
-  goodies : ($("#tt-goodies li").length),
-  media   : ($("#tt-media li").length),
-  news    : ($("#tt-news li").length),
-  contact : ($("#tt-contact li").length)
-  };
+var itms = {
+home    : ($("#tt-home li").length),
+blog    : ($("#tt-blog li").length),
+books   : ($("#tt-books li").length),
+goodies : ($("#tt-goodies li").length),
+media   : ($("#tt-media li").length),
+news    : ($("#tt-news li").length),
+contact : ($("#tt-contact li").length)
+};
 
 ```
 
 Now one can add the outcome: this number, on a class, which is then added with javascript on each parent dropdown list-item. In jQuery we can use `$each` in a function to get the number of list-items in each list:
 
 ```javascript
- $.each( itms, function( i, val ) {
-   $( "#tt-" + i ).addClass('tt-nav__itemcount-'+val);
- });
+$.each( itms, function( i, val ) {
+  $( "#tt-" + i ).addClass('tt-nav__itemcount-'+val);
+});
 
 ```
 
@@ -57,8 +57,8 @@ $item-value-list: 46px 92px 138px 184px 230px 276px 322px 368px 414px 460px;
 The generated `CSS` <sup>2</sup>:
 
 ```css
-  [class*="itemcount-5"]:hover .tt-nav__submenu {
-    padding-bottom: 230px;
+[class*="itemcount-5"]:hover .tt-nav__submenu {
+  padding-bottom: 230px;
 }
 ```
 
@@ -68,14 +68,14 @@ In the `CSS` one should have declarations for the different ‘states’, but th
 ```scss
 /* Submenu - shared properties and values */
 .tt-nav__submenu {
-    transition: padding-bottom .75s cubic-bezier(0.6, 0.4, 0.25, 0.75);
-    height: 0;
-    padding: 0;
+  transition: padding-bottom .75s cubic-bezier(0.6, 0.4, 0.25, 0.75);
+  height: 0;
+  padding: 0;
 }
 
 .tt-nav__item:hover .tt-nav__submenu {
-    // maybe include a fallback for padding-bottom when javascript is not available:
-    padding-bottom: 460px;
+// maybe include a fallback for padding-bottom when javascript is not available:
+  padding-bottom: 460px;
 }
 
 // Sass function after this,

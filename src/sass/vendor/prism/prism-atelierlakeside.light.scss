@@ -14,7 +14,7 @@ Original Base16 color scheme by Chris Kempson (https://github.com/chriskempson/b
 
 code[class*="language-"],
 pre[class*="language-"] {
-  font-family: Consolas, Menlo, Monaco, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", "Courier New", Courier, monospace;
+  font-family: $monospace;
   font-size: 14px;
   line-height: 1.375;
   direction: ltr;
@@ -30,9 +30,9 @@ pre[class*="language-"] {
   -ms-hyphens: none;
   hyphens: none;
   white-space: pre;
-  white-space: pre-wrap;
-  word-break: break-all;
-  word-wrap: break-word;
+  // white-space: pre-wrap;
+  // word-break: break-all;
+  // word-wrap: break-word;
   background: $base07;
   color: $base02;
 }
@@ -61,6 +61,7 @@ pre[class*="language-"] {
   padding: 1em;
   margin: 2em 0;
   overflow: auto;
+  max-width: 49em;
 }
 
 /* Inline code */

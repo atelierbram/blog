@@ -15,7 +15,7 @@
   </symbol>
 </svg>
 <section class="content"><ul class="publication-list publication-list--articles"><li class="publication-list__item">
-    <h3 class="publication-list__item__title"><a href="http://atelierbram.github.io/blog/assembling">Assembling</a></h3>
+    <h3 class="publication-list__item__title"><a href="http://atelierbram.github.io/blog/assembling">Generate a Static Website</a></h3>
     <p class="publication-list__item__meta">
     <time datetime="2015-02-18">February 2015</time>
     </p>
@@ -30,7 +30,7 @@
     </p>
     <div class="publication-list__item__content">
       <p>
-      <span class="dropcap dropcap--a">A</span>nimating the height of an element with only `CSS` is possible with the `max-height` property, giving the begin value a `max-height` of zero and (_let's say_) the 'hovered' value some high number _“that will always be higher then the real height of the highest animated element”_. The outcome of the <span class="truncate">results can vary quite a bit, depending on the differences between all these values: not satisfying in all scenarios. An alternative way is using `height: 0` in combination with a set value for `padding-bottom`.</span> <a href="http://atelierbram.github.io/blog/interplay-css-javascript" class="read-more">read rest of article <svg class="shape-icon shape-arrow--broken"><use xlink:href="#arrowBroken"></use></svg></a>
+      <span class="dropcap">A</span>nimating the height of an element with only `CSS` is possible with the `max-height` property, giving the begin value a `max-height` of zero and (_let's say_) the 'hovered' value some high number _“that will always be higher then the real height of the highest animated element”_. The outcome of the <span class="truncate">results can vary quite a bit, depending on the differences between all these values: not satisfying in all scenarios. An alternative way is using `height: 0` in combination with a set value for `padding-bottom`.</span> <a href="http://atelierbram.github.io/blog/interplay-css-javascript" class="read-more">read rest of article <svg class="shape-icon shape-arrow--broken"><use xlink:href="#arrowBroken"></use></svg></a>
      </p>
     </div>
     </li><li class="publication-list__item">
