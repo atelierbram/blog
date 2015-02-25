@@ -100,7 +100,7 @@ ol code {
   margin: 0;
   border: 1px solid #ddd;
   background-color: #f8f8f8;
-  padding: 2px 0 0 0;
+  padding: 1px 0;
   border-radius: $rounded;
 }
 
@@ -112,12 +112,6 @@ ol code:before,
 ol code:after {
   content: "\00a0";
   letter-spacing: -0.2em;
-}
-
-.wf-sourcecodepro-n4-active p code,
-.wf-sourcecodepro-n4-active ul code,
-.wf-sourcecodepro-n4-active ol code {
-  padding: 1px 0;
 }
 
 b, strong, thead th, button {
