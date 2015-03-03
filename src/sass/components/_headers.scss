@@ -18,14 +18,24 @@ h3 {
   padding-left: .35rem;
   color: $base01;
 }
+h4 {
+  font-family: AvenirNextCondensed-DemiBold, Corbel, "Lucida Grande", "Trebuchet Ms", "Segoe Ui", "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", sans-serif;
+  font-weight: normal;
+}
 
 h4 {
-  font-family: AvenirNextCondensed-DemiBold, Corbel, "Trebuchet Ms", "Segoe Ui", "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", sans-serif;
   margin: 2em 0 0;
   padding: 1rem 0 0;
-  font-size: 1.25rem;
-  font-weight: normal;
   text-transform: uppercase;
   color: $dark04;
+  font-size: 1.25rem;
+}
+.prevnext h5 {
+  font-family: AvenirNextCondensed-Regular, Corbel, "Lucida Grande", "Trebuchet Ms", "Segoe Ui", "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", sans-serif;
+  font-family: $wf-header;
+  float: left;
+  width: 50%;
+  font-size: 1em;
+  font-weight: normal;
 }
 

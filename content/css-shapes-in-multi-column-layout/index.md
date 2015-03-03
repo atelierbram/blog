@@ -3,6 +3,7 @@
     short-title:    CSS-Shapes in Multi-Column Layout
     type:           page
     page-id:        id-01
+    id:             id-01
     sortOrder:      12
     description:    Avoid breaking the layout of a multi-column-layout when using CSS-Shapes
 ---
@@ -53,3 +54,9 @@ This is what makes it all work: wrapping the text around the shape.
 1. One day we will be able to use [`shape-inside` and CSS Exclusions](http://alistapart.com/article/css-shapes-101#section8) for this, but here and now, the pullquote-text pseudo-element is positioned `absolute` right on top of the `CSS-Shape` itself.
 
 <span class="note">This article was also published on [Codepen](http://codepen.io/atelierbram/blog/css-shapes-in-multi-column-layout)</span>
+
+<div class="prevnext">
+  <h5><a href="#!"></a></h5>
+  <h5><a href="../{{url.post-id--02}}" rel="next">{{name.post-id--02}}</a></h5>
+</div>
+

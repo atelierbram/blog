@@ -3,6 +3,7 @@
     short-title:    Assembling
     type:           page
     page-id:        id-04
+    id:             id-04
     sortOrder:      9
     description:    Generate a Static Website with Assemble
 ---
@@ -115,4 +116,8 @@ When you have read the next quote, (from the [Javascript Jabber podcast](http://
 1. By _“boilerplate”_, I mean a complete folder structure with a `Gruntfile.js` and `package.json` files. With this being a Grunt-plugin, this also means a git-repo, _(you can do yourself a big favor by making yourself familiar with that as well, if you haven't already)_. In the `.gitignore` file _(in the root of the project-folder)_  you can add the output-folder, often called `dist`, to the list there: no need to keep this in the repo.
 
 <span class="note">This article was also published on [Codepen](http://codepen.io/atelierbram/blog/assembling)</span>
+
+<div class="prevnext">
+  <h5><a href="../{{url.post-id--03}}" rel="prev">{{name.post-id--03}}</a></h5>
+</div>
 

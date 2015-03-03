@@ -2,7 +2,7 @@
     title:          Interplay between CSS and Javascript on Transitions
     short-title:    Interplay between CSS and Javascript
     type:           page
-    page-id:        id-03
+    id:             id-03
     sortOrder:      10
     description:    Make CSS and Javascript cooperate on your own terms
 ---
@@ -101,5 +101,10 @@ require `max-height` instead of `height`, but I wanted to be carefull here, avoi
 2. One of them declarations: it outputs 10 of those, see also [this Github Gist](https://gist.github.com/atelierbram/a88e3811173bb9d75b40), or this [reduced testcase here on CodePen](http://codepen.io/atelierbram/pen/CBLaw)
 3.  do it yourself
 
-<span class="note">This article was also published on [Codepen](http://codepen.io/atelierbram/blog/interplay-css-javascript).</span>
+<div class="clear"><p class="clear"><span class="note">This article was also published on [Codepen](http://codepen.io/atelierbram/blog/interplay-css-javascript).</span></p>
+
+<div class="prevnext clear">
+  <h5><a href="../{{url.post-id--02}}" rel="prev">{{name.post-id--02}}</a></h5>
+  <h5><a href="../{{url.post-id--04}}" rel="next">{{name.post-id--04}}</a></h5>
+</div></div>
 

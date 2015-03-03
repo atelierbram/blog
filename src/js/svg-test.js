@@ -7,6 +7,7 @@ function insertBtn() {
 
   var uiGutter = window.document.createElement("div");
   var btnMenu = window.document.createElement("button");
+  var pageWrap = document.getElementById("pageWrap");
 
   uiGutter.setAttribute("class", "ui-gutter");
 
@@ -18,6 +19,9 @@ function insertBtn() {
 
   btnMenu.onclick= function () {
     document.body.classList.toggle('has-nav-active');
+  };
+  pageWrap.onclick= function () {
+    document.body.classList.remove('has-nav-active');
   };
 }
 insertBtn();

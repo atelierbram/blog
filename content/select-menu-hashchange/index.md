@@ -3,6 +3,7 @@
     short-title:    Site-wide Navigation with Select Menu
     type:           page
     page-id:        id-02
+    id:             id-02
     sortOrder:      11
     description:    Have a select-option with the right value on page refresh
 ---
@@ -101,3 +102,8 @@ Now also on iOS, we have our current page right in the top of the `select`-menu.
 - [a Github Gist](https://gist.github.com/atelierbram/18d7489b81dc9acf0747)
 
 <span class="note">This article was also published on [Codepen](http://codepen.io/atelierbram/blog/select-menu-hashchange)</span>
+
+<div class="prevnext">
+  <h5><a href="../{{url.post-id--01}}" rel="prev">{{name.post-id--01}}</a></h5>
+  <h5><a href="../{{url.post-id--03}}" rel="next">{{name.post-id--03}}</a></h5>
+</div>

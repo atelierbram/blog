@@ -1,0 +1,14 @@
+{
+  "license": "http://atelierbram.mit-license.org/",
+  "homepage": "http://atelierbram.github.io/blog/",
+  "codepen": "http://codepen.io/atelierbram/blog",
+  "codepen-blog": "http://codepen.io/atelierbram/blog",
+  "google-plus": "https://plus.google.com/+BramdeHaan/posts",
+  "atelier":"http://atelierbramdehaan.nl/",
+  "repository": "https://github.com/atelierbram/blog",
+  "repository-readme-link": "https://github.com/atelierbram/blog/blob/master/README.md",
+  "post-id--01": "css-shapes-in-multi-column-layout",
+  "post-id--02": "select-menu-hashchange",
+  "post-id--03": "interplay-css-javascript",
+  "post-id--04": "assembling"
+}

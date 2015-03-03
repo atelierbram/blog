@@ -62,8 +62,3 @@ blockquote {
 // tr:nth-of-type(even) {
 //   background: rgba(0,0,0,.125);
 // }
-footer {
-  @include mq($from: desktop) {
-    margin-top: 6em;
-  }
-}

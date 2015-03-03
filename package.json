@@ -36,7 +36,8 @@
     "handlebars-helper-autolink": "~0.1.1",
     "grunt-contrib-copy": "^0.7.0",
     "grunt-contrib-htmlmin": "^0.4.0",
-    "grunt-verb": "^0.2.4"
+    "grunt-verb": "^0.2.4",
+    "handlebars-helpers": "^0.5.8"
   },
   "keywords": [
     "Webdesign",

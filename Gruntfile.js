@@ -10,33 +10,10 @@ module.exports = function(grunt) {
       // options: grunt.file.readYAML('config.yml'),
           options: {
             data: ['src/data/*.json'],
-            // sitemap not working ...
-            // sitemap: {
-            //   options: { ext: '.xml' },
-            //   files: {
-            //     '.': ['src/sitemap/sitemap.hbs' ]
-            //   }
-            // },
-            // plugins: ['assemble-middleware-sitemap'],
-            // files: {
-            // '.': ['src/templates/partials/**/*.hbs']
-            // },
-            // sitemap: {
-            //   homepage: 'http://atelierbram.github.io/blog/',
-            //   changefreq: 'daily',
-            //   priority: '0.8',
-            //   // exclude: ['50x', 'foo'],
-            //   robot: false
-            // },
-            // component: {
-            //   files: {
-            //     'Sitemap.xml': ['src/sitemap.hbs']
-            //   }
-            // },
             assets: 'dist/static',
-            layout: 'layout.hbs',
-            partials: 'src/templates/partials/**/*.hbs',
             layoutdir: 'src/templates/layouts',
+            partials: 'src/templates/partials/**/*.hbs',
+            layout: 'layout.hbs',
             helpers: ['handlebars-helper-autolink','handlebars-helper-isActive','src/helpers/**.js']
         },
 
@@ -105,6 +82,7 @@ module.exports = function(grunt) {
           'src/templates/partials/critical-css.hbs'    : 'dist/static/prefixed/critical.min.css',
           'src/templates/partials/homeheadstyles.hbs'  : 'dist/static/prefixed/home.min.css',
           'src/templates/partials/head-detect-js.hbs'  : 'dist/static/head-detect.min.js',
+          'src/templates/partials/insert-svg-js.hbs'   : 'dist/static/insert-svg.min.js',
           'src/templates/partials/script-id-01-js.hbs' : 'dist/static/script-id-01.min.js',
           'src/templates/partials/script-id-02-js.hbs' : 'dist/static/script-id-02.min.js',
           'src/templates/partials/script-id-03-js.hbs' : 'dist/static/script-id-03.min.js',
@@ -134,7 +112,8 @@ module.exports = function(grunt) {
       concat: {
          dist: {
            files: {
-             'dist/static/main.js' :  ['src/js/svg-test.js','src/js/prism-custom.min.js'],
+             'dist/static/insert-svg.min.js' :  ['src/js/svg-test.js'],
+             'dist/static/prism-custom.min.js' :  ['src/js/prism-custom.min.js'],
              'dist/static/dropcap.min.js' :  ['src/js/dropcap.min.js'],
            }
          }
@@ -146,8 +125,8 @@ module.exports = function(grunt) {
         },
         dist: {
           files: {
-            'dist/static/main.min.js' : 'dist/static/main.js',
-            'dist/static/head-detect.min.js' : 'src/js/head-detect.js',
+            'dist/static/insert-svg.min.js'   : 'dist/static/insert-svg.min.js',
+            'dist/static/head-detect.min.js'  : 'src/js/head-detect.js',
             'dist/static/script-id-01.min.js' : 'src/js/script-id-01.js',
             'dist/static/script-id-02.min.js' : 'src/js/script-id-02.js',
             'dist/static/script-id-03.min.js' : 'src/js/script-id-03.js',
@@ -171,7 +150,7 @@ module.exports = function(grunt) {
         dev: {
           options: {
             hostname: '0.0.0.0',
-            port: 3000,
+            // port: 35729,
             base: 'dist',
             livereload: true
           }
@@ -181,24 +160,43 @@ module.exports = function(grunt) {
       watch: {
         options: {
           livereload: true,
-          spawn: false
         },
 
         scss: {
             files: ['src/**/*.scss'],
-            tasks: 'scss'
+            tasks: ['scss','autoprefixer','cssmin','copy','hashres'],
+            options: {
+              spawn: false
+            }
         },
 
         js: {
             files: ['src/js/**/*.js'],
-            tasks: 'js'
+            tasks: ['concat','uglify'],
+            options: {
+              spawn: false
+            }
         },
 
         html: {
-            files: ['content/**/*', 'src/templates/**/*'],
-            tasks: 'html'
-        }
-    },
+            files: ['content/**/*','src/templates/**/*'],
+            tasks: [],
+            options: {
+              spawn: false
+            }
+        },
+        // https://github.com/gruntjs/grunt-contrib-watch#optionslivereload
+        livereload: {
+        // Here we watch the files the sass task will compile to
+        // These files are sent to the live reload server after sass compiles to them
+        options: {
+          livereload: true,
+          spawn: false,
+          },
+        files: ['dist/static/**/*.css'],
+        },
+      },
+
 
       // from the commandline run: grunt gh-pages to build the remote gh-pages branch:
       // https://github.com/tschaub/grunt-gh-pages
@@ -218,10 +216,11 @@ module.exports = function(grunt) {
     grunt.registerTask('js', ['uglify', 'concat']);
     grunt.registerTask('html', ['assemble', 'hashres']);
     grunt.registerTask('default', ['build', 'connect', 'watch']);
+    grunt.registerTask('dev', ['connect', 'watch']);
     // grunt.registerTask('default', ['build', 'connect', 'watch', 'assemble:component']);
     // grunt.registerTask('default', ['assemble:component']);
 
-    grunt.loadNpmTasks('assemble', 'grunt-verb', 'grunt-hashres', 'grunt-gh-pages', 'grunt-contrib-copy', 'grunt-contrib-htmlmin');
+    grunt.loadNpmTasks('assemble', 'grunt-verb', 'grunt-hashres', 'grunt-gh-pages', 'grunt-contrib-copy', 'grunt-contrib-htmlmin', 'grunt-contrib-sass','grunt-contrib-watch','matchdep','grunt-contrib-clean','grunt-contrib-connect','grunt-autoprefixer');
     require('matchdep').filterDev('grunt-*').forEach(grunt.loadNpmTasks);
 
   // Default tasks to be run.
