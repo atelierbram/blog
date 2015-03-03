@@ -7,7 +7,7 @@ footer {
 }
 header {
   background-color: adjust-color($base07,$lightness: 1.5%);
-  min-height: 3.5rem;
+  // min-height: 3.5rem;
   @include mq($from: tablet) {
     border-bottom: 1px solid $base07;
   }
@@ -21,9 +21,9 @@ header h1 {
   font-weight: normal;
 
   @include mq($until: tablet) {
-    margin-left: 1em;
+    margin-left: 3em;
     padding-right: 1rem;
-    font-size: 1.25rem;
+    font-size: 1rem;
   }
 }
 header h1,

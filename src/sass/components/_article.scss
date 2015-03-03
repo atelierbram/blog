@@ -54,8 +54,6 @@ li p {
 .page-wrap {
   flex: 1;
   overflow-x: hidden;
-  @include mq($until: tablet) {
-  }
 }
 .page {
   padding: 1em 2em;
