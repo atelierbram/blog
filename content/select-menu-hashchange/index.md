@@ -48,17 +48,15 @@ $(function(){
 });
 ```
 
-###Update
+### Simplifying
 
-Maybe I was overcomplicating things here a bit, and I guess you don't need the hashchange plugin after all (_took a left turn, and got carried away a bit, and then rushed it, ... it happens_).
-
-If it is possible to set a class on the pages' `body`-tags (_and why wouldn't that be possible?_), and also give all those `select` `option`s an`id` like so:
+Maybe one is overcomplicating things a bit when doing it like above, because if it is possible to set a class on the pages’ `body`-tags, and give the `select` `option`’s `id`’s like so:
 
 ```markup
 <option id="sm-blog" value="http://mydomain.com/blog">Blog</option>
 ```
 
-Then you can target those options on the corresponding pages like this:
+Then in that case you don't need the hashchange plugin after all, for you can target those options on the corresponding pages like this:
 
 ```javascript
 $(function(){
