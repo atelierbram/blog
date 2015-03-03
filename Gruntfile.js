@@ -125,6 +125,7 @@ module.exports = function(grunt) {
         },
         dist: {
           files: {
+            'dist/static/prism-custom.min.js' : 'dist/static/prism-custom.min.js',
             'dist/static/insert-svg.min.js'   : 'dist/static/insert-svg.min.js',
             'dist/static/head-detect.min.js'  : 'src/js/head-detect.js',
             'dist/static/script-id-01.min.js' : 'src/js/script-id-01.js',
