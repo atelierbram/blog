@@ -126,6 +126,25 @@ pre[class*="language-"] {
 .token.entity {
   cursor: help;
 }
+// scrollbars in webkit
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(black,0.25);
+  border-radius: 2px;
+  background-color: $base07;
+}
+::-webkit-scrollbar {
+  width: .75em;
+  height: .75em;
+  background-color: $base06;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 3px;
+  -webkit-box-shadow: inset 0 0 6px rgba(black,.25);
+  background-color: $base06;
+}
+::-webkit-scrollbar-thumb:window-inactive {
+  background-color: $base07;
+}
 // pre > code.highlight {
 //   outline: .4em solid $base08;
 //   outline-offset: .4em;
