@@ -29,16 +29,16 @@ button::-webkit-focus-inner {
 }
 // hamburger menu
 .btn {
-  -webkit-appearance: none;
+  // -webkit-appearance: none;
   overflow: visible;
   outline: 0;
   vertical-align: top;
   font-size: 16px;
   line-height: 1.3;
-  background-image: none;
-  background-color: #ddd;
-  border: 1px solid #bbb;
-  border-color: #ccc #bbb #b3b3b3;
+  // background-image: none;
+  // background-color: #ddd;
+  // border: 1px solid #bbb;
+  // border-color: #ccc #bbb #b3b3b3;
 }
 .btn:hover {
   background-image: none;
@@ -78,6 +78,11 @@ button::-webkit-focus-inner {
   position: relative;
   width: 42px;
   height: 32px;
+}
+// override the inline styles inserted by javascript
+.btn-menu[style] {
+  background-color: #ddd !important;
+  border-color: #ccc #bbb #b3b3b3 !important;
 }
 // .shape-icon, .btn-menu__text {
 
