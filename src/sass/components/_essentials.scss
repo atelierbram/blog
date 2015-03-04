@@ -98,10 +98,11 @@ ul code,
 ol code {
   font-size: .875em;
   margin: 0;
-  border: 1px solid #ddd;
+  border: 1px solid #eee;
   background-color: #f8f8f8;
   padding: 1px 0;
   border-radius: $rounded;
+  color: $orange-red;
 }
 
 p code:before,
