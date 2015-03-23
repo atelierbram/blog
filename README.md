@@ -1,6 +1,6 @@
 # [Documenting a Learning Curve](http://atelierbram.github.io/blog/)
 
-Webdesign-related blogposts [hosted here on Github](http://atelierbram.github.io/blog/): a place to conveniently post some of the things I learn along the way with `HTML`, `CSS` and `Javascript`. Most of these articles were also published on [Codepen](http://codepen.io/atelierbram/blog), _(to subscribe to the RSS-feed, please [grab the feed on Codepen](http://codepen.io/atelierbram/blog/feed/)_.
+Webdesign-related blogposts [hosted here on Github](http://atelierbram.github.io/blog/): a place to conveniently post some of the things I learn along the way with `HTML`, `CSS` and `Javascript`. Most of these articles were also published on [Codepen](http://codepen.io/atelierbram/blog), _(to subscribe to the RSS-feed, please grab the feed there)_.
 
 - [Assembling](http://atelierbram.github.io/blog/assembling)
 - [Interplay between CSS and Javascript](http://atelierbram.github.io/blog/interplay-css-javascript)

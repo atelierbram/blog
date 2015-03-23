@@ -103,6 +103,7 @@ When you have read the next quote, (from the [Javascript Jabber podcast](http://
 #### Examples
 - [static-site-boilerplate](https://github.com/bdadam/static-site-boilerplate) by Adam Beres-Deak
 - [build-boilerplate](https://github.com/atelierbram/build-boilerplate) fork of static-site-boilerplate by Adam Beres-Deak, with some modifications
+- [Basic Example of using Assemble](https://gist.github.com/atelierbram/e425ad7238af56925f7f)
 
 #### Resources
 - [Assemble Docs](http://assemble.io/docs/)
