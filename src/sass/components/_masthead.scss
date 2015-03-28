@@ -8,7 +8,7 @@ footer {
 header {
   // background-color: adjust-color($base07,$lightness: 1.5%);
   background-color: $base07;
-  // min-height: 3.5rem;
+  min-height: 4rem;
   @include mq($from: tablet) {
     border-bottom: 1px solid $base06;
   }

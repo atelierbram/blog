@@ -19,10 +19,12 @@ release
 /temp/
 dist
 vector
+_
 _vector
 _test
 _patternlab
 _doc
+_draft
 
 TODO.md
 
