@@ -104,9 +104,11 @@ button::-webkit-focus-inner {
 .has-nav-active .shape-hamburger {
   fill: $cyan;
 }
-.shape-hamburger,
-.btn-menu:hover .shape-hamburger {
+.shape-hamburger {
   fill: $dark_cyan;
+}
+.btn-menu:hover .shape-hamburger {
+  fill: $light_cyan;
 }
 // loaded with .no-svg support
 // .no-js .btn-menu no javascript, then not hidden, but no button needed
