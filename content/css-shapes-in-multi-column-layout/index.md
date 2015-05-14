@@ -10,7 +10,7 @@
 
 ## CSS-Shapes in Multi-Column Layout
 
-In order to avoid breaking up a `CSS-Shape` from the surrounding wrapping text to another column, (_... which is far from pretty_), when using CSS-Shapes (_to make text flow around an image or an object_) within a <strong>multi-column layout</strong>: one can use the property `break-inside` with the value `avoid-column` on the wrapping element:
+<span class="dropcap">I</span>n order to avoid breaking up a `CSS-Shape` from the surrounding wrapping text to another column, (_... which is far from pretty_), when using CSS-Shapes (_to make text flow around an image or an object_) within a <strong>multi-column layout</strong>: one can use the property `break-inside` with the value `avoid-column` on the wrapping element:
 
 ```css
 .wrap-module {

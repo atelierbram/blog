@@ -11,5 +11,7 @@
   "post-id--03-short": "Interplay between CSS and Javascript",
   "post-id--03": "Interplay between CSS and Javascript on Transitions",
   "post-id--04-short": "Generate a Static Website",
-  "post-id--04": "Generate a Static Website with Assemble"
+  "post-id--04": "Generate a Static Website with Assemble",
+  "post-id--05": "Colorscheming for Syntax Highlighting",
+  "post-id--05-short": "Colorscheming"
 }

@@ -86,7 +86,8 @@ module.exports = function(grunt) {
           'src/templates/partials/script-id-01-js.hbs' : 'dist/static/script-id-01.min.js',
           'src/templates/partials/script-id-02-js.hbs' : 'dist/static/script-id-02.min.js',
           'src/templates/partials/script-id-03-js.hbs' : 'dist/static/script-id-03.min.js',
-          'src/templates/partials/script-id-04-js.hbs' : 'dist/static/script-id-04.min.js'
+          'src/templates/partials/script-id-04-js.hbs' : 'dist/static/script-id-04.min.js',
+          'src/templates/partials/script-id-05-js.hbs' : 'dist/static/script-id-05.min.js'
           },
           flatten: true,
           filter: 'isFile',
@@ -101,6 +102,7 @@ module.exports = function(grunt) {
           },
           files: {                                   // Dictionary of files
             'dist/index.html': 'dist/index.html',    // 'destination': 'source'
+            'dist/colorscheming/index.html': 'dist/colorscheming/index.html',
             'dist/assembling/index.html': 'dist/assembling/index.html',
             'dist/select-menu-hashchange/index.html': 'dist/select-menu-hashchange/index.html',
             'dist/css-shapes-in-multi-column-layout/index.html': 'dist/css-shapes-in-multi-column-layout/index.html',
@@ -131,7 +133,8 @@ module.exports = function(grunt) {
             'dist/static/script-id-01.min.js' : 'src/js/script-id-01.js',
             'dist/static/script-id-02.min.js' : 'src/js/script-id-02.js',
             'dist/static/script-id-03.min.js' : 'src/js/script-id-03.js',
-            'dist/static/script-id-04.min.js' : 'src/js/script-id-04.js'
+            'dist/static/script-id-04.min.js' : 'src/js/script-id-04.js',
+            'dist/static/script-id-05.min.js' : 'src/js/script-id-05.js'
           }
         }
       },

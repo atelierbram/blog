@@ -10,7 +10,7 @@
 
 ## Generate a Static Website with Assemble
 
-The advantages of having a static site-generator integrated in one and the same build-tool _(that you may already be using)_ is huge: [Assemble itself](https://github.com/assemble/assemble) is a Grunt- _(also Yeoman and Node, and soon to be Gulp-)_ plugin. At the same time, Assemble assumes very little about _“what it is that you are trying to do”_; making it fun to use _(if you are also the kind of person that tends to want to make things their own &hellip;)_.
+<span class="dropcap">T</span>he advantages of having a static site-generator integrated in one and the same build-tool _(that you may already be using)_ is huge: [Assemble itself](https://github.com/assemble/assemble) is a Grunt- _(also Yeoman and Node, and soon to be Gulp-)_ plugin. At the same time, Assemble assumes very little about _“what it is that you are trying to do”_; making it fun to use _(if you are also the kind of person that tends to want to make things their own &hellip;)_.
 
 ### Static Site Generator
 One of the first problems to solve, when wanting to generate a website from flat files _(without a database)_, is to come up with a flexible solution for site-wide navigation. In [Assemble](http://assemble.io) this could be tackled like this in a _“partial”_ handlebars file, here `nav.hbs`:
@@ -120,5 +120,6 @@ When you have read the next quote, (from the [Javascript Jabber podcast](http://
 
 <div class="prevnext">
   <h5><a href="../{{url.post-id--03}}" rel="prev">{{name.post-id--03}}</a></h5>
+  <h5><a href="../{{url.post-id--05}}" rel="next">{{name.post-id--05}}</a></h5>
 </div>
 
