@@ -10,7 +10,7 @@
 
 ## Colorscheming for Syntax Highlighting
 
-<span class="dropcap">F</span>or the last couple of years, whenever I was in the mood for it and found the time, I build colorschemes for syntax highlighting. It soon became a bit of a conceptual academic exercise in colorscheming. The idea was to build a serie of colorschemes, each with it’s own base-color.
+<span class="dropcap">F</span>or the last couple of years, whenever I was in the mood for it and found the time, I build colorschemes for syntax highlighting. The idea, that triggered this kind of an academic exercise in colorscheming, was to build a serie of colorschemes that would comprise the whole color gamut, each with it’s own base-color.
 
 > music is centered around a tonal center, the tonic, which also determines a key. The vast majority of western music is tonal.
 
@@ -30,7 +30,7 @@ When evaluating color-contrast between colors _(foreground and background colors
 ![Colorwheel](http://atelierbram.github.io/blog/static/img/svg/colorwheel.svg)
 
 ### Saturation in color
-In the colorscheme for [Estuary](http://atelierbram.github.io/syntax-highlighting/atelier-schemes/estuary), which is based on yellow/green, I tried hard to avoid this foreground/background complementary colorclash, by desaturating the values in the red – violet gamma, but also to _not_ use violet–purple at all. Note also the value for red that is used goes to the yellow, and is more of an orange, but in this yellow-green context it really works as a red. Related to this issue: in some of the first colorschemes (_made a few years back,_) I felt the need to change some of the values over there as well. For anyone who is interested in the documentation of these changes, [they can be found here](http://atelierbram.github.io/syntax-highlighting/atelier-schemes/demo/changes-03-2015.html).
+In the colorscheme for [Estuary](http://atelierbram.github.io/syntax-highlighting/atelier-schemes/estuary), which is based on yellow/green, I tried hard to avoid this foreground/background complementary colorclash, by desaturating the values in the red – violet gamut, but also to _not_ use violet–purple at all. Note also the value for red that is used goes to the yellow, and is more of an orange, but in this yellow-green context it really works as a red. Related to this issue: in some of the first colorschemes (_made a few years back,_) I felt the need to change some of the values over there as well. For anyone who is interested in the documentation of these changes, [they can be found here](http://atelierbram.github.io/syntax-highlighting/atelier-schemes/demo/changes-03-2015.html).
 
 ![demotiles for Estuary colorscheme](http://atelierbram.github.io/syntax-highlighting/assets/img/svg/atelierschemes-demotiles-estuary_1200x300.svg)
 [demotiles for Estuary colorscheme](http://atelierbram.github.io/syntax-highlighting/atelier-schemes/estuary)
@@ -85,7 +85,7 @@ Those same variables can be used in another build tool called [Base16 Builder](h
 
 #### Notes
 1. [elements-of-music.com](http://elements-of-music.com/tonality.html#theelement)
-1. Like in music where there can be a “tonal centre” which also can determine a key in a piece of music, likewise one can translate this to the visual medium and color. So for each colorscheme, a different color from the colorwheel represented this “tonal centre”, or base color which is to be thought of as being right in the middle of the color-gamma that is being used in the colorscheme.
+1. Like in music where there can be a “tonal centre” which also can determine a key in a piece of music, likewise one can translate this to the visual medium and color. So for each colorscheme, a different color from the colorwheel represented this “tonal centre”, or base color which is to be thought of as being right in the middle of the color-gamut that is being used in the colorscheme.
 1. These “characteristics” don’t have to be obvious; art can have “secrets”
 1. In Chrome DevTools you can, with Shift-Click on a selected color, move from HEX to RGB to HSL. Using HSL, you can conveniently use the arrow keys on your keyboard to see the effect of hue, saturation, and lightness change.
 1. The colorwheel, and the color-theory of someone like [Johannes Itten](http://www.worqx.com/color/itten.htm) is, (_if very useable in education; even today,_) superseded by updated (scientifical) theories that bring in [physics](http://physics.info/color/), stating that color is in fact [frequency](http://www.marktaw.com/design/ColorTheorya.html). Although fascinating material, the more recent scientific discoveries are a lot harder to teach in educating art-students I find, but please someone prove me wrong.
