@@ -78,7 +78,7 @@ $magenta: $base0f;
 "settings";
 ```
 
-Those same variables can be used in another build tool called [Base16 Builder](https://github.com/chriskempson/base16-builder), which I started using for converting these colorschemes to syntax highlighting schemes for different applications, _see also [Base16 on Github](https://github.com/chriskempson/base16) _. Base16 Builder enables you to create syntax highlighting colorschemes in dark and light background variations, for many applications. _It is constructed as a bash-script that can be triggered from the terminal; checkout the dependencies on Github though ..._.
+Those same variables can be used in another build tool called [Base16 Builder](https://github.com/chriskempson/base16-builder), which I started using for converting these colorschemes to syntax highlighting schemes for different applications, see also _[Base16 on Github](https://github.com/chriskempson/base16)_. Base16 Builder enables you to create syntax highlighting colorschemes in dark and light background variations, for many applications. It is constructed as a bash-script that can be triggered from the terminal; _checkout the dependencies on Github though ..._.
 
 #### Examples
   ![Screenshot – dark version – Sulphurpool in Sublime Text](https://atelierbram.github.io/syntax-highlighting/assets/img/sulphurpool-dark_sublime_640x425.png) Screenshot of a working colorscheme as syntax-highlighting (_[Sulphurpool color-scheme](http://atelierbram.github.io/syntax-highlighting/atelier-schemes/sulphurpool) in Sublime Text_).
