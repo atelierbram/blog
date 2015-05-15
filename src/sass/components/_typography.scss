@@ -1,3 +1,10 @@
+.page p:first-of-type,
+.page p:first-of-type em {
+  font-weight: 400;
+}
+.page p:first-of-type {
+  font-size: 1.75em;
+}
 .page pre + h3 {
   margin-top: 2rem;
 }
@@ -60,6 +67,8 @@ h4 + ol {
 blockquote p  {
   position: relative;
   z-index: 1;
+  font-size: 24px !important;
+  font-size: 1.5rem !important;
 }
 blockquote::after {
   content: "“";

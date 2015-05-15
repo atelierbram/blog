@@ -25,7 +25,7 @@ One of the first problems to solve, when wanting to generate a website from flat
 </nav>
 ```
 
-HTML mixed with handlebars’ template tags, spitting out<sup>1</sup> a complete _“ordered”_ unordered list of the content folder files in the HTML-output.  In the markup are references to these two handlebar-helper plugins: “handlebars-helper-autolink” and “handlebars-helper-isActive”. The sort-order of the linked files can be set in the versatile [Yaml front matter](http://assemble.io/docs/YAML-front-matter.html) in the content-file itself. So when generating pages from markdown,  let’s say `index.md`, in the YFM<sup>2</sup>, right in the head of the file, one can set these variables:
+HTML mixed with handlebars’ template tags, spitting out <sup>1</sup> a complete _“ordered”_ unordered list of the content folder files in the HTML-output.  In the markup are references to these two handlebar-helper plugins: “handlebars-helper-autolink” and “handlebars-helper-isActive”. The sort-order of the linked files can be set in the versatile [Yaml front matter](http://assemble.io/docs/YAML-front-matter.html) in the content-file itself. So when generating pages from markdown,  let’s say `index.md`, in the YFM <sup>2</sup>, right in the head of the file, one can set these variables:
 
 ```markup
 ---
@@ -40,7 +40,7 @@ description: My Homepage
 
 ### Templating
 
-Besides that you can put variables in the top of your content-files as YMF<sup>2</sup>, another way to get data into your templates is to [store custom variables as “key-value-pairs” in an external file](http://assemble.io/docs/options-data.html), for example a JSON or YML - file. The way to let the javascript rendering-engine know about this file, is to link it up (as a value for `data`) in the options-section for Assemble within the Gruntfile.
+Besides that you can put variables in the top of your content-files as YMF <sup>2</sup>, another way to get data into your templates is to [store custom variables as “key-value-pairs” in an external file](http://assemble.io/docs/options-data.html), for example a JSON or YML - file. The way to let the javascript rendering-engine know about this file, is to link it up (as a value for `data`) in the options-section for Assemble within the Gruntfile.
 
 
 ```javascript
@@ -67,7 +67,7 @@ So when I have a file called `var.json` in the `src/data` folder, then the varia
 ```
 
 ### Make it your own
-When I suffer from _“horror vacui”_, indecision or what not, from all these possibilities and options that can be set in tools like these, I like to fight this by baking a boilerplate<sup>3</sup>: get a feeling for what it is like to, for example, use handlebar-templates, and partials with handlebar-tags within a small project.
+When I suffer from _“horror vacui”_, indecision or what not, from all these possibilities and options that can be set in tools like these, I like to fight this by baking a boilerplate <sup>3</sup>: get a feeling for what it is like to, for example, use handlebar-templates, and partials with handlebar-tags within a small project.
 
 At [Assemble’s website](http://assemble.io/docs/Resources.html#boilerplates) you can find some very instructive boilerplates, and at the bottom of this article are some links to examples, but make sure to also look at implementations in Github repo’s made by Zurb’s Foundation, and the [Gruntfile for h5bp-Effeckt.css](https://github.com/h5bp/Effeckt.css/blob/master/Gruntfile.js), which may have even more minimal and up to date implementations.
 

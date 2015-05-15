@@ -29,7 +29,7 @@ Consider the following `HTML`-markup one would need in order to achieve this:
 </div>
 ```
 
-That is quite some extra `HTML`-markup for pretty decoration. In [this example](http://codepen.io/atelierbram/pen/Iujdi) <sup>[1]</sup> those elements are inserted into the page with (jQuery) javascript, to keep the `HTML` clean (here is [a fork of this pen in plain-vanilla javascript](http://codepen.io/atelierbram/pen/aoKus/), with _slightly different_ nesting of elements). Here the `CSS-Shape` is combined with the classic [pullquote with data-attributes trick](http://codepen.io/aarongustafson/pen/zxKdh), which will even make more sense in the near future.<sup>[2]</sup>
+That is quite some extra `HTML`-markup for pretty decoration. In [this example](http://codepen.io/atelierbram/pen/Iujdi) <sup>[1]</sup> those elements are inserted into the page with (jQuery) javascript, to keep the `HTML` clean (here is [a fork of this pen in plain-vanilla javascript](http://codepen.io/atelierbram/pen/aoKus/), with _slightly different_ nesting of elements). Here the `CSS-Shape` is combined with the classic [pullquote with data-attributes trick](http://codepen.io/aarongustafson/pen/zxKdh), which will even make more sense in the near future. <sup>[2]</sup>
 
 Here the `.shape-rect` could be a rectangle made with the property `shape-outside` with the `polygon` values:
 
