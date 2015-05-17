@@ -29,6 +29,28 @@ li p {
 .fs-3_75 {
     font-size: 3.75rem;
 }
+.fs-4 {
+    font-size: 4rem;
+}
+
+sup a,
+sup a:hover {
+  text-decoration: none;
+}
+sup span {
+  position: relative;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  top: .5rem;
+  left: .5rem;
+  color: $base00;
+  display: none;
+}
+sup a:hover span {
+  display: inline-block;
+  padding: 1em;
+  margin: 1em 0;
+}
 // font-sizes scaling with screen-width for heading
 @include mq($from: tablet) {
   .has-moved-h2 {
@@ -42,6 +64,9 @@ li p {
   }
   .fs-desktop-vw-6_75 {
     font-size: 6.75vw;
+  }
+  .fs-desktop-vw-7 {
+    font-size: 7vw;
   }
   .fs-desktop-vw-7_25 {
     font-size: 7.25vw;

@@ -1,3 +1,4 @@
+@import "color-vars";
 body {
   min-height: 100%;
   min-height: 100vh;
@@ -61,7 +62,7 @@ header h1 a {
   text-align: center;
   z-index: 1;
   position: relative;
-  color: #666;
+  color: $base05;
   background-color: #fff;
   padding-top: 0;
 }
@@ -70,7 +71,7 @@ header h1 a {
   position: absolute;
   top:0;bottom:0;left:.6em;right:.6em;
   z-index: -1;
-  border-top: 1px solid #aaa;
+  border-top: 1px solid adjust-color($base05,$lightness:15%);
   margin-top: .78em;
 }
 .wf-poplarstd-n4-active .publication-list__item__meta:after {
@@ -81,7 +82,7 @@ time {
   padding: 0 1em;
 }
 h3 a {
-  color: #3c3c3c;
+  color: $dark06;
   padding: .6rem;
   display: block;
   transition: color .3s;
@@ -118,11 +119,11 @@ h3 a:hover {
 }
 .read-more:hover,
 .read-more:active {
-  background-color: rgba(black,.05);
+  background-color: $base06;
   padding-left: 1em;
 }
 .read-more:focus {
-  outline: 1px dotted #aaa;
+  outline: 1px dotted $base05;
 }
 .shape-arrow--broken {
   width: 35px;

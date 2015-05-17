@@ -56,12 +56,12 @@ footer  a:hover {
 b, strong { font-weight: bold; }
 small { font-size: 80%; }
 sup {
-  font-size: 60% !important;
+  font-size: .6rem !important;
   line-height: 0;
   position: relative;
   vertical-align: baseline;
-  top: -0.5em;
-  left: -.25em;
+  top: -0.5rem;
+  left: -.25rem;
 }
 
 code { font-size: 1em; }

@@ -76,11 +76,12 @@ blockquote::after {
   top:0;left:0;
   margin: -16px 0 0 -30%;
   padding: 0;
-  width: 290px;
-  height: 200px;
+  width: 315;
+  height: 225px;
   font: 664px/.8 "Trebuchet MS", Georgia, serif;
   color: $base05;
   z-index: 0;
+  overflow: hidden;
 }
 .wf-europa-n7-active blockquote::after {
   font-style: italic;
@@ -88,23 +89,25 @@ blockquote::after {
 }
 hr,
 pre,
-.note {
+.note,
+sup span {
   box-shadow: $box-shadow;
 }
 pre,
-.note {
+.note,
+sup span {
   border-radius: $rounded;
+}
+.note,
+sup span {
+  background-color: $light_yellow00;
+  border: 1px solid $light_yellow;
 }
 .note {
   float: right;
   font-size: .875rem;
   margin: 3em 0 2em;
-  // @include mq($from: desktop) {
-  //   margin-right: -32%;
-  // }
   padding: 1.5em 1.5em 1.75em;
-  background-color: $light_yellow00;
-  border: 1px solid $light_yellow;
 }
 .prevnext {
   clear: both;
