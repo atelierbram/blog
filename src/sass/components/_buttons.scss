@@ -10,21 +10,22 @@ button {
 //   box-shadow:none;
 // }
 button:focus {
-  box-shadow: #06f 0 0 5px 0;
   z-index: 1;
+  outline: none;
 }
 button:hover {
-  background-color: #ccc;
+  // background-color: #ccc;
   text-decoration: none;
 }
 button:active {
-  background-color: #bbb;
-  box-shadow: inset rgba(black, 0.25) 0 1px 2px 0;
-  border-color: #888 #999 #aaa;
+  // background-color: #bbb;
+  // box-shadow: inset rgba(black, 0.25) 0 1px 2px 0;
+  // border-color: #888 #999 #aaa;
 }
 button::-moz-focus-inner,
 button::-webkit-focus-inner {
   border: 0;
+  outline: none;
   padding: 0;
 }
 // hamburger menu
@@ -41,20 +42,20 @@ button::-webkit-focus-inner {
   // border-color: #ccc #bbb #b3b3b3;
 }
 .btn:hover {
-  background-image: none;
-  background-color: #ccc;
+  // background-image: none;
+  // background-color: #ccc;
 }
 .btn:active {
-  background-image: none;
-  background-color: #bbb;
-  border-color: #888 #999 #aaa;
+  // background-image: none;
+  // background-color: #bbb;
+  // border-color: #888 #999 #aaa;
 }
 .has-nav-active .btn {
   z-index: 1;
-  background-color: $base03;
+  // background-color: $base03;
 }
 .has-nav-active .btn:hover {
-  background-color: #bbb;
+  // background-color: #bbb;
 }
 .btn-menu,
 .shape-hamburger {
@@ -72,42 +73,29 @@ button::-webkit-focus-inner {
 }
 .btn-menu {
   display: inline-block;
-  border-radius: 3px;
   text-decoration: none;
   text-align: center;
   position: relative;
   width: 42px;
-  height: 32px;
+  height: 42px;
 }
-// override the inline styles inserted by javascript
-.btn-menu[style] {
-  background-color: $base06 !important;
-  border-color: $light05 $light07 $light06 !important;
-}
-// .shape-icon, .btn-menu__text {
 
 // .btn-menu__text {
-//   margin-top: -1.25rem;
-//   font-size: .875rem;
-//   color: $base00;
+  // margin-top: -1.25rem;
+  // font-size: .875rem;
+  // color: $base00;
 // }
-.shape-icon {
+.shape-airvent {
   position: absolute;
   top:0;right:0;bottom:0;left:0;
-  width: 16px;
-  height: 12px;
-  margin: .55rem 0 0 .75em;
-}
-.shape-hamburger {
+  width: 42px;
+  height: 42px;
   transition: fill .3s;
 }
-.has-nav-active .shape-hamburger {
+.has-nav-active .shape-airvent {
   fill: $cyan;
 }
-.shape-hamburger {
-  fill: $dark_cyan;
-}
-.btn-menu:hover .shape-hamburger {
+.btn-menu:hover .shape-airvent {
   fill: $light_cyan;
 }
 // loaded with .no-svg support

@@ -100,4 +100,5 @@ Those same variables can be used in another build tool called [Base16 Builder](h
 
 <div class="prevnext">
   <h5><a href="../{{url.post-id--04}}" rel="prev">{{name.post-id--04}}</a></h5>
+  <h5><a href="../{{url.post-id--06}}" rel="next">{{name.post-id--06}}</a></h5>
 </div>
