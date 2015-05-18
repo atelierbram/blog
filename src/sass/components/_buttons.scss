@@ -81,8 +81,8 @@ button::-webkit-focus-inner {
 }
 // override the inline styles inserted by javascript
 .btn-menu[style] {
-  background-color: #ddd !important;
-  border-color: #ccc #bbb #b3b3b3 !important;
+  background-color: $base06 !important;
+  border-color: $light05 $light07 $light06 !important;
 }
 // .shape-icon, .btn-menu__text {
 
