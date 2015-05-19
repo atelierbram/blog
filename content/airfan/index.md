@@ -29,7 +29,7 @@ This is the twentyfirst century and we survived modernism, post-modernism, and a
 <p data-height="268" data-theme-id="71" data-slug-hash="eNzKgE" data-default-tab="result" data-user="atelierbram" class='codepen'>See the Pen <a href='http://codepen.io/atelierbram/pen/eNzKgE/'>Airfan Icon</a> by Bram de Haan (<a href='http://codepen.io/atelierbram'>@atelierbram</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
-<span class="note">NOTE: A minor point of warning for little childeren on touch devices: don’t stick the finger between the blades of the fan!</span>
+<span class="note">NOTE: A minor point of warning for little children on touch devices: don’t stick the finger between the blades of the fan!</span>
 
 #### Notes
 1. <span id="note-1">The window that you are looking at **right now**: that monitor or tablet screen!</span>
