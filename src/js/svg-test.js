@@ -45,7 +45,7 @@ if (supportsSVG()) {
 
   var symbolAirventIcon = document.createElementNS(SVG_NS, 'symbol');
 
-  var symbolAirventIconOuterRing = document.createElementNS(SVG_NS, 'path');
+  var symbolAirventIconOuter= document.createElementNS(SVG_NS, 'path');
   var symbolAirventIconBg = document.createElementNS(SVG_NS, 'circle');
   var symbolAirventIconFan = document.createElementNS(SVG_NS, 'path');
   var symbolAirventIconMiddot = document.createElementNS(SVG_NS, 'circle');
@@ -56,8 +56,8 @@ if (supportsSVG()) {
   symbolAirventIcon.setAttributeNS(null, 'width','42');
   symbolAirventIcon.setAttributeNS(null, 'height','42');
 
-  symbolAirventIconOuterRing.setAttributeNS(null, 'fill','#adb2c4');
-  symbolAirventIconOuterRing.setAttributeNS(null, 'd','M21,0C9.402,0,0,9.402,0,21c0,11.598,9.402,21,21,21c11.598,0,21-9.402,21-21C42,9.402,32.598,0,21,0z M21,38c-9.389,0-17-7.611-17-17S11.611,4,21,4c9.389,0,17,7.611,17,17S30.389,38,21,38z');
+  symbolAirventIconOuter.setAttributeNS(null, 'fill','#c9cddf');
+  symbolAirventIconOuter.setAttributeNS(null, 'd','M40.5,39c-0.025,0.177-0.229,0.729-0.5,1s-0.728,0.432-1,0.5c-3.25,0.812-16.992,1.506-18,1.5 c-1.02-0.006-15.267-0.684-18-1.5c-0.272-0.082-0.866-0.384-1-0.5c-0.167-0.134-0.547-0.578-0.7-1C0.35,36.383-0.001,22.021,0,21 C0.002,20.005,0.788,6.4,1.5,3C1.521,2.899,1.729,2.271,2,2s0.848-0.458,1-0.5C6.463,0.538,19.98,0.008,21,0 c0.996-0.008,14.554,0.782,18,1.5c0.273,0.057,0.729,0.229,1,0.5s0.465,0.757,0.5,1C41,6.425,42,19.992,42,21S41,35.6,40.5,39z');
 
   symbolAirventIconBg.setAttributeNS(null, 'fill','#ffffff');
   symbolAirventIconBg.setAttributeNS(null, 'cx','21');
@@ -76,12 +76,12 @@ if (supportsSVG()) {
 
   symbolAirventIconFan.appendChild(symbolAirventRotate);
 
-  symbolAirventIconMiddot.setAttributeNS(null, 'fill','#adb2c4');
+  symbolAirventIconMiddot.setAttributeNS(null, 'fill','#d7daed');
   symbolAirventIconMiddot.setAttributeNS(null, 'cx','21');
   symbolAirventIconMiddot.setAttributeNS(null, 'cy','21');
   symbolAirventIconMiddot.setAttributeNS(null, 'r','4');
 
-  symbolAirventIcon.appendChild(symbolAirventIconOuterRing);
+  symbolAirventIcon.appendChild(symbolAirventIconOuter);
   symbolAirventIcon.appendChild(symbolAirventIconBg);
   symbolAirventIcon.appendChild(symbolAirventIconFan);
   symbolAirventIcon.appendChild(symbolAirventIconMiddot);
@@ -107,7 +107,7 @@ else {
 }
 
 
- function addListeners(){
+function addListeners(){
   document.getElementById('btnMenu').addEventListener("mouseout", btn1func);
   document.getElementById('btnMenu').addEventListener("mouseover", btn2func);
   function btn1func(){
