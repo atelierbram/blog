@@ -1,8 +1,8 @@
-@import
-"mq",
-"color-vars",
-"settings";
-
+// @import
+// "mq",
+// "color-vars",
+// "settings";
+//
 // mark { background: #ff0; color: #000; }
 // abbr[title] { border-bottom: 1px dotted; }
 img,svg { border: 0; max-width: 100%;}
@@ -20,15 +20,6 @@ pre {
   white-space: pre-wrap;
 }
 
-blockquote {
-  position: relative;
-  padding: .75em 1.5em 8em;
-  margin: 1em 0 1em 20%;
-  background-color: transparent;
-  color: $base01;
-  font-family: AvenirNext-Italic, Avenir-Oblique, AvenirMedium-Oblique, Georgia, serif;
-  font-style: italic;
-}
 
 // table {
 //   border-collapse: collapse;
