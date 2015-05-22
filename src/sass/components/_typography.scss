@@ -153,9 +153,12 @@ sup span {
   color: $dark03;
   text-decoration: none;
   transition: color .3s;
+  border-bottom: none;
+  box-shadow: none;
 }
 .prevnext h5 a:hover {
   color: $red;
+  background: none;
 }
 .prevnext h5 a::after {
   content: "";

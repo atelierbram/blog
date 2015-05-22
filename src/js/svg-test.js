@@ -50,6 +50,7 @@ if (supportsSVG()) {
   var symbolAirventIconFan = document.createElementNS(SVG_NS, 'path');
   var symbolAirventIconMiddot = document.createElementNS(SVG_NS, 'circle');
   var symbolAirventRotate = document.createElementNS(SVG_NS, 'animateTransform');
+  var symbolAirventIconGrate= document.createElementNS(SVG_NS, 'path');
 
   symbolAirventIcon.setAttributeNS(null, 'id','AirventIcon');
   symbolAirventIcon.setAttributeNS(null, 'viewport','0 0 42 42');
@@ -81,10 +82,16 @@ if (supportsSVG()) {
   symbolAirventIconMiddot.setAttributeNS(null, 'cy','21');
   symbolAirventIconMiddot.setAttributeNS(null, 'r','4');
 
+  symbolAirventIconGrate.setAttributeNS(null, 'id','grate');
+  symbolAirventIconGrate.setAttributeNS(null, 'fill','#202746');
+  symbolAirventIconGrate.setAttributeNS(null, 'opacity','0.5');
+  symbolAirventIconGrate.setAttributeNS(null, 'd','M40.5,3c-0.035-0.243-0.229-0.729-0.5-1s-0.727-0.443-1-0.5C35.554,0.783,21.995-0.008,21,0 C19.98,0.009,6.462,0.538,3,1.5C2.848,1.542,2.271,1.729,2,2S1.521,2.899,1.5,3C0.788,6.4,0.001,20.005,0,21 c-0.001,1.021,0.35,15.384,1.3,18c0.153,0.422,0.534,0.867,0.7,1c0.133,0.117,0.727,0.419,1,0.5c2.733,0.816,16.98,1.494,18,1.5 c1.008,0.006,14.75-0.688,18-1.5c0.272-0.068,0.729-0.229,1-0.5s0.474-0.822,0.5-1C41,35.601,42,22.008,42,21S41,6.425,40.5,3z M30,28H12v-2h18V28z M30,22H12v-2h18V22z M30,16H12v-2h18V16z');
+
   symbolAirventIcon.appendChild(symbolAirventIconOuter);
   symbolAirventIcon.appendChild(symbolAirventIconBg);
   symbolAirventIcon.appendChild(symbolAirventIconFan);
   symbolAirventIcon.appendChild(symbolAirventIconMiddot);
+  symbolAirventIcon.appendChild(symbolAirventIconGrate);
 
   svgMenu.appendChild(symbolAirventIcon);
 
