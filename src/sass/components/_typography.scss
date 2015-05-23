@@ -3,10 +3,12 @@
   font-weight: 400;
 }
 .page p:first-of-type {
-  font-size: 1.75em;
+  @include mq($from: tablet) {
+    font-size: 1.75em;
+  }
 }
 .page pre + h3 {
-    margin-top: 2rem;
+  margin-top: 2rem;
 }
 .page blockquote + h3 {
   @include mq($from: tablet) {
@@ -90,8 +92,10 @@ blockquote {
 blockquote p  {
   position: relative;
   z-index: 1;
-  font-size: 24px !important;
-  font-size: 1.5rem !important;
+  @include mq($from: tablet) {
+    font-size: 24px !important;
+    font-size: 1.5rem !important;
+  }
 }
 blockquote::after {
   @include mq($from: tablet) {
@@ -107,6 +111,11 @@ blockquote::after {
     z-index: 0;
     overflow: hidden;
   }
+}
+.author {
+  position: relative;
+  top: 2.25em;
+  float: right;
 }
 .wf-europa-n7-active blockquote::after {
   font-style: italic;

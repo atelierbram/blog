@@ -90,6 +90,7 @@ h3 a {
 h3 a:hover {
   text-decoration: none;
   color: $red;
+  background-color: transparent;
 }
 .publication-list__item__content,
 .truncate {

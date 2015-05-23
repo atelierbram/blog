@@ -25,7 +25,7 @@ One of the first problems to solve, when wanting to generate a website from flat
 </nav>
 ```
 
-HTML mixed with handlebars’ template tags, spitting out <sup>1</sup> a complete _“ordered”_ unordered list of the content folder files in the HTML-output.  In the markup are references to these two handlebar-helper plugins: “handlebars-helper-autolink” and “handlebars-helper-isActive”. The sort-order of the linked files can be set in the versatile [Yaml front matter](http://assemble.io/docs/YAML-front-matter.html) in the content-file itself. So when generating pages from markdown,  let’s say `index.md`, in the YFM <sup>2</sup>, right in the head of the file, one can set these variables:
+HTML mixed with handlebars’ template tags, spitting out <sup><a href="#note-1" class="sup-link" id="supLink1">1</a></sup> a complete _“ordered”_ unordered list of the content folder files in the HTML-output.  In the markup are references to these two handlebar-helper plugins: “handlebars-helper-autolink” and “handlebars-helper-isActive”. The sort-order of the linked files can be set in the versatile [Yaml front matter](http://assemble.io/docs/YAML-front-matter.html) in the content-file itself. So when generating pages from markdown,  let’s say `index.md`, in the YFM <sup><a href="#note-2" class="sup-link" id="supLink2">2</a></sup>, right in the head of the file, one can set these variables:
 
 ```markup
 ---
@@ -40,7 +40,7 @@ description: My Homepage
 
 ### Templating
 
-Besides that you can put variables in the top of your content-files as YMF <sup>2</sup>, another way to get data into your templates is to [store custom variables as “key-value-pairs” in an external file](http://assemble.io/docs/options-data.html), for example a JSON or YML - file. The way to let the javascript rendering-engine know about this file, is to link it up (as a value for `data`) in the options-section for Assemble within the Gruntfile.
+Besides that you can put variables in the top of your content-files as YMF another way to get data into your templates is to [store custom variables as “key-value-pairs” in an external file](http://assemble.io/docs/options-data.html), for example a JSON or YML - file. The way to let the javascript rendering-engine know about this file, is to link it up (as a value for `data`) in the options-section for Assemble within the Gruntfile.
 
 
 ```javascript
@@ -66,8 +66,10 @@ So when I have a file called `var.json` in the `src/data` folder, then the varia
 
 ```
 
+Alongside build in Handlebar-helpers <sup><a href="#note-3" class="sup-link" id="supLink3">3</a></sup>, this becomes powerful templating at your disposal.
+
 ### Make it your own
-When I suffer from _“horror vacui”_, indecision or what not, from all these possibilities and options that can be set in tools like these, I like to fight this by baking a boilerplate <sup>3</sup>: get a feeling for what it is like to, for example, use handlebar-templates, and partials with handlebar-tags within a small project.
+When I suffer from _“horror vacui”_, indecision or what not, from all these possibilities and options that can be set in tools like these, I like to fight this by baking a boilerplate <sup><a href="#note-4" class="sup-link" id="supLink4">4</a></sup>: get a feeling for what it is like to, for example, use handlebar-templates, and partials with handlebar-tags within a small project.
 
 At [Assemble’s website](http://assemble.io/docs/Resources.html#boilerplates) you can find some very instructive boilerplates, and at the bottom of this article are some links to examples, but make sure to also look at implementations in Github repo’s made by Zurb’s Foundation, and the [Gruntfile for h5bp-Effeckt.css](https://github.com/h5bp/Effeckt.css/blob/master/Gruntfile.js), which may have even more minimal and up to date implementations.
 
@@ -110,11 +112,14 @@ When you have read the next quote, (from the [Javascript Jabber podcast](http://
 - [Embed Github Gists](http://assemble.github.io/assemble-gist-blog/)
 - [Create a Sitemap](https://github.com/assemble/boilerplate-sitemap)
 - [Front-End Process - Flat Builds and Automation, part 3: Grunt Tasks](http://www.gpmd.co.uk/blog/front-end-process-flat-builds-and-automation-part-3-grunt-tasks/)
+- [Assemble – erste Schritte mit dem Static Site Generator für Grunt](http://maddesigns.de/assemble-static-site-generator-grunt-2625.html)
 
 #### Notes
-1. on the `grunt build` command, depending on the existing files in your `src/content` folder _(or whatever the name of that folder is: can be anything you like), also: can have subfolders too, it’s smart about that)_
-1. YAML-front-matter
-1. By _“boilerplate”_, I mean a complete folder structure with a `Gruntfile.js` and `package.json` files. With this being a Grunt-plugin, this also means a git-repo, _(you can do yourself a big favor by making yourself familiar with that as well, if you haven't already)_. In the `.gitignore` file _(in the root of the project-folder)_  you can add the output-folder, often called `dist`, to the list there: no need to keep this in the repo.
+1. <span id="note-1">on the `grunt build` command, depending on the existing files in your `src/content` folder _(or whatever the name of that folder is: can be anything you like), also: can have subfolders too, it’s smart about that)_</span>
+1. <span id="note-2">YAML-front-matter</span>
+1. <span id="note-3">The [build in handlebar helpers](http://handlebarsjs.com/builtin_helpers.html); there is `if`, `unless`, `each`, `with` and `lookup`. For an example of `each`, checkout the tutorial on [maddesigns](http://maddesigns.de/assemble-static-site-generator-grunt-2625.html) _(in german)_.</span>
+1. <span id="note-4">By _“boilerplate”_, I mean a complete folder structure with a `Gruntfile.js` and `package.json` files. With this being a Grunt-plugin, this also means a git-repo, _(you can do yourself a big favor by making yourself familiar with that as well, if you haven't already)_. In the `.gitignore` file _(in the root of the project-folder)_  you can add the output-folder, often called `dist`, to the list there: no need to keep this in the repo.</span>
+
 
 <span class="note">This article was also published on [Codepen](http://codepen.io/atelierbram/blog/assembling)</span>
 
