@@ -1,6 +1,6 @@
 ---
     title:          Site-wide Navigation with Select Menu using window.onhashchange event
-    short-title:    Site-wide Navigation with Select Menu
+    short-title:    Select Menu
     type:           page
     page-id:        id-02
     id:             id-02

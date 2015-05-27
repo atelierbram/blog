@@ -1,6 +1,6 @@
 ---
     title:          CSS-Shapes in Multi-Column Layout
-    short-title:    CSS-Shapes in Multi-Column Layout
+    short-title:    CSS-Shapes
     type:           page
     page-id:        id-01
     id:             id-01

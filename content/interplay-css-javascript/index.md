@@ -1,6 +1,6 @@
 ---
     title:          Interplay between CSS and Javascript on Transitions
-    short-title:    Interplay between CSS and Javascript
+    short-title:    Interplay
     type:           page
     id:             id-03
     sortOrder:      10
