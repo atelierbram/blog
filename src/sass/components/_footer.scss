@@ -1,5 +1,8 @@
 @import "color-vars";
-
+.page-wrap:after,
+footer {
+  height: 4em;
+}
 footer {
   color: $dark_green-yellow;
   background-color: $ui-bg-color;

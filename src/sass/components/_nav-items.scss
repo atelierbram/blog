@@ -6,7 +6,7 @@
   text-decoration: none;
   transition: background-color .4s, color .3s, border-color .3s;
   display: block;
-  border-radius: .5em;
+  border-radius: 3px;
   padding: .5em 1em;
   border: 1px solid transparent;
   color: transparent;
@@ -26,19 +26,19 @@
   background-color: #fff;
 }
 .has-nav-active .nav {
-  position: fixed;
-  top: auto; right: 0; left: 0;
-  z-index: 1;
-  border-bottom: 1px solid $light04;
-  box-shadow: 0 12px 6px rgba(black,.25);
-  margin-top: -1em;
+  // position: fixed;
+  // top: auto; right: 0; left: 0;
+  // z-index: 1;
+  border-bottom: 1px solid $light03;
+  box-shadow: 0 6px 12px rgba(black,.175);
+  // margin-top: -1em;
 }
-.has-nav-active {
-  min-height: 100%;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
+// .has-nav-active {
+  // min-height: 100%;
+  // min-height: 100vh;
+  // display: flex;
+  // flex-direction: column;
+// }
 .no-flexbox body,
 .no-js body {
   position: relative;
