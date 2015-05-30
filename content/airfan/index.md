@@ -39,9 +39,8 @@ So alternatively, put a grate on top for safety.
 #### Notes
 1. <span id="note-1">The window that you are looking at **right now**: that monitor or tablet screen!</span>
 
-
 <span class="note">This article was also published on [Codepen](http://codepen.io/atelierbram/blog/airfan)</span>
 
 <div class="prevnext">
-  <h5><a href="../{{url.post-id--05}}" rel="prev">{{name.post-id--05}}</a></h5>
+  <h5><a href="../{{url.post-id--05}}" rel="prev"><i class="icon icon-8 icon-arrow-left"><svg class="shape-icon" viewBox="0 0 8 12"><use xlink:href="#shape-arrow-point" transform="rotate(180,4,6)"></use></svg></i> {{name.post-id--05}}</a></h5>
 </div>

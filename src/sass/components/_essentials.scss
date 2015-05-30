@@ -154,6 +154,21 @@ h3 {
 h3 {
   font-size: 1.75rem;
 }
+img,
+svg { 
+  border: 0;
+  max-width: 100%;
+}
+svg {
+  vertical-align: middle;
+}
+svg:not(:root) {
+  overflow: hidden;
+}
+.icon {
+  display: inline-block;
+  position: relative;
+}
 // ::selection,
 // ::moz-selection {
 //   text-shadow: none;

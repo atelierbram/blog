@@ -147,12 +147,12 @@ sup span {
   clear: both;
   margin-bottom: 2em;
 }
-.prevnext h5:nth-of-type(1) {
-  padding-left: 1em;
-}
+// .prevnext h5:nth-of-type(1) {
+//   padding-left: 1em;
+// }
 .prevnext h5:nth-of-type(2) {
   text-align: right;
-  padding-right: 1em;
+  // padding-right: 1em;
 }
 
 .prevnext h5 a {
@@ -169,39 +169,59 @@ sup span {
   color: $red;
   background: none;
 }
-.prevnext h5 a::after {
-  content: "";
-  position: absolute;
-  width: 0;
-  height: 0;
-  top: 0;
-  margin-top: .4em;
-  transition: border .3s;
+// .prevnext h5 a svg {
+.shape-icon {
+ fill: $base01;
 }
+.prevnext h5 a:hover svg {
+  fill: $red;
+}
+// .prevnext h5 a::after {
+//   content: "";
+//   position: absolute;
+//   width: 0;
+//   height: 0;
+//   top: 0;
+//   margin-top: .4em;
+//   transition: border .3s;
+// }
 .wf-europa-i4-active .prevnext h5 a::after {
   margin-top: .55em;
 }
-.prevnext [rel="prev"]::after {
-  left: 0;
-  border-top: .5em solid transparent;
-  border-right: .5em solid $dark04;
-  border-bottom: .5em solid transparent;
-  margin-left: -1em;
+// .prevnext [rel="prev"]::after {
+//   left: 0;
+//   border-top: .5em solid transparent;
+//   border-right: .5em solid $dark04;
+//   border-bottom: .5em solid transparent;
+//   margin-left: -1em;
+// }
+// .prevnext [rel="next"]::after {
+//   right: 0;
+//   border-top: .5em solid transparent;
+//   border-left: .5em solid $dark04;
+//   border-bottom: .5em solid transparent;
+//   margin-right: -1em;
+// }
+//
+// .prevnext [rel="prev"]:hover::after {
+//   border-right-color: $red;
+// }
+// .prevnext [rel="next"]:hover::after {
+//   border-left-color: $red;
+// }
+.icon-8 {
+  width: 8px;
+  height: 12px;
+  top: -1px;
+  // left: .25em;
 }
-.prevnext [rel="next"]::after {
-  right: 0;
-  border-top: .5em solid transparent;
-  border-left: .5em solid $dark04;
-  border-bottom: .5em solid transparent;
-  margin-right: -1em;
+.icon-arrow-left {
+  right: .25em;
+}
+.icon-arrow-right {
+  left: .25em;
 }
 
-.prevnext [rel="prev"]:hover::after {
-  border-right-color: $red;
-}
-.prevnext [rel="next"]:hover::after {
-  border-left-color: $red;
-}
 // * { outline: 1px dotted salmon; }
 // figure {
 //   margin: 1em auto 1em 0;
