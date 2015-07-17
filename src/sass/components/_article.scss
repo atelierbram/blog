@@ -51,7 +51,6 @@ sup span {
 .sup-link:hover span {
   display: block;
   padding: 1em;
-  margin: 1em 0;
 }
 // font-sizes scaling with screen-width for heading
 @include mq($from: tablet) {
