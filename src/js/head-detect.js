@@ -13,46 +13,11 @@ function featureDetect() {
 featureDetect();
 
 // Typekit loads Europa
-(function(d) {
-    "use strict";
-  var config = {
+  (function(d) {
+    var config = {
       kitId: 'vtk5rcj',
-      scriptTimeout: 3000
-  },
-  h = d.documentElement,
-  t = setTimeout(function() {
-      h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
-  }, config.scriptTimeout),
-  tk = d.createElement("script"),
-  f = false,
-  s = d.getElementsByTagName("script")[0],
-  a;
-  h.className += " wf-loading";
-  tk.src = '//use.typekit.net/' + config.kitId + '.js';
-  tk.async = true;
-  tk.onload = tk.onreadystatechange = function() {
-    a = this.readyState;
-    if (f || a && a != "complete" && a != "loaded") return;
-    f = true;
-    clearTimeout(t);
-    try {
-        Typekit.load(config)
-    } catch (e) {}
-  };
-  s.parentNode.insertBefore(tk, s)
-})(document);
-
-// Google loads Source Code Pro
-// WebFontConfig = {
-//   google: { families: [ 'Source+Code+Pro::latin' ] }
-// };
-// (function() {
-//     "use strict";
-//   var wf = document.createElement('script');
-//   wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
-//     '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
-//   wf.type = 'text/javascript';
-//   wf.async = 'true';
-//   var s = document.getElementsByTagName('script')[0];
-//   s.parentNode.insertBefore(wf, s);
-// })();
+      scriptTimeout: 3000,
+      async: true
+    },
+    h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='//use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+  })(document);
