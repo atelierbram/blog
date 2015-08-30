@@ -1,3 +1,4 @@
+.DS_Store
 lib-cov
 *.seed
 *.log
@@ -9,16 +10,23 @@ lib-cov
 *.rar
 *.ai
 
+# Logs
 npm-debug.log
 node_modules
 pids
 logs
+*.log
+
+#sass cache files
+.sass-cache
 
 release
 /tmp/
 /temp/
 dist
 vector
+
+# Docs, etc in underscore directory
 _
 _vector
 _test
