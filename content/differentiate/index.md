@@ -33,6 +33,7 @@ This is not difficult to achieve with Prism syntax-hightlighter combined with Sa
 
 Check out [this demo at Codepen](http://codepen.io/atelierbram/pen/ZbYrRJ) to see how the `<pre class="language-bash">` is targeted in the `CSS` You can see how this works out in [a different example here](http://atelierbram.github.io/Starter-Assemble-Gulp/).
 
+<span class="note">This article was also published on [Codepen](http://codepen.io/atelierbram/blog/differentiate/)</span>
 
 <div class="prevnext">
   <h5><a href="../{{url.post-id--06}}" rel="prev"><i class="icon icon-8 icon-arrow-left"><svg class="shape-icon" viewBox="0 0 8 12"><use xlink:href="#shape-arrow-point" transform="rotate(180,4,6)"></use></svg></i> {{name.post-id--06}}</a></h5>
