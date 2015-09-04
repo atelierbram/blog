@@ -88,7 +88,8 @@ module.exports = function(grunt) {
           'src/templates/partials/script-id-03-js.hbs' : 'dist/static/script-id-03.min.js',
           'src/templates/partials/script-id-04-js.hbs' : 'dist/static/script-id-04.min.js',
           'src/templates/partials/script-id-05-js.hbs' : 'dist/static/script-id-05.min.js',
-          'src/templates/partials/script-id-06-js.hbs' : 'dist/static/script-id-06.min.js'
+          'src/templates/partials/script-id-06-js.hbs' : 'dist/static/script-id-06.min.js',
+          'src/templates/partials/script-id-07-js.hbs' : 'dist/static/script-id-07.min.js'
           },
           flatten: true,
           filter: 'isFile',
@@ -136,7 +137,8 @@ module.exports = function(grunt) {
             'dist/static/script-id-03.min.js' : 'src/js/script-id-03.js',
             'dist/static/script-id-04.min.js' : 'src/js/script-id-04.js',
             'dist/static/script-id-05.min.js' : 'src/js/script-id-05.js',
-            'dist/static/script-id-06.min.js' : 'src/js/script-id-06.js'
+            'dist/static/script-id-06.min.js' : 'src/js/script-id-06.js',
+            'dist/static/script-id-07.min.js' : 'src/js/script-id-07.js'
           }
         }
       },

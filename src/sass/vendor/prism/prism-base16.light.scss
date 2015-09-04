@@ -10,13 +10,14 @@ Original Base16 color scheme by Chris Kempson (https://github.com/chriskempson/b
 
 @import
 "../../components/color-vars",
+"../../components/mq",
 "../../components/settings";
 
 code[class*="language-"],
 pre[class*="language-"] {
   font-family: $monospace;
   font-size: 14px;
-  line-height: 1.375;
+  line-height: 1.5;
   direction: ltr;
   text-align: left;
   word-spacing: normal;
@@ -30,11 +31,14 @@ pre[class*="language-"] {
   -ms-hyphens: none;
   hyphens: none;
   white-space: pre;
-  // white-space: pre-wrap;
-  // word-break: break-all;
-  // word-wrap: break-word;
   background: $base07;
   color: $base02;
+}
+// dark theme overrides
+code.language-bash,
+pre.language-bash {
+  background: $base00;
+  color: $base05;
 }
 
 pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection,
@@ -43,21 +47,40 @@ code[class*="language-"]::-moz-selection, code[class*="language-"] ::-moz-select
   background: $base06;
 }
 
+// dark theme overrides
+pre.language-bash::-moz-selection, pre.language-bash ::-moz-selection,
+code.language-bash::-moz-selection, code.language-bash ::-moz-selection {
+  background: $base04;
+}
+
 pre[class*="language-"]::selection, pre[class*="language-"] ::selection,
 code[class*="language-"]::selection, code[class*="language-"] ::selection {
   text-shadow: none;
   background: $base06;
 }
 
-/* Code blocks */
+// dark theme overrides
+pre.language-bash::selection, pre.language-bash ::selection,
+code.language-bash::selection, code.language-bash ::selection {
+  background: $base04;
+}
+
+// Code blocks */
 pre[class*="language-"] {
-  padding: 1em;
+  padding: 1.5em;
   margin: 2em 0;
   overflow: auto;
   max-width: 49em;
 }
-
-/* Inline code */
+// dark theme overrides
+pre.language-bash {
+  @include mq($from: tablet) {
+    margin-left: 1em;
+    margin-right: 1em;
+    max-width: 43em;
+  }
+}
+// Inline code */
 :not(pre) > code[class*="language-"] {
   padding: .1em;
   border-radius: .3em;
@@ -69,8 +92,20 @@ pre[class*="language-"] {
 .token.cdata {
   color: $base04;
 }
+// dark theme overrides
+.language-bash .token.comment,
+.language-bash .token.prolog,
+.language-bash .token.doctype,
+.language-bash .token.cdata {
+  color: $base03;
+}
+
 .token.punctuation {
   color: $base02;
+}
+// dark theme overrides
+.language-bash .token.punctuation {
+  color: $base05;
 }
 .namespace {
   opacity: .7;
@@ -82,27 +117,34 @@ pre[class*="language-"] {
 .token.deleted {
   color: $base09;
 }
+
 .token.property {
   color: $base0a;
 }
+
 .token.tag {
   color: $base0d;
 }
+
 .token.string {
   color: $base0c;
 }
+
 .token.selector {
   color: $base0e;
 }
+
 .token.attr-name {
   color: $base09;
 }
+
 .token.entity,
 .token.url,
 .language-css .token.string,
 .style .token.string {
   color: $base0c;
 }
+
 .token.attr-value,
 .token.keyword,
 .token.control,
@@ -110,19 +152,23 @@ pre[class*="language-"] {
 .token.unit {
   color: $base0b;
 }
+
 .token.statement,
 .token.regex,
 .token.atrule {
   color: $base0c;
 }
+
 .token.placeholder,
 .token.variable {
   color: $base0d;
 }
+
 .token.important {
   color: $base08;
   font-weight: bold;
 }
+
 .token.entity {
   cursor: help;
 }
@@ -132,18 +178,34 @@ pre[class*="language-"] {
   border-radius: 2px;
   background-color: $base07;
 }
+// dark theme overrides
+.language-bash ::-webkit-scrollbar-track {
+  background-color: $base00;
+}
 ::-webkit-scrollbar {
   width: .75em;
   height: .75em;
   background-color: $base06;
+}
+// dark theme overrides
+.language-bash ::-webkit-scrollbar {
+  background-color: $base01;
 }
 ::-webkit-scrollbar-thumb {
   border-radius: 3px;
   -webkit-box-shadow: inset 0 0 6px rgba(black,.25);
   background-color: $base06;
 }
+// dark theme overrides
+.language-bash ::-webkit-scrollbar-thumb {
+  background-color: $base01;
+}
 ::-webkit-scrollbar-thumb:window-inactive {
   background-color: $base07;
+}
+// dark theme overrides
+.language-bash ::-webkit-scrollbar-thumb:window-inactive {
+  background-color: $base00;
 }
 // pre > code.highlight {
 //   outline: .4em solid $base08;
