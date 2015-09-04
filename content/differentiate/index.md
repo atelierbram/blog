@@ -5,7 +5,7 @@
     page-id:        id-07
     id:             id-07
     sortOrder:      8
-    description:    How the airfan icon entered the user interface game and came out on top of the competition
+    description:    Use two versions of one colorscheme, light- and dark, in a blogpost in order to differentiate between different code environments
 ---
 
 ## Differentiate between Code Examples
