@@ -15,6 +15,9 @@
 ### Intimidation on the Scene
 In their attempt to stifle free expression and impose only _the most rigorous_ treatment of the formal properties of art _(– shape, color, line, texture and so on)_, upon every artistic expression that dared to raise it’s ugly head on the scene, the modernistic critics went to great lenghts to establish their authority, not only on the artistical output, but went so far as to also intimidate individual artists themselves.
 
+<p data-height="500" data-theme-id="71" data-slug-hash="QjwYXd" data-default-tab="result" data-user="atelierbram" class='codepen'>See the Pen <a href='http://codepen.io/atelierbram/pen/bdwxrx/'>Airfan Icon with Hamburger Grate</a> by Bram de Haan (<a href='http://codepen.io/atelierbram'>@atelierbram</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<script async src="//assets.codepen.io/assets/embed/ei.js"></script> 
+
 ### Form Follows Fact
 It is a [well established fact](https://www.evernote.com/shard/s207/sh/022f2237-4b4f-4096-87f2-053acd228c2d/ede2672bc3f39a1b0232f84e01ca0a83) that the function of _the air vent_ in graphical interfaces is to keep the window <sup><a href="#note-1" class="sup-link" id="supLink1">1</a></sup> cool. Translated into the modernistic jargon of the day the _form follows function_ doctrine demands nothing less than straight lines: horizontal and vertical, _(only diagonal if it can not be avoided)_. The shape just **has to be geometrical**, preferably a rectangle. That is how _the air vent_, back in the day, transformed into the [hamburger menu icon](http://codepen.io/tag/hamburger).
 
@@ -33,7 +36,7 @@ This is the twentyfirst century and we survived modernism, post-modernism, and a
 
 So alternatively, put a grate on top for safety.
 
-<p data-height="128" data-theme-id="71" data-slug-hash="bdwxrx" data-default-tab="result" data-user="atelierbram" class='codepen'>See the Pen <a href='http://codepen.io/atelierbram/pen/bdwxrx/'>Airfan Icon with Hamburger Grate</a> by Bram de Haan (<a href='http://codepen.io/atelierbram'>@atelierbram</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<p data-height="128" data-theme-id="71" data-slug-hash="RWNvqz" data-default-tab="result" data-user="atelierbram" class='codepen'>See the Pen <a href='http://codepen.io/atelierbram/pen/bdwxrx/'>Airfan Icon with Hamburger Grate</a> by Bram de Haan (<a href='http://codepen.io/atelierbram'>@atelierbram</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
 #### Notes

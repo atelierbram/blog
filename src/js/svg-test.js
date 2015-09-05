@@ -13,7 +13,7 @@ function insertBtn() {
 
   btnMenu.setAttribute("class", "btn btn-menu");
   btnMenu.setAttribute("id", "btnMenu");
-  btnMenu.setAttribute("style", "display:inline-block;-webkit-appearance:none;background-image:none;background-color:transparent;border:1px solid transparent");
+  // btnMenu.setAttribute("style", "display:inline-block;-webkit-appearance:none;background-image:none;background-color:transparent;border:1px solid transparent");
 
   uiGutter.appendChild(btnMenu);
   header.appendChild(uiGutter);
@@ -49,8 +49,8 @@ if (supportsSVG()) {
   var symbolAirventIconBg = document.createElementNS(SVG_NS, 'circle');
   var symbolAirventIconFan = document.createElementNS(SVG_NS, 'path');
   var symbolAirventIconMiddot = document.createElementNS(SVG_NS, 'circle');
-  var symbolAirventRotate = document.createElementNS(SVG_NS, 'animateTransform');
-  var symbolAirventIconGrate= document.createElementNS(SVG_NS, 'path');
+  // var symbolAirventRotate = document.createElementNS(SVG_NS, 'animateTransform');
+  // var symbolAirventIconGrate= document.createElementNS(SVG_NS, 'path');
 
   symbolAirventIcon.setAttributeNS(null, 'id','AirventIcon');
   symbolAirventIcon.setAttributeNS(null, 'viewport','0 0 42 42');
@@ -67,31 +67,31 @@ if (supportsSVG()) {
 
   symbolAirventIconFan.setAttributeNS(null, 'fill','#dfe2f1');
   symbolAirventIconFan.setAttributeNS(null, 'd','M34.09,19.289c-2.55-1.46-5.265-0.164-7.939-0.539c-3.75-0.425-3.925-3.175-3.96-3.698 c-0.122-1.825,0.716-3.534,1.51-4.477C25.825,8.05,29.25,8.15,28.301,7c-0.544-0.658-3.75-2-7.3-2c-2.4,0-7.914,1.8-8,5.5 c-0.05,2.15,1.3,3.6,3.15,6.5c1.794,2.813,0.845,6.527-4,6.9c-4.55,0.35-6.136-3.886-6.926-2.25 c-0.371,0.769,0.136,4.248,1.905,7.325c1.196,2.081,5.471,6.058,8.755,4.194c3.832-2.175,3.915-11.536,10.416-7.72 c2.393,1.405,3.133,4.584,2.633,8.05c-0.007,0.047,0,0.867,0.574,0.801c0.848-0.098,3.602-2.257,5.369-5.335 C36.071,26.884,37.25,21.101,34.09,19.289z');
-  symbolAirventRotate.setAttributeNS(null, 'attributeName','transform');
-  symbolAirventRotate.setAttributeNS(null, 'type','rotate');
-  symbolAirventRotate.setAttributeNS(null, 'from','0 21 21');
-  symbolAirventRotate.setAttributeNS(null, 'to','360 21 21');
-  symbolAirventRotate.setAttributeNS(null, 'begin','0s');
-  symbolAirventRotate.setAttributeNS(null, 'dur','2s');
-  symbolAirventRotate.setAttributeNS(null, 'repeatCount','indefinite');
+  // symbolAirventRotate.setAttributeNS(null, 'attributeName','transform');
+  // symbolAirventRotate.setAttributeNS(null, 'type','rotate');
+  // symbolAirventRotate.setAttributeNS(null, 'from','0 21 21');
+  // symbolAirventRotate.setAttributeNS(null, 'to','360 21 21');
+  // symbolAirventRotate.setAttributeNS(null, 'begin','0s');
+  // symbolAirventRotate.setAttributeNS(null, 'dur','2s');
+  // symbolAirventRotate.setAttributeNS(null, 'repeatCount','indefinite');
+  //
+  // symbolAirventIconFan.appendChild(symbolAirventRotate);
 
-  symbolAirventIconFan.appendChild(symbolAirventRotate);
-
-  symbolAirventIconMiddot.setAttributeNS(null, 'fill','#d7daed');
+  symbolAirventIconMiddot.setAttributeNS(null, 'fill','#d7daea');
   symbolAirventIconMiddot.setAttributeNS(null, 'cx','21');
   symbolAirventIconMiddot.setAttributeNS(null, 'cy','21');
   symbolAirventIconMiddot.setAttributeNS(null, 'r','4');
 
-  symbolAirventIconGrate.setAttributeNS(null, 'id','grate');
-  symbolAirventIconGrate.setAttributeNS(null, 'fill','#202746');
-  symbolAirventIconGrate.setAttributeNS(null, 'opacity','0.4');
-  symbolAirventIconGrate.setAttributeNS(null, 'd','M40.5,3c-0.035-0.243-0.229-0.729-0.5-1s-0.727-0.443-1-0.5C35.554,0.783,21.995-0.008,21,0 C19.98,0.009,6.462,0.538,3,1.5C2.848,1.542,2.271,1.729,2,2S1.521,2.899,1.5,3C0.788,6.4,0.001,20.005,0,21 c-0.001,1.021,0.35,15.384,1.3,18c0.153,0.422,0.534,0.867,0.7,1c0.133,0.117,0.727,0.419,1,0.5c2.733,0.816,16.98,1.494,18,1.5 c1.008,0.006,14.75-0.688,18-1.5c0.272-0.068,0.729-0.229,1-0.5s0.474-0.822,0.5-1C41,35.601,42,22.008,42,21S41,6.425,40.5,3z M30,28H12v-2h18V28z M30,22H12v-2h18V22z M30,16H12v-2h18V16z');
-
+  // symbolAirventIconGrate.setAttributeNS(null, 'id','grate');
+  // symbolAirventIconGrate.setAttributeNS(null, 'fill','#202746');
+  // symbolAirventIconGrate.setAttributeNS(null, 'opacity','0.4');
+  // symbolAirventIconGrate.setAttributeNS(null, 'd','M40.5,3c-0.035-0.243-0.229-0.729-0.5-1s-0.727-0.443-1-0.5C35.554,0.783,21.995-0.008,21,0 C19.98,0.009,6.462,0.538,3,1.5C2.848,1.542,2.271,1.729,2,2S1.521,2.899,1.5,3C0.788,6.4,0.001,20.005,0,21 c-0.001,1.021,0.35,15.384,1.3,18c0.153,0.422,0.534,0.867,0.7,1c0.133,0.117,0.727,0.419,1,0.5c2.733,0.816,16.98,1.494,18,1.5 c1.008,0.006,14.75-0.688,18-1.5c0.272-0.068,0.729-0.229,1-0.5s0.474-0.822,0.5-1C41,35.601,42,22.008,42,21S41,6.425,40.5,3z M30,28H12v-2h18V28z M30,22H12v-2h18V22z M30,16H12v-2h18V16z');
+  //
   // symbolAirventIcon.appendChild(symbolAirventIconOuter);
   symbolAirventIcon.appendChild(symbolAirventIconBg);
   symbolAirventIcon.appendChild(symbolAirventIconFan);
   symbolAirventIcon.appendChild(symbolAirventIconMiddot);
-  symbolAirventIcon.appendChild(symbolAirventIconGrate);
+  // symbolAirventIcon.appendChild(symbolAirventIconGrate);
 
   svgMenu.appendChild(symbolAirventIcon);
 
@@ -114,16 +114,16 @@ else {
 }
 
 
-function addListeners(){
-  document.getElementById('btnMenu').addEventListener("mouseout", btn1func);
-  document.getElementById('btnMenu').addEventListener("mouseover", btn2func);
-  function btn1func(){
-    symbolAirventRotate.setAttributeNS(null, 'dur','1s');
-  }
-  function btn2func(){
-    symbolAirventRotate.setAttributeNS(null, 'dur','0.5s');
-  }
-}
-window.addEventListener("load", addListeners);
-
+// function addListeners(){
+//   document.getElementById('btnMenu').addEventListener("mouseout", btn1func);
+//   document.getElementById('btnMenu').addEventListener("mouseover", btn2func);
+//   function btn1func(){
+//     symbolAirventRotate.setAttributeNS(null, 'dur','1s');
+//   }
+//   function btn2func(){
+//     symbolAirventRotate.setAttributeNS(null, 'dur','0.5s');
+//   }
+// }
+// window.addEventListener("load", addListeners);
+//
 supportsSVG();
