@@ -13,7 +13,7 @@
 
 Let’s say one is writing a tutorial with code-examples showing code-snippets from the command-line, _and_ code-snippets from javascript files. One _could_ use **screenshots** from the commandline with, for example, a _dark_ theme and javascript snippets in plain text within a `pre`tag syntax-highlighted with a _light_ theme, in order to differentiate between the two in a clear manner.
 
-Screenshots can work well when done right, even when displaying text; like code-snippets. Adept them, have arrows with additional explaining text next to it. Craft them well and you can get [something like this](https://jakearchibald.com/2015/anatomy-of-responsive-images/) which gets it’s point across in an unambiguous manner: considering this complicated matter in an appropriate hands-on manner.
+Screenshots can work well when done right, even when displaying text; like code-snippets. Adept them, have arrows with additional explaining text next to it. Craft them well and you can get [something like this](https://jakearchibald.com/2015/anatomy-of-responsive-images/) which gets it’s point across in an hands-on manner: considering this complicated matter.
 
 ### Combining a colorscheme’s dark– and light version
 But _even when_ working with screenshots of code-snippets, one can mix it up with plain text in `pre`-tags. To keep consistency in design, one would want those themes to be related in color, or better use _the same_ colors of a colorscheme in a dark and light version (_dark being in a way “inverted”_), have the commandline code-snippets be informed by the _dark_ version of the colorscheme and, visa versa, the javascript examples colors informed by the _light_ version. You may go about it like this:
