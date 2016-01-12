@@ -60,6 +60,7 @@ Screenshot of javaScript file, syntax-highlighted with DuoTone Dark colorscheme.
 - [Demo for Prism](http://atelierbram.github.io/syntax-highlighting/duotones/demo/dark/)
 
 #### Resources
+- [DuoTones Sublime Colorschemes on Github](https://github.com/atelierbram/duotones-sublime-colorschemes)
 - [commands for Sublime](http://www.sublimetext.com/docs/commands)
 - [info on setting for Sublime](https://www.sublimetext.com/docs/3/settings.html)
 - [Original DuoTone Themes for Atom on simurai.com](http://simurai.com/projects/2016/01/01/duotone-themes/)
