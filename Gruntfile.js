@@ -89,7 +89,8 @@ module.exports = function(grunt) {
           'src/templates/partials/script-id-04-js.hbs' : 'dist/static/script-id-04.min.js',
           'src/templates/partials/script-id-05-js.hbs' : 'dist/static/script-id-05.min.js',
           'src/templates/partials/script-id-06-js.hbs' : 'dist/static/script-id-06.min.js',
-          'src/templates/partials/script-id-07-js.hbs' : 'dist/static/script-id-07.min.js'
+          'src/templates/partials/script-id-07-js.hbs' : 'dist/static/script-id-07.min.js',
+          'src/templates/partials/script-id-08-js.hbs' : 'dist/static/script-id-08.min.js'
           },
           flatten: true,
           filter: 'isFile',
@@ -108,7 +109,9 @@ module.exports = function(grunt) {
             'dist/assembling/index.html': 'dist/assembling/index.html',
             'dist/select-menu-hashchange/index.html': 'dist/select-menu-hashchange/index.html',
             'dist/css-shapes-in-multi-column-layout/index.html': 'dist/css-shapes-in-multi-column-layout/index.html',
-            'dist/interplay-css-javascript/index.html': 'dist/interplay-css-javascript/index.html'
+            'dist/interplay-css-javascript/index.html': 'dist/interplay-css-javascript/index.html',
+            'dist/colorschemes-sublime/index.html': 'dist/colorschemes-sublime/index.html',
+            'dist/airfan/index.html': 'dist/airfan/index.html'
           }
         }
       },
@@ -138,7 +141,8 @@ module.exports = function(grunt) {
             'dist/static/script-id-04.min.js' : 'src/js/script-id-04.js',
             'dist/static/script-id-05.min.js' : 'src/js/script-id-05.js',
             'dist/static/script-id-06.min.js' : 'src/js/script-id-06.js',
-            'dist/static/script-id-07.min.js' : 'src/js/script-id-07.js'
+            'dist/static/script-id-07.min.js' : 'src/js/script-id-07.js',
+            'dist/static/script-id-08.min.js' : 'src/js/script-id-08.js'
           }
         }
       },

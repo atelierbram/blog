@@ -53,7 +53,7 @@ This is what makes it all work: wrapping the text around the shape.
 1. <span id="note-1">Disclaimer: the example has many pullquotes: normally one wouldn’t use this many pullquotes on one page, but this is just in order to show it _not breaking the layout_. One can test this by dragging the browser-window, and maybe also see what happens when removing the `.wrap-module` declaration from the `CSS`.</span>
 1. <span id="note-2">One day we will be able to use [`shape-inside` and CSS Exclusions](http://alistapart.com/article/css-shapes-101#section8) for this, but here and now, the pullquote-text pseudo-element is positioned `absolute` right on top of the `CSS-Shape` itself.</span>
 
-<span class="note">This article was also published on [Codepen](http://codepen.io/atelierbram/blog/css-shapes-in-multi-column-layout)</span>
+<span class="note">This article was also published on [Codepen](http://codepen.io/atelierbram/post/css-shapes-in-multi-column-layout)</span>
 
 <div class="prevnext">
   <h5><a href="#!"></a></h5>

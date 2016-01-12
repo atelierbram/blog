@@ -100,7 +100,7 @@ require `max-height` instead of `height`, but I wanted to be carefull here, avoi
 1. <span id="note-2">One of them declarations: it outputs 10 of those, see also [this Github Gist](https://gist.github.com/atelierbram/a88e3811173bb9d75b40), or this [reduced testcase here on CodePen](http://codepen.io/atelierbram/pen/CBLaw)</span>
 1. <span id="note-3">do it yourself</span>
 
-<span class="note">This article was also published on [Codepen](http://codepen.io/atelierbram/blog/interplay-css-javascript).</span>
+<span class="note">This article was also published on [Codepen](http://codepen.io/atelierbram/post/interplay-css-javascript).</span>
 
 <div class="prevnext">
   <h5><a href="../{{url.post-id--02}}" rel="prev"><i class="icon icon-8 icon-arrow-left"><svg class="shape-icon" viewBox="0 0 8 12"><use xlink:href="#shape-arrow-point" transform="rotate(180,4,6)"></use></svg></i> {{name.post-id--02}}</a></h5>

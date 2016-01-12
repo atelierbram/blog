@@ -96,7 +96,7 @@ Those same variables can be used in another build tool called [Base16 Builder](h
 1. <span id="note-4">The colorwheel, and the color-theory of someone like [Johannes Itten](http://www.worqx.com/color/itten.htm) is, (_if very useable in education; even today,_) superseded by updated (scientifical) theories that bring in [physics](http://physics.info/color/), stating that color is in fact [frequency](http://www.marktaw.com/design/ColorTheorya.html). Although fascinating material, the more recent scientific discoveries are a lot harder to teach in educating art-students I find, but please someone prove me wrong.</span>
 
 
-<span class="note">This article was also published on [Codepen](http://codepen.io/atelierbram/blog/colorscheming)</span>
+<span class="note">This article was also published on [Codepen](http://codepen.io/atelierbram/post/colorscheming)</span>
 
 <div class="prevnext">
   <h5><a href="../{{url.post-id--04}}" rel="prev"><i class="icon icon-8 icon-arrow-left"><svg class="shape-icon" viewBox="0 0 8 12"><use xlink:href="#shape-arrow-point" transform="rotate(180,4,6)"></use></svg></i> {{name.post-id--04}}</a></h5>

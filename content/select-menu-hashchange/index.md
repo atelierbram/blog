@@ -99,7 +99,7 @@ Now also on iOS, we have our current page right in the top of the `select`-menu.
 - [a simplified version with some small Jquery javascript](http://bramdeh.home.xs4all.nl/playground/ui-patterns/sitewide-selectnav/) parked on provider's site.
 - [a Github Gist](https://gist.github.com/atelierbram/18d7489b81dc9acf0747)
 
-<span class="note">This article was also published on [Codepen](http://codepen.io/atelierbram/blog/select-menu-hashchange)</span>
+<span class="note">This article was also published on [Codepen](http://codepen.io/atelierbram/post/select-menu-hashchange)</span>
 
 <div class="prevnext">
   <h5><a href="../{{url.post-id--01}}" rel="prev"><i class="icon icon-8 icon-arrow-left"><svg class="shape-icon" viewBox="0 0 8 12"><use xlink:href="#shape-arrow-point" transform="rotate(180,4,6)"></use></svg></i> {{name.post-id--01}}</a></h5>
