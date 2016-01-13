@@ -105,13 +105,14 @@ module.exports = function(grunt) {
           },
           files: {                                   // Dictionary of files
             'dist/index.html': 'dist/index.html',    // 'destination': 'source'
-            'dist/colorscheming/index.html': 'dist/colorscheming/index.html',
+            'dist/airfan/index.html': 'dist/airfan/index.html',
             'dist/assembling/index.html': 'dist/assembling/index.html',
-            'dist/select-menu-hashchange/index.html': 'dist/select-menu-hashchange/index.html',
-            'dist/css-shapes-in-multi-column-layout/index.html': 'dist/css-shapes-in-multi-column-layout/index.html',
-            'dist/interplay-css-javascript/index.html': 'dist/interplay-css-javascript/index.html',
             'dist/colorschemes-sublime/index.html': 'dist/colorschemes-sublime/index.html',
-            'dist/airfan/index.html': 'dist/airfan/index.html'
+            'dist/colorscheming/index.html': 'dist/colorscheming/index.html',
+            'dist/css-shapes-in-multi-column-layout/index.html': 'dist/css-shapes-in-multi-column-layout/index.html',
+            'dist/differentiate/index.html': 'dist/differentiate/index.html',
+            'dist/interplay-css-javascript/index.html': 'dist/interplay-css-javascript/index.html',
+            'dist/select-menu-hashchange/index.html': 'dist/select-menu-hashchange/index.html'
           }
         }
       },

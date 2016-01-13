@@ -25,7 +25,12 @@ I have this alias in my `.bashrc` for easy access from the terminal.
 </code></pre>
 
 ### Workflow
-A helpful tool [can be this webapp on Heroku](http://tmtheme-editor.herokuapp.com/), but this will only get you so far. What I do is editing template files that come with [Base16-builder](http://github.com/chriskempson/base16-builder/), of which I host a separate version for [DuoTones](https://github.com/atelierbram/syntax-highlighting/tree/master/duotones). After running the `base16` command in the folder with the `base16` executable bash-file, a whole lot of syntax-highlighting themes are generated from the commandline in the `output`-folder, as many as there are template files. Next copy those files over from the `output` folder (from the commandline) to the Packages/Color Scheme - folder. (_Also not to forget removing the `*.cache` files in that same folder_).
+First of all, a visual reference for the colorscheme you are working on is indispensable. Something which works really well in my experience is [these kind of colorscheme labs](http://localhost/~bram/syntax-highlighting/duotones/demo/dark/), which basically is just a webpage containing colorscheme color-tiles (_using sixteen Sass variables for colors_), some code-samples in a few different languages, and Prism being used as a syntax-highlighter. Ones happy with the colorvalues, then those hex-values can be copied over to the Base16-schemes.
+
+![demotiles for DuoTones dark colorscheme](http://atelierbram.github.io/syntax-highlighting/assets/img/svg/duotones-dark_1200x300.svg)
+[demotiles for DuoTones dark colorscheme](http://atelierbram.github.io/syntax-highlighting/duotones/demo/dark)
+
+_Base16?_ A helpful tool [can be this webapp on Heroku](http://tmtheme-editor.herokuapp.com/), but this will only get you so far. What I do is editing template files that come with [Base16-builder](http://github.com/chriskempson/base16-builder/), of which I host a separate version for [DuoTones](https://github.com/atelierbram/syntax-highlighting/tree/master/duotones). After running the `base16` command in the folder with the `base16` executable bash-file, a whole lot of syntax-highlighting themes are generated from the commandline in the `output`-folder, as many as there are template files. Next copy those files over from the `output` folder (from the commandline) to the Packages/Color Scheme - folder. (_Also not to forget removing the `*.cache` files in that same folder_).
 
 ### Helpful Hints
 What you really want when editing, or iterating over an existing colorscheme, is hints for syntax-names which are used by the syntax-highlighting engine. This can be achieved when the command `displayName` is activated, and the function keys `<Ctrl><Shift><P>` are simultaneously pressed, while being with the cursor on a specific tag. This now will show the syntax-name in the left-bottom corner of the Sublime Text app-frame. Which makes me wonder how else one could know that the syntax-name for the “dot” in front of a class-name in `CSS` belongs to the syntax-group `punctuation.definition.entity.css`.
@@ -43,7 +48,7 @@ I have this line `"command": "displayName"` in my `Preferences.sublime-settings`
 }
 </code></pre>
 
-One thing I found out is that you can be more ore less specific with leaving out or adding those suffixes, so `keyword` selects also `keyword.operator`, but `keyword.operator.sass` will override both, which makes sense.
+One thing I found out is that you can be more or less specific with leaving out or adding those suffixes, so `keyword` selects also `keyword.operator`, but `keyword.operator.sass` will override both, which makes sense.
 
 ### Screenshots
 ![screenshot of javaScript file syntax-highlighted with DuoTone Dark colorscheme](http://atelierbram.github.io/syntax-highlighting/assets/img/duotones-dark_sublime_960x640.png)
