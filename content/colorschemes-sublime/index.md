@@ -10,7 +10,7 @@
 
 ## On Editing Colorschemes for Sublime Text
 
-Here are some notes which can be helpful with editing colorschemes for Sublime Text.
+Here are some notes which can be helpful with editing colorschemes for Sublime Text. Somehow I was suprised that, for such a popular text-editor, how scarces the information is that can be found around the interwebs, and in the docs on the subject. Down the bottom of the post one will find links to resources which helped me crack this nut.
 
 On Mac OS X the `colorschemes.tmTheme` files can be found in the following directory from the terminal:
 
@@ -25,7 +25,7 @@ I have this alias in my `.bashrc` for easy access from the terminal.
 </code></pre>
 
 ### Workflow
-First of all, a visual reference for the colorscheme you are working on is indispensable. Something which works really well in my experience is [these kind of colorscheme labs](http://localhost/~bram/syntax-highlighting/duotones/demo/dark/), which basically is just a webpage containing colorscheme color-tiles (_using sixteen Sass variables for colors_), some code-samples in a few different languages, and Prism being used as a syntax-highlighter. Ones happy with the colorvalues, then those hex-values can be copied over to the Base16-schemes.
+First of all, a visual reference for the colorscheme you are working on is indispensable. Something which works really well in my experience is [these kind of colorscheme labs](http://localhost/~bram/syntax-highlighting/duotones/demo/dark/), which basically is just a webpage containing colorscheme color-tiles (_using sixteen Sass variables for colors_), some code-samples in a few different languages, and Prism being used as a syntax-highlighter. In order to make editing the colors less cumbersome, it helps to tweak the values for saturation and lightness in the HSL format. Ones happy with the colorvalues, it's not that difficult to convert them to hex-values, either from DevTools, or some other trustworthy colortool, and then manually copy those hex-values over to the Base16-schemes.
 
 ![demotiles for DuoTones dark colorscheme](http://atelierbram.github.io/syntax-highlighting/assets/img/svg/duotones-dark_1200x300.svg)
 [demotiles for DuoTones dark colorscheme](http://atelierbram.github.io/syntax-highlighting/duotones/demo/dark)
