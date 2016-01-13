@@ -1,6 +1,6 @@
 ---
     title:          On Editing Colorschemes for Sublime Text
-    short-title:    Colorschemes Sublime
+    short-title:    Sublime
     type:           page
     page-id:        id-08
     id:             id-08
