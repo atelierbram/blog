@@ -66,11 +66,10 @@ Screenshot of javaScript file, syntax-highlighted with DuoTone Dark colorscheme.
 - [Demo for Prism on Codepen](http://codepen.io/atelierbram/pen/WrjVyv)
 
 #### Resources
-- [DuoTones Sublime Colorschemes on Github](https://github.com/atelierbram/duotones-sublime-colorschemes)
 - [commands for Sublime](http://www.sublimetext.com/docs/commands)
 - [info on setting for Sublime](https://www.sublimetext.com/docs/3/settings.html)
 - [Original DuoTone Themes for Atom on simurai.com](http://simurai.com/projects/2016/01/01/duotone-themes/)
-
+- [DuoTones Sublime Colorschemes on Github](https://github.com/atelierbram/duotones-sublime-colorschemes)
 
 <span class="note">This article was also published on [Codepen](http://codepen.io/atelierbram/post/colorschemes-sublime/)</span>
 
