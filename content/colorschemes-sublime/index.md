@@ -10,7 +10,9 @@
 
 ## On Editing Colorschemes for Sublime Text
 
-Somewhat suprised to see how scarces the available information is, around the interwebs and in the docs, on the subject of creating colorschemes for Sublime Text, for such a popular text-editor. Here are some notes that may come handy when doing this yourself. Down at the bottom of this post one will find links to other resources.
+<span class="dropcap">S</span>omewhat suprised to see how scarces the available information is, around the interwebs and in the docs, on the subject of creating colorschemes for Sublime Text, for such a popular text-editor. Here are some notes that may come handy when doing this yourself. Down at the bottom of this post one will find links to other resources.
+
+<p class="publication-list__item__meta"><time datetime="2016-01-11">January 2016</time></p>
 
 On Mac OS X the `colorschemes.tmTheme` files can be found in the following directory from the terminal:
 

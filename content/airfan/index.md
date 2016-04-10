@@ -11,6 +11,7 @@
 ## How the Airfan is Going to Replace the Hamburger
 
 <span class="dropcap">I</span>n the heyday of strict modernism, when Xerox PARC [invented the air vent menu](https://vimeo.com/61556918#t=1265s) in the early seventies, it was the doctrine of _“form follows function”_ that ruled the art – and design–world. From architecture to applied graphical user interfaces; nothing could escape [the modernist inquisition](https://www.dukeupress.edu/Modern-Inquisitions).
+<p class="publication-list__item__meta"><time datetime="2015-05-14">May 2015</time></p>
 
 ### Intimidation on the Scene
 In their attempt to stifle free expression and impose only _the most rigorous_ treatment of the formal properties of art _(– shape, color, line, texture and so on)_, upon every artistic expression that dared to raise it’s ugly head on the scene, the modernistic critics went to great lenghts to establish their authority, not only on the artistical output, but went so far as to also intimidate individual artists themselves.

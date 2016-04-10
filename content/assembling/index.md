@@ -11,6 +11,7 @@
 ## Generate a Static Website with Assemble
 
 <span class="dropcap">T</span>he advantages of having a static site-generator integrated in one and the same build-tool _(that you may already be using)_ is huge: [Assemble itself](https://github.com/assemble/assemble) is a Grunt- _(also Yeoman and Node, and soon to be Gulp-)_ plugin. At the same time, Assemble assumes very little about _“what it is that you are trying to do”_; making it fun to use _(if you are also the kind of person that tends to want to make things their own &hellip;)_.
+<p class="publication-list__item__meta"><time datetime="2015-02-18">February 2015</time></p>
 
 For an example with the alpha version of Assemble 6.0, using Gulp ISO Grunt,  go to [this repo](https://github.com/atelierbram/Starter-Assemble-Gulp)
 

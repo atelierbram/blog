@@ -11,6 +11,7 @@
 ## Site-wide Navigation with Select Menu
 
 <span class="dropcap">W</span>hen one is already using jQuery, easiest way is to use Ben Alman's great ["hashchange plugin"](https://github.com/cowboy/jquery-hashchange) to get a select-menu to display the right `option` when using a select-menu for site-wide navigation (_maybe for small screens_), for otherwise, with each page refresh, the `select` will always jump to the top option when there is no `selected` attribute with a value of `selected` set for the corresponding page on that corresponding option. This is how I would do it, probably could me less verbose, but it works:
+<p class="publication-list__item__meta"><time datetime="2014-09-18">September 2014</time></p>
 
 - set an `id` on all the individual option items, something like `<option id="sm-home">` for the homepage `<option id="sm-blog">`  for the blog-page, and so on
 - for the next bit to work, we will have to add the page#target (to the id) to the end of the `url` of the `href`s `option` values, like so `blog/index.html#sm-blog`, or maybe `blog/index.php#sm-blog`
