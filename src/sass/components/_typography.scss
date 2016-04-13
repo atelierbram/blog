@@ -122,6 +122,14 @@ blockquote::after {
 //  font-style: normal;
 //   margin: -40px 0 0 -40%;
 // }
+.read-more:after {
+  content: "\261B";
+  font-size: 2em;
+  color: $base01;
+  display: inline-block;
+  margin-left: .25em;
+}
+ 
 hr,
 pre,
 .note,
