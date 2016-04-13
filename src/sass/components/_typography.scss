@@ -74,7 +74,7 @@ h4 + ol {
 blockquote {
   position: relative;
   padding: .25em .75em .25em 2.25em;
-  margin: 1em 0 2em;
+  margin: 3em 0;
   background-color: transparent;
   color: $base01;
   font-family: AvenirNext-Italic, Avenir-Oblique, AvenirMedium-Oblique, Georgia, serif;
@@ -84,6 +84,7 @@ blockquote {
   }
 
   @include mq($from: tablet) {
+    margin-top: 6em;
     padding-bottom: 6em;
     margin-left: 20%;
   }
@@ -102,7 +103,7 @@ blockquote::after {
     content: "“";
     position: absolute;
     top:0;left:0;
-    margin: -16px 0 0 -30%;
+    margin: -16px 0 0 -35%;
     padding: 0;
     width: 315px;
     height: 225px;
@@ -117,10 +118,10 @@ blockquote::after {
   top: 2.25em;
   float: right;
 }
-.wf-europa-n7-active blockquote::after {
-  font-style: italic;
-  margin: -40px 0 0 -40%;
-}
+// .wf-active blockquote::after {
+//  font-style: normal;
+//   margin: -40px 0 0 -40%;
+// }
 hr,
 pre,
 .note,
@@ -139,7 +140,7 @@ sup span {
 }
 .note {
   float: right;
-  font-size: .875rem;
+  // font-size: .875rem;
   margin: 3em 0 2em;
   padding: 1.5em 1.5em 1.75em;
 }
