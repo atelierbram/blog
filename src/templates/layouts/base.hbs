@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js core no-flexbox" lang="en">
+<html class="no-js core no-flexbox wf-inactive" lang="en">
 <head>
     <meta charset="utf-8">
     <title>{{ title }}</title>
@@ -10,10 +10,8 @@
     {{#is type "page" }}<style>{{> critical-css}}</style>{{/is}}
     <style>{{> btn-menu-svg-bg }}</style>
 
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="index, follow">
-    <link href='//use.typekit.net/' rel='preconnect' crossorigin>
     <link rel="author" href="https://plus.google.com/+BramdeHaan/posts">
     <script>{{> head-detect-js}}</script>
  {{#is type "page" }}<script>{{> load-css-js}} loadCSS( "{{assets}}/prefixed/style.min.css" );</script>{{/is}}
@@ -31,5 +29,7 @@
 {{#is id "id-08" }}<script>{{> script-id-08-js}}</script>{{/is}}
 {{#is type "page" }}<script>{{> insert-svg-js}}</script>{{/is}}
 {{#is type "page" }}<script defer src="{{assets}}/prism-custom.min.js"></script>{{/is}}
+<script>{{> fontfaceobserver-js}}</script>
+<script>var observer = new FontFaceObserver('Brando'); observer.check(null, 5000).then(function () { console.log('Font is available'); document.documentElement.className = document.documentElement.className.replace(/\bwf-inactive\b/g, '') + ' wf-active '; }, function () { console.log('Font is not available after waiting 5 seconds'); });</script>
 </body>
 </html>

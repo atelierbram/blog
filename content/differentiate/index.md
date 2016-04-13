@@ -39,9 +39,5 @@ Check out [this demo at Codepen](http://codepen.io/atelierbram/pen/ZbYrRJ) to se
 
 <div class="prevnext">
   <h5><a href="../{{url.post-id--06}}" rel="prev"><i class="icon icon-8 icon-arrow-left"><svg class="shape-icon" viewBox="0 0 8 12"><use xlink:href="#shape-arrow-point" transform="rotate(180,4,6)"></use></svg></i> {{name.post-id--06}}</a></h5>
-</div>
-
-<div class="prevnext">
-  <h5><a href="../{{url.post-id--06}}" rel="prev"><i class="icon icon-8 icon-arrow-left"><svg class="shape-icon" viewBox="0 0 8 12"><use xlink:href="#shape-arrow-point" transform="rotate(180,4,6)"></use></svg></i> {{name.post-id--06}}</a></h5>
   <h5><a href="../{{url.post-id--08}}" rel="next">{{name.post-id--08}}<i class="icon icon-8 icon-arrow-right"><svg class="shape-icon" viewBox="0 0 8 12"><use xlink:href="#shape-arrow-point"></use></svg></i></a></h5>
 </div>

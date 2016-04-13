@@ -1,6 +1,7 @@
 .publication-list__item__meta {
   font-size: 1rem;
   font-size: .875em;
+  line-height: 1.5;
   text-align: center;
   z-index: 1;
   position: relative;
@@ -22,9 +23,9 @@
   border-top: 1px solid adjust-color($base05,$lightness:15%);
   margin-top: .78em;
 }
-.wf-poplarstd-n4-active .publication-list__item__meta:after {
-  margin-top: .8em;
-}
+// .wf-active .publication-list__item__meta:after {
+//   margin-top: .8em;
+// }
 time {
   background-color: #fff;
   padding: 0 1em;

@@ -83,6 +83,7 @@ module.exports = function(grunt) {
           'src/templates/partials/homeheadstyles.hbs'  : 'dist/static/prefixed/home.min.css',
           'src/templates/partials/head-detect-js.hbs'  : 'dist/static/head-detect.min.js',
           'src/templates/partials/insert-svg-js.hbs'   : 'dist/static/insert-svg.min.js',
+          'src/templates/partials/fontfaceobserver-js.hbs' : 'src/js/fontfaceobserver.js',
           'src/templates/partials/script-id-01-js.hbs' : 'dist/static/script-id-01.min.js',
           'src/templates/partials/script-id-02-js.hbs' : 'dist/static/script-id-02.min.js',
           'src/templates/partials/script-id-03-js.hbs' : 'dist/static/script-id-03.min.js',
@@ -135,6 +136,7 @@ module.exports = function(grunt) {
           files: {
             'dist/static/prism-custom.min.js' : 'dist/static/prism-custom.min.js',
             'dist/static/insert-svg.min.js'   : 'dist/static/insert-svg.min.js',
+            // 'dist/static/fontfaceoberserver.js' : 'dist/static/fontfaceoberserver.min.js',
             'dist/static/head-detect.min.js'  : 'src/js/head-detect.js',
             'dist/static/script-id-01.min.js' : 'src/js/script-id-01.js',
             'dist/static/script-id-02.min.js' : 'src/js/script-id-02.js',
