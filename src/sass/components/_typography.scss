@@ -1,6 +1,6 @@
 .page p:first-of-type,
 .page p:first-of-type em {
-  font-weight: 400;
+  font-weight: normal;
 }
 .page p:first-of-type {
   @include mq($from: tablet) {
