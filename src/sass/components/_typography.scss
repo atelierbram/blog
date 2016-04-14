@@ -8,13 +8,13 @@
   }
 }
 .page pre + h3 {
-  margin-top: 2rem;
+  margin-top: 3rem;
 }
-.page blockquote + h3 {
-  @include mq($from: tablet) {
-    margin-top: -2rem;
-  }
-}
+// .page blockquote + h3 {
+//   @include mq($from: tablet) {
+//     margin-top: -2rem;
+//   }
+// }
 .page h3 + p {
   margin-top: 1px;
   border-top: 1px solid $base01;
