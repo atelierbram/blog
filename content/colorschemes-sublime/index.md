@@ -77,5 +77,5 @@ Screenshot of javaScript file, syntax-highlighted with DuoTone Dark colorscheme.
 
 <div class="prevnext">
   <h5><a href="../{{url.post-id--07}}" rel="prev"><i class="icon icon-8 icon-arrow-left"><svg class="shape-icon" viewBox="0 0 8 12"><use xlink:href="#shape-arrow-point" transform="rotate(180,4,6)"></use></svg></i> {{name.post-id--07}}</a></h5>
+  <h5><a href="../{{url.post-id--09}}" rel="next">{{name.post-id--09}} <i class="icon icon-8 icon-arrow-right"><svg class="shape-icon" viewBox="0 0 8 12"><use xlink:href="#shape-arrow-point"></use></svg></i></a></h5>
 </div>
-
