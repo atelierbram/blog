@@ -1,6 +1,6 @@
 ---
     title:          Switching Color Modes in SVG
-    short-title:    Switching Color Modes
+    short-title:    Switching Modes
     type:           page
     page-id:        id-09
     id:             id-09
@@ -32,12 +32,15 @@ In using the `currentColor` keyword in CSS combined with `opacity` for logos we 
   points="107.644,470.877 74.633,100.62 437.367,100.62 404.321,470.819 255.778,512"/>
 ```
 
-The flexibility of the CSS keyword `currentColor` can be used here to our advantage. `CurrentColor` picks up whatever value for color is set on – or is inherited by – the element in CSS, and behaves in that way like a variable. Whenever the color of the monochrome images needs to be changed, this can be done by editing just one value in the CSS.
+The flexibility of the CSS keyword `currentColor` can be used here to our advantage; `currentColor` picks up whatever value for color is set on – or is inherited by – the element in CSS, and behaves in that way like a variable. Whenever the color of the monochrome images needs to be changed, this can be done by editing just one value in the CSS.
 
 <p data-height="750" data-theme-id="71" data-slug-hash="xVXWWR" data-default-tab="result" data-user="atelierbram" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/atelierbram/pen/xVXWWR/">Monochrome SVG Logo Gallery</a> by Bram de Haan (<a href="http://codepen.io/atelierbram">@atelierbram</a>) on <a href="http://codepen.io">CodePen</a>.</p>
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
 How this color-mode switching works in the demo: the default mode is monochrome, and the values for color are stored in data-attributes.
+
+### DIY tinkering
+One trick to get the right values for opacity is to have another instance of your SVG image temporalily on the page, or a copy of the whole page, but now with using CSS-filter grayscale, like `-webkit-filter: grayscale(1);`. When setting a `background-color: hsl(0,0%,0%)` on the page and moving the last value for lightness up and down with the arrow keys of your keyboard within DevTools, this will give you the right number, when you subtract it from 100.
 
 #### Notes
 1. <span id="note-1">It seems `data-*` attributes on SVG elements are officially supported [in the current draft of SVG2](https://github.com/w3c/svgwg/commit/1cb4ee9e165b3d777d33828da8fa757e67d019ff). The current spec allows the xml methods of custom name-spaces, but these are [hard to handle](https://www.youtube.com/watch?v=1ZxN9iQM7OY) and a pain to use for targeting elements with javaScript. As far as I know all major browsers tolerate data-attributes in SVG.</span>
