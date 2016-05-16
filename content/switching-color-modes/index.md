@@ -37,7 +37,7 @@ The flexibility of the CSS keyword `currentColor` can be used here to our advant
 <p data-height="750" data-theme-id="71" data-slug-hash="xVXWWR" data-default-tab="result" data-user="atelierbram" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/atelierbram/pen/xVXWWR/">Monochrome SVG Logo Gallery</a> by Bram de Haan (<a href="http://codepen.io/atelierbram">@atelierbram</a>) on <a href="http://codepen.io">CodePen</a>.</p>
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
-How this color-mode switching works in the demo: the default mode is monochrome, and the values for color are stored in data-attributes.
+How this color-mode switching works in the demo: the default mode is monochrome, and the values for `fill` are stored in custom data-attributes.
 
 ### DIY tinkering
 One trick to get the right values for opacity is to have another instance of your SVG image temporarily on the page, or a copy of the whole page, but now with using CSS-filter grayscale, like `-webkit-filter: grayscale(1);`. When setting a `background-color: hsl(0,0%,0%)` on the page and moving the last value for lightness up and down with the arrow keys of your keyboard within DevTools, in comparison to the grayness of the SVG-image, this will give you the right number, when you subtract it from 100.
