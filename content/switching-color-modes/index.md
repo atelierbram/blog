@@ -19,7 +19,7 @@ With CSS-filters one is limited to the grayscale- or sepia filters, which will b
 > Graphic designers are of a separate species; they have ink flowing through their veins
 
 ### Alternative approach with SVG
-In this article I like to explore a different workflow, and suggest an alternative approach. It won’t be harder to  accomplish but it will be more work, and harder to maintain. But it can be better suitable for let’s say a logo gallery for a graphical designer on a portpolio website, where demands on (the quality and appearance of) the images will be of more outspoken nature, because graphic designers are of a separate species; they have ink flowing through their veins.
+In this article I like to explore a different workflow, and suggest an alternative approach. It won’t be harder to  accomplish but it will be more work, and harder to maintain. But it can be better suitable for let’s say a logo gallery for a graphic designer on a portpolio website, where demands on (the quality and appearance of) the images will be of more outspoken nature, because graphic designers are of a separate species; they have ink flowing through their veins.
 
 In using the `currentColor` keyword in CSS combined with `opacity` for logos we can get monochrome images in just one color but keep the possibility to have gradations in tonality, like it is done [at Logomoon](http://logomono.com/). `Data-attributes`<sup><a href="#note-1" class="sup-link" id="supLink1">1</a></sup> (for values of colors and opacity on SVG shapes) combined with javaScript can make switching between the monochrome-and full-color mode happen by the click of a button.
 
