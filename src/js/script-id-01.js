@@ -19,7 +19,7 @@ supLink2.appendChild(clonedNote2);
 clonedNote1.id = "clonedNode1";
 clonedNote2.id = "clonedNode2";
 
-hTitle.classList.add("has-moved-h2","fs-desktop-vw-7_25");
+hTitle.classList.add("has-moved-h2","fs-desktop-vw-5_75");
 
   innerWrap.insertBefore(hTitle, page);
 }

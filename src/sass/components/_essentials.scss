@@ -151,9 +151,14 @@ h2,
 h3 {
   font-family: AvenirNextCondensed-Regular, Corbel, "Trebuchet Ms", "Segoe Ui", "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", sans-serif;
 }
-h3 {
+
+.content-home h3 {
   font-size: 1.75rem;
 }
+.page h3 {
+  font-size: 2em;
+}
+
 img,
 svg {
   border: 0;

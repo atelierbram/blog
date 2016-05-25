@@ -33,7 +33,7 @@ clonedNote2.id = "clonedNode2";
 clonedNote3.id = "clonedNode3";
 clonedNote4.id = "clonedNode4";
 
-hTitle.classList.add("has-moved-h2","fs-desktop-vw-6_75","fs-3_75");
+hTitle.classList.add("has-moved-h2","fs-desktop-vw-8","fs-3_75");
 
   innerWrap.insertBefore(hTitle, page);
 }

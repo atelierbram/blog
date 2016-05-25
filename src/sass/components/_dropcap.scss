@@ -1,12 +1,14 @@
 // Dropcap
 .dropcap {
-  font-family: Impact, AvenirNextCondensed-Heavy, Charcoal, "Arial Black", sans-serif;
+  // font-family: Impact, AvenirNextCondensed-Heavy, Charcoal, "Arial Black", sans-serif;
   color: $base01;
   margin: -5px 4px 0.5rem 1px;
   padding: 0;
   float: left;
-  font-size: 142px;
-  line-height: 1;
+  // font-size: 142px;
+  // line-height: 1;
+  font-size: 172px;
+  line-height: .7;
   height: 127px;
   -webkit-font-smoothing: antialiased;
 }

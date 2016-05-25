@@ -1,5 +1,5 @@
-.has-moved-h2 {
-  font-family: $wf-header !important;
+.wf-active .has-moved-h2 {
+  font-family: $wf-subheader !important;
 }
 header,
 footer {
@@ -31,6 +31,6 @@ h2 {
   font-size: 2.25rem;
   font-family: AvenirNextCondensed-Regular, Corbel, "Trebuchet Ms", "Segoe Ui", "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", sans-serif;
   font-weight: normal;
-  color: $yellow-orange;
+  color: $red-magenta;
 }
 

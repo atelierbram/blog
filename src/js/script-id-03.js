@@ -25,7 +25,7 @@ clonedNote1.id = "clonedNode1";
 clonedNote2.id = "clonedNode2";
 clonedNote3.id = "clonedNode3";
 
-hTitle.classList.add("has-moved-h2","fs-desktop-vw-5_25");
+hTitle.classList.add("has-moved-h2","fs-desktop-vw-8");
 
   innerWrap.insertBefore(hTitle, page);
 }
