@@ -127,8 +127,8 @@ ol code:after {
   letter-spacing: -0.2em;
 }
 
-b, strong, thead th, button {
-  font-family: AvenirNextCondensed-DemiBold, Corbel, "Lucida Grande","Segoe Ui","Trebuchet Ms", Verdana, sans-serif;
+h2, h3, b, strong, thead th, button {
+  font-family: AvenirNext-DemiBold, Corbel, "Lucida Grande","Segoe Ui","Trebuchet Ms", Verdana, sans-serif;
 }
 //.wf-europa-n7-active thead th,
 //.wf-europa-n7-active button,
@@ -146,10 +146,6 @@ i,em {
 p {
   margin: 0;
   padding: .5em 0;
-}
-h2,
-h3 {
-  font-family: AvenirNextCondensed-Regular, Corbel, "Trebuchet Ms", "Segoe Ui", "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", sans-serif;
 }
 
 .content-home h3 {
