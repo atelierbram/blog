@@ -9,9 +9,9 @@ header {
   // background-color: adjust-color($base07,$lightness: 1.5%);
   background-color: $base07;
   min-height: 4rem;
-  @include mq($from: tablet) {
-    border-bottom: 1px solid $base06;
-  }
+  // @include mq($from: tablet) {
+  //   border-bottom: 1px solid $base06;
+  // }
 }
 header h1 {
   font-size: 1.75rem;
