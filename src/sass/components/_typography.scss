@@ -132,26 +132,31 @@ blockquote::after {
 
 hr,
 pre,
-.note,
 sup span {
   box-shadow: $box-shadow;
 }
 pre,
-.note,
 sup span {
   border-radius: $rounded;
 }
-.note,
 sup span {
   background-color: $light_yellow00;
   border: 1px solid $light_yellow;
 }
+
 .note {
+  background-color: $light_yellow02;
   float: right;
-  // font-size: .875rem;
+  font-size: .875em;
   margin: 3em 0 2em;
   padding: 1.5em 1.5em 1.75em;
 }
+
+.is-loaded .note {
+  border: 13px solid transparent;
+  border-image: url(http://atelierbram.github.io/frame-patterns/assets/svg/stamp_40x40_border-image.svg) 13.33333 round round;
+}
+
 .prevnext {
   clear: both;
   margin-bottom: 2em;

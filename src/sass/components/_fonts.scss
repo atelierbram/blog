@@ -42,14 +42,16 @@
 .wf-active h3,
 .wf-active h5,
 .wf-active .nav ul,
-.wf-active .prevnext h5 {
+.wf-active .prevnext h5,
+.wf-active footer small {
   font-family: $wf-subheader;
   font-weight: normal;
 }
 
 .wf-active [id="resources"] ~ ul li,
+.wf-active [id="demo"] ~ ul li,
 .wf-active .note,
-.wf-active footer small {
+.wf-active footer small a:nth-of-type(2) {
   font-family: $wf-sans-regular;
   font-weight: normal;
 }
