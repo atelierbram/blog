@@ -37,21 +37,23 @@
 }
 
 .wf-active .publication-list__item__title,
-.wf-active h4 {
-  font-family: $wf-subheader;
-  font-weight: normal;
-}
-
+.wf-active h4,
 .wf-active .read-more,
 .wf-active h3,
 .wf-active h5,
 .wf-active .nav ul,
-.wf-active .note,
-.wf-active footer small {
-  font-family: $wf-subheader-light;
+.wf-active .prevnext h5 {
+  font-family: $wf-subheader;
   font-weight: normal;
 }
 
-// .wf-active .dropcap {
-//  font-family: $wf-heavy;
-// }
+.wf-active [id="resources"] ~ ul li,
+.wf-active .note,
+.wf-active footer small {
+  font-family: $wf-sans-regular;
+  font-weight: normal;
+}
+
+.wf-active .dropcap {
+ font-family: $wf-heavy;
+}

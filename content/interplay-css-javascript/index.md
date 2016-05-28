@@ -104,6 +104,6 @@ require `max-height` instead of `height`, but I wanted to be carefull here, avoi
 <span class="note">This article was also published on [Codepen](http://codepen.io/atelierbram/post/interplay-css-javascript).</span>
 
 <div class="prevnext">
-  <h5><a href="../{{url.post-id--02}}" rel="prev"><i class="icon icon-8 icon-arrow-left"><svg class="shape-icon" viewBox="0 0 8 12"><use xlink:href="#shape-arrow-point" transform="rotate(180,4,6)"></use></svg></i> {{name.post-id--02}}</a></h5>
-  <h5><a href="../{{url.post-id--04}}" rel="next">{{name.post-id--04}} <i class="icon icon-8 icon-arrow-right"><svg class="shape-icon" viewBox="0 0 8 12"><use xlink:href="#shape-arrow-point"></use></svg></i></a></h5>
+  <h5><a href="../{{url.post-id--02}}" rel="prev"><i class="icon icon-8 icon-arrow-left"><svg class="shape-icon" viewBox="0 0 8 12" width="8" height="12"><use xlink:href="#shape-arrow-point" transform="rotate(180,4,6)"></use></svg></i> {{name.post-id--02}}</a></h5>
+  <h5><a href="../{{url.post-id--04}}" rel="next">{{name.post-id--04}} <i class="icon icon-8 icon-arrow-right"><svg class="shape-icon" viewBox="0 0 8 12" width="8" height="12"><use xlink:href="#shape-arrow-point"></use></svg></i></a></h5>
 </div>

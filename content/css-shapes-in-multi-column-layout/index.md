@@ -58,5 +58,5 @@ This is what makes it all work: wrapping the text around the shape.
 
 <div class="prevnext">
   <h5><a href="#!"></a></h5>
-  <h5><a href="../{{url.post-id--02}}" rel="next">{{name.post-id--02}} <i class="icon icon-8 icon-arrow-right"><svg class="shape-icon" viewBox="0 0 8 12"><use xlink:href="#shape-arrow-point"></use></svg></i></a></h5>
+  <h5><a href="../{{url.post-id--02}}" rel="next">{{name.post-id--02}} <i class="icon icon-8 icon-arrow-right"><svg class="shape-icon" viewBox="0 0 8 12" width="8" height="12"><use xlink:href="#shape-arrow-point"></use></svg></i></a></h5>
 </div>

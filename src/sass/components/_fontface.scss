@@ -1,18 +1,18 @@
+// @font-face {
+//     font-family: 'SonrisaThin';
+//     src: url('http://atelierbram.github.io/type/sonrisa-thin/sonrisa-thin-trial-webfont.woff2') format('woff2'),
+//          url('http://atelierbram.github.io/type/sonrisa-thin/sonrisa-thin-trial-webfont.woff') format('woff'),
+//          url('http://atelierbram.github.io/type/sonrisa-thin/sonrisa-thin-trial-webfont.ttf') format('truetype');
+//     font-weight: normal;
+//     font-style: normal;
+// }
+//
 @font-face {
-    font-family: 'SonrisaThin';
-    src: url('http://atelierbram.github.io/type/sonrisa-thin/sonrisa-thin-trial-webfont.woff2') format('woff2'),
-         url('http://atelierbram.github.io/type/sonrisa-thin/sonrisa-thin-trial-webfont.woff') format('woff'),
-         url('http://atelierbram.github.io/type/sonrisa-thin/sonrisa-thin-trial-webfont.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'phattphreddyregular';
-    src: url('http://atelierbram.github.io/type/PhatPhreddy/phatp___.woff2') format('woff2'),
-         url('http://atelierbram.github.io/type/PhatPhreddy/phatp___.woff') format('woff'),
-         url('http://atelierbram.github.io/type/PhatPhreddy/phatp___.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "brandosans-regular-v100";
+  src: url('http://atelierbram.github.io/type/Brando-Sans/brandosans-regular-v100.woff2') format('woff2'),
+       url('http://atelierbram.github.io/type/Brando-Sans/brandosans-regular-v100.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
 @font-face {
   font-family: "brandosans-semibold-v100";
@@ -32,6 +32,13 @@
   font-family: "Brando Italic";
   src: url('http://atelierbram.github.io/type/Brando/brando-regularitalic.woff2') format('woff2'),
        url('http://atelierbram.github.io/type/Brando/brando-regularitalic.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Brando SemiBold";
+  src: url('http://atelierbram.github.io/type/Brando/brando-semibold.woff2') format('woff2'),
+       url('http://atelierbram.github.io/type/Brando/brando-semibold.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
