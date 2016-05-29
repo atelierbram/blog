@@ -55,5 +55,5 @@ One trick to get the right values for opacity is to have another instance of you
 <span class="note">This article was also published on [Codepen](http://codepen.io/atelierbram/post/switching-color-modes)</span>
 
 <div class="prevnext">
-  <h5><a href="../{{url.post-id--08}}" rel="prev"><i class="icon icon-8 icon-arrow-left"><svg class="shape-icon" viewBox="0 0 8 12" width="10" height="15"><use xlink:href="#shape-arrow-point" transform="rotate(180,4,6)"></use></svg></i> {{name.post-id--08}}</a></h5>
+  <h5><a href="../{{url.post-id--08}}" rel="prev"><i class="icon icon-8 icon-arrow-left"><svg class="shape-icon" viewBox="0 0 8 12" width="10" height="15"><use xlink:href="#shape-arrow-point-left"></use></svg></i> {{name.post-id--08}}</a></h5>
 </div>

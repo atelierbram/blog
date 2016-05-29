@@ -46,6 +46,6 @@ So alternatively, put a grate on top for safety.
 <span class="note">This article was also published on [Codepen](http://codepen.io/atelierbram/post/airfan)</span>
 
 <div class="prevnext">
-  <h5><a href="../{{url.post-id--05}}" rel="prev"><i class="icon icon-8 icon-arrow-left"><svg class="shape-icon" viewBox="0 0 8 12" width="10" height="15"><use xlink:href="#shape-arrow-point" transform="rotate(180,4,6)"></use></svg></i> {{name.post-id--05}}</a></h5>
-  <h5><a href="../{{url.post-id--07}}" rel="next">{{name.post-id--07}}<i class="icon icon-8 icon-arrow-right"><svg class="shape-icon" viewBox="0 0 8 12" width="10" height="15"><use xlink:href="#shape-arrow-point"></use></svg></i></a></h5>
+  <h5><a href="../{{url.post-id--05}}" rel="prev"><i class="icon icon-8 icon-arrow-left"><svg class="shape-icon" viewBox="0 0 8 12" width="10" height="15"><use xlink:href="#shape-arrow-point-left"></use></svg></i> {{name.post-id--05}}</a></h5>
+  <h5><a href="../{{url.post-id--07}}" rel="next">{{name.post-id--07}}<i class="icon icon-8 icon-arrow-right"><svg class="shape-icon" viewBox="0 0 8 12" width="10" height="15"><use xlink:href="#shape-arrow-point-right"></use></svg></i></a></h5>
 </div>
