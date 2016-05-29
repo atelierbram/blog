@@ -23,7 +23,7 @@ body {
   line-height: 1.5;
   font-family: AvenirNext-Regular, Corbel, "Segoe Ui", "Lucida Grande", "Lucida Unicode", "Trebuchet Ms", Verdana, "DejaVu Sans", "Bitstream Vera Sans","Liberation Sans", sans-serif;
   background: inherit;
-  color: $base00;
+  color: adjust-color($dark01, $lightness: -9%);
   box-sizing: border-box;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: subpixel-antialiased !important;
