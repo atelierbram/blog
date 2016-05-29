@@ -33,8 +33,8 @@
   // position: fixed;
   // top: auto; right: 0; left: 0;
   // z-index: 1;
-  border-bottom: 1px solid $light03;
-  box-shadow: 0 6px 12px rgba(black,.175);
+  // border-bottom: 1px solid $light03;
+  box-shadow: inset 0 6px 12px rgba($dark01,.175);
   // margin-top: -1em;
 }
 // .has-nav-active {

@@ -56,20 +56,15 @@ h4 + ol {
   max-width: 36em;
 }
 .page ul li::before {
-  content: "";
-  position: absolute;
-  top:.665em;left:0;
-  padding: 1px;
-  height: 1px;
-  width: 1px;
-  background-color: $green;
-  border: 1px solid $dark_green06;
-  border-radius: 50%;
+  content: " \B7"; // middot in unicode -> &middot;
+  font-size: 1.5em;
+  line-height: 0;
   display: inline-block;
-  line-height: 1;
-}
-.wf-europa-n4-active .page ul li::before {
-  top: .8em;
+  vertical-align: middle;
+  color: $dark_cyan-green;
+  padding-right: 3px;
+  position: relative;
+  top: -1px;
 }
 blockquote {
   position: relative;
@@ -225,8 +220,8 @@ sup span {
 //   border-left-color: $red;
 // }
 .icon-8 {
-  width: 8px;
-  height: 12px;
+  width: 10px;
+  height: 15px;
   top: -1px;
   vertical-align: top;
 }
