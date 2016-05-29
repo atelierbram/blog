@@ -23,6 +23,8 @@ In this article I like to explore a different workflow, and suggest an alternati
 
 In using the `currentColor` keyword in CSS combined with `opacity` for logos we can get monochrome images in just one color but keep the possibility to have gradations in tonality, like it is done [at Logomoon](http://logomono.com/). `Data-attributes`<sup><a href="#note-1" class="sup-link" id="supLink1">1</a></sup> (for values of colors and opacity on SVG shapes) combined with javaScript can make switching between the monochrome-and full-color mode happen by the click of a button.
 
+The flexibility of the CSS keyword `currentColor` can be used here to our advantage; `currentColor` picks up whatever value for color is set on – or is inherited by – the element in CSS, and behaves in that way like a variable. Whenever the color of the monochrome images needs to be changed, this can be done by editing just one value in the CSS.
+
 ```markup
 <polygon
   opacity="0.56"
@@ -31,8 +33,6 @@ In using the `currentColor` keyword in CSS combined with `opacity` for logos we 
   data-opacity="0.56"
   points="107.644,470.877 74.633,100.62 437.367,100.62 404.321,470.819 255.778,512"/>
 ```
-
-The flexibility of the CSS keyword `currentColor` can be used here to our advantage; `currentColor` picks up whatever value for color is set on – or is inherited by – the element in CSS, and behaves in that way like a variable. Whenever the color of the monochrome images needs to be changed, this can be done by editing just one value in the CSS.
 
 <p data-height="750" data-theme-id="71" data-slug-hash="xVXWWR" data-default-tab="result" data-user="atelierbram" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/atelierbram/pen/xVXWWR/">Monochrome SVG Logo Gallery</a> by Bram de Haan (<a href="http://codepen.io/atelierbram">@atelierbram</a>) on <a href="http://codepen.io">CodePen</a>.</p>
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
