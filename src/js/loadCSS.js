@@ -1,4 +1,4 @@
-/*!
+/*
 loadCSS: load a CSS file asynchronously.
 [c]2014 @scottjehl, Filament Group, Inc.
 Licensed MIT

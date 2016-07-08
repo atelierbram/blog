@@ -92,7 +92,8 @@ module.exports = function(grunt) {
           'src/templates/partials/script-id-06-js.hbs' : 'dist/static/script-id-06.min.js',
           'src/templates/partials/script-id-07-js.hbs' : 'dist/static/script-id-07.min.js',
           'src/templates/partials/script-id-08-js.hbs' : 'dist/static/script-id-08.min.js',
-          'src/templates/partials/script-id-09-js.hbs' : 'dist/static/script-id-09.min.js'
+          'src/templates/partials/script-id-09-js.hbs' : 'dist/static/script-id-09.min.js',
+          'src/templates/partials/script-id-10-js.hbs' : 'dist/static/script-id-10.min.js'
           },
           flatten: true,
           filter: 'isFile',
@@ -115,7 +116,8 @@ module.exports = function(grunt) {
             'dist/differentiate/index.html': 'dist/differentiate/index.html',
             'dist/interplay-css-javascript/index.html': 'dist/interplay-css-javascript/index.html',
             'dist/select-menu-hashchange/index.html': 'dist/select-menu-hashchange/index.html',
-            'dist/switching-color-modes/index.html': 'dist/switching-color-modes/index.html'
+            'dist/switching-color-modes/index.html': 'dist/switching-color-modes/index.html',
+            'dist/alpha-transparency-in-hex/index.html': 'dist/alpha-transparency-in-hex/index.html'
           }
         }
       },
@@ -148,7 +150,8 @@ module.exports = function(grunt) {
             'dist/static/script-id-06.min.js' : 'src/js/script-id-06.js',
             'dist/static/script-id-07.min.js' : 'src/js/script-id-07.js',
             'dist/static/script-id-08.min.js' : 'src/js/script-id-08.js',
-            'dist/static/script-id-09.min.js' : 'src/js/script-id-09.js'
+            'dist/static/script-id-09.min.js' : 'src/js/script-id-09.js',
+            'dist/static/script-id-10.min.js' : 'src/js/script-id-10.js'
           }
         }
       },

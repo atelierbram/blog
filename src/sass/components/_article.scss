@@ -30,6 +30,9 @@ li p {
 .fs-3 {
     font-size: 3rem;
 }
+.fs-3_5 {
+    font-size: 3.5rem;
+}
 .fs-3_75 {
     font-size: 3.75rem;
 }
@@ -97,6 +100,9 @@ sup span {
   .fs-desktop-vw-9 {
     font-size: 9vw;
   }
+  .fs-desktop-vw-9_5 {
+    font-size: 9.5vw;
+  }
   .fs-desktop-vw-10 {
     font-size: 10vw;
   }
@@ -136,3 +142,19 @@ sup span {
   // border-color: $base06 $light03 $base05 $base05;
   margin: 2em 0 3em;
 }
+
+.container-media video {
+  border: 1px solid $base06;
+  border-radius: 10px;
+  box-shadow: 4px 7px 12px rgba($base00,.35);
+  padding: .5em;
+}
+//
+// .container-media-square {
+//   padding-bottom: 100%;
+// }
+//
+// .container-media video {
+//   position: absolute;
+//   top:0;right:0;bottom:0;left:0;
+// }
