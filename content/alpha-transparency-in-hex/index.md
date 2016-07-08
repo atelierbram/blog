@@ -24,7 +24,7 @@ Now HEXA doesn’t have the most intuitive syntax, [HSLA](https://css-tricks.com
 </div>
 
 ### Use case in color templating
-So what could use cases for HEXA be? Maybe easier color manipulation in javascipt for some, but also templating. Consider this code snippet in a template for Prism syntax-highlighting in [Base16 Builder](https://github.com/base16-builder/base16-builder/):
+So what could use cases for HEXA be? Maybe easier color manipulation in javaScript for some, but also templating. Consider this code snippet in a template for Prism syntax-highlighting in [Base16 Builder](https://github.com/base16-builder/base16-builder/):
 
 ```css
 .line-highlight {
