@@ -49,8 +49,10 @@ To see if your browser supports alpha transparency in 8 digits hex notation: <sp
 #### Resources
 - [the spec](https://drafts.csswg.org/css-color/#hex-notation)
 - [demo on github by Google Chrome](https://googlechrome.github.io/samples/css-alpha-channel/)
-- [on MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value#rgba) 
+- [on MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value#rgba)
 - [in Firefox DevTools](https://twitter.com/patrickbrosset/status/732859240147243008)
+- [Alpha Transparency in CSS](http://thenewcode.com/1081/CSS-alpha#hexalpha)
+- [Using Hexadecimal Colors in CSS](http://thenewcode.com/1108/Using-Hexadecimal-Colors-in-CSS)
 
 <span class="note">This article was also published on [Codepen](http://codepen.io/atelierbram/post/alpha-transparency-in-hex)</span>
 
