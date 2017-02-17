@@ -13,6 +13,7 @@ p,
     max-width: 34em;
   }
 }
+
 li p {
   @include mq($from: tablet) {
     font-size: 1rem;

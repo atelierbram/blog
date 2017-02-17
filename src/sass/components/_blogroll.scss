@@ -43,6 +43,7 @@ header h1 a {
   max-width: 30em;
   flex-basis: 30em;
   margin: 0;
+  padding: 1em;
   @media (min-width: 768px) {
     flex: 1 1 30em;
   }
@@ -127,7 +128,7 @@ h3 a:hover {
 }
 .read-more:hover .icon-arrow-right {
   @include mq($from: tablet) {
-    margin-left: 64%;
+    margin-left: 60%;
   }
 }
 
