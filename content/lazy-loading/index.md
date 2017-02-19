@@ -75,7 +75,10 @@ But instead of the 1px square transparent PNG, we can use an (url encoded) inlin
 
 Note the inline style-tag on the `text` attribute, with values for basic typographic properties applied. The `x` and `y` attributes are for the positioning of the text.
 
-Go see [the demo](https://atelierbram.github.io/lazy-loading-logos/) on Github.
+Go see the demo:
+
+- [here on Github](https://atelierbram.github.io/lazy-loading-logos/)
+- [on Codepen](http://codepen.io/atelierbram/pen/YNoNZw)
 
 #### Resources
 
