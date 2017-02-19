@@ -25,6 +25,26 @@ The original technique would use a 1px square transparent url-encoded inline ima
       class="logo" width="456" height="60">
 ```
 
+We will need an `addLoadEvent` function:
+
+```javascript
+/*
+ * http://blog.simonwillison.net/post/57956760515/addloadevent
+ * http://www.sitepoint.com/closures-and-executing-javascript-on-page-load/
+ */
+function addLoadEvent(func) {
+  var oldonload = window.onload;
+  if (typeof window.onload != 'function') {
+    window.onload = func;
+  } else {
+    window.onload = function() {
+      oldonload();
+      func();
+    }
+  }
+}
+```
+
 The javaScript function will look for elements in the <abbr title="Document Object Model">DOM</abbr> with the `data-src` attribute, and replace the value for the `src` attribute with the value stored in the `data-src` attribute on that same `img` element.
 
 ```javascript
@@ -59,10 +79,11 @@ Go see [the demo](https://atelierbram.github.io/lazy-loading-logos/) on Github.
 
 #### Resources
 
+- [addLoadEvent](http://blog.simonwillison.net/post/57956760515/addloadevent)
+- [closures-and-executing-javascript-on-page-load](http://www.sitepoint.com/closures-and-executing-javascript-on-page-load/)
 - [Probaly Don’t Base64 SVG](https://css-tricks.com/probably-dont-base64-svg/)
 - [Optimizing SVGs in data URIs](https://codepen.io/tigt/post/optimizing-svgs-in-data-uris)
 - [Create a 1px url encoded PNG](http://png-pixel.com/)
-
 
 <span class="note">This article was also published on [Codepen](http://codepen.io/atelierbram/post/lazy-loading)</span>
 
