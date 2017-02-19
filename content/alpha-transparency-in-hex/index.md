@@ -12,7 +12,7 @@
 
 <span class="dropcap">M</span>aybe early days, but coming to a browser near you some day: alpha transparency in 8 digits hex notation; currently supported in Chrome Canary and Firefox Nightly. Some thoughts here on how and why this could be useful.
 
-<p class="publication-list__item__meta"><time datetime="2016-15-05">July 2016</time></p>
+<p class="publication-list__item__meta"><time datetime="2016-15-07">July 2016</time></p>
 
 Now HEXA doesn’t have the most intuitive syntax, [HSLA](https://css-tricks.com/yay-for-hsla/) has, and the alpha transparency isn’t making live easier. But we have tools for this build right into the browser: you can check this out in Chrome Canary or in Firefox Nightly DevTools:
 <div class="container-media container-media-square">
@@ -58,4 +58,5 @@ To see if your browser supports alpha transparency in 8 digits hex notation: <sp
 
 <div class="prevnext">
   <h5><a href="../{{url.post-id--09}}" rel="prev"><i class="icon icon-8 icon-arrow-left"><svg class="shape-icon" viewBox="0 0 8 12" width="10" height="15"><use xlink:href="#shape-arrow-point-left"></use></svg></i> {{name.post-id--09}}</a></h5>
+<h5><a href="../{{url.post-id--11}}" rel="next">{{name.post-id--11}} <i class="icon icon-8 icon-arrow-right"><svg class="shape-icon" viewBox="0 0 8 12" width="10" height="15"><use xlink:href="#shape-arrow-point-right"></use></svg></i></a></h5> 
 </div>
