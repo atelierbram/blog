@@ -24,20 +24,7 @@ release
 /tmp/
 /temp/
 dist
-vector
+sitemap-ignore.json
 
 # Docs, etc in underscore directory
 _
-_vector
-_test
-_patternlab
-_doc
-_draft
-_psd
-_tiff
-_img
-
-TODO.md
-
-*.sublime-project
-*.sublime-workspace
