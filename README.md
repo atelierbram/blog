@@ -14,10 +14,6 @@ Webdesign-related blogposts [hosted here on Github](http://atelierbram.github.io
 - [Site-wide Navigation with Select Menu](http://atelierbram.github.io/blog/select-menu-hashchange)
 - [CSS-Shapes in Multi-Column Layout](http://atelierbram.github.io/blog/css-shapes-in-multi-column-layout)
 
-### Template and Design
-This blog runs on [Assemble](http://assemble.io), the static-site generator, which is [awesome and fun to use](http://atelierbram.github.io/blog/assembling).
-It was generated from a template called [Flex-Starter](http://github.com/atelierbram/flex-starter), which in turn is based on [build-boilerplate](https://github.com/atelierbram/build-boilerplate), which in turn is a fork of [static-site-boilerplate](https://github.com/bdadam/static-site-boilerplate) by Adam Beres-Deak, with some modifications.
-
 #### License
 
 Copyright (c) 2015 [Bram de Haan](http://atelierbramdehaan.nl)
