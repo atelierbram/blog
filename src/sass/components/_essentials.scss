@@ -47,13 +47,15 @@ a:hover {
   margin-bottom: -4em;
   padding-bottom: 4em;
   overflow: auto;
+// uncomment for grid:
+  // background: rgba(white,.02) url(../../../../../../_/img/grid-unit_24px.png);
 }
 .page-wrap:after {
   content: "";
   display: block;
 }
 .page a {
-  border-bottom: 1px solid adjust-color($light_blue, $lightness: 10%);
+  // border-bottom: 1px solid adjust-color($light_blue, $lightness: 10%);
   box-shadow: inset 0 -3px 0 adjust-color($light_blue, $lightness: 10%);
 }
 .page a:hover,
@@ -130,8 +132,6 @@ ol code:after {
 h2, h3, b, strong, thead th, button {
   font-family: AvenirNext-DemiBold, Corbel, "Lucida Grande","Segoe Ui","Trebuchet Ms", Verdana, sans-serif;
 }
-//.wf-europa-n7-active thead th,
-//.wf-europa-n7-active button,
 
 strong em {
   font-family:  AvenirNext-BoldItalic, Avenir-HeavyOblique, Corbel, Trebuchet-BoldItalic, "Lucida Grande", Corbel, "Segoe Ui", "Trebuchet Ms", Verdana, sans-serif;
