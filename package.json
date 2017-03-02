@@ -32,7 +32,7 @@
     "grunt-contrib-uglify": "~0.7.0",
     "grunt-contrib-concat": "~0.5.0",
     "grunt-gh-pages": "~0.9.1",
-    "handlebars-helper-isActive": "~0.1.1",
+    "handlebars-helper-isactive": "~0.1.1",
     "handlebars-helper-autolink": "~0.1.1",
     "grunt-contrib-copy": "^0.7.0",
     "grunt-contrib-htmlmin": "^0.4.0",
