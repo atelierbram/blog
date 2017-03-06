@@ -2,6 +2,9 @@
 
 Webdesign-related blogposts [hosted here on Github](http://atelierbram.github.io/blog/): a place to conveniently post some of the things I learn along the way with `HTML`, `CSS` and `Javascript`. These articles are also published on [Codepen](http://codepen.io/atelierbram/blog), you can  _[subscribe to the RSS-feed](http://codepen.io/atelierbram/blog/feed/) there_.
 
+<small>(Click to expand)</small>
+<details>
+<summary>Table of contents</summary>
 - [Lazy Loading Logos](http://atelierbram.github.io/blog/lazy-loading/)
 - [Alpha Transparency in 8 Digits Hex Notation](http://atelierbram.github.io/blog/alpha-transparency-in-hex)
 - [Switching Color Modes in SVG](http://atelierbram.github.io/blog/switching-color-modes)
@@ -13,6 +16,7 @@ Webdesign-related blogposts [hosted here on Github](http://atelierbram.github.io
 - [Interplay between CSS and Javascript](http://atelierbram.github.io/blog/interplay-css-javascript)
 - [Site-wide Navigation with Select Menu](http://atelierbram.github.io/blog/select-menu-hashchange)
 - [CSS-Shapes in Multi-Column Layout](http://atelierbram.github.io/blog/css-shapes-in-multi-column-layout)
+</details>
 
 Build with [Sculpin](https://sculpin.io).
 
