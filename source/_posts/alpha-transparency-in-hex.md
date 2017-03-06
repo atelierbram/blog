@@ -19,7 +19,7 @@ use:
 
 <span class="dropcap">M</span>aybe early days, but coming to a browser near you some day: alpha transparency in 8 digits hex notation; currently supported in Chrome Canary and Firefox Nightly. Some thoughts here on how and why this could be useful.
 
-<p class="publication-list__item__meta"><time datetime="2016-15-07">July 2016</time></p>
+<p class="publication-list__item__meta"><time datetime="2016-07-15">July 2016</time></p>
 
 Now HEXA doesn’t have the most intuitive syntax, [HSLA](https://css-tricks.com/yay-for-hsla/) has, and the alpha transparency isn’t making live easier. But we have tools for this build right into the browser: you can check this out in Chrome Canary or in Firefox Nightly DevTools:
 <div class="container-media container-media-square">

@@ -19,7 +19,7 @@ use:
 
 <span class="dropcap">C</span>ommon practice with showing a serie of logos in an attractive way in a webpage, is to present gray scaled – or monochrome versions, to neutralize the (_potentially clashing_) distracting colors from the images. One way of doing this could be to manipulate the full-color images in photo-editing software and save copies in gray scaled versions. An even quicker way would be to use css– or svg-filters.
 
-<p class="publication-list__item__meta"><time datetime="2016-15-05">May 2016</time></p>
+<p class="publication-list__item__meta"><time datetime="2016-05-15">May 2016</time></p>
 
 With CSS-filters one is limited to the grayscale- or sepia filters, which will be sufficient in most use-cases. SVG filters are more powerful and have more options, while being more complex in a syntax which may have to be studied to be used well (_in a more customized way_).
 

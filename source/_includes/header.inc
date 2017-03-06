@@ -1,16 +1,2 @@
-<header id="header">
-  <h1><a href="{{ site.url }}">{{ site.subtitle }}</a></h1>
-  <!-- SVG for menu btn inserted with javascript (not needed for homepage)
-<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
-  <symbol id="hamburgerIcon" viewBox="0 0 16 12">
-    <rect width="16" height="2"/>
-    <rect y="5" width="16" height="2"/>
-    <rect y="10" width="16" height="2"/>
-  </symbol>
-</svg> -->
-
-  <!-- menu btn inserted with javascript (not needed for homepage)
-<div class="ui-gutter">
-  <button class="btn btn-menu" id="btnMenu"><svg class="shape-icon shape-x"><use xlink:href="#xIcon"></use></svg><svg class="shape-icon shape-hamburger"><use xlink:href="#hamburgerIcon"></use></svg><span class="btn-menu__text">Menu</span></button>
-</div> -->
-</header>
+<header id="header"><h1><a href="{{ site.url }}">{{ site.subtitle }}</a></h1></header>
+<div class="page-wrap" id="pageWrap">
