@@ -2,7 +2,6 @@
 
 Webdesign-related blogposts [hosted here on Github](http://atelierbram.github.io/blog/): a place to conveniently post some of the things I learn along the way with `HTML`, `CSS` and `Javascript`. These articles are also published on [Codepen](http://codepen.io/atelierbram/blog), you can  _[subscribe to the RSS-feed](http://codepen.io/atelierbram/blog/feed/) there_.
 
-<small>(Click to expand)</small>
 <details>
 <summary>Table of contents</summary>
 - [Lazy Loading Logos](http://atelierbram.github.io/blog/lazy-loading/)
@@ -18,7 +17,7 @@ Webdesign-related blogposts [hosted here on Github](http://atelierbram.github.io
 - [CSS-Shapes in Multi-Column Layout](http://atelierbram.github.io/blog/css-shapes-in-multi-column-layout)
 </details>
 
-Build with [Sculpin](https://sculpin.io).
+<br>Build with [Sculpin](https://sculpin.io).
 
 #### License
 
