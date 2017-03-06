@@ -29,6 +29,9 @@ sitemap-ignore.json
 # Docs, etc in underscore directory
 _
 
+# copied assets for local development
+/assets
+
 # Sculpin
 /app/cache/*
 /app/config/sculpin_kernel_*.yml

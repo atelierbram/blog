@@ -13,9 +13,9 @@ module.exports = function(grunt) {
       },
       dist: {
         files: {
-          'output_prod/assets/css/critical.css': 'source/assets/sass/critical.scss',
-          'output_prod/assets/css/style.css': 'source/assets/sass/style.scss',
-          'output_prod/assets/css/home.css': 'source/assets/sass/home.scss'
+          'output_prod/_posts/assets/css/critical.css': 'source/assets/sass/critical.scss',
+          'output_prod/_posts/assets/css/style.css': 'source/assets/sass/style.scss',
+          'output_prod/_posts/assets/css/home.css': 'source/assets/sass/home.scss'
         }
       }
     },
@@ -24,7 +24,7 @@ module.exports = function(grunt) {
       options: {
         map: {
           inline: false, // save all sourcemaps as separate files...
-          // annotation: 'output_prod/assets/css/prefixed/' // ...to the specified directory
+          // annotation: 'output_prod/_posts/assets/css/prefixed/' // ...to the specified directory
         },
         processors: [
           require('autoprefixer')({browsers: 'last 2 versions'}),
@@ -35,9 +35,9 @@ module.exports = function(grunt) {
         expand: true,
         flatten: true,
         files: {
-          'output_prod/assets/css/prefixed/critical.css': 'output_prod/assets/css/critical.css',
-          'output_prod/assets/css/prefixed/style.css': 'output_prod/assets/css/style.css',
-          'output_prod/assets/css/prefixed/home.css': 'output_prod/assets/css/home.css'
+          'output_prod/_posts/assets/css/prefixed/critical.css': 'output_prod/_posts/assets/css/critical.css',
+          'output_prod/_posts/assets/css/prefixed/style.css': 'output_prod/_posts/assets/css/style.css',
+          'output_prod/_posts/assets/css/prefixed/home.css': 'output_prod/_posts/assets/css/home.css'
         }
       }
     },
@@ -45,9 +45,9 @@ module.exports = function(grunt) {
     cssmin: {
       dist: {
         files: {
-          'output_prod/assets/css/prefixed/critical.min.css': 'output_prod/assets/css/prefixed/critical.css',
-          'output_prod/assets/css/prefixed/style.min.css': 'output_prod/assets/css/prefixed/style.css',
-          'output_prod/assets/css/prefixed/home.min.css': 'output_prod/assets/css/prefixed/home.css'
+          'output_prod/_posts/assets/css/prefixed/critical.min.css': 'output_prod/_posts/assets/css/prefixed/critical.css',
+          'output_prod/_posts/assets/css/prefixed/style.min.css': 'output_prod/_posts/assets/css/prefixed/style.css',
+          'output_prod/_posts/assets/css/prefixed/home.min.css': 'output_prod/_posts/assets/css/prefixed/home.css'
         }
       }
     },
@@ -55,27 +55,27 @@ module.exports = function(grunt) {
     copy: {
       main: {
         files: {
-          'source/_includes/critical-css.inc'    : 'output_prod/assets/css/prefixed/critical.min.css',
-          'source/_includes/homeheadstyles.inc'  : 'output_prod/assets/css/prefixed/home.min.css',
-          'source/_includes/head-detect-js.inc'  : 'output_prod/assets/js/head-detect.min.js',
-          'source/_includes/insert-svg-js.inc'   : 'output_prod/assets/js/insert-svg.min.js',
-          'source/_includes/script-id_01-js.inc' : 'output_prod/assets/js/script-id_01.min.js',
-          'source/_includes/script-id_02-js.inc' : 'output_prod/assets/js/script-id_02.min.js',
-          'source/_includes/script-id_03-js.inc' : 'output_prod/assets/js/script-id_03.min.js',
-          'source/_includes/script-id_04-js.inc' : 'output_prod/assets/js/script-id_04.min.js',
-          'source/_includes/script-id_05-js.inc' : 'output_prod/assets/js/script-id_05.min.js',
-          'source/_includes/script-id_06-js.inc' : 'output_prod/assets/js/script-id_06.min.js',
-          'source/_includes/script-id_07-js.inc' : 'output_prod/assets/js/script-id_07.min.js',
-          'source/_includes/script-id_08-js.inc' : 'output_prod/assets/js/script-id_08.min.js',
-          'source/_includes/script-id_09-js.inc' : 'output_prod/assets/js/script-id_09.min.js',
-          'source/_includes/script-id_10-js.inc' : 'output_prod/assets/js/script-id_10.min.js',
-          'source/_includes/script-id_11-js.inc' : 'output_prod/assets/js/script-id_11.min.js',
-          'source/_includes/fontfaceobserver-js.inc' : 'output_prod/assets/js/fontfaceobserver.js',
+          'source/_includes/critical-css.inc'    : 'output_prod/_posts/assets/css/prefixed/critical.min.css',
+          'source/_includes/homeheadstyles.inc'  : 'output_prod/_posts/assets/css/prefixed/home.min.css',
+          'source/_includes/head-detect-js.inc'  : 'output_prod/_posts/assets/js/head-detect.min.js',
+          'source/_includes/insert-svg-js.inc'   : 'output_prod/_posts/assets/js/insert-svg.min.js',
+          'source/_includes/script-id_01-js.inc' : 'output_prod/_posts/assets/js/script-id_01.min.js',
+          'source/_includes/script-id_02-js.inc' : 'output_prod/_posts/assets/js/script-id_02.min.js',
+          'source/_includes/script-id_03-js.inc' : 'output_prod/_posts/assets/js/script-id_03.min.js',
+          'source/_includes/script-id_04-js.inc' : 'output_prod/_posts/assets/js/script-id_04.min.js',
+          'source/_includes/script-id_05-js.inc' : 'output_prod/_posts/assets/js/script-id_05.min.js',
+          'source/_includes/script-id_06-js.inc' : 'output_prod/_posts/assets/js/script-id_06.min.js',
+          'source/_includes/script-id_07-js.inc' : 'output_prod/_posts/assets/js/script-id_07.min.js',
+          'source/_includes/script-id_08-js.inc' : 'output_prod/_posts/assets/js/script-id_08.min.js',
+          'source/_includes/script-id_09-js.inc' : 'output_prod/_posts/assets/js/script-id_09.min.js',
+          'source/_includes/script-id_10-js.inc' : 'output_prod/_posts/assets/js/script-id_10.min.js',
+          'source/_includes/script-id_11-js.inc' : 'output_prod/_posts/assets/js/script-id_11.min.js',
+          'source/_includes/fontfaceobserver-js.inc' : 'output_prod/_posts/assets/js/fontfaceobserver.js',
 
           // for local development
-          'assets/js/prism-custom.min.js' :       'output_prod/assets/js/prism-custom.js',
-          'assets/css/prefixed/style.min.css':    'output_prod/assets/css/prefixed/style.css',
-          'assets/css/prefixed/home.min.css':     'output_prod/assets/css/prefixed/home.css'
+          'assets/js/prism-custom.min.js' :       'output_prod/_posts/assets/js/prism-custom.js',
+          'assets/css/prefixed/style.min.css':    'output_prod/_posts/assets/css/prefixed/style.css',
+          'assets/css/prefixed/home.min.css':     'output_prod/_posts/assets/css/prefixed/home.css'
         },
         flatten: true,
         filter: 'isFile',
@@ -85,9 +85,9 @@ module.exports = function(grunt) {
     concat: {
       dist: {
         files: {
-          'output_prod/assets/js/insert-svg.js' :  ['source/assets/js/svg-test.js'],
-          'output_prod/assets/js/prism-custom.js' :  ['source/assets/js/prism-custom.js'],
-          'output_prod/assets/js/dropcap.min.js' :  ['source/assets/js/dropcap.js'],
+          'output_prod/_posts/assets/js/insert-svg.js' :  ['source/assets/js/svg-test.js'],
+          'output_prod/_posts/assets/js/prism-custom.js' :  ['source/assets/js/prism-custom.js'],
+          'output_prod/_posts/assets/js/dropcap.min.js' :  ['source/assets/js/dropcap.js'],
         }
       }
     },
@@ -101,20 +101,20 @@ module.exports = function(grunt) {
       },
       dist: {
         files: {
-          'output_prod/assets/js/prism-custom.min.js' : 'output_prod/assets/js/prism-custom.js',
-          'output_prod/assets/js/insert-svg.min.js'   : 'output_prod/assets/js/insert-svg.js',
-          'output_prod/assets/js/head-detect.min.js'  : 'source/assets/js/head-detect.js',
-          'output_prod/assets/js/script-id_01.min.js' : 'source/assets/js/script-id_01.js',
-          'output_prod/assets/js/script-id_02.min.js' : 'source/assets/js/script-id_02.js',
-          'output_prod/assets/js/script-id_03.min.js' : 'source/assets/js/script-id_03.js',
-          'output_prod/assets/js/script-id_04.min.js' : 'source/assets/js/script-id_04.js',
-          'output_prod/assets/js/script-id_05.min.js' : 'source/assets/js/script-id_05.js',
-          'output_prod/assets/js/script-id_06.min.js' : 'source/assets/js/script-id_06.js',
-          'output_prod/assets/js/script-id_07.min.js' : 'source/assets/js/script-id_07.js',
-          'output_prod/assets/js/script-id_08.min.js' : 'source/assets/js/script-id_08.js',
-          'output_prod/assets/js/script-id_09.min.js' : 'source/assets/js/script-id_09.js',
-          'output_prod/assets/js/script-id_10.min.js' : 'source/assets/js/script-id_10.js',
-          'output_prod/assets/js/script-id_11.min.js' : 'source/assets/js/script-id_11.js'
+          'output_prod/_posts/assets/js/prism-custom.min.js' : 'output_prod/_posts/assets/js/prism-custom.js',
+          'output_prod/_posts/assets/js/insert-svg.min.js'   : 'output_prod/_posts/assets/js/insert-svg.js',
+          'output_prod/_posts/assets/js/head-detect.min.js'  : 'source/assets/js/head-detect.js',
+          'output_prod/_posts/assets/js/script-id_01.min.js' : 'source/assets/js/script-id_01.js',
+          'output_prod/_posts/assets/js/script-id_02.min.js' : 'source/assets/js/script-id_02.js',
+          'output_prod/_posts/assets/js/script-id_03.min.js' : 'source/assets/js/script-id_03.js',
+          'output_prod/_posts/assets/js/script-id_04.min.js' : 'source/assets/js/script-id_04.js',
+          'output_prod/_posts/assets/js/script-id_05.min.js' : 'source/assets/js/script-id_05.js',
+          'output_prod/_posts/assets/js/script-id_06.min.js' : 'source/assets/js/script-id_06.js',
+          'output_prod/_posts/assets/js/script-id_07.min.js' : 'source/assets/js/script-id_07.js',
+          'output_prod/_posts/assets/js/script-id_08.min.js' : 'source/assets/js/script-id_08.js',
+          'output_prod/_posts/assets/js/script-id_09.min.js' : 'source/assets/js/script-id_09.js',
+          'output_prod/_posts/assets/js/script-id_10.min.js' : 'source/assets/js/script-id_10.js',
+          'output_prod/_posts/assets/js/script-id_11.min.js' : 'source/assets/js/script-id_11.js'
 
         }
       }
