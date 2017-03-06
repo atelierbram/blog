@@ -55,6 +55,7 @@ module.exports = function(grunt) {
     copy: {
       main: {
         files: {
+          'output_prod/_posts/index.html'        : 'output_prod/index.html',
           'source/_includes/critical-css.inc'    : 'output_prod/_posts/assets/css/prefixed/critical.min.css',
           'source/_includes/homeheadstyles.inc'  : 'output_prod/_posts/assets/css/prefixed/home.min.css',
           'source/_includes/head-detect-js.inc'  : 'output_prod/_posts/assets/js/head-detect.min.js',
@@ -148,7 +149,8 @@ module.exports = function(grunt) {
       'gh-pages': {
         options: {
           // push: false
-          base: 'output_prod/_posts/'
+          base: 'output_prod/_posts/',
+          add: true
         },
         src: '**/*'
       }
