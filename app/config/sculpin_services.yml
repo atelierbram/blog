@@ -1,0 +1,8 @@
+# https://blog.bitexpert.de/blog/sorting-custom-types-in-sculpin/
+# https://github.com/sculpin/proxy-source-collection-contrib/issues/1
+# https://github.com/jbouzekri/SculpinDateNavigationBundle
+services:
+  sculpin_content_types.types.posts.collection.sorter:
+    class: Sculpin\Contrib\ProxySourceCollection\Sorter\MetaSorter
+    arguments:
+      - date

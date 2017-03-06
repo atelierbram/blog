@@ -1,0 +1,21 @@
+# The contents of this file are parsed and made available as
+# via `site.*`. So for example, {{ site.title }} can be used
+# in a template to get the contents of the `title` key.
+title: Atelierbram Blog
+subtitle: Documenting a Learning Curve
+author: Bram de Haan <info@atelierbramdehaan.nl>
+org: Atelier Bram de Haan
+description: Blog-posts on Frontend Webdesign
+keywords: Webdesign, Frontend, Design, 2D-Design, Documentation, Culture
+url: http://localhost/~bram/github.com/atelierbram/blog/output_dev
+slug: http://localhost/~bram/github.com/atelierbram/blog
+slug_posts: http://localhost/~bram/github.com/atelierbram/blog/output_dev/_posts
+url_license: http://atelierbram.mit-license.org/
+url_homepage: http://atelierbram.github.io/blog/
+url_codepen-blog: http://codepen.io/atelierbram/blog
+url_google-plus: https://plus.google.com/+BramdeHaan/posts
+url_atelier: http://atelierbramdehaan.nl/
+url_repository: https://github.com/atelierbram/blog
+url_repository-readme-link: https://github.com/atelierbram/blog/blob/master/README.md
+year_old: 2014
+year_new: 2017
