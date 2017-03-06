@@ -148,7 +148,7 @@ module.exports = function(grunt) {
       'gh-pages': {
         options: {
           // push: false
-          base: 'output_prod'
+          base: 'output_prod/_posts/'
         },
         src: '**/*'
       }
