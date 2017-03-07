@@ -1,18 +1,32 @@
 .wf-active .has-moved-h2 {
   font-family: $wf-subheader !important;
+  letter-spacing: -1px;
+  word-spacing: 1px;
+
+  @include mq($from: tablet) {
+    letter-spacing: -2px;
+    word-spacing: 2px;
+  }
+  @include mq($from: desktop) {
+    letter-spacing: -3px;
+    word-spacing: 3px;
+  }
+  @include mq($from: wide) {
+    letter-spacing: -5px;
+    word-spacing: 5px;
+  }
 }
+
 header,
 footer {
   text-align: center;
 }
+
 header {
-  // background-color: adjust-color($base07,$lightness: 1.5%);
   background-color: $base07;
   min-height: 4rem;
-  // @include mq($from: tablet) {
-  //   border-bottom: 1px solid $base06;
-  // }
 }
+
 header h1 {
   font-size: 1.75rem;
   line-height: 1.25;
@@ -27,9 +41,9 @@ header h1 {
     font-size: 1rem;
   }
 }
+
 h2 {
   font-size: 2.25rem;
-  // font-family: AvenirNextCondensed-Regular, Corbel, "Trebuchet Ms", "Segoe Ui", "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", sans-serif;
   font-weight: normal;
   color: $cyan;
 }

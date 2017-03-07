@@ -2,7 +2,7 @@
 <html class="no-js core no-flexbox wf-inactive" lang="en">
   <head>
     <meta charset="utf-8">
-    <title>{% block title %}{{ page.title }}{% endblock %}</title>
+    <title>{% block title %}{{ page.long_title }} | {{ site.subtitle }}{% endblock %}</title>
     {% if site.description %}<meta name="description" content="{{page.description}} - {{site.description}}"/>{% endif %}
     {% if page.index_type %}<style>{% include "homeheadstyles-css.inc" %}</style>{% endif %}
     {% if page.index_type %}<link rel="prefetch" href="{{ site.slug }}/assets/js/prism-custom.min.js">{% endif %}
