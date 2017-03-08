@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>{% block title %}{{ page.long_title }} | {{ site.subtitle }}{% endblock %}</title>
-    {% if site.description %}<meta name="description" content="{{page.description}} - {{site.description}}"/>{% endif %}
+    {% if site.description %}<meta name="description" content="{{page.description}}"/>{% endif %}
     {% if page.index_type %}<style>{% include "homeheadstyles-css.inc" %}</style>{% endif %}
     {% if page.index_type %}<link rel="prefetch" href="{{ site.slug }}/assets/js/prism-custom.min.js">{% endif %}
     {% if page.index_type %}<link rel="prefetch" href="{{ site.slug }}/assets/css/prefixed/style.min.css">{% endif %}
@@ -17,7 +17,7 @@
     <script>{% include "head-detect-js.inc" %}</script>
     {% if page.post_type %}<script>{% include "load-css-js.inc" %} loadCSS( "{{ site.slug }}/assets/css/prefixed/style.min.css" );</script><noscript><link href="{{ site.slug }}/assets/css/prefixed/style.min.css" rel="stylesheet"></noscript>{% endif %}
   </head>
-  <body class="{% if page.id %}page-{{ page.id }}{% endif %}">
+  <body class="{% if page.slug %}page-{{ page.slug }}{% endif %}">
     {% include "header.inc" %}
     {% if page.post_type %}{% include "nav.inc" %}{% endif %}
     {% block content_wrapper %}{% block content %}{% endblock %}{% endblock %}
