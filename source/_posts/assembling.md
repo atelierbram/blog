@@ -25,6 +25,15 @@ For an example with the alpha version of Assemble 6.0, using Gulp ISO Grunt,  go
 ### Static Site Generator
 One of the first problems to solve, when wanting to generate a website from flat files _(without a database)_, is to come up with a flexible solution for site-wide navigation. In [Assemble](http://assemble.io) this could be tackled like this in a _“partial”_ handlebars file, here `nav.hbs`:
 
+<pre><code class="language-markup">
+&lt;nav class=&quot;nav&quot; id=&quot;nav&quot;&gt;
+  &lt;ul&gt;
+    &#x7b;&#x7b;#withSort pages &#39;data.sortOrder&#39;&#x7d;&#x7d;
+      &lt;li&gt;&lt;a href=&quot;&#x7b;&#x7b;autolink&#x7d;&#x7d;&quot; &#x7b;&#x7bisActive&#x7d;&#x7d;&gt;&#x7b;&#x7b;data.title&#x7d;&#x7d;&lt;/a&gt;&lt;/li&gt;
+    &#x7b;&#x7b/withSort&#x7d;&#x7d;
+  &lt;/ul&gt;
+&lt;/nav&gt;
+</code></pre>
 
 HTML mixed with handlebars’ template tags, spitting out <sup><a href="#note-1" class="sup-link" id="supLink1">1</a></sup> a complete _“ordered”_ unordered list of the content folder files in the HTML-output.  In the markup are references to these two handlebar-helper plugins: “handlebars-helper-autolink” and “handlebars-helper-isActive”. The sort-order of the linked files can be set in the versatile [Yaml front matter](http://assemble.io/docs/YAML-front-matter.html) in the content-file itself. So when generating pages from markdown,  let’s say `index.md`, in the YFM <sup><a href="#note-2" class="sup-link" id="supLink2">2</a></sup>, right in the head of the file, one can set these variables:
 
@@ -60,10 +69,10 @@ grunt.initConfig({
 
 So when I have a file called `var.json` in the `src/data` folder, then the variables within those files can be called with, for example in template partials files.
 
-```language-markup
-<!-- footer.hbs -->
-<footer><small>by <a href="{{var.site-url}}">{{var.org}}</a> &middot; <a href="{{var.license-url}}">&copy; {var.year}}</a></small></footer>
-```
+<pre><code class="language-markup">
+&lt;!-- footer.hbs --&gt;
+&lt;footer&gt;&lt;small&gt;by &lt;a href=&quot;&#x7b;&#x7b;var.site-url&#x7d;&#x7d;&quot;&gt;&#x7b;&#x7b;var.org&#x7d;&#x7d;&lt;/a&gt; &amp;middot; &lt;a href=&quot;&#x7b;&#x7b;var.license-url&#x7d;&#x7d;&quot;&gt;&amp;copy; &#x7b;&#x7b;var.year&#x7d;&#x7d;&lt;/a&gt;&lt;/small&gt;&lt;/footer&gt;
+</code></pre>
 
 Alongside build in Handlebar-helpers <sup><a href="#note-3" class="sup-link" id="supLink3">3</a></sup>, this becomes powerful templating at your disposal.
 
@@ -86,7 +95,13 @@ copy: {
 },
 ```
 
-&hellip; can do conditional tags as well in the base-layout template, Nice!
+&hellip; can do conditional tags as well in the base-layout template:
+
+<pre><code class="language-markup">
+&#x7b;&#x7b;#is type &quot;home&quot; &#x7d;&#x7d;&lt;style&gt;&#x7b;&#x7b;&gt; homeheadstyles&#x7d;&#x7d;&lt;/style&gt;&#x7b;&#x7b;/is&#x7d;&#x7d;
+</code></pre>
+
+Nice!
 
 ### Publishing
 Grunt-plugin [grunt-gh-pages](https://www.npmjs.com/package/grunt-gh-pages) makes a gh-pages branch and commits and pushes the output of the `dist` folder to a remote gh-pages branch on Github. Still find it magical how that works from this command in the terminal: `grunt gh-pages`.
