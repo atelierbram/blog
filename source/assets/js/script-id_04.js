@@ -1,7 +1,7 @@
 function insertRemove() {
 "use strict";
 
-var hTitle= document.getElementById("generate-a-static-website-with-assemble");
+var hTitle= document.getElementById("static-site-generator-assemble");
 var innerWrap = document.getElementById("innerWrap");
 var page = document.getElementById("page");
 
@@ -33,7 +33,7 @@ clonedNote2.id = "clonedNode2";
 clonedNote3.id = "clonedNode3";
 clonedNote4.id = "clonedNode4";
 
-hTitle.classList.add("has-moved-h2","fs-desktop-vw-8","fs-3_75");
+hTitle.classList.add("has-moved-h2","fs-desktop-vw-10","fs-3_75");
 
   innerWrap.insertBefore(hTitle, page);
 }

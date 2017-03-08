@@ -1,8 +1,8 @@
 ---
 title:          Assembling
-long_title:     Generate a Static Website with Assemble
+long_title:     Static Site Generator Assemble
 slug:           assembling
-description:    Generate a Static Website with Assemble
+description:    Static Site Generator Assemble
 post_type:      post
 id:             id_04
 script:         script-id_04-js.inc
@@ -15,7 +15,7 @@ use:
 
 ---
 
-## Generate a Static Website with Assemble
+## Static Site Generator Assemble
 
 <span class="dropcap">T</span>he advantages of having a static site-generator integrated in one and the same build-tool _(that you may already be using)_ is huge: [Assemble itself](https://github.com/assemble/assemble) is a Grunt- _(also Yeoman and Node, and soon to be Gulp-)_ plugin. At the same time, Assemble assumes very little about _“what it is that you are trying to do”_; making it fun to use _(if you are also the kind of person that tends to want to make things their own &hellip;)_.
 <p class="publication-list__item__meta"><time datetime="2015-02-18">February 2015</time></p>

@@ -183,7 +183,8 @@ module.exports = function(grunt) {
 
   });
 
-  grunt.registerTask('build', ['concat', 'uglify', 'sass', 'postcss:dist', 'cssmin', 'copy','htmlmin']);
+  grunt.registerTask('build', ['concat', 'uglify', 'sass', 'postcss:dist', 'cssmin', 'copy', 'htmlmin']);
+  grunt.registerTask('min', ['htmlmin']);
   grunt.registerTask('scss', ['sass', 'postcss:dist', 'cssmin']);
   grunt.registerTask('js', ['uglify', 'concat']);
   grunt.registerTask('default', ['build', 'watch']);
