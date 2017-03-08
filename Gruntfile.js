@@ -124,6 +124,29 @@ module.exports = function(grunt) {
       }
     },
 
+    htmlmin: { // Task
+       dist: { // Target
+         options: { // Target options
+           removeComments: true,
+           collapseWhitespace: true
+         },
+         files: { // Dictionary of files
+           'output_prod/_posts/index.html': 'output_prod/_posts/index.html', // 'destination': 'source'
+           'output_prod/_posts/airfan/index.html': 'output_prod/_posts/airfan/index.html',
+           'output_prod/_posts/assembling/index.html': 'output_prod/_posts/assembling/index.html',
+           'output_prod/_posts/colorschemes-sublime/index.html': 'output_prod/_posts/colorschemes-sublime/index.html',
+           'output_prod/_posts/colorscheming/index.html': 'output_prod/_posts/colorscheming/index.html',
+           'output_prod/_posts/css-shapes-in-multi-column-layout/index.html': 'output_prod/_posts/css-shapes-in-multi-column-layout/index.html',
+           'output_prod/_posts/differentiate/index.html': 'output_prod/_posts/differentiate/index.html',
+           'output_prod/_posts/interplay-css-javascript/index.html': 'output_prod/_posts/interplay-css-javascript/index.html',
+           'output_prod/_posts/select-menu-hashchange/index.html': 'output_prod/_posts/select-menu-hashchange/index.html',
+           'output_prod/_posts/switching-color-modes/index.html': 'output_prod/_posts/switching-color-modes/index.html',
+           'output_prod/_posts/alpha-transparency-in-hex/index.html': 'output_prod/_posts/alpha-transparency-in-hex/index.html',
+           'output_prod/_posts/lazy-loading/index.html': 'output_prod/_posts/lazy-loading/index.html'
+         }
+       }
+    },
+
     watch: {
       options: {
         livereload: true,
@@ -160,12 +183,12 @@ module.exports = function(grunt) {
 
   });
 
-  grunt.registerTask('build', ['concat', 'uglify', 'sass', 'postcss:dist', 'cssmin', 'copy']);
+  grunt.registerTask('build', ['concat', 'uglify', 'sass', 'postcss:dist', 'cssmin', 'copy','htmlmin']);
   grunt.registerTask('scss', ['sass', 'postcss:dist', 'cssmin']);
   grunt.registerTask('js', ['uglify', 'concat']);
   grunt.registerTask('default', ['build', 'watch']);
   grunt.registerTask('dev', ['watch']);
 
-  grunt.loadNpmTasks('grunt-sass','grunt-contrib-cssmin','grunt-contrib-concat','grunt-contrib-uglify','grunt-contrib-watch','matchdep','grunt-postcss','grunt-contrib-copy','grunt-gh-pages');
+  grunt.loadNpmTasks('grunt-sass','grunt-contrib-cssmin','grunt-contrib-concat','grunt-contrib-uglify','grunt-contrib-watch','matchdep','grunt-postcss','grunt-contrib-copy','grunt-contrib-htmlmin','grunt-gh-pages');
   require('matchdep').filterDev('grunt-*').forEach(grunt.loadNpmTasks);
 };
