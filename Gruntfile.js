@@ -184,6 +184,7 @@ module.exports = function(grunt) {
   });
 
   grunt.registerTask('build', ['concat', 'uglify', 'sass', 'postcss:dist', 'cssmin', 'copy', 'htmlmin']);
+  grunt.registerTask('copy', ['copy']);
   grunt.registerTask('min', ['htmlmin']);
   grunt.registerTask('scss', ['sass', 'postcss:dist', 'cssmin']);
   grunt.registerTask('js', ['uglify', 'concat']);
