@@ -1,6 +1,7 @@
 ---
 title:          Interplay
 long_title:     Interplay between CSS and Javascript on Transitions
+index_title:    Interplay between CSS and Javascript
 slug:           interplay-css-javascript
 description:    Make CSS and Javascript cooperate on your own terms
 post_type:      post
@@ -14,8 +15,6 @@ pagination:
 use: [posts]
 
 ---
-
-## Interplay between CSS and Javascript on Transitions
 
 <span class="dropcap">A</span>nimating the height of an element with only `CSS` is possible with the `max-height` property, giving the begin value a `max-height` of zero and (_let's say_) the 'hovered' value some high number _“that will always be higher then the real height of the highest animated element”_. The outcome of the results can vary quite a bit, depending on the differences between all these values: not satisfying in all scenarios. An alternative way is using `height: 0` in combination with a set value for `padding-bottom`.
 <p class="publication-list__item__meta"><time datetime="{{ page.date_machine }}">{{ page.date_human }}</time></p>

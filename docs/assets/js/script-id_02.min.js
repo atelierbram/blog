@@ -1,1 +1,1 @@
-function insertRemove(){"use strict";var a=document.getElementById("site-wide-navigation-with-select-menu"),b=document.getElementById("innerWrap"),c=document.getElementById("page");a.classList.add("has-moved-h2","fs-desktop-vw-10"),b.insertBefore(a,c)}insertRemove();
+function insert(){"use strict";document.getElementById("select-menu-hashchange").classList.add("fs-desktop-vw-10")}insert();

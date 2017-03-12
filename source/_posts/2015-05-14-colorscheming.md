@@ -1,6 +1,7 @@
 ---
 title:          Colorscheming
 long_title:     Colorscheming for Syntax Highlighting
+index_title:    Colorscheming for Syntax Highlighting
 slug:           colorscheming
 description:    The Process of Creating a Colorscheme for a Code Syntax Highlighting Theme
 post_type:      post
@@ -14,8 +15,6 @@ pagination:
 use: [posts]
 
 ---
-
-## Colorscheming for Syntax Highlighting
 
 <span class="dropcap">F</span>or the last couple of years, whenever I was in the mood for it and found the time, I build colorschemes for syntax highlighting. The idea, that triggered this kind of an academic exercise in colorscheming, was to build a serie of colorschemes that would comprise the whole color gamut, each with it’s own base-color.
 <p class="publication-list__item__meta"><time datetime="{{ page.date_machine }}">{{ page.date_human }}</time></p>

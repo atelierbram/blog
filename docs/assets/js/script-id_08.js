@@ -1,14 +1,14 @@
-function insertRemove() {
+function insert() {
 "use strict";
 
-var hTitle= document.getElementById("on-editing-colorschemes-for-sublime-text");
+var hTitle= document.getElementById("colorschemes-sublime");
 
-var innerWrap = document.getElementById("innerWrap");
-var page = document.getElementById("page");
+// var innerWrap = document.getElementById("innerWrap");
+// var page = document.getElementById("page");
 
-hTitle.classList.add("has-moved-h2","fs-desktop-vw-8","fs-4");
+hTitle.classList.add("fs-desktop-vw-8","fs-4");
 
-  innerWrap.insertBefore(hTitle, page);
+  // innerWrap.insertBefore(hTitle, page);
 
 }
-insertRemove();
+insert();

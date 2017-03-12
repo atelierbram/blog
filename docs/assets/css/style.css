@@ -168,6 +168,7 @@ pre {
   word-wrap: normal;
   white-space: pre-wrap; }
 
+.publication-list__item__content p:first-of-type:first-letter,
 .dropcap {
   font-family: AvenirNext-DemiBold, Corbel, "Lucida Grande", "Trebuchet Ms", "Segoe Ui", "DejaVu Sans Condensed", sans-serif;
   color: #293256;
@@ -179,6 +180,7 @@ pre {
   height: 127px;
   -webkit-font-smoothing: antialiased; }
 
+.wf-active .publication-list__item__content p:first-of-type:first-letter,
 .wf-active .dropcap {
   margin-top: 0;
   margin-bottom: 0; }
@@ -818,6 +820,7 @@ pre[class*="language-"] {
   font-family: brandosans-regular-v100, AvenirNext-Regular, Corbel, "Lucida Grande", "Trebuchet Ms", "Segoe Ui", "DejaVu Sans", sans-serif;
   font-weight: normal; }
 
+.wf-active .publication-list__item__content p:first-of-type:first-letter,
 .wf-active .dropcap {
   font-family: "Brando Semibold", Impact, AvenirNextCondensed-Heavy, Charcoal, "Arial Black", sans-serif; }
 

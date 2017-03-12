@@ -1,6 +1,7 @@
 ---
 title:          Sublime
 long_title:     On Editing Colorschemes for Sublime Text
+index_title:    Editing Colorschemes for Sublime Text
 slug:           colorschemes-sublime
 description:    Some things learned when editing colorschemes for Sublime Text
 post_type:      post
@@ -14,8 +15,6 @@ pagination:
 use: [posts]
 
 ---
-
-## On Editing Colorschemes for Sublime Text
 
 <span class="dropcap">S</span>omewhat suprised to see how scarces the available information is, around the interwebs and in the docs, on the subject of creating colorschemes for Sublime Text, for such a popular text-editor. Here are some notes that may come handy when doing this yourself. Down at the bottom of this post one will find links to other resources.
 

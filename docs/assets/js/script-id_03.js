@@ -1,9 +1,9 @@
-function insertRemove() {
+function insert() {
 "use strict";
 
-var hTitle= document.getElementById("interplay-between-css-and-javascript-on-transitions");
-var innerWrap = document.getElementById("innerWrap");
-var page = document.getElementById("page");
+var hTitle= document.getElementById("interplay-css-javascript");
+// var innerWrap = document.getElementById("innerWrap");
+// var page = document.getElementById("page");
 
 var note1 = document.getElementById("note-1");
 var clonedNote1 = note1.cloneNode(true);
@@ -25,8 +25,8 @@ clonedNote1.id = "clonedNode1";
 clonedNote2.id = "clonedNode2";
 clonedNote3.id = "clonedNode3";
 
-hTitle.classList.add("has-moved-h2","fs-desktop-vw-8");
+hTitle.classList.add("fs-desktop-vw-5_75");
 
-  innerWrap.insertBefore(hTitle, page);
+  // innerWrap.insertBefore(hTitle, page);
 }
-insertRemove();
+insert();

@@ -1,14 +1,14 @@
-function insertRemove() {
+function insert() {
 "use strict";
 
-var hTitle= document.getElementById("alpha-transparency-in-8-digits-hex-notation");
+var hTitle= document.getElementById("alpha-transparency-in-hex");
 
-var innerWrap = document.getElementById("innerWrap");
-var page = document.getElementById("page");
+// var innerWrap = document.getElementById("innerWrap");
+// var page = document.getElementById("page");
+//
+hTitle.classList.add("fs-desktop-vw-8","fs-3_5");
 
-hTitle.classList.add("has-moved-h2","fs-desktop-vw-9_5","fs-3_5");
-
-  innerWrap.insertBefore(hTitle, page);
+  // innerWrap.insertBefore(hTitle, page);
 
 }
-insertRemove();
+insert();

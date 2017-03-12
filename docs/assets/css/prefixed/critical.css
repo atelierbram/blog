@@ -28,20 +28,20 @@
   font-weight: normal;
   font-style: normal; }
 
-.wf-active .has-moved-h2 {
+.wf-active .title-post {
   font-family: brandosans-semibold-v100, AvenirNext-DemiBold, Corbel, "Lucida Grande", "Trebuchet Ms", "Segoe Ui", "DejaVu Sans Condensed", sans-serif !important;
   letter-spacing: -1px;
   word-spacing: 1px; }
   @media all and (min-width: 40em) {
-    .wf-active .has-moved-h2 {
+    .wf-active .title-post {
       letter-spacing: -2px;
       word-spacing: 2px; } }
   @media all and (min-width: 61.25em) {
-    .wf-active .has-moved-h2 {
+    .wf-active .title-post {
       letter-spacing: -3px;
       word-spacing: 3px; } }
   @media all and (min-width: 81.25em) {
-    .wf-active .has-moved-h2 {
+    .wf-active .title-post {
       letter-spacing: -5px;
       word-spacing: 5px; } }
 
@@ -104,7 +104,7 @@ p,
     font-size: 1rem;
     max-width: 100%; } }
 
-.has-moved-h2 {
+.title-post {
   -webkit-font-smoothing: antialiased;
   text-align: center; }
 
@@ -140,7 +140,7 @@ sup span {
   padding: 1em; }
 
 @media all and (min-width: 40em) {
-  .has-moved-h2 {
+  .title-post {
     margin: 2rem 1rem 3rem; }
   .fs-desktop-vw-5 {
     font-size: 5vw; }

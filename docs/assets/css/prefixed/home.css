@@ -1,17 +1,17 @@
-.wf-active .has-moved-h2 {
+.wf-active .title-post {
   font-family: brandosans-semibold-v100, AvenirNext-DemiBold, Corbel, "Lucida Grande", "Trebuchet Ms", "Segoe Ui", "DejaVu Sans Condensed", sans-serif !important;
   letter-spacing: -1px;
   word-spacing: 1px; }
   @media all and (min-width: 40em) {
-    .wf-active .has-moved-h2 {
+    .wf-active .title-post {
       letter-spacing: -2px;
       word-spacing: 2px; } }
   @media all and (min-width: 61.25em) {
-    .wf-active .has-moved-h2 {
+    .wf-active .title-post {
       letter-spacing: -3px;
       word-spacing: 3px; } }
   @media all and (min-width: 81.25em) {
-    .wf-active .has-moved-h2 {
+    .wf-active .title-post {
       letter-spacing: -5px;
       word-spacing: 5px; } }
 
@@ -41,6 +41,7 @@ h2 {
   font-weight: normal;
   color: #22a2c9; }
 
+.publication-list__item__content p:first-of-type:first-letter,
 .dropcap {
   font-family: AvenirNext-DemiBold, Corbel, "Lucida Grande", "Trebuchet Ms", "Segoe Ui", "DejaVu Sans Condensed", sans-serif;
   color: #293256;
@@ -52,6 +53,7 @@ h2 {
   height: 127px;
   -webkit-font-smoothing: antialiased; }
 
+.wf-active .publication-list__item__content p:first-of-type:first-letter,
 .wf-active .dropcap {
   margin-top: 0;
   margin-bottom: 0; }
@@ -463,6 +465,7 @@ footer a {
   font-family: brandosans-regular-v100, AvenirNext-Regular, Corbel, "Lucida Grande", "Trebuchet Ms", "Segoe Ui", "DejaVu Sans", sans-serif;
   font-weight: normal; }
 
+.wf-active .publication-list__item__content p:first-of-type:first-letter,
 .wf-active .dropcap {
   font-family: "Brando Semibold", Impact, AvenirNextCondensed-Heavy, Charcoal, "Arial Black", sans-serif; }
 /*# sourceMappingURL=home.css.map */

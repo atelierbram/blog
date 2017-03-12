@@ -1,6 +1,7 @@
 ---
 title:          Differentiate
 long_title:     Differentiate between Code Examples
+index_title:    Differentiate between Code Examples
 slug:           differentiate
 description:    Use two versions of one colorscheme, light- and dark, in a blogpost in order to differentiate between different code environments
 post_type:      post
@@ -14,8 +15,6 @@ pagination:
 use: [posts]
 
 ---
-
-## Differentiate between Code Examples
 
 <span class="dropcap">L</span>et’s say one is writing a tutorial with code-examples showing code-snippets from the command-line, _and_ code-snippets from javascript files. One _could_ use **screenshots** from the commandline with, for example, a _dark_ theme and javascript snippets in plain text within a `pre`tag syntax-highlighted with a _light_ theme, in order to differentiate between the two in a clear manner.
 <p class="publication-list__item__meta"><time datetime="{{ page.date_machine }}">{{ page.date_human }}</time></p>

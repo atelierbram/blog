@@ -20,6 +20,7 @@
   <body class="{% if page.slug %}page-{{ page.slug }}{% endif %}">
     {% include "header.twig" %}
     {% if page.post_type %}{% include "nav.twig" %}{% endif %}
+    {% if page.post_type %}<h2 id="{{ page.slug }}" class="title-post">{{ page.index_title }}</h2>{% endif %}
     {% block content_wrapper %}{% block content %}{% endblock %}{% endblock %}
     {% include "footer.twig" %}
 

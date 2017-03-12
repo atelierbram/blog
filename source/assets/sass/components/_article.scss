@@ -22,7 +22,7 @@ li p {
 }
 
 // moved with javascript to .innerwrap for large and wide heading ...
-.has-moved-h2 {
+.title-post {
   -webkit-font-smoothing: antialiased;
   text-align: center;
 }
@@ -62,7 +62,7 @@ sup span {
 }
 // font-sizes scaling with screen-width for heading
 @include mq($from: tablet) {
-  .has-moved-h2 {
+  .title-post {
     margin: 2rem 1rem 3rem;
   }
  .fs-desktop-vw-5 {

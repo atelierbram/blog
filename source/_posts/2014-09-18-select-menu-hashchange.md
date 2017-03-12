@@ -1,6 +1,7 @@
 ---
 title:          Select Menu
 long_title:     Site-wide Navigation with Select Menu using window.onhashchange event
+index_title:    Site-wide Navigation with Select Menu
 slug:           select-menu-hashchange
 description:    Have a select-option with the right value on page refresh
 post_type:      post
@@ -14,8 +15,6 @@ pagination:
 use: [posts]
 
 ---
-
-## Site-wide Navigation with Select Menu
 
 <span class="dropcap">W</span>hen one is already using jQuery, easiest way is to use Ben Alman's great ["hashchange plugin"](https://github.com/cowboy/jquery-hashchange) to get a select-menu to display the right `option` when using a select-menu for site-wide navigation (_maybe for small screens_), for otherwise, with each page refresh, the `select` will always jump to the top option when there is no `selected` attribute with a value of `selected` set for the corresponding page on that corresponding option. This is how I would do it, probably could me less verbose, but it works:
 <p class="publication-list__item__meta"><time datetime="{{ page.date_machine }}">{{ page.date_human }}</time></p>

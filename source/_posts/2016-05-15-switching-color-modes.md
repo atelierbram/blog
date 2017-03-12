@@ -1,6 +1,7 @@
 ---
 title:          Switching Modes
 long_title:     Switching Color Modes in SVG
+index_title:    Switching Color Modes in SVG
 slug:           switching-color-modes
 description:    Switch between monochrome and full-color mode in SVG with custom data-attributes
 post_type:      post
@@ -14,8 +15,6 @@ pagination:
 use: [posts]
 
 ---
-
-## Switching Color Modes in SVG
 
 <span class="dropcap">C</span>ommon practice with showing a serie of logos in an attractive way in a webpage, is to present gray scaled – or monochrome versions, to neutralize the (_potentially clashing_) distracting colors from the images. One way of doing this could be to manipulate the full-color images in photo-editing software and save copies in gray scaled versions. An even quicker way would be to use css– or svg-filters.
 

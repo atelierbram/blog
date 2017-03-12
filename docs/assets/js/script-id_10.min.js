@@ -1,1 +1,1 @@
-function insertRemove(){"use strict";var a=document.getElementById("alpha-transparency-in-8-digits-hex-notation"),b=document.getElementById("innerWrap"),c=document.getElementById("page");a.classList.add("has-moved-h2","fs-desktop-vw-9_5","fs-3_5"),b.insertBefore(a,c)}insertRemove();
+function insert(){"use strict";document.getElementById("alpha-transparency-in-hex").classList.add("fs-desktop-vw-8","fs-3_5")}insert();

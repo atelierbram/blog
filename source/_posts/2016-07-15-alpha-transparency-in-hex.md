@@ -1,6 +1,7 @@
 ---
 title:          Alpha Transparency
 long_title:     Alpha Transparency In 8 Digits Hex Notation
+index_title:    Alpha Transparency In Hex
 slug:           alpha-transparency-in-hex
 description:    Where alpha transparency in 8 digits hex notation can be usefull
 post_type:      post
@@ -14,8 +15,6 @@ pagination:
 use: [posts]
 
 ---
-
-## Alpha Transparency in 8 Digits Hex Notation
 
 <span class="dropcap">M</span>aybe early days, but coming to a browser near you some day: alpha transparency in 8 digits hex notation; currently supported in Chrome Canary and Firefox Nightly. Some thoughts here on how and why this could be useful.
 

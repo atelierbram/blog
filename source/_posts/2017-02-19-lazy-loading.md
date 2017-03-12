@@ -1,6 +1,7 @@
 ---
 title:          Lazy Loading
 long_title:     Lazy Loading Logos
+index_title:    Lazy Loading Logos
 slug:           lazy-loading
 description:    Lazy load images with javascript by replacing a small inline SVG data URI with embedded text on the src-tag with the url of the image stored in a data-attribute.
 post_type:      post
@@ -14,8 +15,6 @@ pagination:
 use: [posts]
 
 ---
-
-## Lazy Loading Logos
 
 <span class="dropcap">T</span>weaking a method for the lazy loading of images made me think the result could be described as progressively enhancing images. By replacing – with javaScript – a small inline SVG data URI with only embedded text inside on the src-tag with the url of the external image stored in a data-attribute.
 

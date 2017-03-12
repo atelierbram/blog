@@ -57,7 +57,7 @@ module.exports = function(grunt) {
         files: {
           'docs/index.html'            : 'output_prod/index.html',
           'source/_includes/critical-css.inc'        : 'docs/assets/css/prefixed/critical.min.css',
-          'source/_includes/homeheadstyles.inc'      : 'docs/assets/css/prefixed/home.min.css',
+          'source/_includes/homeheadstyles-css.inc'  : 'docs/assets/css/prefixed/home.min.css',
           'source/_includes/head-detect-js.inc'      : 'docs/assets/js/head-detect.min.js',
           'source/_includes/insert-svg-js.inc'       : 'docs/assets/js/insert-svg.min.js',
           'source/_includes/script-id_01-js.inc'     : 'docs/assets/js/script-id_01.min.js',
