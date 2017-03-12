@@ -29,6 +29,9 @@ sitemap-ignore.json
 # Docs, etc in underscore directory
 _
 
+# ignore page folder for pagination for now
+/docs/page/
+
 # copied assets for local development
 /assets
 
