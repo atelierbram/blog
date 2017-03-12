@@ -1,3 +1,5 @@
+sculpin:
+  output_dir: docs
 sculpin_content_types:
   posts:
-    permalink: pretty
+    permalink: /:basename/

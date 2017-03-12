@@ -1,0 +1,16 @@
+// Dropcap
+.dropcap {
+  font-family: AvenirNext-DemiBold, Corbel, "Lucida Grande", "Trebuchet Ms", "Segoe Ui", "DejaVu Sans Condensed", sans-serif;
+  color: $base01;
+  margin: 16px 4px 0.5rem 1px;
+  padding: 0;
+  float: left;
+  font-size: 172px;
+  line-height: .7;
+  height: 127px;
+  -webkit-font-smoothing: antialiased;
+}
+.wf-active .dropcap {
+  margin-top: 0;
+  margin-bottom: 0;
+}

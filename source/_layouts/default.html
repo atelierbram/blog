@@ -18,10 +18,10 @@
     {% if page.post_type %}<script>{% include "load-css-js.inc" %} loadCSS( "{{ site.slug }}/assets/css/prefixed/style.min.css" );</script><noscript><link href="{{ site.slug }}/assets/css/prefixed/style.min.css" rel="stylesheet"></noscript>{% endif %}
   </head>
   <body class="{% if page.slug %}page-{{ page.slug }}{% endif %}">
-    {% include "header.inc" %}
-    {% if page.post_type %}{% include "nav.inc" %}{% endif %}
+    {% include "header.twig" %}
+    {% if page.post_type %}{% include "nav.twig" %}{% endif %}
     {% block content_wrapper %}{% block content %}{% endblock %}{% endblock %}
-    {% include "footer.inc" %}
+    {% include "footer.twig" %}
 
     {% if page.script %}<script>{% include page.script %}</script>{% endif %}
 

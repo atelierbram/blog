@@ -1,0 +1,39 @@
+// to target the original h2: if javascripts fails and the heading is not moved to .inner-wrap
+.page h2 {
+  margin: .5rem 0 .75em;
+  @include mq($from: desktop) {
+    font-size: 3rem;
+    -webkit-font-smoothing: antialiased;
+  }
+  @include mq($from: wide) {
+    font-size: 4rem;
+  }
+}
+h3 {
+  margin: .75rem 0 0 0;
+  padding: .75em 0 0;
+  font-weight: normal;
+  // border-bottom: 2px solid $dark04;
+  // margin-left: -.35rem;
+  // padding-left: .35rem;
+  color: $base01;
+}
+h4 {
+  font-family: AvenirNextCondensed-DemiBold, Corbel, "Lucida Grande", "Trebuchet Ms", "Segoe Ui", "DejaVu Sans Condensed", sans-serif;
+}
+
+h4 {
+  margin: 2em 0 0;
+  padding: 1rem 0 0;
+  text-transform: uppercase;
+  color: $dark04;
+  font-size: 1.25rem;
+}
+.prevnext h5 {
+  font-family: AvenirNextCondensed-Regular, Corbel, "Lucida Grande", "Trebuchet Ms", "Segoe Ui", "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", sans-serif;
+  float: left;
+  width: 50%;
+  font-size: 1em;
+  font-weight: normal;
+}
+

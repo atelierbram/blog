@@ -7,9 +7,9 @@ author: Bram de Haan <info@atelierbramdehaan.nl>
 org: Atelier Bram de Haan
 description: Blog-posts on Frontend Webdesign
 keywords: Webdesign, Frontend, Design, 2D-Design, Documentation, Culture
-url: http://localhost/~bram/github.com/atelierbram/blog/output_dev
+url: http://localhost/~bram/github.com/atelierbram/blog/docs
 slug: http://localhost/~bram/github.com/atelierbram/blog
-slug_posts: http://localhost/~bram/github.com/atelierbram/blog/output_dev/_posts
+slug_posts: http://localhost/~bram/github.com/atelierbram/blog/docs
 url_license: http://atelierbram.mit-license.org/
 url_homepage: http://atelierbram.github.io/blog/
 url_codepen-blog: http://codepen.io/atelierbram/blog

@@ -19,11 +19,14 @@
         "component-dir": "source/components"
     },
     "scripts": {
-        "post-install-cmd": [
-            "ComponentManager\\ComponentManager::postComposerInstall"
-        ]
+      "post-install-cmd": [
+        "ComponentManager\\ComponentManager::postComposerInstall"
+      ],
+      "local": [
+        "vendor/bin/sculpin generate --url=http://localhost/~bram/github.com/atelierbram/blog/output_dev/ --watch --server"
+      ]
     },
     "autoload": {
-        "classmap": ["component-manager.php"]
+      "classmap": ["component-manager.php"]
     }
 }
