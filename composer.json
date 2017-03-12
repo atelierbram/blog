@@ -22,8 +22,11 @@
       "post-install-cmd": [
         "ComponentManager\\ComponentManager::postComposerInstall"
       ],
-      "local": [
-        "vendor/bin/sculpin generate --url=http://localhost/~bram/github.com/atelierbram/blog/output_dev/ --watch --server"
+      "dev": [
+        "vendor/bin/sculpin generate --url=http://localhost/~bram/github.com/atelierbram/blog/docs/ --watch --server"
+      ],
+      "prod": [
+        "sculpin generate --env=prod"
       ]
     },
     "autoload": {

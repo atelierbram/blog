@@ -24,8 +24,8 @@ use: [posts]
 Now HEXA doesn’t have the most intuitive syntax, [HSLA](https://css-tricks.com/yay-for-hsla/) has, and the alpha transparency isn’t making live easier. But we have tools for this build right into the browser: you can check this out in Chrome Canary or in Firefox Nightly DevTools:
 <div class="container-media container-media-square">
 <video width="512" controls autoplay>
-  <source src="http://atelierbram.github.io/blog/assets/media/color-formats-firefox-devtools.mp4" type="video/mp4">
-  <source src="http://atelierbram.github.io/blog/assets/media/color-formats-firefox-devtools.ogg" type="video/ogg">
+  <source src="http://atelierbram.github.io/video/color-formats-firefox-devtools.mp4" type="video/mp4">
+  <source src="http://atelierbram.github.io/video/color-formats-firefox-devtools.ogg" type="video/ogg">
   Your browser doesn't support HTML5 video tag.
 </video>
 </div>
