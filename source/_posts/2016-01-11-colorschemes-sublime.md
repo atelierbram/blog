@@ -4,11 +4,11 @@ long_title:     On Editing Colorschemes for Sublime Text
 index_title:    Editing Colorschemes for Sublime Text
 slug:           colorschemes-sublime
 description:    Some things learned when editing colorschemes for Sublime Text
-post_type:      post
+page_type:      post
 id:             id_08
 script:         script-id_08-js.inc
 date_human:     January 2016
-date_machine:   2016-01-11
+date_machine:   2016_01_11
 generator:      pagination
 pagination:
   max_per_page: 12
@@ -16,9 +16,9 @@ use: [posts]
 
 ---
 
-<span class="dropcap">S</span>omewhat suprised to see how scarces the available information is, around the interwebs and in the docs, on the subject of creating colorschemes for Sublime Text, for such a popular text-editor. Here are some notes that may come handy when doing this yourself. Down at the bottom of this post one will find links to other resources.
+Somewhat suprised to see how scarces the available information is, around the interwebs and in the docs, on the subject of creating colorschemes for Sublime Text, for such a popular text-editor. Here are some notes that may come handy when doing this yourself. Down at the bottom of this post one will find links to other resources.
 
-<p class="publication-list__item__meta"><time datetime="{{ page.date_machine }}">{{ page.date_human }}</time></p>
+<p class="publication-list__item__meta"><time datetime="{{ page.date_machine|replace({'_':'-'}) }}">{{ page.date_human }}</time></p>
 
 On Mac OS X the `colorschemes.tmTheme` files can be found in the following directory from the terminal:
 

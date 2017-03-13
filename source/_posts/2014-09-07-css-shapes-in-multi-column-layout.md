@@ -4,11 +4,11 @@ long_title:     CSS-Shapes in Multi-Column Layout
 index_title:    CSS-Shapes in Multi-Column Layout
 slug:           css-shapes-in-multi-column-layout
 description:    Avoid breaking the layout of a multi-column-layout when using CSS-Shapes
-post_type:      post
-id:             id-01
+page_type:      post
+id:             id_01
 script:         script-id_01-js.inc
 date_human:     September 2014
-date_machine:   2014-09-07
+date_machine:   2014_09_07
 generator:      pagination
 pagination:
   max_per_page: 12
@@ -16,8 +16,8 @@ use: [posts]
 
 ---
 
-<span class="dropcap">I</span>n order to avoid breaking up a `CSS-Shape` from the surrounding wrapping text to another column, (_... which is far from pretty_), when using CSS-Shapes (_to make text flow around an image or an object_) within a <strong>multi-column layout</strong>: one can use the property `break-inside` with the value `avoid-column` on the wrapping element:
-<p class="publication-list__item__meta"><time datetime="{{ page.date_machine }}">{{ page.date_human }}</time></p>
+In order to avoid breaking up a `CSS-Shape` from the surrounding wrapping text to another column, (_... which is far from pretty_), when using CSS-Shapes (_to make text flow around an image or an object_) within a <strong>multi-column layout</strong>: one can use the property `break-inside` with the value `avoid-column` on the wrapping element:
+<p class="publication-list__item__meta"><time datetime="{{ page.date_machine|replace({'_':'-'}) }}">{{ page.date_human }}</time></p>
 
 ```language-css
 .wrap-module {

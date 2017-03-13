@@ -4,11 +4,11 @@ long_title:     Switching Color Modes in SVG
 index_title:    Switching Color Modes in SVG
 slug:           switching-color-modes
 description:    Switch between monochrome and full-color mode in SVG with custom data-attributes
-post_type:      post
+page_type:      post
 id:             id_09
 script:         script-id_09-js.inc
 date_human:     May 2016
-date_machine:   2016-05-15
+date_machine:   2016_05_15
 generator:      pagination
 pagination:
   max_per_page: 12
@@ -16,9 +16,9 @@ use: [posts]
 
 ---
 
-<span class="dropcap">C</span>ommon practice with showing a serie of logos in an attractive way in a webpage, is to present gray scaled – or monochrome versions, to neutralize the (_potentially clashing_) distracting colors from the images. One way of doing this could be to manipulate the full-color images in photo-editing software and save copies in gray scaled versions. An even quicker way would be to use css– or svg-filters.
+Common practice with showing a serie of logos in an attractive way in a webpage, is to present gray scaled – or monochrome versions, to neutralize the (_potentially clashing_) distracting colors from the images. One way of doing this could be to manipulate the full-color images in photo-editing software and save copies in gray scaled versions. An even quicker way would be to use css– or svg-filters.
 
-<p class="publication-list__item__meta"><time datetime="{{ page.date_machine }}">{{ page.date_human }}</time></p>
+<p class="publication-list__item__meta"><time datetime="{{ page.date_machine|replace({'_':'-'}) }}">{{ page.date_human }}</time></p>
 
 With CSS-filters one is limited to the grayscale- or sepia filters, which will be sufficient in most use-cases. SVG filters are more powerful and have more options, while being more complex in a syntax which may have to be studied to be used well (_in a more customized way_).
 

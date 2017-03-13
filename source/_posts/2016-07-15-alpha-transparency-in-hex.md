@@ -4,11 +4,11 @@ long_title:     Alpha Transparency In 8 Digits Hex Notation
 index_title:    Alpha Transparency In Hex
 slug:           alpha-transparency-in-hex
 description:    Where alpha transparency in 8 digits hex notation can be usefull
-post_type:      post
-id:             id-10
+page_type:      post
+id:             id_10
 script:         script-id_10-js.inc
 date_human:     July 2016
-date_machine:   2016-07-15
+date_machine:   2016_07_15
 generator:      pagination
 pagination:
   max_per_page: 12
@@ -16,9 +16,9 @@ use: [posts]
 
 ---
 
-<span class="dropcap">M</span>aybe early days, but coming to a browser near you some day: alpha transparency in 8 digits hex notation; currently supported in Chrome Canary and Firefox Nightly. Some thoughts here on how and why this could be useful.
+Maybe early days, but coming to a browser near you some day: alpha transparency in 8 digits hex notation; currently supported in Chrome Canary and Firefox Nightly. Some thoughts here on how and why this could be useful.
 
-<p class="publication-list__item__meta"><time datetime="{{ page.date_machine }}">{{ page.date_human }}</time></p>
+<p class="publication-list__item__meta"><time datetime="{{ page.date_machine|replace({'_':'-'}) }}">{{ page.date_human }}</time></p>
 
 Now HEXA doesn’t have the most intuitive syntax, [HSLA](https://css-tricks.com/yay-for-hsla/) has, and the alpha transparency isn’t making live easier. But we have tools for this build right into the browser: you can check this out in Chrome Canary or in Firefox Nightly DevTools:
 <div class="container-media container-media-square">

@@ -4,11 +4,11 @@ long_title:     Static Site Generator Assemble
 index_title:    Static Site Generator Assemble
 slug:           assembling
 description:    Static Site Generator Assemble
-post_type:      post
+page_type:      post
 id:             id_04
 script:         script-id_04-js.inc
 date_human:     February 2015
-date_machine:   2015-02-18
+date_machine:   2015_02_18
 generator:      pagination
 pagination:
   max_per_page: 12
@@ -16,8 +16,8 @@ use: [posts]
 
 ---
 
-<span class="dropcap">T</span>he advantages of having a static site-generator integrated in one and the same build-tool _(that you may already be using)_ is huge: [Assemble itself](https://github.com/assemble/assemble) is a Grunt- _(also Yeoman and Node, and soon to be Gulp-)_ plugin. At the same time, Assemble assumes very little about _“what it is that you are trying to do”_; making it fun to use _(if you are also the kind of person that tends to want to make things their own &hellip;)_.
-<p class="publication-list__item__meta"><time datetime="{{ page.date_machine }}">{{ page.date_human }}</time></p>
+The advantages of having a static site-generator integrated in one and the same build-tool _(that you may already be using)_ is huge: [Assemble itself](https://github.com/assemble/assemble) is a Grunt- _(also Yeoman and Node, and soon to be Gulp-)_ plugin. At the same time, Assemble assumes very little about _“what it is that you are trying to do”_; making it fun to use _(if you are also the kind of person that tends to want to make things their own &hellip;)_.
+<p class="publication-list__item__meta"><time datetime="{{ page.date_machine|replace({'_':'-'}) }}">{{ page.date_human }}</time></p>
 
 For an example with the alpha version of Assemble 6.0, using Gulp ISO Grunt,  go to [this repo](https://github.com/atelierbram/Starter-Assemble-Gulp)
 

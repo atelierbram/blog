@@ -4,11 +4,11 @@ long_title:     Site-wide Navigation with Select Menu using window.onhashchange 
 index_title:    Site-wide Navigation with Select Menu
 slug:           select-menu-hashchange
 description:    Have a select-option with the right value on page refresh
-post_type:      post
-id:             id-02
+page_type:      post
+id:             id_02
 script:         script-id_02-js.inc
 date_human:     September 2014
-date_machine:   2014-09-18
+date_machine:   2014_09_18
 generator:      pagination
 pagination:
   max_per_page: 12
@@ -16,8 +16,8 @@ use: [posts]
 
 ---
 
-<span class="dropcap">W</span>hen one is already using jQuery, easiest way is to use Ben Alman's great ["hashchange plugin"](https://github.com/cowboy/jquery-hashchange) to get a select-menu to display the right `option` when using a select-menu for site-wide navigation (_maybe for small screens_), for otherwise, with each page refresh, the `select` will always jump to the top option when there is no `selected` attribute with a value of `selected` set for the corresponding page on that corresponding option. This is how I would do it, probably could me less verbose, but it works:
-<p class="publication-list__item__meta"><time datetime="{{ page.date_machine }}">{{ page.date_human }}</time></p>
+When one is already using jQuery, easiest way is to use Ben Alman's great ["hashchange plugin"](https://github.com/cowboy/jquery-hashchange) to get a select-menu to display the right `option` when using a select-menu for site-wide navigation (_maybe for small screens_), for otherwise, with each page refresh, the `select` will always jump to the top option when there is no `selected` attribute with a value of `selected` set for the corresponding page on that corresponding option. This is how I would do it, probably could me less verbose, but it works:
+<p class="publication-list__item__meta"><time datetime="{{ page.date_machine|replace({'_':'-'}) }}">{{ page.date_human }}</time></p>
 
 - set an `id` on all the individual option items, something like `<option id="sm-home">` for the homepage `<option id="sm-blog">`  for the blog-page, and so on
 - for the next bit to work, we will have to add the page#target (to the id) to the end of the `url` of the `href`s `option` values, like so `blog/index.html#sm-blog`, or maybe `blog/index.php#sm-blog`

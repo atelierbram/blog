@@ -4,10 +4,10 @@
     <meta charset="utf-8">
     <title>{% block title %}{{ page.long_title }} | {{ site.subtitle }}{% endblock %}</title>
     {% if site.description %}<meta name="description" content="{{page.description}}"/>{% endif %}
-    {% if page.index_type %}<style>{% include "homeheadstyles-css.inc" %}</style>{% endif %}
-    {% if page.index_type %}<link rel="prefetch" href="{{ site.slug }}/assets/js/prism-custom.min.js">{% endif %}
-    {% if page.index_type %}<link rel="prefetch" href="{{ site.slug }}/assets/css/prefixed/style.min.css">{% endif %}
-    {% if page.post_type %}<style>{% include "critical-css.inc" %}</style>{% endif %}
+    {% if page.page_type == "index" %}<style>{% include "homeheadstyles-css.inc" %}</style>{% endif %}
+    {% if page.page_type == "index" %}<link rel="prefetch" href="{{ site.slug }}/assets/js/prism-custom.min.js">{% endif %}
+    {% if page.page_type == "index" %}<link rel="prefetch" href="{{ site.slug }}/assets/css/prefixed/style.min.css">{% endif %}
+    {% if page.page_type == "post" %}<style>{% include "critical-css.inc" %}</style>{% endif %}
 
     <style>{% include "btn-menu-svg-bg.inc" %}</style>
 
@@ -15,19 +15,19 @@
     <meta name="author" content="Bram de Haan">
     <link rel="author" href="https://plus.google.com/+BramdeHaan/posts">
     <script>{% include "head-detect-js.inc" %}</script>
-    {% if page.post_type %}<script>{% include "load-css-js.inc" %} loadCSS( "{{ site.slug }}/assets/css/prefixed/style.min.css" );</script><noscript><link href="{{ site.slug }}/assets/css/prefixed/style.min.css" rel="stylesheet"></noscript>{% endif %}
+    {% if page.page_type == "post" %}<script>{% include "load-css-js.inc" %} loadCSS( "{{ site.slug }}/assets/css/prefixed/style.min.css" );</script><noscript><link href="{{ site.slug }}/assets/css/prefixed/style.min.css" rel="stylesheet"></noscript>{% endif %}
   </head>
-  <body class="{% if page.slug %}page-{{ page.slug }}{% endif %}">
+  <body class="{% if page.slug %}page-{{ page.slug }}{% endif %} {% if page.page_type %}page-type-{{ page.page_type }}{% endif %}" {% if page.id %}id="{{ page.id|replace({'_':'-'}) }}"{% endif %}>
     {% include "header.twig" %}
-    {% if page.post_type %}{% include "nav.twig" %}{% endif %}
-    {% if page.post_type %}<h2 id="{{ page.slug }}" class="title-post">{{ page.index_title }}</h2>{% endif %}
+    {% if page.page_type == "post" %}{% include "nav.twig" %}{% endif %}
+    {% if page.page_type == "post" %}<h2 id="{{ page.slug }}" class="title-post">{{ page.index_title }}</h2>{% endif %}
     {% block content_wrapper %}{% block content %}{% endblock %}{% endblock %}
     {% include "footer.twig" %}
 
     {% if page.script %}<script>{% include page.script %}</script>{% endif %}
 
-    {% if page.post_type %}<script>{% include "insert-svg-js.inc" %}</script> {% endif %}
-    {% if page.post_type %}<script src="{{ site.slug }}/assets/js/prism-custom.min.js"></script>{% endif %}
+    {% if page.page_type == "post" %}<script>{% include "insert-svg-js.inc" %}</script> {% endif %}
+    {% if page.page_type == "post" %}<script src="{{ site.slug }}/assets/js/prism-custom.min.js"></script>{% endif %}
     <script>{% include "fontfaceobserver-js.inc" %}</script>
     <script>var observer = new FontFaceObserver('Brando'); observer.check(null, 5000).then(function () { console.log('Font is available'); document.documentElement.className = document.documentElement.className.replace(/\bwf-inactive\b/g, '') + ' wf-active '; }, function () { console.log('Font is not available after waiting 5 seconds'); });</script>
   </body>

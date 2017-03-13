@@ -4,11 +4,11 @@ long_title:     Lazy Loading Logos
 index_title:    Lazy Loading Logos
 slug:           lazy-loading
 description:    Lazy load images with javascript by replacing a small inline SVG data URI with embedded text on the src-tag with the url of the image stored in a data-attribute.
-post_type:      post
+page_type:      post
 id:             id_11
 script:         script-id_11-js.inc
 date_human:     February 2017
-date_machine:   2017-02-19
+date_machine:   2017_02_19
 generator:      pagination
 pagination:
   max_per_page: 12
@@ -16,9 +16,9 @@ use: [posts]
 
 ---
 
-<span class="dropcap">T</span>weaking a method for the lazy loading of images made me think the result could be described as progressively enhancing images. By replacing – with javaScript – a small inline SVG data URI with only embedded text inside on the src-tag with the url of the external image stored in a data-attribute.
+Tweaking a method for the lazy loading of images made me think the result could be described as progressively enhancing images. By replacing – with javaScript – a small inline SVG data URI with only embedded text inside on the src-tag with the url of the external image stored in a data-attribute.
 
-<p class="publication-list__item__meta"><time datetime="{{ page.date_machine }}">{{ page.date_human }}</time></p>
+<p class="publication-list__item__meta"><time datetime="{{ page.date_machine|replace({'_':'-'}) }}">{{ page.date_human }}</time></p>
 
 Keep in mind this is about loading SVG (vector) images, like in a logo.
 

@@ -1,13 +1,13 @@
 ---
-layout: default
-title: Documenting a Learning Curve
-long_title:  Frontend Webdesign Blogposts by Bram de Haan
-description: documenting a learning curve on frontend webdesign by Bram de Haan, also known as Atelierbram on social media
-index_type:  home
-id:          id_00
-generator: pagination
+layout:         default
+title:          Documenting a Learning Curve
+long_title:     Frontend Webdesign Blogposts by Bram de Haan
+description:    documenting a learning curve on frontend webdesign by Bram de Haan, also known as Atelierbram on social media
+page_type:      index
+id:             id_00
+generator:      pagination
 pagination:
-    max_per_page: 12
+  max_per_page: 12
 use: [posts]
 ---
 
@@ -22,7 +22,7 @@ use: [posts]
           {% if post.blocks.excerpt %}
           {{ post.blocks.excerpt|raw }}
           {% else %}
-          <p class="publication-list__item__meta"><time datetime="{{ post.date_machine}}">{{ post.date_human }}</time></p>
+          <p class="publication-list__item__meta"><time datetime="{{ post.date_machine|replace({'_':'-'}) }}">{{ post.date_human }}</time></p>
           <div class="publication-list__item__content">
             <p>
             {{ post.blocks.content|raw|striptags|split(' ')|slice(0,40)|join(' ') }} &hellip;
@@ -39,6 +39,7 @@ use: [posts]
 
         {% endfor %}
    </ul>
+ </section>
 
    {% if page.pagination.previous_page or page.pagination.next_page %}
    <ul class="pager">
@@ -49,6 +50,5 @@ use: [posts]
      <li class="previous"><a href="{{ site.url }}{{ page.pagination.next_page.url }}">← Older</a></li>
      {% endif %}
    </ul>
- </section>
  {% endif %}
  {% endblock %}

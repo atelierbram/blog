@@ -4,11 +4,11 @@ long_title:     Colorscheming for Syntax Highlighting
 index_title:    Colorscheming for Syntax Highlighting
 slug:           colorscheming
 description:    The Process of Creating a Colorscheme for a Code Syntax Highlighting Theme
-post_type:      post
+page_type:      post
 id:             id_05
 script:         script-id_05-js.inc
 date_human:     May 2015
-date_machine:   2015-05-14
+date_machine:   2015_05_14
 generator:      pagination
 pagination:
   max_per_page: 12
@@ -16,8 +16,8 @@ use: [posts]
 
 ---
 
-<span class="dropcap">F</span>or the last couple of years, whenever I was in the mood for it and found the time, I build colorschemes for syntax highlighting. The idea, that triggered this kind of an academic exercise in colorscheming, was to build a serie of colorschemes that would comprise the whole color gamut, each with it’s own base-color.
-<p class="publication-list__item__meta"><time datetime="{{ page.date_machine }}">{{ page.date_human }}</time></p>
+For the last couple of years, whenever I was in the mood for it and found the time, I build colorschemes for syntax highlighting. The idea, that triggered this kind of an academic exercise in colorscheming, was to build a serie of colorschemes that would comprise the whole color gamut, each with it’s own base-color.
+<p class="publication-list__item__meta"><time datetime="{{ page.date_machine|replace({'_':'-'}) }}">{{ page.date_human }}</time></p>
 
 > music is centered around a tonal center, the tonic, which also determines a key. The vast majority of western music is tonal.
 

@@ -4,11 +4,11 @@ long_title:     Differentiate between Code Examples
 index_title:    Differentiate between Code Examples
 slug:           differentiate
 description:    Use two versions of one colorscheme, light- and dark, in a blogpost in order to differentiate between different code environments
-post_type:      post
+page_type:      post
 id:             id_07
 script:         script-id_07-js.inc
 date_human:     September 2015
-date_machine:   2015-09-04
+date_machine:   2015_09_04
 generator:      pagination
 pagination:
   max_per_page: 12
@@ -16,8 +16,8 @@ use: [posts]
 
 ---
 
-<span class="dropcap">L</span>et’s say one is writing a tutorial with code-examples showing code-snippets from the command-line, _and_ code-snippets from javascript files. One _could_ use **screenshots** from the commandline with, for example, a _dark_ theme and javascript snippets in plain text within a `pre`tag syntax-highlighted with a _light_ theme, in order to differentiate between the two in a clear manner.
-<p class="publication-list__item__meta"><time datetime="{{ page.date_machine }}">{{ page.date_human }}</time></p>
+Let’s say one is writing a tutorial with code-examples showing code-snippets from the command-line, _and_ code-snippets from javascript files. One _could_ use **screenshots** from the commandline with, for example, a _dark_ theme and javascript snippets in plain text within a `pre`tag syntax-highlighted with a _light_ theme, in order to differentiate between the two in a clear manner.
+<p class="publication-list__item__meta"><time datetime="{{ page.date_machine|replace({'_':'-'}) }}">{{ page.date_human }}</time></p>
 
 Screenshots can work well when done right, even when displaying text; like code-snippets. Adept them, have arrows with additional explaining text next to it. Craft them well and you can get [something like this](https://jakearchibald.com/2015/anatomy-of-responsive-images/) which gets it’s point across in an hands-on manner: considering this complicated matter.
 
