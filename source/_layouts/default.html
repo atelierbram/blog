@@ -18,6 +18,7 @@
     {% if page.page_type == "post" %}<script>{% include "load-css-js.inc" %} loadCSS( "{{ site.slug }}/assets/css/prefixed/style.min.css" );</script><noscript><link href="{{ site.slug }}/assets/css/prefixed/style.min.css" rel="stylesheet"></noscript>{% endif %}
   </head>
   <body class="{% if page.slug %}page-{{ page.slug }}{% endif %} {% if page.page_type %}page-type-{{ page.page_type }}{% endif %}" {% if page.id %}id="{{ page.id|replace({'_':'-'}) }}"{% endif %}>
+    {% include "icons-svg.inc" %}
     {% include "header.twig" %}
     {% if page.page_type == "post" %}{% include "nav.twig" %}{% endif %}
     {% if page.page_type == "post" %}<h2 id="{{ page.slug }}" class="title-post">{{ page.index_title }}</h2>{% endif %}

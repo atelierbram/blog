@@ -154,8 +154,7 @@ svg:not(:root) {
   overflow: hidden; }
 
 .icon {
-  display: inline-block;
-  position: relative; }
+  display: inline-block; }
 
 pre {
   background-color: transparent;
@@ -210,13 +209,6 @@ h4 {
   text-transform: uppercase;
   color: #3f4664;
   font-size: 1.25rem; }
-
-.prevnext h5 {
-  font-family: AvenirNextCondensed-Regular, Corbel, "Lucida Grande", "Trebuchet Ms", "Segoe Ui", "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", sans-serif;
-  float: left;
-  width: 50%;
-  font-size: 1em;
-  font-weight: normal; }
 
 .nav_list li {
   margin: 3px; }
@@ -434,8 +426,26 @@ sup span {
 .prevnext {
   clear: both;
   margin-bottom: 2em;
-  padding-top: 8em; }
+  padding-top: 8em;
+  overflow: auto; }
 
+.page-type-index .prevnext {
+  padding-left: 5%;
+  padding-right: 5%; }
+
+.prevnext h5 {
+  font-family: AvenirNextCondensed-Regular, Corbel, "Lucida Grande", "Trebuchet Ms", "Segoe Ui", "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", sans-serif;
+  width: 50%;
+  font-size: 1em;
+  font-weight: normal; }
+
+.prevnext .prevnext_left {
+  float: left; }
+
+.prevnext .prevnext_right {
+  float: right; }
+
+.prevnext .prevnext_right,
 .prevnext h5:nth-of-type(2) {
   text-align: right; }
 
@@ -462,14 +472,14 @@ sup span {
 .icon-8 {
   width: 10px;
   height: 15px;
-  top: -1px;
+  margin-top: -1px;
   vertical-align: top; }
 
 .icon-arrow-left {
-  right: .25em; }
+  margin-right: .25em; }
 
 .icon-arrow-right {
-  left: .25em; }
+  margin-left: .25em; }
 
 button {
   color: inherit;

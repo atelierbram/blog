@@ -43,11 +43,11 @@ use: [posts]
 
  {% if page.pagination.previous_page or page.pagination.next_page %}
  <nav class="prevnext">
-   {% if page.pagination.previous_page %}
-   <h5><a href="{{ site.url }}{{ page.pagination.previous_page.url }}" rel="prev"><i class="icon icon-8 icon-arrow-left"><svg class="shape-icon" viewBox="0 0 8 12" width="10" height="15"><use xlink:href="#shape-arrow-point-left"></use></svg></i>newer posts</a></h5>
-   {% endif %}
    {% if page.pagination.next_page %}
-   <h5><a href="{{ site.url }}{{ page.pagination.next_page.url }}" rel="next">older posts<i class="icon icon-8 icon-arrow-right"><svg class="shape-icon" viewBox="0 0 8 12" width="10" height="15"><use xlink:href="#shape-arrow-point-right"></use></svg></i></a></h5>
+   <h5 class="prevnext_left"><a href="{{ site.url }}{{ page.pagination.next_page.url }}" rel="next"><i class="icon icon-8 icon-arrow-left"><svg class="shape-icon" viewBox="0 0 8 12" width="10" height="15"><use xlink:href="#shape-arrow-point-left"></use></svg></i>older posts</a></h5>
+   {% endif %}
+   {% if page.pagination.previous_page %}
+   <h5 class="prevnext_right"><a href="{{ site.url }}{{ page.pagination.previous_page.url }}" rel="prev">newer posts<i class="icon icon-8 icon-arrow-right"><svg class="shape-icon" viewBox="0 0 8 12" width="10" height="15"><use xlink:href="#shape-arrow-point-right"></use></svg></i></a></h5>
    {% endif %}
  </nav>
  {% endif %}

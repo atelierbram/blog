@@ -308,8 +308,7 @@ svg:not(:root) {
   overflow: hidden; }
 
 .icon {
-  display: inline-block;
-  position: relative; }
+  display: inline-block; }
 
 .publication-list__item__meta {
   font-size: 1rem;
@@ -340,6 +339,64 @@ svg:not(:root) {
 time {
   background-color: #fff;
   padding: 0 1em; }
+
+.prevnext {
+  clear: both;
+  margin-bottom: 2em;
+  padding-top: 8em;
+  overflow: auto; }
+
+.page-type-index .prevnext {
+  padding-left: 5%;
+  padding-right: 5%; }
+
+.prevnext h5 {
+  font-family: AvenirNextCondensed-Regular, Corbel, "Lucida Grande", "Trebuchet Ms", "Segoe Ui", "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", sans-serif;
+  width: 50%;
+  font-size: 1em;
+  font-weight: normal; }
+
+.prevnext .prevnext_left {
+  float: left; }
+
+.prevnext .prevnext_right {
+  float: right; }
+
+.prevnext .prevnext_right,
+.prevnext h5:nth-of-type(2) {
+  text-align: right; }
+
+.prevnext h5 a {
+  position: relative;
+  display: block;
+  padding: .25em 0;
+  color: #323853;
+  text-decoration: none;
+  transition: color .3s;
+  border-bottom: none;
+  box-shadow: none; }
+
+.prevnext h5 a:hover {
+  color: #c94922;
+  background: none; }
+
+.shape-icon {
+  fill: #293256; }
+
+.prevnext h5 a:hover svg {
+  fill: #c94922; }
+
+.icon-8 {
+  width: 10px;
+  height: 15px;
+  margin-top: -1px;
+  vertical-align: top; }
+
+.icon-arrow-left {
+  margin-right: .25em; }
+
+.icon-arrow-right {
+  margin-left: .25em; }
 
 .page-wrap:after,
 footer {
