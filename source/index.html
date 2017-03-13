@@ -41,14 +41,15 @@ use: [posts]
    </ul>
  </section>
 
-   {% if page.pagination.previous_page or page.pagination.next_page %}
-   <ul class="pager">
-     {% if page.pagination.previous_page %}
-     <li class="next"><a href="{{ site.url }}{{ page.pagination.previous_page.url }}">Newer →</a></li>
-     {% endif %}
-     {% if page.pagination.next_page %}
-     <li class="previous"><a href="{{ site.url }}{{ page.pagination.next_page.url }}">← Older</a></li>
-     {% endif %}
-   </ul>
+ {% if page.pagination.previous_page or page.pagination.next_page %}
+ <nav class="prevnext">
+   {% if page.pagination.previous_page %}
+   <h5><a href="{{ site.url }}{{ page.pagination.previous_page.url }}" rel="prev"><i class="icon icon-8 icon-arrow-left"><svg class="shape-icon" viewBox="0 0 8 12" width="10" height="15"><use xlink:href="#shape-arrow-point-left"></use></svg></i>newer posts</a></h5>
+   {% endif %}
+   {% if page.pagination.next_page %}
+   <h5><a href="{{ site.url }}{{ page.pagination.next_page.url }}" rel="next">older posts<i class="icon icon-8 icon-arrow-right"><svg class="shape-icon" viewBox="0 0 8 12" width="10" height="15"><use xlink:href="#shape-arrow-point-right"></use></svg></i></a></h5>
+   {% endif %}
+ </nav>
  {% endif %}
+
  {% endblock %}

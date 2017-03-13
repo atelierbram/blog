@@ -169,7 +169,7 @@ pre {
   white-space: pre-wrap; }
 
 .publication-list__item__content p:first-of-type:first-letter,
-.page p:first-of-type:first-letter {
+.page > p:first-of-type:first-letter {
   font-family: AvenirNext-DemiBold, Corbel, "Lucida Grande", "Trebuchet Ms", "Segoe Ui", "DejaVu Sans Condensed", sans-serif;
   color: #293256;
   margin: 16px 4px 0.5rem 1px;
@@ -181,7 +181,7 @@ pre {
   -webkit-font-smoothing: antialiased; }
 
 .wf-active .publication-list__item__content p:first-of-type:first-letter,
-.wf-active .page p:first-of-type:first-letter {
+.wf-active .page > p:first-of-type:first-letter {
   margin-top: 0;
   margin-bottom: 0; }
 
@@ -821,7 +821,7 @@ pre[class*="language-"] {
   font-weight: normal; }
 
 .wf-active .publication-list__item__content p:first-of-type:first-letter,
-.wf-active .page p:first-of-type:first-letter {
+.wf-active .page > p:first-of-type:first-letter {
   font-family: "Brando Semibold", Impact, AvenirNextCondensed-Heavy, Charcoal, "Arial Black", sans-serif; }
 
 @media print {

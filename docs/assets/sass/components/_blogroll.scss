@@ -75,22 +75,22 @@ h3 a:hover {
 .wf-active .publication-list__item__content p {
   line-height: 1.4;
 }
-
-.truncate {
-  width: 40%;
-  text-overflow: ellipsis;
-  vertical-align: top;
-  white-space: nowrap;
-  display: inline-block;
-}
+// oud
+// .truncate {
+//   width: 40%;
+//   text-overflow: ellipsis;
+//   vertical-align: top;
+//   white-space: nowrap;
+//   display: inline-block;
+// }
 .read-more {
   display: block;
   position: relative;
   padding: .5em 2em .5em 5em;
   border-radius: 3px;
   clear: both;
-  // transition: padding .4s .4s, background-color .4s;
   transition: all .4s;
+  color: $base01;
 }
 .read-more:hover,
 .read-more:active {
