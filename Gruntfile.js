@@ -55,7 +55,6 @@ module.exports = function(grunt) {
     copy: {
       main: {
         files: {
-          'docs/index.html'            : 'output_prod/index.html',
           'source/_includes/critical-css.inc'        : 'docs/assets/css/prefixed/critical.min.css',
           'source/_includes/homeheadstyles-css.inc'  : 'docs/assets/css/prefixed/home.min.css',
           'source/_includes/head-detect-js.inc'      : 'docs/assets/js/head-detect.min.js',
@@ -170,27 +169,15 @@ module.exports = function(grunt) {
 
       },
 
-      // from the commandline run: grunt gh-pages to build the remote gh-pages branch:
-      // https://github.com/tschaub/grunt-gh-pages
-      // 'gh-pages': {
-      //   options: {
-      //     // push: false
-      //     base: 'docs/',
-      //     add: true
-      //   },
-      //   src: '*|)}>#*'
-      // }
-
   });
 
   grunt.registerTask('build', ['concat', 'uglify', 'sass', 'postcss:dist', 'cssmin', 'copy', 'htmlmin']);
   grunt.registerTask('copy', ['copy']);
-  grunt.registerTask('min', ['htmlmin']);
   grunt.registerTask('scss', ['sass', 'postcss:dist', 'cssmin']);
   grunt.registerTask('js', ['uglify', 'concat']);
   grunt.registerTask('default', ['build', 'watch']);
   grunt.registerTask('dev', ['watch']);
 
-  grunt.loadNpmTasks('grunt-sass','grunt-contrib-cssmin','grunt-contrib-concat','grunt-contrib-uglify','grunt-contrib-watch','matchdep','grunt-postcss','grunt-contrib-copy','grunt-contrib-htmlmin','grunt-gh-pages');
+  grunt.loadNpmTasks('grunt-sass','grunt-contrib-cssmin','grunt-contrib-concat','grunt-contrib-uglify','grunt-contrib-watch','matchdep','grunt-postcss','grunt-contrib-copy','grunt-contrib-htmlmin');
   require('matchdep').filterDev('grunt-*').forEach(grunt.loadNpmTasks);
 };
