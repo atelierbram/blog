@@ -25,7 +25,6 @@
     "grunt-contrib-htmlmin": "^2.3.0",
     "grunt-contrib-uglify": "^2.2.0",
     "grunt-contrib-watch": "^1.0.0",
-    "grunt-gh-pages": "^2.0.0",
     "grunt-postcss": "^0.8.0",
     "grunt-sass": "^2.0.0",
     "matchdep": "^1.0.1",
