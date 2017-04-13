@@ -7,7 +7,7 @@ description:    Applying the small-caps keyword on the font-variant property in 
 page_type:      post
 id:             id_12
 script:         script-id_12-js.inc
-date_human:     February 2017
+date_human:     April 2017
 date_machine:   2017_04_13
 generator:      pagination
 pagination:
