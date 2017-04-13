@@ -143,7 +143,8 @@ module.exports = function(grunt) {
            'docs/select-menu-hashchange/index.html': 'docs/select-menu-hashchange/index.html',
            'docs/switching-color-modes/index.html': 'docs/switching-color-modes/index.html',
            'docs/alpha-transparency-in-hex/index.html': 'docs/alpha-transparency-in-hex/index.html',
-           'docs/lazy-loading/index.html': 'docs/lazy-loading/index.html'
+           'docs/lazy-loading/index.html': 'docs/lazy-loading/index.html',
+           'docs/create-custom-unicase-webfont/index.html': 'docs/create-custom-unicase-webfont/index.html'
          }
        }
     },
