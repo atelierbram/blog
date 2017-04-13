@@ -70,6 +70,7 @@ module.exports = function(grunt) {
           'source/_includes/script-id_09-js.inc'     : 'docs/assets/js/script-id_09.min.js',
           'source/_includes/script-id_10-js.inc'     : 'docs/assets/js/script-id_10.min.js',
           'source/_includes/script-id_11-js.inc'     : 'docs/assets/js/script-id_11.min.js',
+          'source/_includes/script-id_12-js.inc'     : 'docs/assets/js/script-id_12.min.js',
           'source/_includes/fontfaceobserver-js.inc' : 'docs/assets/js/fontfaceobserver.js',
 
           // for local development and also for source maps
@@ -117,7 +118,8 @@ module.exports = function(grunt) {
           'docs/assets/js/script-id_08.min.js' : 'source/assets/js/script-id_08.js',
           'docs/assets/js/script-id_09.min.js' : 'source/assets/js/script-id_09.js',
           'docs/assets/js/script-id_10.min.js' : 'source/assets/js/script-id_10.js',
-          'docs/assets/js/script-id_11.min.js' : 'source/assets/js/script-id_11.js'
+          'docs/assets/js/script-id_11.min.js' : 'source/assets/js/script-id_11.js',
+          'docs/assets/js/script-id_12.min.js' : 'source/assets/js/script-id_12.js'
 
         }
       }
