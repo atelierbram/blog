@@ -18,6 +18,7 @@ use: [posts]
 
 Unicase fonts are a bit special; they provide uppercase glyphs for lowercase characters, which means lowercase glyphs are rendered with glyphs which look just like uppercase glyphs. One should be careful using these fonts, but they have their place. If you want to create the same effect with any other font then there is the CSS property-value pair `font-variant-caps: small-caps` to the rescue <sup><a href="#note-1" class="sup-link" id="supLink1">1</a></sup>.
 
+<p class="publication-list__item__meta"><time datetime="{{ page.date_machine|replace({'_':'-'}) }}">{{ page.date_human }}</time></p>
 
 ```language-css
 .small-caps {
