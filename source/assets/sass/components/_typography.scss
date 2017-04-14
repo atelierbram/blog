@@ -163,3 +163,12 @@ sup span {
 .note a {
   box-shadow: inset 0 -3px 0 $yellow;
 }
+
+@supports (font-variant-caps:  small-caps) {
+  .small-caps {
+    text-transform: lowercase;
+    font-variant-caps: small-caps;
+    letter-spacing: .5px;
+    word-spacing: -.5px;
+  }
+}
