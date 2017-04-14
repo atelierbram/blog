@@ -16,11 +16,11 @@ use: [posts]
 
 ---
 
-Animating the height of an element with only `CSS` is possible with the `max-height` property, giving the begin value a `max-height` of zero and (_let's say_) the 'hovered' value some high number _“that will always be higher then the real height of the highest animated element”_. The outcome of the results can vary quite a bit, depending on the differences between all these values: not satisfying in all scenarios. An alternative way is using `height: 0` in combination with a set value for `padding-bottom`.
+Animating the height of an element with only <span class="small-caps">CSS</span> is possible with the `max-height` property, giving the begin value a `max-height` of zero and (_let's say_) the 'hovered' value some high number _“that will always be higher then the real height of the highest animated element”_. The outcome of the results can vary quite a bit, depending on the differences between all these values: not satisfying in all scenarios. An alternative way is using `height: 0` in combination with a set value for `padding-bottom`.
 <p class="publication-list__item__meta"><time datetime="{{ page.date_machine|replace({'_':'-'}) }}">{{ page.date_human }}</time></p>
 
 ### Animating padding-bottom with CSS-Transitions
-But to know these values for `padding-bottom` <sup><a href="#note-1" class="sup-link" id="supLink1">1</a></sup> one will have to know the height of each element. With only a small amount of dropdown-lists to be styled, one might be tempted to hardcode those values in. But what if someone (, and maybe even not you) wants to add an item to one of these lists in the future? Now one will have to change this value in the `CSS` _every time again_ when the number of items in the `HTML` changes, which can be anoying.
+But to know these values for `padding-bottom` <sup><a href="#note-1" class="sup-link" id="supLink1">1</a></sup> one will have to know the height of each element. With only a small amount of dropdown-lists to be styled, one might be tempted to hardcode those values in. But what if someone (, and maybe even not you) wants to add an item to one of these lists in the future? Now one will have to change this value in the <span class="small-caps">CSS</span> _every time again_ when the number of items in the <span class="small-caps">HTML</span> changes, which can be anoying.
 
 ### Javascript to the rescue
 Since one can know the height of one individual list-item in the dropdown, (because we have a set `font-size`, `padding`, and even use a web-font), one can calculate the height of each list by multiplying this value with the number of list-items that are in the list. To count the number of list-items in each dropdown list with javascript one can use the `length` method.
@@ -59,7 +59,7 @@ $item-value-list: 46px 92px 138px 184px 230px 276px 322px 368px 414px 460px;
 }
 ```
 
-The generated `CSS` <sup><a href="#note-2" class="sup-link" id="supLink2">2</a></sup>:
+The generated <span class="small-caps">CSS</span> <sup><a href="#note-2" class="sup-link" id="supLink2">2</a></sup>:
 
 ```language-css
 [class*="itemcount-5"]:hover .tt-nav__submenu {
@@ -68,7 +68,7 @@ The generated `CSS` <sup><a href="#note-2" class="sup-link" id="supLink2">2</a><
 ```
 
 ### Minimal transition in CSS
-In the `CSS` one should have declarations for the different ‘states’, but the definition can be quite minimal:
+In the <span class="small-caps">CSS</span> one should have declarations for the different ‘states’, but the definition can be quite minimal:
 
 ```language-scss
 /* Submenu - shared properties and values */
@@ -93,11 +93,11 @@ In the `CSS` one should have declarations for the different ‘states’, but th
 One can also provide a fall-back value for `padding-bottom` on the active/hover state (_value should be matching the highest current element, which will then be overridden by the values outputted by the `Sass`-function_) in order to make it always appear, even without javascript (, as shown above).
 
 ### Interplay
-Then there it is: a DIY <sup><a href="#note-3" class="sup-link" id="supLink3">3</a></sup> cooperation between CSS and Javascript, responding fast and snappy, because it benefits from modern browser’s native capabilities with using CSS-transitions.
+Then there it is: a <span class="small-caps">DIY</span> <sup><a href="#note-3" class="sup-link" id="supLink3">3</a></sup> cooperation between <span class="small-caps">CSS</span> and Javascript, responding fast and snappy, because it benefits from modern browser’s native capabilities with using <span class="small-caps">CSS</span>-transitions.
 
 #### Examples
 - [responsive dropdown demo](http://codepen.io/atelierbram/pen/AHwyr) - Disclaimer: this is a prototype: there will be more robust javascript implementations for dropdown menu’s tested on multiple devices out there (like Foundation/Bootstrap).
-- [example build on Bootstrap-3](http://codepen.io/atelierbram/pen/vymHL/) -  extended with [hover-dropdown-plugin](https://github.com/CWSpear/bootstrap-hover-dropdown) by [Cameron Spear](http://cameronspear.com/blog/bootstrap-dropdown-on-hover-plugin/) - [fork of repo on Github](https://github.com/atelierbram/bootstrap-hover-dropdown) - toggle links are clickable, as far as I know works on mobile, but javascript could be improved upon (I am aware that the animation could be done with jQuery `slideDown()` too, I just like the DIY <sup>3</sup> aspect: the tinkering, and the fact the transitions are done by the `CSS`, which has it's own (long-term) advantage.)
+- [example build on Bootstrap-3](http://codepen.io/atelierbram/pen/vymHL/) -  extended with [hover-dropdown-plugin](https://github.com/CWSpear/bootstrap-hover-dropdown) by [Cameron Spear](http://cameronspear.com/blog/bootstrap-dropdown-on-hover-plugin/) - [fork of repo on Github](https://github.com/atelierbram/bootstrap-hover-dropdown) - toggle links are clickable, as far as I know works on mobile, but javascript could be improved upon (I am aware that the animation could be done with jQuery `slideDown()` too, I just like the <span class="small-caps">DIY</span> <sup>3</sup> aspect: the tinkering, and the fact the transitions are done by the `<span class="small-caps">CSS</span>, which has it's own (long-term) advantage.)
 
 #### Notes
 1. <span id="note-1">Probably can also use `height` instead of `padding-bottom` since we are not using `height: auto` here, which (_used to?_)

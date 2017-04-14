@@ -434,6 +434,7 @@ sup span {
   .small-caps {
     text-transform: lowercase;
     font-variant-caps: small-caps;
+    font-weight: 600;
     letter-spacing: .5px;
     word-spacing: -.5px; } }
 
@@ -806,6 +807,7 @@ pre[class*="language-"] {
 .wf-active pre {
   font-family: "Source Code Pro", Consolas, Menlo, Monaco, monospace; }
 
+.wf-active .small-caps,
 .wf-active body,
 .wf-active header h1,
 .wf-active h2,

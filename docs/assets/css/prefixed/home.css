@@ -478,6 +478,7 @@ footer a {
 .wf-active pre {
   font-family: "Source Code Pro", Consolas, Menlo, Monaco, monospace; }
 
+.wf-active .small-caps,
 .wf-active body,
 .wf-active header h1,
 .wf-active h2,

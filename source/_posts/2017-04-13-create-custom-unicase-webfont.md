@@ -1,7 +1,7 @@
 ---
-title:          Custom Unicase Webfont
+title:          Unicase Webfont
 long_title:     Create Custom Unicase Webfont
-index_title:    Custom Unicase Webfont
+index_title:    Unicase Webfont
 slug:           create-custom-unicase-webfont
 description:    Applying the small-caps keyword on the font-variant property in CSS forces the use of small capitals letters for lower case characters
 page_type:      post
@@ -26,7 +26,7 @@ Unicase fonts are a bit special; they provide uppercase glyphs for lowercase cha
 }
 ```
 
-This `font-variant-caps: small-caps` basically makes all lowercase characters appear in a smaller uppercase version, unlike `text-transform: uppercase` which scales the height of the glyphs up. It has to be mentioned though that this likely will only approach the look of a font with true small caps though. This has to do with that uppercase characters in a regular font are usually a bit thinner, an will often look fragile when scaled down to small caps size. One way to fight this is to choose a medium weight font to begin with; more on this later. Adding some letter-spacing also makes them look better in my eyes.
+This `font-variant-caps: small-caps` basically makes all lowercase characters appear in a smaller uppercase version, unlike `text-transform: uppercase` which scales the height of the glyphs up. It has to be mentioned though that this likely will only approach the look of a font with true small caps though. Because uppercase characters in a regular font often are a tiny bit thinner, they may look fragile when scaled down to small caps size compared with lowercase characters of the same size. One way to fight this is to choose a medium weight font to begin with; more on this later. Adding some letter-spacing also makes them look better in my eyes.
 
 <blockquote><dl class="quote"><dt>small-caps</dt><dd>This keyword forces the use of small capitals letters for lower case characters. It corresponds to the OpenType value <code>smcp</code>; if the font doesn't support them, it synthesizes the glyphs.</dd></dl></blockquote>
 
@@ -51,7 +51,7 @@ Leave the rest of the options as default and check the Agreement checkbox.
 
 Now you can download your own custom unicase font, only containing the glyphs for uppercase, numbers and punctuation, which also makes it very light-weight. Conveniently FontSquirrel generates additional <span class="small-caps">CSS</span> with the `@fontface` rule <sup><a href="#note-2" class="sup-link" id="supLink2">2</a></sup> applied.
 
-<blockquote><p class="quote">Never use capital letters to accentuate words in running copy. They stick out far too much spoiling the look of the column or page. Use italics instead. If you have to set words in capitals, use proper small caps with or without initial capitals.</p><p style="text-align:right;font-size:1.125rem !important">Erik Spiekermann</p></blockquote>
+> Never use capital letters to accentuate words in running copy. They stick out far too much spoiling the look of the column or page. Use italics instead. If you have to set words in capitals, use proper small caps with or without initial capitals. <small class="author">Erik Spiekermann</small>
 
 ### Examples
 

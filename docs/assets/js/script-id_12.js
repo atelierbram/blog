@@ -3,7 +3,7 @@ function insert() {
 
 var hTitle= document.getElementById("create-custom-unicase-webfont");
 
-hTitle.classList.add("fs-desktop-vw-8","fs-3_5");
+hTitle.classList.add("fs-desktop-vw-10","fs-3_5");
 
 var note1 = document.getElementById("note-1");
 var clonedNote1 = note1.cloneNode(true);

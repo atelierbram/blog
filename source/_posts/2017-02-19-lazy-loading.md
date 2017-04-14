@@ -16,11 +16,11 @@ use: [posts]
 
 ---
 
-Tweaking a method for the lazy loading of images made me think the result could be described as progressively enhancing images. By replacing – with javaScript – a small inline SVG data URI with only embedded text inside on the src-tag with the url of the external image stored in a data-attribute.
+Tweaking a method for the lazy loading of images made me think the result could be described as progressively enhancing images. By replacing – with javaScript – a small inline <span class="small-caps">SVG</span> data <span class="small-caps">URI</span> with only embedded text inside on the src-tag with the url of the external image stored in a data-attribute.
 
 <p class="publication-list__item__meta"><time datetime="{{ page.date_machine|replace({'_':'-'}) }}">{{ page.date_human }}</time></p>
 
-Keep in mind this is about loading SVG (vector) images, like in a logo.
+Keep in mind this is about loading <span class="small-caps">SVG</span> (vector) images, like in a logo.
 
 The original technique would use a 1px square transparent url-encoded inline image, which would be replaced with the url of the full-sized image **on page load** with javaScript. The url of the latter image is stored in a data-attribute of that same image:
 
@@ -51,7 +51,7 @@ function addLoadEvent(func) {
 }
 ```
 
-The javaScript function will look for elements in the <abbr title="Document Object Model">DOM</abbr> with the `data-src` attribute, and replace the value for the `src` attribute with the value stored in the `data-src` attribute on that same `img` element.
+The javaScript function will look for elements in the <abbr title="Document Object Model" class="small-caps">DOM</abbr> with the `data-src` attribute, and replace the value for the `src` attribute with the value stored in the `data-src` attribute on that same `img` element.
 
 ```language-javascript
 function loadImg() {
@@ -65,9 +65,7 @@ function loadImg() {
 addLoadEvent(loadImg);
 ```
 
-Now when, for whatever reason, the page takes too long to load on a clients browser, or when javaScript isn’t working, this would result in leaving a blank space at the place where the image should be.
-
-But instead of the 1px square transparent PNG, we can use an (url encoded) inline SVG with just a text-attribute inside. In that way, even with javaScript disabled, there will always be visual information on the subject there.
+Now when, for whatever reason, the page takes too long to load on a clients browser, or when javaScript isn’t working, this would result in leaving a blank space at the place where the image should be. But instead of the 1px square transparent <span class="small-caps">PNG</span>, we can use an (url encoded) inline <span class="small-caps">SVG</span> with just a text-attribute inside. In that way, even with javaScript disabled, there will always be visual information on the subject there.
 
 ```language-html
  <img data-src="assets/img/svg/logo-lll_456x60.svg"

@@ -20,7 +20,7 @@ Maybe early days, but coming to a browser near you some day: alpha transparency 
 
 <p class="publication-list__item__meta"><time datetime="{{ page.date_machine|replace({'_':'-'}) }}">{{ page.date_human }}</time></p>
 
-Now HEXA doesn’t have the most intuitive syntax, [HSLA](https://css-tricks.com/yay-for-hsla/) has, and the alpha transparency isn’t making live easier. But we have tools for this build right into the browser: you can check this out in Chrome Canary or in Firefox Nightly DevTools:
+Now <span class="small-caps">HEXA</span> doesn’t have the most intuitive syntax, <span class="small-caps">[HSLA](https://css-tricks.com/yay-for-hsla/)</span> has, and the alpha transparency isn’t making live easier. But we have tools for this build right into the browser: you can check this out in Chrome Canary or in Firefox Nightly DevTools:
 <div class="container-media container-media-square">
 <video width="512" controls autoplay>
   <source src="http://atelierbram.github.io/video/color-formats-firefox-devtools.mp4" type="video/mp4">
@@ -30,7 +30,7 @@ Now HEXA doesn’t have the most intuitive syntax, [HSLA](https://css-tricks.com
 </div>
 
 ### Use case in color templating
-So what could use cases for HEXA be? Maybe easier color manipulation in javaScript for some, but also templating. Consider this code snippet in a template for Prism syntax-highlighting in [Base16 Builder](https://github.com/base16-builder/base16-builder/):
+So what could use cases for <span class="small-caps">HEXA</span> be? Maybe easier color manipulation in javaScript for some, but also templating. Consider this code snippet in a template for Prism syntax-highlighting in [Base16 Builder](https://github.com/base16-builder/base16-builder/):
 
 ```language-css
 .line-highlight {
@@ -39,7 +39,7 @@ So what could use cases for HEXA be? Maybe easier color manipulation in javaScri
 }
 ```
 
-Which (for one colorscheme) would compile to this CSS:
+Which (for one colorscheme) would compile to this <span class="small-caps">CSS</span>:
 
 ```language-css
 .line-highlight {
@@ -48,9 +48,9 @@ Which (for one colorscheme) would compile to this CSS:
 }
 ```
 
-Because Base16 schemes only allows color-values for variables to be defined in HEX notation _in schemes_, these color-variables can now be manipulated by adding 2 digits after the variables _in templates_, and by doing so give those colors alpha transparency (in browsers that support it).
+Because Base16 schemes only allows color-values for variables to be defined in <span class="small-caps">HEX</span> notation _in schemes_, these color-variables can now be manipulated by adding 2 digits after the variables _in templates_, and by doing so give those colors alpha transparency (in browsers that support it).
 
-To see if your browser supports alpha transparency in 8 digits hex notation: <span style="font-size:2em;background-color:#263573f2;color:hsla(228, 50%, 30%, 0.5);display:inline-block;margin-top:.5em">Unfortunately your browser does not support alpha transparency in HEX yet</span><br><span style="color:#fff;color:#263573f2;display:inline-block;margin-top:1em;font-size:1.25em">Your browser supports alpha transparency in HEX!</span> <br>And/or checkout [this demo](http://codepen.io/atelierbram/full/bZAGmW/).
+To see if your browser supports alpha transparency in 8 digits hex notation: <span style="font-size:2em;background-color:#263573f2;color:hsla(228, 50%, 30%, 0.5);display:inline-block;margin-top:.5em">Unfortunately your browser does not support alpha transparency in <span class="small-caps">HEX</span> yet</span><br><span style="color:#fff;color:#263573f2;display:inline-block;margin-top:1em;font-size:1.25em">Your browser supports alpha transparency in <span class="small-caps">HEX</span>!</span> <br>And/or checkout [this demo](http://codepen.io/atelierbram/full/bZAGmW/).
 
 #### Resources
 - [the spec](https://drafts.csswg.org/css-color/#hex-notation)

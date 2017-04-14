@@ -19,7 +19,7 @@ use: [posts]
 The advantages of having a static site-generator integrated in one and the same build-tool _(that you may already be using)_ is huge: [Assemble itself](https://github.com/assemble/assemble) is a Grunt- _(also Yeoman and Node, and soon to be Gulp-)_ plugin. At the same time, Assemble assumes very little about _“what it is that you are trying to do”_; making it fun to use _(if you are also the kind of person that tends to want to make things their own &hellip;)_.
 <p class="publication-list__item__meta"><time datetime="{{ page.date_machine|replace({'_':'-'}) }}">{{ page.date_human }}</time></p>
 
-For an example with the alpha version of Assemble 6.0, using Gulp ISO Grunt,  go to [this repo](https://github.com/atelierbram/Starter-Assemble-Gulp)
+For an example with the alpha version of Assemble 6.0, using Gulp <span class="small-caps">ISO</span> Grunt,  go to [this repo](https://github.com/atelierbram/Starter-Assemble-Gulp)
 
 ### Static Site Generator
 One of the first problems to solve, when wanting to generate a website from flat files _(without a database)_, is to come up with a flexible solution for site-wide navigation. In [Assemble](http://assemble.io) this could be tackled like this in a _“partial”_ handlebars file, here `nav.hbs`:
@@ -34,7 +34,7 @@ One of the first problems to solve, when wanting to generate a website from flat
 &lt;/nav&gt;
 </code></pre>
 
-HTML mixed with handlebars’ template tags, spitting out <sup><a href="#note-1" class="sup-link" id="supLink1">1</a></sup> a complete _“ordered”_ unordered list of the content folder files in the HTML-output.  In the markup are references to these two handlebar-helper plugins: “handlebars-helper-autolink” and “handlebars-helper-isActive”. The sort-order of the linked files can be set in the versatile [Yaml front matter](http://assemble.io/docs/YAML-front-matter.html) in the content-file itself. So when generating pages from markdown,  let’s say `index.md`, in the YFM <sup><a href="#note-2" class="sup-link" id="supLink2">2</a></sup>, right in the head of the file, one can set these variables:
+HTML mixed with handlebars’ template tags, spitting out <sup><a href="#note-1" class="sup-link" id="supLink1">1</a></sup> a complete _“ordered”_ unordered list of the content folder files in the <span class="small-caps">HTML</span>-output.  In the markup are references to these two handlebar-helper plugins: “handlebars-helper-autolink” and “handlebars-helper-isActive”. The sort-order of the linked files can be set in the versatile [Yaml front matter](http://assemble.io/docs/YAML-front-matter.html) in the content-file itself. So when generating pages from markdown,  let’s say `index.md`, in the YFM <sup><a href="#note-2" class="sup-link" id="supLink2">2</a></sup>, right in the head of the file, one can set these variables:
 
 ```language-markup
 ---
@@ -49,7 +49,7 @@ description: My Homepage
 
 ### Templating
 
-Besides that you can put variables in the top of your content-files as YMF another way to get data into your templates is to [store custom variables as “key-value-pairs” in an external file](http://assemble.io/docs/options-data.html), for example a JSON or YML - file. The way to let the javascript rendering-engine know about this file, is to link it up (as a value for `data`) in the options-section for Assemble within the Gruntfile.
+Besides that you can put variables in the top of your content-files as <span class="small-caps">YMF</span> another way to get data into your templates is to [store custom variables as “key-value-pairs” in an external file](http://assemble.io/docs/options-data.html), for example a <span class="small-caps">JSON</span> or <span class="small-caps">YML</span> - file. The way to let the javascript rendering-engine know about this file, is to link it up (as a value for `data`) in the options-section for Assemble within the Gruntfile.
 
 
 ```language-javascript
@@ -81,7 +81,7 @@ When I suffer from _“horror vacui”_, indecision or what not, from all these 
 At [Assemble’s website](http://assemble.io/docs/Resources.html#boilerplates) you can find some very instructive boilerplates, and at the bottom of this article are some links to examples, but make sure to also look at implementations in Github repo’s made by Zurb’s Foundation, and the [Gruntfile for h5bp-Effeckt.css](https://github.com/h5bp/Effeckt.css/blob/master/Gruntfile.js), which may have even more minimal and up to date implementations.
 
 ### Optimization
-To be able to have the minified CSS within style-tags in the `head` of your HTML, for optimization, one can use the grunt-plugin `grunt-contrib-copy` to automate the hard work. Copy the contents of a minified CSS-file to a handlebars-file as a Grunt-task &hellip;
+To be able to have the minified <span class="small-caps">CSS</span> within style-tags in the `head` of your <span class="small-caps">HTML</span>, for optimization, one can use the grunt-plugin `grunt-contrib-copy` to automate the hard work. Copy the contents of a minified <span class="small-caps">CSS</span>-file to a handlebars-file as a Grunt-task &hellip;
 
 ```language-javascript
 copy: {
@@ -112,7 +112,7 @@ When you have read the next quote, (from the [Javascript Jabber podcast](http://
 
 #### Notes
 1. <span id="note-1">on the `grunt build` command, depending on the existing files in your `src/content` folder _(or whatever the name of that folder is: can be anything you like), also: can have subfolders too, it’s smart about that)_</span>
-1. <span id="note-2">YAML-front-matter</span>
+1. <span id="note-2"><span class="small-caps">YAML</span>-front-matter</span>
 1. <span id="note-3">The [build in handlebar helpers](http://handlebarsjs.com/builtin_helpers.html); there is `if`, `unless`, `each`, `with` and `lookup`. For an example of `each`, checkout the tutorial on [maddesigns](http://maddesigns.de/assemble-static-site-generator-grunt-2625.html) _(in german)_.</span>
 1. <span id="note-4">By _“boilerplate”_, I mean a complete folder structure with a `Gruntfile.js` and `package.json` files. With this being a Grunt-plugin, this also means a git-repo, _(you can do yourself a big favor by making yourself familiar with that as well, if you haven't already)_. In the `.gitignore` file _(in the root of the project-folder)_  you can add the output-folder, often called `dist`, to the list there: no need to keep this in the repo.</span>
 
