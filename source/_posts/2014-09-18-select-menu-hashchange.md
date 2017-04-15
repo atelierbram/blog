@@ -16,7 +16,8 @@ use: [posts]
 
 ---
 
-When one is already using jQuery, easiest way is to use Ben Alman's great ["hashchange plugin"](https://github.com/cowboy/jquery-hashchange) to get a select-menu to display the right `option` when using a select-menu for site-wide navigation (_maybe for small screens_), for otherwise, with each page refresh, the `select` will always jump to the top option when there is no `selected` attribute with a value of `selected` set for the corresponding page on that corresponding option. This is how I would do it, probably could me less verbose, but it works:
+When one is already using jQuery, easiest way is to use Ben Alman's great ["hashchange plugin"](//github.com/cowboy/jquery-hashchange) to get a select-menu to display the right `option` when using a select-menu for site-wide navigation (_maybe for small screens_), for otherwise, with each page refresh, the `select` will always jump to the top option when there is no `selected` attribute with a value of `selected` set for the corresponding page on that corresponding option. This is how I would do it, probably could me less verbose, but it works:
+
 <p class="publication-list__item__meta"><time datetime="{{ page.date_machine|replace({'_':'-'}) }}">{{ page.date_human }}</time></p>
 
 - set an `id` on all the individual option items, something like `<option id="sm-home">` for the homepage `<option id="sm-blog">`  for the blog-page, and so on
@@ -25,8 +26,8 @@ When one is already using jQuery, easiest way is to use Ben Alman's great ["hash
 ```language-markup
 <select name="menu-items" onchange="location = this.options[this.selectedIndex].value;" id="menu-select-menu" class="select-menu">
   <option id="sm-menu" value="">Menu</option>
-  <option id="sm-home" value="http://mydomain.com/index.html#sm-home">Home</option>
-  <option id="sm-blog" value="http://mydomain.com/blog/index.html#sm-blog">Blog</option>
+  <option id="sm-home" value="//mydomain.com/index.html#sm-home">Home</option>
+  <option id="sm-blog" value="//mydomain.com/blog/index.html#sm-blog">Blog</option>
 ```
 
 -   Bind an event to window.onhashchange (with the help of the plugin) that, when the hash changes, sets a class on the body with the same name as the #hash-tag
@@ -60,7 +61,7 @@ $(function(){
 Maybe one is overcomplicating things a bit when doing it like above, because if it is possible to set a class on the pages’ `body`-tags, and give the `select` `option`’s `id`’s like so:
 
 ```language-markup
-<option id="sm-blog" value="http://mydomain.com/blog">Blog</option>
+<option id="sm-blog" value="//mydomain.com/blog">Blog</option>
 ```
 
 Then in that case you don't need the hashchange plugin after all, for you can target those options on the corresponding pages like this:
@@ -101,9 +102,9 @@ Now also on iOS, we have our current page right in the top of the `select`-menu.
 <del>P.S. This doesn't seem to work on iOS, at least on my iPad it always shows the most top option ... but there are all kinds of issues with select-menus on iOS, so well ...</del> Fixed, see above.
 
 #### Examples
-- [demo on Codepen](http://codepen.io/atelierbram/pen/GjLvw)
-- [a demo with the jQuery hashtag plugin](http://bramdeh.home.xs4all.nl/playground/ui-patterns/select-nav/) parked on my provider's site.
-- [a simplified version with some small Jquery javascript](http://bramdeh.home.xs4all.nl/playground/ui-patterns/sitewide-selectnav/) parked on provider's site.
-- [a Github Gist](https://gist.github.com/atelierbram/18d7489b81dc9acf0747)
+- [demo on Codepen](//codepen.io/atelierbram/pen/GjLvw)
+- [a demo with the jQuery hashtag plugin](//bramdeh.home.xs4all.nl/playground/ui-patterns/select-nav/) parked on my provider's site.
+- [a simplified version with some small Jquery javascript](//bramdeh.home.xs4all.nl/playground/ui-patterns/sitewide-selectnav/) parked on provider's site.
+- [a Github Gist](//gist.github.com/atelierbram/18d7489b81dc9acf0747)
 
-<span class="note">This article was also published on [Codepen](http://codepen.io/atelierbram/post/select-menu-hashchange)</span>
+<span class="note">This article was also published on [Codepen](//codepen.io/atelierbram/post/select-menu-hashchange)</span>

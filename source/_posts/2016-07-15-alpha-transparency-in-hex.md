@@ -23,8 +23,8 @@ Maybe early days, but coming to a browser near you some day: alpha transparency 
 Now <span class="small-caps">HEXA</span> doesn’t have the most intuitive syntax, <span class="small-caps">[HSLA](https://css-tricks.com/yay-for-hsla/)</span> has, and the alpha transparency isn’t making live easier. But we have tools for this build right into the browser: you can check this out in Chrome Canary or in Firefox Nightly DevTools:
 <div class="container-media container-media-square">
 <video width="512" controls autoplay>
-  <source src="http://atelierbram.github.io/video/color-formats-firefox-devtools.mp4" type="video/mp4">
-  <source src="http://atelierbram.github.io/video/color-formats-firefox-devtools.ogg" type="video/ogg">
+  <source src="//atelierbram.github.io/video/color-formats-firefox-devtools.mp4" type="video/mp4">
+  <source src="//atelierbram.github.io/video/color-formats-firefox-devtools.ogg" type="video/ogg">
   Your browser doesn't support HTML5 video tag.
 </video>
 </div>

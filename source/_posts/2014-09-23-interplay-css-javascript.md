@@ -17,6 +17,7 @@ use: [posts]
 ---
 
 Animating the height of an element with only <span class="small-caps">CSS</span> is possible with the `max-height` property, giving the begin value a `max-height` of zero and (_let's say_) the 'hovered' value some high number _“that will always be higher then the real height of the highest animated element”_. The outcome of the results can vary quite a bit, depending on the differences between all these values: not satisfying in all scenarios. An alternative way is using `height: 0` in combination with a set value for `padding-bottom`.
+
 <p class="publication-list__item__meta"><time datetime="{{ page.date_machine|replace({'_':'-'}) }}">{{ page.date_human }}</time></p>
 
 ### Animating padding-bottom with CSS-Transitions
@@ -96,13 +97,13 @@ One can also provide a fall-back value for `padding-bottom` on the active/hover 
 Then there it is: a <span class="small-caps">DIY</span> <sup><a href="#note-3" class="sup-link" id="supLink3">3</a></sup> cooperation between <span class="small-caps">CSS</span> and Javascript, responding fast and snappy, because it benefits from modern browser’s native capabilities with using <span class="small-caps">CSS</span>-transitions.
 
 #### Examples
-- [responsive dropdown demo](http://codepen.io/atelierbram/pen/AHwyr) - Disclaimer: this is a prototype: there will be more robust javascript implementations for dropdown menu’s tested on multiple devices out there (like Foundation/Bootstrap).
-- [example build on Bootstrap-3](http://codepen.io/atelierbram/pen/vymHL/) -  extended with [hover-dropdown-plugin](https://github.com/CWSpear/bootstrap-hover-dropdown) by [Cameron Spear](http://cameronspear.com/blog/bootstrap-dropdown-on-hover-plugin/) - [fork of repo on Github](https://github.com/atelierbram/bootstrap-hover-dropdown) - toggle links are clickable, as far as I know works on mobile, but javascript could be improved upon (I am aware that the animation could be done with jQuery `slideDown()` too, I just like the <span class="small-caps">DIY</span> <sup>3</sup> aspect: the tinkering, and the fact the transitions are done by the `<span class="small-caps">CSS</span>, which has it's own (long-term) advantage.)
+- [responsive dropdown demo](//codepen.io/atelierbram/pen/AHwyr) - Disclaimer: this is a prototype: there will be more robust javascript implementations for dropdown menu’s tested on multiple devices out there (like Foundation/Bootstrap).
+- [example build on Bootstrap-3](//codepen.io/atelierbram/pen/vymHL/) -  extended with [hover-dropdown-plugin](//github.com/CWSpear/bootstrap-hover-dropdown) by [Cameron Spear](//cameronspear.com/blog/bootstrap-dropdown-on-hover-plugin/) - [fork of repo on Github](//github.com/atelierbram/bootstrap-hover-dropdown) - toggle links are clickable, as far as I know works on mobile, but javascript could be improved upon (I am aware that the animation could be done with jQuery `slideDown()` too, I just like the <span class="small-caps">DIY</span> <sup>3</sup> aspect: the tinkering, and the fact the transitions are done by the `<span class="small-caps">CSS</span>, which has it's own (long-term) advantage.)
 
 #### Notes
 1. <span id="note-1">Probably can also use `height` instead of `padding-bottom` since we are not using `height: auto` here, which (_used to?_)
 require `max-height` instead of `height`, but I wanted to be carefull here, avoid confusion by not mixing those concepts.</span>
-1. <span id="note-2">One of them declarations: it outputs 10 of those, see also [this Github Gist](https://gist.github.com/atelierbram/a88e3811173bb9d75b40), or this [reduced testcase here on CodePen](http://codepen.io/atelierbram/pen/CBLaw)</span>
+1. <span id="note-2">One of them declarations: it outputs 10 of those, see also [this Github Gist](//gist.github.com/atelierbram/a88e3811173bb9d75b40), or this [reduced testcase here on CodePen](//codepen.io/atelierbram/pen/CBLaw)</span>
 1. <span id="note-3">do it yourself</span>
 
-<span class="note">This article was also published on [Codepen](http://codepen.io/atelierbram/post/interplay-css-javascript).</span>
+<span class="note">This article was also published on [Codepen](//codepen.io/atelierbram/post/interplay-css-javascript).</span>
