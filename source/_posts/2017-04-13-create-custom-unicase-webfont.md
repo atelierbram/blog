@@ -26,7 +26,7 @@ Unicase fonts are a bit special; they provide uppercase glyphs for lowercase cha
 }
 ```
 
-This `font-variant-caps: small-caps` basically makes all lowercase characters appear in a smaller uppercase version, unlike `text-transform: uppercase` which scales the height of the glyphs up. It has to be mentioned though that this likely will only approach the look of a font with true small caps though. Because uppercase characters in a regular font often are a tiny bit thinner, they may look fragile when scaled down to small caps size compared with lowercase characters of the same size. One way to fight this is to choose a medium weight font to begin with; more on this later. Adding some letter-spacing also makes them look better in my eyes.
+This `font-variant-caps: small-caps` basically makes all lowercase characters appear in a smaller uppercase version, unlike `text-transform: uppercase` which scales the height of the glyphs up. It has to be mentioned though that this likely will only _approach_ the look of a font with true small caps though. Because uppercase characters in a regular font often are a tiny bit thinner, they may look fragile when scaled down to small caps size compared with lowercase characters of the same size. One way to fight this is to choose a medium weight font to begin with; more on this later. Adding some letter-spacing also makes them look better in my eyes.
 
 <blockquote><dl class="quote"><dt>small-caps</dt><dd>This keyword forces the use of small capitals letters for lower case characters. It corresponds to the OpenType value <code>smcp</code>; if the font doesn't support them, it synthesizes the glyphs.</dd></dl></blockquote>
 
