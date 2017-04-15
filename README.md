@@ -4,18 +4,18 @@ Webdesign-related blogposts [hosted here on Github](//atelierbram.github.io/blog
 
 <details>
 <summary>Table of contents</summary>
-- [Create a Custom Unicase Webfont](//atelierbram.github.io/blog/create-custom-unicase-webfont)
-- [Lazy Loading Logos](//atelierbram.github.io/blog/lazy-loading/)
-- [Alpha Transparency in 8 Digits Hex Notation](//atelierbram.github.io/blog/alpha-transparency-in-hex)
-- [Switching Color Modes in SVG](//atelierbram.github.io/blog/switching-color-modes)
-- [On Editing Colorschemes for Sublime Text](//atelierbram.github.io/blog/colorschemes-sublime/)
-- [Differentiate between Code Examples](//atelierbram.github.io/blog/differentiate/)
-- [How the Airfan is Going to Replace the Hamburger](//atelierbram.github.io/blog/airfan)
-- [Colorscheming for Syntax Highlighting](//atelierbram.github.io/blog/colorscheming)
-- [Generate a Static Website with Assemble](//atelierbram.github.io/blog/assembling)
-- [Interplay between CSS and Javascript](//atelierbram.github.io/blog/interplay-css-javascript)
-- [Site-wide Navigation with Select Menu](//atelierbram.github.io/blog/select-menu-hashchange)
-- [CSS-Shapes in Multi-Column Layout](//atelierbram.github.io/blog/css-shapes-in-multi-column-layout)
+- [Create a Custom Unicase Webfont](http://atelierbram.github.io/blog/create-custom-unicase-webfont)
+- [Lazy Loading Logos](http://atelierbram.github.io/blog/lazy-loading/)
+- [Alpha Transparency in 8 Digits Hex Notation](http://atelierbram.github.io/blog/alpha-transparency-in-hex)
+- [Switching Color Modes in SVG](http://atelierbram.github.io/blog/switching-color-modes)
+- [On Editing Colorschemes for Sublime Text](http://atelierbram.github.io/blog/colorschemes-sublime/)
+- [Differentiate between Code Examples](http://atelierbram.github.io/blog/differentiate/)
+- [How the Airfan is Going to Replace the Hamburger](http://atelierbram.github.io/blog/airfan)
+- [Colorscheming for Syntax Highlighting](http://atelierbram.github.io/blog/colorscheming)
+- [Generate a Static Website with Assemble](http://atelierbram.github.io/blog/assembling)
+- [Interplay between CSS and Javascript](http://atelierbram.github.io/blog/interplay-css-javascript)
+- [Site-wide Navigation with Select Menu](http://atelierbram.github.io/blog/select-menu-hashchange)
+- [CSS-Shapes in Multi-Column Layout](http://atelierbram.github.io/blog/css-shapes-in-multi-column-layout)
 </details>
 
 <br>Build with [Sculpin](//sculpin.io).
