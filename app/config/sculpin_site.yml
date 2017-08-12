@@ -6,10 +6,10 @@ subtitle: Documenting a Learning Curve
 author: Bram de Haan <info@atelierbramdehaan.nl>
 org: Atelier Bram de Haan
 description: Blog-posts on Frontend Webdesign
-keywords: Webdesign, Frontend, Design, 2D-Design, Documentation, Culture
-url: //localhost/~bram/github.com/atelierbram/blog/docs
-slug: //localhost/~bram/github.com/atelierbram/blog
-slug_posts: //localhost/~bram/github.com/atelierbram/blog/docs
+keywords: Webdesign, Frontend, Design, 2D-Design, Documentation, Culture 
+url: //localhost:8000
+slug: //localhost:8000
+slug_posts: //localhost:8000
 url_license: //atelierbram.mit-license.org/
 url_homepage: //atelierbram.github.io/blog/
 url_codepen-blog: //codepen.io/atelierbram/blog

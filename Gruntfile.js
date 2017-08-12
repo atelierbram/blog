@@ -71,6 +71,7 @@ module.exports = function(grunt) {
           'source/_includes/script-id_10-js.inc'     : 'docs/assets/js/script-id_10.min.js',
           'source/_includes/script-id_11-js.inc'     : 'docs/assets/js/script-id_11.min.js',
           'source/_includes/script-id_12-js.inc'     : 'docs/assets/js/script-id_12.min.js',
+          'source/_includes/script-id_13-js.inc'     : 'docs/assets/js/script-id_13.min.js',
           'source/_includes/fontfaceobserver-js.inc' : 'docs/assets/js/fontfaceobserver.js',
 
           // for local development and also for source maps
@@ -119,8 +120,8 @@ module.exports = function(grunt) {
           'docs/assets/js/script-id_09.min.js' : 'source/assets/js/script-id_09.js',
           'docs/assets/js/script-id_10.min.js' : 'source/assets/js/script-id_10.js',
           'docs/assets/js/script-id_11.min.js' : 'source/assets/js/script-id_11.js',
-          'docs/assets/js/script-id_12.min.js' : 'source/assets/js/script-id_12.js'
-
+          'docs/assets/js/script-id_12.min.js' : 'source/assets/js/script-id_12.js',
+          'docs/assets/js/script-id_13.min.js' : 'source/assets/js/script-id_13.js'
         }
       }
     },
@@ -151,7 +152,7 @@ module.exports = function(grunt) {
 
     watch: {
       options: {
-        livereload: true,
+        livereload: 35729,
       },
 
       scss: {
@@ -172,6 +173,39 @@ module.exports = function(grunt) {
 
       },
 
+    exec: {
+      remove_ds_store1: {
+        command: 'rm -f *.DS_Store',
+        stdout: false,
+        stderr: false
+      },
+      remove_ds_store2: {
+        command: 'rm -f source/.DS_Store',
+        stdout: false,
+        stderr: false
+      },
+      remove_ds_store3: {
+        command: 'rm -f source/_posts/.DS_Store',
+        stdout: false,
+        stderr: false
+      },
+      remove_ds_store4: {
+        command: 'rm -f source/_includes/.DS_Store',
+        stdout: false,
+        stderr: false
+      },
+      remove_ds_store5: {
+        command: 'rm -f source/_views/.DS_Store',
+        stdout: false,
+        stderr: false
+      },
+      remove_ds_store6: {
+        command: 'rm -f docs/.DS_Store',
+        stdout: false,
+        stderr: false
+      }
+    }
+
   });
 
   grunt.registerTask('build', ['concat', 'uglify', 'sass', 'postcss:dist', 'cssmin', 'copy', 'htmlmin']);
@@ -181,6 +215,6 @@ module.exports = function(grunt) {
   grunt.registerTask('default', ['build', 'watch']);
   grunt.registerTask('dev', ['watch']);
 
-  grunt.loadNpmTasks('grunt-sass','grunt-contrib-cssmin','grunt-contrib-concat','grunt-contrib-uglify','grunt-contrib-watch','matchdep','grunt-postcss','grunt-contrib-copy','grunt-contrib-htmlmin');
+  grunt.loadNpmTasks('grunt-sass','grunt-contrib-cssmin','grunt-contrib-concat','grunt-contrib-uglify','grunt-contrib-watch','matchdep','grunt-postcss','grunt-contrib-copy','grunt-contrib-htmlmin', 'grunt-exec');
   require('matchdep').filterDev('grunt-*').forEach(grunt.loadNpmTasks);
 };

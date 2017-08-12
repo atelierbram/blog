@@ -19,10 +19,12 @@ use: [posts]
         {% for post in page.pagination.items %}
         <li class="publication-list__item">
           <h3 class="publication-list__item__title"><a href="{{ site.slug_posts }}/{{ post.slug }}">{{ post.index_title }}</a></h3>
-          {% if post.blocks.excerpt %}
-          {{ post.blocks.excerpt|raw }}
-          {% else %}
+          {% if post.excerpt %}
+          <div class="publication-list__item__content">
+            <p>
+          {{ post.excerpt|raw }}
           <p class="publication-list__item__meta"><time datetime="{{ post.date_machine|replace({'_':'-'}) }}">{{ post.date_human }}</time></p>
+          {% else %}
           <div class="publication-list__item__content">
             <p>
             {{ post.blocks.content|raw|striptags|split(' ')|slice(0,40)|join(' ') }} &hellip;
