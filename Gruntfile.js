@@ -145,7 +145,8 @@ module.exports = function(grunt) {
            'docs/switching-color-modes/index.html': 'docs/switching-color-modes/index.html',
            'docs/alpha-transparency-in-hex/index.html': 'docs/alpha-transparency-in-hex/index.html',
            'docs/lazy-loading/index.html': 'docs/lazy-loading/index.html',
-           'docs/create-custom-unicase-webfont/index.html': 'docs/create-custom-unicase-webfont/index.html'
+           'docs/create-custom-unicase-webfont/index.html': 'docs/create-custom-unicase-webfont/index.html',
+           'docs/template-sculpin-netlify/index.html': 'docs/template-sculpin-netlify/index.html'
          }
        }
     },

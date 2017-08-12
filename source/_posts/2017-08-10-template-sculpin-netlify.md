@@ -15,7 +15,7 @@ pagination:
 use: [posts]
 ---
 
-On the Look out for available templates on the interwebs for deployment of a static site on Netlify build with Sculpin and Grunt I stumbled on some intriguing templates but none with that exact combination. There are templates available for different static site builders and build tools on [Netlify’s dedicated repository of templates](https://github.com/netlify-templates), like a lot with Hugo, typically integrated in a Gulp workflow.
+On the look out for available templates on the interwebs for deployment of a static site on Netlify build with Sculpin and Grunt I stumbled on some intriguing templates but none with that exact combination. There are templates available for different static site builders and build tools on [Netlify’s dedicated repository of templates](https://github.com/netlify-templates), like a lot with Hugo, typically integrated in a Gulp workflow.
 
 <p class="publication-list__item__meta" id="time"><time datetime="{{ page.date_machine|replace({'_':'-'}) }}">{{ page.date_human }}</time></p>
 

@@ -5,6 +5,7 @@ Webdesign-related blogposts [hosted here on Github](//atelierbram.github.io/blog
 <details>
 <summary>Table of contents</summary>
 
+- [Template for Sculpin and Netlify](https://atelierbram.github.io/blog/template-sculpin-netlify/)
 - [Create a Custom Unicase Webfont](https://atelierbram.github.io/blog/create-custom-unicase-webfont)
 - [Lazy Loading Logos](https://atelierbram.github.io/blog/lazy-loading/)
 - [Alpha Transparency in 8 Digits Hex Notation](https://atelierbram.github.io/blog/alpha-transparency-in-hex)
