@@ -19,7 +19,7 @@ On the look out for available templates on the interwebs for deployment of a sta
 
 <p class="publication-list__item__meta" id="time"><time datetime="{{ page.date_machine|replace({'_':'-'}) }}">{{ page.date_human }}</time></p>
 
-One template, the [Kaldi Hugo Template](https://github.com/netlify-templates/kaldi-hugo-cms-template) which itself is based on the [Victor Hugo](https://github.com/netlify/victor-hugo) template has Netlify <span class="small-caps">CMS</span> as an <span class="small-caps">NPM</span> dependency. This allows for a local installment of the <span class="small-caps">CMS</span>, which is funny but can also be a bit confusing, and in my experience unnecessary. <sup><a href="#note-1" class="sup-link" id="supLink1"> 1 </a></sup>
+One template, the [Kaldi Hugo Template](https://github.com/netlify-templates/kaldi-hugo-cms-template) which itself is based on the [Victor Hugo](https://github.com/netlify/victor-hugo) template has Netlify <span class="small-caps">CMS</span> as an npm dependency. This allows for a local installment of the <span class="small-caps">CMS</span>, which is funny but can also be a bit confusing, and in my experience unnecessary. <sup><a href="#note-1" class="sup-link" id="supLink1"> 1 </a></sup>
 
 Hugo is a static site builder rapidly growing in popularity with very fast performance due to the Go rendering engine. But the Go language is also making it difficult to debug for someone new to the language. And we all make typos and syntax errors so this can be an issue. I just had to make my own template with Sculpin –  which I love –  but where to start?
 
