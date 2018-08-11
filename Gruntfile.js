@@ -9,6 +9,7 @@ module.exports = function(grunt) {
 
     sass: {
       options: {
+        implementation: require('node-sass'),
         sourceMap: true
       },
       dist: {
@@ -28,6 +29,7 @@ module.exports = function(grunt) {
         },
         processors: [
           require('autoprefixer')({browsers: 'last 2 versions'}),
+          require('cssnano')(),
         ]
       },
 
@@ -35,22 +37,25 @@ module.exports = function(grunt) {
         expand: true,
         flatten: true,
         files: {
-          'docs/assets/css/prefixed/critical.css' : 'docs/assets/css/critical.css',
-          'docs/assets/css/prefixed/style.css'    : 'docs/assets/css/style.css',
-          'docs/assets/css/prefixed/home.css'     : 'docs/assets/css/home.css'
+          // 'docs/assets/css/prefixed/critical.css' : 'docs/assets/css/critical.css',
+          'docs/assets/css/prefixed/critical.min.css': 'docs/assets/css/critical.css',
+          // 'docs/assets/css/prefixed/style.css'    : 'docs/assets/css/style.css',
+          'docs/assets/css/prefixed/style.min.css'   : 'docs/assets/css/style.css',
+          // 'docs/assets/css/prefixed/home.css'     : 'docs/assets/css/home.css'
+          'docs/assets/css/prefixed/home.min.css'    : 'docs/assets/css/home.css'
         }
       }
     },
 
-    cssmin: {
-      dist: {
-        files: {
-          'docs/assets/css/prefixed/critical.min.css': 'docs/assets/css/prefixed/critical.css',
-          'docs/assets/css/prefixed/style.min.css'   : 'docs/assets/css/prefixed/style.css',
-          'docs/assets/css/prefixed/home.min.css'    : 'docs/assets/css/prefixed/home.css'
-        }
-      }
-    },
+    // cssmin: {
+    //   dist: {
+    //     files: {
+    //       'docs/assets/css/prefixed/critical.min.css': 'docs/assets/css/prefixed/critical.css',
+    //       'docs/assets/css/prefixed/style.min.css'   : 'docs/assets/css/prefixed/style.css',
+    //       'docs/assets/css/prefixed/home.min.css'    : 'docs/assets/css/prefixed/home.css'
+    //     }
+    //   }
+    // },
 
     copy: {
       main: {
@@ -101,8 +106,8 @@ module.exports = function(grunt) {
       options: {
         // preserveComments: 'false'
         preserveComments: /^!/
-          // only preserve comments that start with a bang
-          // https://github.com/gruntjs/grunt-contrib-uglify/issues/366
+        // only preserve comments that start with a bang
+        // https://github.com/gruntjs/grunt-contrib-uglify/issues/366
       },
       dist: {
         files: {
@@ -127,28 +132,28 @@ module.exports = function(grunt) {
     },
 
     htmlmin: { // Task
-       dist: { // Target
-         options: { // Target options
-           removeComments: true,
-           collapseWhitespace: true
-         },
-         files: { // Dictionary of files
-           'docs/index.html': 'docs/index.html', // 'destination': 'source'
-           'docs/airfan/index.html': 'docs/airfan/index.html',
-           'docs/assembling/index.html': 'docs/assembling/index.html',
-           'docs/colorschemes-sublime/index.html': 'docs/colorschemes-sublime/index.html',
-           'docs/colorscheming/index.html': 'docs/colorscheming/index.html',
-           'docs/css-shapes-in-multi-column-layout/index.html': 'docs/css-shapes-in-multi-column-layout/index.html',
-           'docs/differentiate/index.html': 'docs/differentiate/index.html',
-           'docs/interplay-css-javascript/index.html': 'docs/interplay-css-javascript/index.html',
-           'docs/select-menu-hashchange/index.html': 'docs/select-menu-hashchange/index.html',
-           'docs/switching-color-modes/index.html': 'docs/switching-color-modes/index.html',
-           'docs/alpha-transparency-in-hex/index.html': 'docs/alpha-transparency-in-hex/index.html',
-           'docs/lazy-loading/index.html': 'docs/lazy-loading/index.html',
-           'docs/create-custom-unicase-webfont/index.html': 'docs/create-custom-unicase-webfont/index.html',
-           'docs/template-sculpin-netlify/index.html': 'docs/template-sculpin-netlify/index.html'
-         }
-       }
+      dist: { // Target
+        options: { // Target options
+          removeComments: true,
+          collapseWhitespace: true
+        },
+        files: { // Dictionary of files
+          'docs/index.html': 'docs/index.html', // 'destination': 'source'
+          'docs/airfan/index.html': 'docs/airfan/index.html',
+          'docs/assembling/index.html': 'docs/assembling/index.html',
+          'docs/colorschemes-sublime/index.html': 'docs/colorschemes-sublime/index.html',
+          'docs/colorscheming/index.html': 'docs/colorscheming/index.html',
+          'docs/css-shapes-in-multi-column-layout/index.html': 'docs/css-shapes-in-multi-column-layout/index.html',
+          'docs/differentiate/index.html': 'docs/differentiate/index.html',
+          'docs/interplay-css-javascript/index.html': 'docs/interplay-css-javascript/index.html',
+          'docs/select-menu-hashchange/index.html': 'docs/select-menu-hashchange/index.html',
+          'docs/switching-color-modes/index.html': 'docs/switching-color-modes/index.html',
+          'docs/alpha-transparency-in-hex/index.html': 'docs/alpha-transparency-in-hex/index.html',
+          'docs/lazy-loading/index.html': 'docs/lazy-loading/index.html',
+          'docs/create-custom-unicase-webfont/index.html': 'docs/create-custom-unicase-webfont/index.html',
+          'docs/template-sculpin-netlify/index.html': 'docs/template-sculpin-netlify/index.html'
+        }
+      }
     },
 
     watch: {
@@ -158,21 +163,21 @@ module.exports = function(grunt) {
 
       scss: {
         files: ['source/assets/sass/**/*.scss'],
-          tasks: ['scss','postcss','cssmin','copy'],
-          options: {
-        // spawn: false
-        }
-        },
-
-        js: {
-          files: ['source/assets/js/**/*.js'],
-            tasks: ['concat','uglify'],
-            options: {
+        tasks: ['scss','postcss','copy'],
+        options: {
           // spawn: false
-          }
-        },
-
+        }
       },
+
+      js: {
+        files: ['source/assets/js/**/*.js'],
+        tasks: ['concat','uglify'],
+        options: {
+          // spawn: false
+        }
+      },
+
+    },
 
     exec: {
       remove_ds_store1: {
@@ -209,13 +214,13 @@ module.exports = function(grunt) {
 
   });
 
-  grunt.registerTask('build', ['concat', 'uglify', 'sass', 'postcss:dist', 'cssmin', 'copy', 'htmlmin']);
+  grunt.registerTask('build', ['concat', 'uglify', 'sass', 'postcss:dist', 'copy', 'htmlmin']);
   grunt.registerTask('copy', ['copy']);
-  grunt.registerTask('scss', ['sass', 'postcss:dist', 'cssmin']);
+  grunt.registerTask('scss', ['sass', 'postcss:dist']);
   grunt.registerTask('js', ['uglify', 'concat']);
   grunt.registerTask('default', ['build', 'watch']);
   grunt.registerTask('dev', ['watch']);
 
-  grunt.loadNpmTasks('grunt-sass','grunt-contrib-cssmin','grunt-contrib-concat','grunt-contrib-uglify','grunt-contrib-watch','matchdep','grunt-postcss','grunt-contrib-copy','grunt-contrib-htmlmin', 'grunt-exec');
+  grunt.loadNpmTasks('grunt-sass','grunt-contrib-concat','grunt-contrib-uglify','grunt-contrib-watch','matchdep','grunt-postcss','grunt-contrib-copy','grunt-contrib-htmlmin', 'grunt-exec');
   require('matchdep').filterDev('grunt-*').forEach(grunt.loadNpmTasks);
 };

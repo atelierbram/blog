@@ -57,11 +57,13 @@ a:hover {
 .page a {
   // border-bottom: 1px solid adjust-color($light_blue, $lightness: 10%);
   box-shadow: inset 0 -3px 0 adjust-color($light_blue, $lightness: 10%);
+  transition: all .3s ease-out;
 }
 .page a:hover,
 .page a:focus,
 .page a:active {
-  background: adjust-color($light_blue, $lightness: 10%);
+  // background: adjust-color($light_blue, $lightness: 10%);
+  box-shadow: inset 0 -2em 0 adjust-color($light_blue, $lightness: 10%);
 }
 header h1 a {
   color: $base05;

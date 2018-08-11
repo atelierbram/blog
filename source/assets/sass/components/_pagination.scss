@@ -39,18 +39,18 @@
   transition: color .3s;
   border-bottom: none;
   box-shadow: none;
-}
 
-.prevnext h5 a:hover {
-  color: $red;
-  background: none;
+  &:hover {
+    color: $red;
+    box-shadow: none;
+    svg {
+      fill: $red;
+    }
+  }
 }
 
 .shape-icon {
  fill: $base01;
-}
-.prevnext h5 a:hover svg {
-  fill: $red;
 }
 
 .icon-8 {

@@ -47,12 +47,13 @@ a:hover {
   display: block; }
 
 .page a {
-  box-shadow: inset 0 -3px 0 #b9d6ee; }
+  box-shadow: inset 0 -3px 0 #b9d6ee;
+  transition: all .3s ease-out; }
 
 .page a:hover,
 .page a:focus,
 .page a:active {
-  background: #b9d6ee; }
+  box-shadow: inset 0 -2em 0 #b9d6ee; }
 
 header h1 a {
   color: #979db4; }
@@ -473,16 +474,14 @@ sup span {
   transition: color .3s;
   border-bottom: none;
   box-shadow: none; }
-
-.prevnext h5 a:hover {
-  color: #c94922;
-  background: none; }
+  .prevnext h5 a:hover {
+    color: #c94922;
+    box-shadow: none; }
+    .prevnext h5 a:hover svg {
+      fill: #c94922; }
 
 .shape-icon {
   fill: #293256; }
-
-.prevnext h5 a:hover svg {
-  fill: #c94922; }
 
 .icon-8 {
   width: 10px;
