@@ -1,1 +1,1 @@
-function insert(){"use strict";document.getElementById("template-sculpin-netlify").classList.add("fs-desktop-vw-12","fs-3_5");var a=document.getElementById("note-1"),b=a.cloneNode(!0);document.getElementById("supLink1").appendChild(b),b.id="clonedNode1"}insert();
+function insert(){"use strict";document.getElementById("template-sculpin-netlify").classList.add("fs-desktop-vw-12","fs-3_5");var e=document.getElementById("note-1").cloneNode(!0);document.getElementById("supLink1").appendChild(e),e.id="clonedNode1"}insert();

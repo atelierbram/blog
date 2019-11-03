@@ -28,7 +28,7 @@ module.exports = function(grunt) {
           // annotation: 'docs/assets/css/prefixed/' // ...to the specified directory
         },
         processors: [
-          require('autoprefixer')({browsers: 'last 2 versions'}),
+          require('autoprefixer')(),
           require('cssnano')(),
         ]
       },
