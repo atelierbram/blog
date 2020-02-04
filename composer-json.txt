@@ -1,0 +1,37 @@
+{
+    "name": "atelierbram-blog",
+    "description": "webdevelopment blog by Bram de Haan",
+    "type": "sculpin-skeleton",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Bram de Haan",
+            "email": "info@atelierbramdehaan.nl",
+            "homepage": "http://atelierbramdehaan.nl"
+        }
+    ],
+    "require": {
+      "sculpin/sculpin": "^3.0"
+    },
+    "config": {
+      "component-dir": "source/components"
+    },
+    "scripts": {
+      "sculpin-watch": [
+        "Composer\\Config::disableProcessTimeout",
+        "./vendor/bin/sculpin generate --watch --server"
+        ],
+        "post-install-cmd": [
+          "ComponentManager\\ComponentManager::postComposerInstall"
+        ],
+        "dev": [
+          "vendor/bin/sculpin generate --url=http://localhost/~bram/github.com/atelierbram/blog/docs/ --watch --server"
+        ],
+        "prod": [
+          "sculpin generate --env=prod"
+        ]
+    },
+    "autoload": {
+      "classmap": ["component-manager.php"]
+    }
+}

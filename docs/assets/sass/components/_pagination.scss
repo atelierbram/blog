@@ -38,11 +38,21 @@
   text-decoration: none;
   transition: color .3s;
   border-bottom: none;
-  box-shadow: none;
+  box-shadow: none !important;
+
+  .theme-dark & {
+    color: $dark07;
+    &:hover {
+      color: $light_red;
+      svg {
+        fill: $light_red;
+      }
+    }
+  }
 
   &:hover {
     color: $red;
-    box-shadow: none;
+    box-shadow: none !important;
     svg {
       fill: $red;
     }
@@ -50,7 +60,10 @@
 }
 
 .shape-icon {
- fill: $base01;
+  fill: $base01;
+  .theme-dark & {
+    fill: $dark07;
+  }
 }
 
 .icon-8 {

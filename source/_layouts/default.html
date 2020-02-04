@@ -31,5 +31,48 @@
     {% if page.page_type == "post" %}<script src="{{ site.slug }}/assets/js/prism-custom.min.js"></script>{% endif %}
     <script>{% include "fontfaceobserver-js.inc" %}</script>
     <script>var observer = new FontFaceObserver('Brando'); observer.check(null, 5000).then(function () { console.log('Font is available'); document.documentElement.className = document.documentElement.className.replace(/\bwf-inactive\b/g, '') + ' wf-active '; }, function () { console.log('Font is not available after waiting 5 seconds'); });</script>
+    <div class="theme-switch">
+      <input class="theme-switch_toggle" id="themeSwitchToggle" type="checkbox">
+      <label class="theme-switch_label" for="themeSwitchToggle"><svg width="20" height="20" fill="currentColor"><use xlink:href="#shape-sunmoon" /></svg><span class="visuallyhidden">light or dark theme</span></label>
+  </div>
+
+<script>
+// https://codepen.io/atelierbram/pen/oNgRyPb
+// https://codyhouse.co/blog/post/store-theme-color-preferences-with-localstorage
+(function() {
+  // Theme switch
+  var themeSwitch = document.getElementById('themeSwitchToggle');
+  if(themeSwitch) {
+    initTheme(); // if user has already selected a specific theme -> apply it
+    themeSwitch.addEventListener('change', function(event){
+      resetTheme(); // update color theme
+    });
+
+    function initTheme() {
+      if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+       document.documentElement.classList.add('theme-dark');
+       window.localStorage.setItem('themeSwitch','dark');
+      }
+
+      var darkThemeSelected = (localStorage.getItem('themeSwitch') !== null && localStorage.getItem('themeSwitch') === 'dark');
+      // update checkbox
+      themeSwitch.checked = darkThemeSelected;
+
+      // update class on html element
+      darkThemeSelected ? document.documentElement.classList.add('theme-dark') : document.documentElement.classList.remove('theme-dark');
+    };
+
+    function resetTheme() {
+      if(themeSwitch.checked) { // dark theme has been selected
+        document.documentElement.classList.add('theme-dark');
+        localStorage.setItem('themeSwitch', 'dark');
+      } else {
+        document.documentElement.classList.remove('theme-dark');
+        localStorage.removeItem('themeSwitch');
+      }
+    };
+  }
+}());
+</script>
   </body>
 </html>

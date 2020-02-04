@@ -9,6 +9,11 @@
   background-color: #fff;
   padding-top: 0;
   max-width: 100%;
+
+  .theme-dark & {
+    color: $dark08;
+    background-color: $dark01;
+  }
 }
 
 .page .publication-list__item__meta {
@@ -22,6 +27,9 @@
   z-index: -1;
   border-top: 1px solid adjust-color($base05,$lightness:15%);
   margin-top: .78em;
+  .theme-dark & {
+    border-top-color: $dark05;
+  }
 }
 // .wf-active .publication-list__item__meta:after {
 //   margin-top: .8em;
@@ -29,4 +37,8 @@
 time {
   background-color: #fff;
   padding: 0 1em;
+
+  .theme-dark & {
+    background-color: $dark01;
+  }
 }

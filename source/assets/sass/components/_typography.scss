@@ -80,6 +80,11 @@ blockquote {
   color: $base01;
   font-family: AvenirNext-Italic, Avenir-Oblique, AvenirMedium-Oblique, Georgia, serif;
   font-style: italic;
+
+  .theme-dark & {
+    color: $light08;
+  }
+
   @include mq($until: tablet) {
     border-left: .75em solid $base05;
   }
@@ -114,6 +119,10 @@ blockquote::after {
     color: $light04;
     z-index: 0;
     overflow: hidden;
+  }
+
+  .theme-dark & {
+    color: $dark03;
   }
 }
 .author {
@@ -153,6 +162,11 @@ sup span {
   font-size: .875em;
   margin: 3em 0 2em;
   padding: 1.5em 1.5em 1.75em;
+  .theme-dark & {
+    background-color: $dark_yellow08;
+    color: $dark_yellow01;
+    border-image: none !important;
+  }
 }
 
 .is-loaded .note {

@@ -122,6 +122,11 @@ sup span {
   margin: 0 auto;
   line-height: 1.6;
 
+  .theme-dark &{
+    background-color: $dark01;
+    color: $light01;
+  }
+
 
   @include mq($until: tablet) {
     flex: 1;
@@ -146,6 +151,9 @@ sup span {
   // border-left-width: 10px;
   // border-color: $base06 $light03 $base05 $base05;
   margin: 2em 0 3em;
+  .theme-dark & .text {
+    color: $dark02;
+  }
 }
 
 .container-media video {

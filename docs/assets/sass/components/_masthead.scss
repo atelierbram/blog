@@ -25,6 +25,11 @@ footer {
 header {
   background-color: $base07;
   min-height: 4rem;
+
+  .theme-dark & {
+    background-color: $base00;
+  }
+
 }
 
 header h1 {

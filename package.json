@@ -24,7 +24,7 @@
   "homepage": "https://github.com/atelierbram/blog#readme",
   "devDependencies": {
     "auto-prefixer": "*",
-    "autoprefixer": "*",
+    "autoprefixer": "^9.7.4",
     "cssnano": "*",
     "grunt": "*",
     "grunt-contrib-concat": "*",
@@ -36,7 +36,7 @@
     "grunt-postcss": "*",
     "grunt-sass": "*",
     "matchdep": "*",
-    "node-sass": "*",
+    "node-sass": "^4.13.1",
     "pretty": "*",
     "time-grunt": "*"
   }

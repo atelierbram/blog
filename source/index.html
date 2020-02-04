@@ -13,9 +13,7 @@ use: [posts]
 
 {% block content %}
 
-<svg style="display:none"><symbol id="shape-arrow" viewBox="0 0 20 20"><path fill="#3f4664" d="M1.244,7.91h12.578L9.707,3.809l1.969-1.982l7.547,7.533l-7.547,7.533l-1.969-1.969l4.129-4.129H1.244V7.91z"/></symbol></svg>
-
- <section class="content content-home"><ul class="publication-list publication-list--articles">
+<section class="content content-home"><ul class="publication-list publication-list--articles">
         {% for post in page.pagination.items %}
         <li class="publication-list__item">
           <h3 class="publication-list__item__title"><a href="{{ site.slug_posts }}/{{ post.slug }}">{{ post.index_title }}</a></h3>
@@ -30,7 +28,7 @@ use: [posts]
             {{ post.blocks.content|raw|striptags|split(' ')|slice(0,40)|join(' ') }} &hellip;
             {% endif %}
 
-            <a href="{{ site.slug_posts }}/{{ post.slug }}" class="read-more">read rest of article <i class="icon icon-arrow-right">
+            <a href="{{ site.slug_posts }}/{{ post.slug }}" class="read-more">read article <i class="icon icon-arrow-right">
                 <svg class="shape-icon" viewBox="0 0 20 20" width="20" height="20">
                   <use xlink:href="#shape-arrow"></use>
                 </svg>

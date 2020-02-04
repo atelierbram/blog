@@ -24,6 +24,9 @@ header h1 a {
   padding: 0 1em;
   margin-bottom: 3em;
   background-color: #fff;
+  .theme-dark & {
+    background-color: $dark01;
+  }
 }
 .publication-list {
   list-style: none;
@@ -62,6 +65,9 @@ h3 a {
   padding: .6rem;
   display: block;
   transition: color .3s;
+  .theme-dark & {
+    color: $light06;
+  }
 }
 h3 a:hover {
   text-decoration: none;
@@ -75,49 +81,35 @@ h3 a:hover {
 .wf-active .publication-list__item__content p {
   line-height: 1.4;
 }
-// oud
-// .truncate {
-//   width: 40%;
-//   text-overflow: ellipsis;
-//   vertical-align: top;
-//   white-space: nowrap;
-//   display: inline-block;
-// }
+
 .read-more {
   display: block;
   position: relative;
-  padding: .5em 2em .5em 5em;
+  padding: .5em 1em .5em 12.5%;
   border-radius: 3px;
   clear: both;
   transition: all .4s;
   color: $base01;
-}
-.read-more:hover,
-.read-more:active {
-  text-decoration: none;
-}
-.read-more:hover,
-.read-more:active {
-  background-color: $base06;
-  padding-left: 1em;
-  max-width: 100%;
-}
-.read-more:focus {
-  outline: 1px dotted $base05;
-}
 
-// .icon-20 {
-//   width: 20px;
-//   height: 20px;
-//   top: -2px;
-//   left: .25em;
-//   transition: margin .6s;
-// }
-// .read-more:hover .icon-20 {
-//   @include mq($from: tablet) {
-//     margin-left: 64%;
-//   }
-// }
+  .theme-dark & {
+    color: $dark07;
+    &:hover,
+    &:active {
+      background-color: $base00;
+    }
+  }
+
+  &:hover,
+  &:active {
+    text-decoration: none;
+    background-color: $base06;
+    padding-left: 1em;
+    max-width: 100%;
+  }
+  &:focus {
+    outline: 1px dotted $base05;
+  }
+}
 
 .icon-arrow-right {
   width: 20px;
@@ -128,19 +120,7 @@ h3 a:hover {
 }
 .read-more:hover .icon-arrow-right {
   @include mq($from: tablet) {
-    margin-left: 60%;
+    margin-left: 75%;
   }
 }
 
-// .read-more:after {
-//   content: "\261B";
-//   font-size: 2em;
-//   color: $base01;
-// }
-
-// .icon-arrow-right {
-//   width: 10px;
-//   height: 15px;
-//   top: -2px;
-//   left: .25em;
-// }

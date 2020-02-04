@@ -17,6 +17,11 @@ body {
   height: 100%;
   background: #fff;
 }
+.theme-dark,
+.theme-dark body {
+  background-color: $dark01;
+  color: $light01;
+}
 body {
   margin: 0;
   font-size: 100%;
@@ -58,12 +63,18 @@ a:hover {
   // border-bottom: 1px solid adjust-color($light_blue, $lightness: 10%);
   box-shadow: inset 0 -3px 0 adjust-color($light_blue, $lightness: 10%);
   transition: all .3s ease-out;
+  .theme-dark & {
+    box-shadow: inset 0 -3px 0 $dark_blue05;
+  }
 }
 .page a:hover,
 .page a:focus,
 .page a:active {
   // background: adjust-color($light_blue, $lightness: 10%);
   box-shadow: inset 0 -2em 0 adjust-color($light_blue, $lightness: 10%);
+  .theme-dark & {
+    box-shadow: inset 0 -2em 0 $dark_blue05;
+  }
 }
 header h1 a {
   color: $base05;
@@ -119,6 +130,12 @@ ol code {
   padding: 1px 0;
   border-radius: $rounded;
   color: $dark_orange-red;
+
+  .theme-dark & {
+    border-color: $dark02;
+    background-color: $base00;
+    color: $light_orange-red04;
+  }
 }
 
 p code:before,

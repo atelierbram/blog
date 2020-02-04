@@ -52,6 +52,8 @@ footer {
 header {
   background-color: #f5f7ff;
   min-height: 4rem; }
+  .theme-dark header {
+    background-color: #202746; }
 
 header h1 {
   font-size: 1.75rem;
@@ -177,6 +179,9 @@ sup span {
   max-width: 60em;
   margin: 0 auto;
   line-height: 1.6; }
+  .theme-dark .page {
+    background-color: #191d2e;
+    color: #f5f7ff; }
   @media all and (max-width: 39.99em) {
     .page {
       flex: 1;
@@ -194,6 +199,8 @@ sup span {
   border-left: 10px solid #979db4;
   background-color: #e4e7f1;
   margin: 2em 0 3em; }
+  .theme-dark .example .text {
+    color: #252a41; }
 
 .container-media video {
   border: 1px solid #dfe2f1;
