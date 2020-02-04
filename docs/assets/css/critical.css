@@ -186,6 +186,7 @@ sup span {
   margin: 0 auto;
   line-height: 1.6; }
   .theme-dark .page {
+    line-height: 1.65;
     background-color: #191d2e;
     color: #f5f7ff; }
   @media all and (max-width: 39.99em) {

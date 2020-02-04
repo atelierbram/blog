@@ -170,6 +170,9 @@ i,em {
 p {
   margin: 0;
   padding: .5em 0;
+  .theme-dark & {
+    word-spacing: 0.05em;
+  }
 }
 
 .content-home h3 {

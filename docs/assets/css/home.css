@@ -312,6 +312,8 @@ i, em {
 p {
   margin: 0;
   padding: .5em 0; }
+  .theme-dark p {
+    word-spacing: 0.05em; }
 
 .content-home h3 {
   font-size: 1.75rem; }
