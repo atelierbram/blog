@@ -647,40 +647,36 @@ button::-webkit-focus-inner {
   position: relative;
   width: 42px;
   height: 42px; }
-
-.btn-menu:hover {
-  cursor: pointer; }
-
-.shape-airvent {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  width: 42px;
-  height: 42px;
-  animation: spin 1s infinite linear forwards;
-  z-index: 0; }
-
-.btn-menu:hover .shape-airvent {
-  animation-duration: .4s; }
+  .btn-menu:hover {
+    cursor: pointer; }
+    .btn-menu:hover .shape-airvent {
+      animation-duration: .4s; }
+  .btn-menu .shape-airvent {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 42px;
+    height: 42px;
+    animation: spin 1s infinite linear forwards;
+    z-index: 0; }
 
 @keyframes spin {
   0% {
     transform: rotate(0deg); }
   100% {
     transform: rotate(360deg); } }
-
-.btn-menu:after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  width: 69px;
-  height: 69px;
-  z-index: 1; }
+  .btn-menu:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 69px;
+    height: 69px;
+    z-index: 1; }
 
 .page-wrap:after,
 footer {
