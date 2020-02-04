@@ -120,7 +120,7 @@ h3 a:hover {
 }
 .read-more:hover .icon-arrow-right {
   @include mq($from: tablet) {
-    margin-left: 75%;
+    margin-left: 70%;
   }
 }
 
