@@ -20,10 +20,15 @@ h3 {
 
   .theme-dark & {
     color: $light06;
+    letter-spacing: .75px;
   }
 }
 h4 {
   font-family: AvenirNextCondensed-DemiBold, Corbel, "Lucida Grande", "Trebuchet Ms", "Segoe Ui", "DejaVu Sans Condensed", sans-serif;
+  .theme-dark & {
+    font-family: AvenirNextCondensed-Regular, Corbel, "Lucida Grande", "Trebuchet Ms", "Segoe Ui", "DejaVu Sans Condensed", sans-serif;
+    font-weight: normal;
+  }
 }
 
 h4 {

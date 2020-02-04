@@ -21,6 +21,8 @@ body {
 .theme-dark body {
   background-color: $dark01;
   color: $light01;
+  letter-spacing: .75px;
+  font-family: AvenirNext-UltraLight, AvenirNext-Regular, Corbel, "Segoe Ui", "Lucida Grande", "Lucida Unicode", "Trebuchet Ms", Verdana, "DejaVu Sans", "Bitstream Vera Sans","Liberation Sans", sans-serif;
 }
 body {
   margin: 0;
@@ -150,6 +152,9 @@ ol code:after {
 
 h2, h3, b, strong, thead th, button {
   font-family: AvenirNext-DemiBold, Corbel, "Lucida Grande","Segoe Ui","Trebuchet Ms", Verdana, sans-serif;
+  .theme-dark & {
+    font-family: AvenirNext-Regular, Corbel, "Lucida Grande","Segoe Ui","Trebuchet Ms", Verdana, sans-serif;
+  }
 }
 
 strong em {

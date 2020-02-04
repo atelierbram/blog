@@ -11,6 +11,12 @@
   font-style: normal; }
 
 @font-face {
+  font-family: "Brando ExtraLight";
+  src: url("//atelierbram.github.io/type/Brando/brando-extralight.woff2") format("woff2"), url("//atelierbram.github.io/type/Brando/brando-extralight.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
   font-family: "Brando";
   src: url("//atelierbram.github.io/type/Brando/brando-regular.woff2") format("woff2"), url("//atelierbram.github.io/type/Brando/brando-regular.woff") format("woff");
   font-weight: normal;

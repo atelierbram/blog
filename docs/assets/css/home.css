@@ -171,7 +171,9 @@ body {
 .theme-dark,
 .theme-dark body {
   background-color: #191d2e;
-  color: #f5f7ff; }
+  color: #f5f7ff;
+  letter-spacing: .75px;
+  font-family: AvenirNext-UltraLight, AvenirNext-Regular, Corbel, "Segoe Ui", "Lucida Grande", "Lucida Unicode", "Trebuchet Ms", Verdana, "DejaVu Sans", "Bitstream Vera Sans","Liberation Sans", sans-serif; }
 
 body {
   margin: 0;
@@ -296,6 +298,8 @@ ol code:after {
 
 h2, h3, b, strong, thead th, button {
   font-family: AvenirNext-DemiBold, Corbel, "Lucida Grande","Segoe Ui","Trebuchet Ms", Verdana, sans-serif; }
+  .theme-dark h2, .theme-dark h3, .theme-dark b, .theme-dark strong, .theme-dark thead th, .theme-dark button {
+    font-family: AvenirNext-Regular, Corbel, "Lucida Grande","Segoe Ui","Trebuchet Ms", Verdana, sans-serif; }
 
 strong em {
   font-family: AvenirNext-BoldItalic, Avenir-HeavyOblique, Corbel, Trebuchet-BoldItalic, "Lucida Grande", Corbel, "Segoe Ui", "Trebuchet Ms", Verdana, sans-serif;
@@ -439,7 +443,7 @@ footer {
   background-color: #979db4;
   border-top: 1px solid #898ea4; }
   .theme-dark footer {
-    color: #79d279;
+    color: #acb2cd;
     background-color: #3f4664;
     border-top-color: #4e5574; }
 
@@ -510,6 +514,12 @@ footer a {
   font-style: normal; }
 
 @font-face {
+  font-family: "Brando ExtraLight";
+  src: url("//atelierbram.github.io/type/Brando/brando-extralight.woff2") format("woff2"), url("//atelierbram.github.io/type/Brando/brando-extralight.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
   font-family: "Brando";
   src: url("//atelierbram.github.io/type/Brando/brando-regular.woff2") format("woff2"), url("//atelierbram.github.io/type/Brando/brando-regular.woff") format("woff");
   font-weight: normal;
@@ -554,6 +564,16 @@ footer a {
   font-family: Brando, AvenirNext-Regular, Corbel, "Lucida Grande", "Trebuchet Ms", "Segoe Ui", "DejaVu Sans", sans-serif;
   font-weight: normal;
   font-style: normal; }
+  .theme-dark .wf-active .small-caps, .theme-dark
+  .wf-active body, .theme-dark
+  .wf-active header h1, .theme-dark
+  .wf-active h2, .theme-dark
+  .wf-active i, .theme-dark
+  .wf-active em, .theme-dark
+  .wf-active strong em, .theme-dark
+  .wf-active b, .theme-dark
+  .wf-active strong {
+    font-family: "Brando ExtraLight", AvenirNext-UltraLight, AvenirNext-Regular, Corbel, "Segoe Ui", "Lucida Grande", "Lucida Unicode", "Trebuchet Ms", Verdana, "DejaVu Sans", "Bitstream Vera Sans", "Liberation Sans", sans-serif; }
 
 .wf-active blockquote,
 .wf-active blockquote::after,
