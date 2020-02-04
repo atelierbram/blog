@@ -925,16 +925,17 @@ pre[class*="language-"] {
   font-family: Brando, AvenirNext-Regular, Corbel, "Lucida Grande", "Trebuchet Ms", "Segoe Ui", "DejaVu Sans", sans-serif;
   font-weight: normal;
   font-style: normal; }
-  .wf-active .small-caps.theme-dark,
-  .wf-active body.theme-dark,
-  .wf-active header h1.theme-dark,
-  .wf-active h2.theme-dark,
-  .wf-active i.theme-dark,
-  .wf-active em.theme-dark,
-  .wf-active strong em.theme-dark,
-  .wf-active b.theme-dark,
-  .wf-active strong.theme-dark {
-    font-family: "Brando ExtraLight", AvenirNext-UltraLight, AvenirNext-Regular, Corbel, "Segoe Ui", "Lucida Grande", "Lucida Unicode", "Trebuchet Ms", Verdana, "DejaVu Sans", "Bitstream Vera Sans", "Liberation Sans", sans-serif; }
+
+.theme-dark.wf-active .small-caps,
+.theme-dark.wf-active body,
+.theme-dark.wf-active header h1,
+.theme-dark.wf-active h2,
+.theme-dark.wf-active i,
+.theme-dark.wf-active em,
+.theme-dark.wf-active strong em,
+.theme-dark.wf-active b,
+.theme-dark.wf-active strong {
+  font-family: "Brando ExtraLight", AvenirNext-UltraLight, AvenirNext-Regular, Corbel, "Segoe Ui", "Lucida Grande", "Lucida Unicode", "Trebuchet Ms", Verdana, "DejaVu Sans", "Bitstream Vera Sans", "Liberation Sans", sans-serif; }
 
 .wf-active blockquote,
 .wf-active blockquote::after,
