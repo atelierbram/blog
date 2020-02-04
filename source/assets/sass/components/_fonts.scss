@@ -27,7 +27,7 @@
   font-family: $wf-bodytext;
   font-weight: normal;
   font-style: normal;
-  .theme-dark & {
+  &.theme-dark {
     font-family: $wf-bodytext-lightweight;
   }
 }
