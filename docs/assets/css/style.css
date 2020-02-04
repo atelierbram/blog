@@ -956,13 +956,29 @@ pre[class*="language-"] {
   font-family: brandosans-semibold-v100, AvenirNext-DemiBold, Corbel, "Lucida Grande", "Trebuchet Ms", "Segoe Ui", "DejaVu Sans Condensed", sans-serif;
   font-weight: normal; }
 
+.theme-dark.wf-active blockquote dt,
+.theme-dark.wf-active .publication-list__item__title,
+.theme-dark.wf-active h4,
+.theme-dark.wf-active .read-more,
+.theme-dark.wf-active h3,
+.theme-dark.wf-active h5,
+.theme-dark.wf-active .nav ul,
+.theme-dark.wf-active .prevnext h5,
+.theme-dark.wf-active footer small,
 .wf-active [id="examples"] ~ ul li,
 .wf-active [id="resources"] ~ ul li,
 .wf-active [id="demo"] ~ ul li,
 .wf-active .note,
-.wf-active footer small a:nth-of-type(2) {
+.wf-active footer small a {
   font-family: brandosans-regular-v100, AvenirNext-Regular, Corbel, "Lucida Grande", "Trebuchet Ms", "Segoe Ui", "DejaVu Sans", sans-serif;
   font-weight: normal; }
+
+.theme-dark.wf-active [id="examples"] ~ ul li,
+.theme-dark.wf-active [id="resources"] ~ ul li,
+.theme-dark.wf-active [id="demo"] ~ ul li,
+.theme-dark.wf-active .note,
+.theme-dark.wf-active footer small a {
+  letter-spacing: 1px; }
 
 .wf-active .publication-list__item__content p:first-of-type:first-letter,
 .wf-active .page > p:first-of-type:first-letter {
