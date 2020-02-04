@@ -428,7 +428,8 @@ h4 + ol {
   top: -1px; }
   .theme-dark .page ul li::before {
     font-size: 2em;
-    color: #79d279; }
+    color: #79d279;
+    top: -3px; }
 
 blockquote {
   position: relative;
