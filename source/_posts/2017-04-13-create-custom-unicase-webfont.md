@@ -30,7 +30,7 @@ This `font-variant-caps: small-caps` basically makes all lowercase characters ap
 
 <blockquote><dl class="quote"><dt>small-caps</dt><dd>This keyword forces the use of small capitals letters for lower case characters. It corresponds to the OpenType value <code>smcp</code>; if the font doesn't support them, it synthesizes the glyphs.</dd></dl></blockquote>
 
-<span class="note">Note that following instructions on sub-setting webfonts are an _additional option_, not required at all to create these small-caps: one can try using just system fonts as well with `font-variant-caps: small-caps` applied.</span>
+<p class="clear"><span class="note">Note that following instructions on sub-setting webfonts are an _additional option_, not required at all to create these small-caps: one can try using just system fonts as well with `font-variant-caps: small-caps` applied.</span></p>
 
 It is possible to generate your own light-weight unicase webfont with the <span class="small-caps">CSS</span> property-value pair `font-variant-caps: small-caps`, combined with the sub-setting technique when generating a web-font.
 
@@ -89,4 +89,4 @@ Ninety <span class="small-caps">JPG</span> files on <span class="small-caps">CD-
 - [Practical Typograhpy on small caps](http://practicaltypography.com/small-caps.html)
 - [Erik Spiekermann’s Typo Tips](http://fontfeed.com/archives/erik-spiekermanns-typo-tips/)
 
-<span class="note">This article was also published on [Codepen](http://codepen.io/atelierbram/post/create-custom-unicase-webfont)</span>
+<p class="clear"><span class="note">This article was also published on <a href="http://codepen.io/atelierbram/post/create-custom-unicase-webfont">Codepen</a></span></p>

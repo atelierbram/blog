@@ -172,7 +172,8 @@ body {
 .theme-dark body {
   background-color: #191d2e;
   color: #f5f7ff;
-  letter-spacing: .75px;
+  letter-spacing: 0.05em;
+  word-spacing: 0.05em;
   font-family: AvenirNext-UltraLight, AvenirNext-Regular, Corbel, "Segoe Ui", "Lucida Grande", "Lucida Unicode", "Trebuchet Ms", Verdana, "DejaVu Sans", "Bitstream Vera Sans","Liberation Sans", sans-serif; }
 
 body {
@@ -313,7 +314,8 @@ p {
   margin: 0;
   padding: .5em 0; }
   .theme-dark p {
-    word-spacing: 0.05em; }
+    word-spacing: 0.05em;
+    letter-spacing: 0.05em; }
 
 .content-home h3 {
   font-size: 1.75rem; }

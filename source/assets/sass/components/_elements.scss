@@ -17,6 +17,10 @@ pre {
   padding: 1rem 1.5rem;
   word-wrap: normal;
   white-space: pre-wrap;
+
+  .theme-dark & {
+    border-color: $dark01;
+  }
 }
 
 

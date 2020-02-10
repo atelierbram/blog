@@ -17,7 +17,8 @@ body {
 .theme-dark body {
   background-color: #191d2e;
   color: #f5f7ff;
-  letter-spacing: .75px;
+  letter-spacing: 0.05em;
+  word-spacing: 0.05em;
   font-family: AvenirNext-UltraLight, AvenirNext-Regular, Corbel, "Segoe Ui", "Lucida Grande", "Lucida Unicode", "Trebuchet Ms", Verdana, "DejaVu Sans", "Bitstream Vera Sans","Liberation Sans", sans-serif; }
 
 body {
@@ -158,7 +159,8 @@ p {
   margin: 0;
   padding: .5em 0; }
   .theme-dark p {
-    word-spacing: 0.05em; }
+    word-spacing: 0.05em;
+    letter-spacing: 0.05em; }
 
 .content-home h3 {
   font-size: 1.75rem; }
@@ -190,6 +192,8 @@ pre {
   padding: 1rem 1.5rem;
   word-wrap: normal;
   white-space: pre-wrap; }
+  .theme-dark pre {
+    border-color: #191d2e; }
 
 .publication-list__item__content p:first-of-type:first-letter,
 .page > p:first-of-type:first-letter {
@@ -496,6 +500,10 @@ hr,
 pre,
 sup span {
   box-shadow: 1px 1px 0 #dfe2f1; }
+  .theme-dark hr, .theme-dark
+  pre, .theme-dark
+  sup span {
+    box-shadow: 1px 1px 0 #191d2e; }
 
 pre,
 sup span {
@@ -755,6 +763,10 @@ pre[class*="language-"] {
   white-space: pre;
   background: #f5f7ff;
   color: #5e6687; }
+  .theme-dark code[class*="language-"], .theme-dark
+  pre[class*="language-"] {
+    background: #202746;
+    color: #979db4; }
 
 code.language-bash,
 pre.language-bash {
@@ -765,6 +777,9 @@ pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selectio
 code[class*="language-"]::-moz-selection, code[class*="language-"] ::-moz-selection {
   text-shadow: none;
   background: #dfe2f1; }
+  .theme-dark pre[class*="language-"]::-moz-selection, .theme-dark pre[class*="language-"] ::-moz-selection, .theme-dark
+  code[class*="language-"]::-moz-selection, .theme-dark code[class*="language-"] ::-moz-selection {
+    background: #898ea4; }
 
 pre.language-bash::-moz-selection, pre.language-bash ::-moz-selection,
 code.language-bash::-moz-selection, code.language-bash ::-moz-selection {
@@ -774,6 +789,9 @@ pre[class*="language-"]::selection, pre[class*="language-"] ::selection,
 code[class*="language-"]::selection, code[class*="language-"] ::selection {
   text-shadow: none;
   background: #dfe2f1; }
+  .theme-dark pre[class*="language-"]::selection, .theme-dark pre[class*="language-"] ::selection, .theme-dark
+  code[class*="language-"]::selection, .theme-dark code[class*="language-"] ::selection {
+    background: #898ea4; }
 
 pre.language-bash::selection, pre.language-bash ::selection,
 code.language-bash::selection, code.language-bash ::selection {
@@ -800,6 +818,11 @@ pre[class*="language-"] {
 .token.doctype,
 .token.cdata {
   color: #898ea4; }
+  .theme-dark .token.comment, .theme-dark
+  .token.prolog, .theme-dark
+  .token.doctype, .theme-dark
+  .token.cdata {
+    color: #6b7394; }
 
 .language-bash .token.comment,
 .language-bash .token.prolog,
@@ -809,6 +832,8 @@ pre[class*="language-"] {
 
 .token.punctuation {
   color: #5e6687; }
+  .theme-dark .token.punctuation {
+    color: #979db4; }
 
 .language-bash .token.punctuation {
   color: #979db4; }
@@ -871,6 +896,8 @@ pre[class*="language-"] {
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.25);
   border-radius: 2px;
   background-color: #f5f7ff; }
+  .theme-dark ::-webkit-scrollbar-track {
+    background-color: #202746; }
 
 .language-bash ::-webkit-scrollbar-track {
   background-color: #202746; }
@@ -879,6 +906,8 @@ pre[class*="language-"] {
   width: .75em;
   height: .75em;
   background-color: #dfe2f1; }
+  .theme-dark ::-webkit-scrollbar {
+    background-color: #293256; }
 
 .language-bash ::-webkit-scrollbar {
   background-color: #293256; }
@@ -887,12 +916,16 @@ pre[class*="language-"] {
   border-radius: 3px;
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.25);
   background-color: #dfe2f1; }
+  .theme-dark ::-webkit-scrollbar-thumb {
+    background-color: #293256; }
 
 .language-bash ::-webkit-scrollbar-thumb {
   background-color: #293256; }
 
 ::-webkit-scrollbar-thumb:window-inactive {
   background-color: #f5f7ff; }
+  .theme-dark ::-webkit-scrollbar-thumb:window-inactive {
+    background-color: #202746; }
 
 .language-bash ::-webkit-scrollbar-thumb:window-inactive {
   background-color: #202746; }

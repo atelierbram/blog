@@ -151,7 +151,12 @@ hr,
 pre,
 sup span {
   box-shadow: $box-shadow;
+
+  .theme-dark & {
+    box-shadow: 1px 1px 0 $dark01;
+  }
 }
+
 pre,
 sup span {
   border-radius: $rounded;
