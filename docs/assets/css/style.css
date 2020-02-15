@@ -6,7 +6,11 @@
 
 html {
   font-family: sans-serif;
-  font-size: 16px; }
+  font-size: 16px;
+  scrollbar-width: thin;
+  scrollbar-color: #dfe2f1 #f5f7ff; }
+  html.theme-dark {
+    scrollbar-color: #323853 #202746; }
 
 html,
 body {
@@ -181,6 +185,33 @@ svg:not(:root) {
 
 .icon {
   display: inline-block; }
+
+::-webkit-scrollbar-track {
+  border-radius: 2px;
+  background-color: #dfe2f1; }
+  .theme-dark ::-webkit-scrollbar-track {
+    background-color: #202746; }
+
+::-webkit-scrollbar {
+  width: 12px;
+  background-color: #dfe2f1; }
+  .theme-dark ::-webkit-scrollbar {
+    background-color: #293256; }
+
+::-webkit-scrollbar-thumb {
+  border-radius: 3px;
+  background-color: #979db4;
+  border: 3px solid #dfe2f1;
+  border-top-width: 1px;
+  border-bottom-width: 1px; }
+  .theme-dark ::-webkit-scrollbar-thumb {
+    background-color: #323853;
+    border-color: #202746; }
+
+::-webkit-scrollbar-thumb:window-inactive {
+  background-color: #f5f7ff; }
+  .theme-dark ::-webkit-scrollbar-thumb:window-inactive {
+    background-color: #202746; }
 
 pre {
   background-color: transparent;
@@ -892,40 +923,14 @@ pre[class*="language-"] {
 .token.entity {
   cursor: help; }
 
-::-webkit-scrollbar-track {
-  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.25);
-  border-radius: 2px;
-  background-color: #f5f7ff; }
-  .theme-dark ::-webkit-scrollbar-track {
-    background-color: #202746; }
-
 .language-bash ::-webkit-scrollbar-track {
   background-color: #202746; }
-
-::-webkit-scrollbar {
-  width: .75em;
-  height: .75em;
-  background-color: #dfe2f1; }
-  .theme-dark ::-webkit-scrollbar {
-    background-color: #293256; }
 
 .language-bash ::-webkit-scrollbar {
   background-color: #293256; }
 
-::-webkit-scrollbar-thumb {
-  border-radius: 3px;
-  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.25);
-  background-color: #dfe2f1; }
-  .theme-dark ::-webkit-scrollbar-thumb {
-    background-color: #293256; }
-
 .language-bash ::-webkit-scrollbar-thumb {
   background-color: #293256; }
-
-::-webkit-scrollbar-thumb:window-inactive {
-  background-color: #f5f7ff; }
-  .theme-dark ::-webkit-scrollbar-thumb:window-inactive {
-    background-color: #202746; }
 
 .language-bash ::-webkit-scrollbar-thumb:window-inactive {
   background-color: #202746; }

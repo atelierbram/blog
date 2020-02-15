@@ -6,7 +6,7 @@
     {% if site.description %}<meta name="description" content="{{page.description}}"/>{% endif %}
     {% if page.page_type == "index" %}<style>{% include "homeheadstyles-css.inc" %}</style>{% endif %}
     {% if page.page_type == "index" %}<link rel="prefetch" href="{{ site.slug }}/assets/js/prism-custom.min.js">{% endif %}
-    {% if page.page_type == "index" %}<link rel="prefetch" href="{{ site.slug }}/assets/css/prefixed/style.min.css">{% endif %}
+    {% if page.page_type == "index" %}<link rel="prefetch" href="{{ site.slug }}/assets/css/prefixed/style.min.css?v3">{% endif %}
     {% if page.page_type == "post" %}<style>{% include "critical-css.inc" %}</style>{% endif %}
 
     <style>{% include "btn-menu-svg-bg.inc" %}</style>
@@ -15,7 +15,7 @@
     <meta name="author" content="Bram de Haan">
     <link rel="author" href="https://plus.google.com/+BramdeHaan/posts">
     <script>{% include "head-detect-js.inc" %}</script>
-    {% if page.page_type == "post" %}<script>{% include "load-css-js.inc" %} loadCSS( "{{ site.slug }}/assets/css/prefixed/style.min.css?v2" );</script><noscript><link href="{{ site.slug }}/assets/css/prefixed/style.min.css?v2" rel="stylesheet"></noscript>{% endif %}
+    {% if page.page_type == "post" %}<script>{% include "load-css-js.inc" %} loadCSS( "{{ site.slug }}/assets/css/prefixed/style.min.css?v2" );</script><noscript><link href="{{ site.slug }}/assets/css/prefixed/style.min.css?v3" rel="stylesheet"></noscript>{% endif %}
   </head>
   <body class="{% if page.slug %}page-{{ page.slug }}{% endif %} {% if page.page_type %}page-type-{{ page.page_type }}{% endif %}" {% if page.id %}id="{{ page.id|replace({'_':'-'}) }}"{% endif %}>
     {% include "icons-svg.inc" %}

@@ -11,7 +11,14 @@
 html {
   font-family: sans-serif;
   font-size: 16px;
+  scrollbar-width: thin;
+  scrollbar-color: $base06 $base07;
+
+  &.theme-dark  {
+    scrollbar-color: $dark03 $base00;
+  }
 }
+
 html,
 body {
   height: 100%;
@@ -199,4 +206,44 @@ svg:not(:root) {
 .icon {
   display: inline-block;
   // position: relative;
+}
+// scrollbars in webkit
+::-webkit-scrollbar-track {
+  border-radius: 2px;
+  background-color: $base06;
+
+  .theme-dark & {
+    background-color: $base00;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+  // height: .75em;
+  background-color: $base06;
+
+  .theme-dark & {
+    background-color: $base01;
+  }
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 3px;
+  background-color: $base05;
+  border: 3px solid $base06;
+  border-top-width: 1px;
+  border-bottom-width: 1px;
+
+  .theme-dark & {
+    background-color: $dark03;
+    border-color: $base00;
+  }
+}
+
+::-webkit-scrollbar-thumb:window-inactive {
+  background-color: $base07;
+
+  .theme-dark & {
+    background-color: $base00;
+  }
 }
