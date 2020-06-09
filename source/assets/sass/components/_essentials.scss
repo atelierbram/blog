@@ -42,6 +42,7 @@ body {
   box-sizing: border-box;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: subpixel-antialiased !important;
+  hyphens: auto;
 }
 
 article, figcaption, figure, footer, header, nav, section { display: block; }
