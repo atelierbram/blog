@@ -71,11 +71,10 @@ a:hover {
   display: block;
 }
 .page a {
-  // border-bottom: 1px solid adjust-color($light_blue, $lightness: 10%);
-  box-shadow: inset 0 -3px 0 adjust-color($light_blue, $lightness: 10%);
+  box-shadow: inset 0 -2px 0 adjust-color($light_blue, $lightness: 10%);
   transition: all .3s ease-out;
   .theme-dark & {
-    box-shadow: inset 0 -3px 0 $dark_blue05;
+    box-shadow: inset 0 -2px 0 $dark_blue05;
   }
 }
 .page a:hover,
@@ -190,6 +189,7 @@ p {
 }
 .page h3 {
   font-size: 2em;
+  line-height: 1;
 }
 
 img,

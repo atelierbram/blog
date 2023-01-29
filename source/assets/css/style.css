@@ -70,11 +70,11 @@ a:hover {
 }
 
 .page a {
-  box-shadow: inset 0 -3px 0 #b9d6ee;
+  box-shadow: inset 0 -2px 0 #b9d6ee;
   transition: all 0.3s ease-out;
 }
 .theme-dark .page a {
-  box-shadow: inset 0 -3px 0 #25679c;
+  box-shadow: inset 0 -2px 0 #25679c;
 }
 
 .page a:hover,
@@ -196,6 +196,7 @@ p {
 
 .page h3 {
   font-size: 2em;
+  line-height: 1;
 }
 
 img,
@@ -305,7 +306,7 @@ pre {
 }
 
 h3 {
-  margin: 0.75rem 0 0 0;
+  margin: 1.5rem 0 0 0;
   padding: 0.75em 0 0;
   font-weight: normal;
   color: #293256;
@@ -351,7 +352,7 @@ h4 {
 }
 @media (min-width: 61.25em) {
   .nav a {
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     font-weight: 400;
   }
 }
@@ -417,7 +418,7 @@ h4 {
   color: transparent !important;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 35%;
+  background-size: 66.66667%;
 }
 
 .theme-switch {
@@ -509,7 +510,7 @@ time {
 }
 
 .page h3 + p {
-  margin-top: 1px;
+  margin-top: -6px;
 }
 
 .no-flexbox p {
@@ -538,12 +539,9 @@ h4 + ol {
   list-style: none;
   position: relative;
   margin-top: 0;
-  margin-left: -1.2em;
+  margin-left: -0.75em;
   padding-left: 0.75em;
-}
-.theme-dark .page ul li a,
-.page ul li > a {
-  box-shadow: none;
+  text-indent: -0.25em;
 }
 
 .page ul li,
@@ -1227,20 +1225,19 @@ h4,
 .read-more,
 h3,
 h5,
-.nav ul,
 .prevnext h5,
 footer small {
   font-family: brandosans-semibold-v100, AvenirNext-DemiBold, Corbel, "Lucida Grande", "Trebuchet Ms", "Segoe Ui", "DejaVu Sans Condensed", sans-serif;
   font-weight: normal;
 }
 
+.nav ul,
 .theme-dark blockquote dt,
 .theme-dark .publication-list__item__title,
 .theme-dark h4,
 .theme-dark .read-more,
 .theme-dark h3,
 .theme-dark h5,
-.theme-dark .nav ul,
 .theme-dark .prevnext h5,
 .theme-dark footer small,
 [id=examples] ~ ul li,

@@ -16,7 +16,7 @@
 //   }
 // }
 .page h3 + p {
-  margin-top: 1px;
+  margin-top: -6px;
   // border-top: 1px solid $base01;
   // position: relative;
 }
@@ -54,12 +54,14 @@ h4 + ol {
   list-style: none;
   position: relative;
   margin-top: 0;
-  margin-left: -1.2em;
+  margin-left: -.75em;
   padding-left: .75em;
-  .theme-dark & a,
-  > a {
-    box-shadow: none;
-  }
+  text-indent: -.25em;
+  // .theme-dark & a,
+  // > a {
+  //   box-shadow: none;
+  // }
+  // }
 }
 .page ul li,
 .page ol li {

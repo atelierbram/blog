@@ -24,21 +24,31 @@ li p {
 // moved with javascript to .innerwrap for large and wide heading ...
 .title-post {
   -webkit-font-smoothing: antialiased;
+  margin: auto;
+  padding-top: 1rem;
+  padding-bottom: 8rem;
   text-align: center;
+  max-width: 88%;
+  line-height: 1;
+
+  @include mq($from: tablet) {
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+  }
 }
 
 // font-sizes on smaller screens for heading
 .fs-3 {
-    font-size: 3rem;
+  font-size: 3rem;
 }
 .fs-3_5 {
-    font-size: 3.5rem;
+  font-size: 3.5rem;
 }
 .fs-3_75 {
-    font-size: 3.75rem;
+  font-size: 3.75rem;
 }
 .fs-4 {
-    font-size: 4rem;
+  font-size: 4rem;
 }
 
 .page .sup-link,
@@ -60,12 +70,10 @@ sup span {
   display: block;
   padding: 1em;
 }
+
 // font-sizes scaling with screen-width for heading
 @include mq($from: tablet) {
-  .title-post {
-    margin: 2rem 1rem 3rem;
-  }
- .fs-desktop-vw-5 {
+  .fs-desktop-vw-5 {
     font-size: 5vw;
   }
   .fs-desktop-vw-5_25 {
@@ -112,6 +120,23 @@ sup span {
   }
   .fs-desktop-vw-17_25 {
     font-size: 17.25vw;
+  }
+}
+
+.fs-desktop-vw-7,
+.fs-desktop-vw-7_25,
+.fs-desktop-vw-7_5,
+.fs-desktop-vw-8,
+.fs-desktop-vw-9,
+.fs-desktop-vw-9_5,
+.fs-desktop-vw-10,
+.fs-desktop-vw-12,
+.fs-desktop-vw-17_25 {
+  @include mq($from: desktop) {
+    letter-spacing: -2px;
+  }
+  @include mq($from: wide) {
+    letter-spacing: -3px;
   }
 }
 

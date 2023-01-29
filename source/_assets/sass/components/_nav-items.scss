@@ -12,7 +12,7 @@
   color: transparent;
   transition: color .5s;
   @include mq($from: desktop){
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     font-weight: 400;
   }
 }
@@ -80,5 +80,5 @@
   color: transparent !important;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 35%;
+  background-size: 66.66667%;
 }

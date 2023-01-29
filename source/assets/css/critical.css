@@ -1,25 +1,11 @@
 @charset "utf-8";
 .title-post {
   font-family: "Brando ExtraLight", AvenirNext-UltraLight, AvenirNext-Regular, Corbel, "Segoe Ui", "Lucida Grande", "Lucida Unicode", "Trebuchet Ms", Verdana, "DejaVu Sans", "Bitstream Vera Sans", "Liberation Sans", sans-serif;
-  letter-spacing: -1px;
-  word-spacing: 1px;
-}
-@media (min-width: 40em) {
-  .title-post {
-    letter-spacing: -2px;
-    word-spacing: 2px;
-  }
 }
 @media (min-width: 61.25em) {
   .title-post {
-    letter-spacing: -3px;
-    word-spacing: 3px;
-  }
-}
-@media (min-width: 81.25em) {
-  .title-post {
-    letter-spacing: -5px;
-    word-spacing: 5px;
+    letter-spacing: -1px;
+    word-spacing: 1px;
   }
 }
 
@@ -96,7 +82,18 @@ p,
 
 .title-post {
   -webkit-font-smoothing: antialiased;
+  margin: auto;
+  padding-top: 1rem;
+  padding-bottom: 8rem;
   text-align: center;
+  max-width: 88%;
+  line-height: 1;
+}
+@media (min-width: 40em) {
+  .title-post {
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+  }
 }
 
 .fs-3 {
@@ -138,9 +135,6 @@ sup span {
 }
 
 @media (min-width: 40em) {
-  .title-post {
-    margin: 2rem 1rem 3rem;
-  }
   .fs-desktop-vw-5 {
     font-size: 5vw;
   }
@@ -190,6 +184,33 @@ sup span {
     font-size: 17.25vw;
   }
 }
+@media (min-width: 61.25em) {
+  .fs-desktop-vw-7,
+  .fs-desktop-vw-7_25,
+  .fs-desktop-vw-7_5,
+  .fs-desktop-vw-8,
+  .fs-desktop-vw-9,
+  .fs-desktop-vw-9_5,
+  .fs-desktop-vw-10,
+  .fs-desktop-vw-12,
+  .fs-desktop-vw-17_25 {
+    letter-spacing: -2px;
+  }
+}
+@media (min-width: 81.25em) {
+  .fs-desktop-vw-7,
+  .fs-desktop-vw-7_25,
+  .fs-desktop-vw-7_5,
+  .fs-desktop-vw-8,
+  .fs-desktop-vw-9,
+  .fs-desktop-vw-9_5,
+  .fs-desktop-vw-10,
+  .fs-desktop-vw-12,
+  .fs-desktop-vw-17_25 {
+    letter-spacing: -3px;
+  }
+}
+
 .page {
   padding: 1em 2em;
   background-color: #fff;

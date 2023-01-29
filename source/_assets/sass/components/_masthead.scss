@@ -1,19 +1,9 @@
 .title-post {
   font-family: $wf-bodytext-lightweight;
-  letter-spacing: -1px;
-  word-spacing: 1px;
 
-  @include mq($from: tablet) {
-    letter-spacing: -2px;
-    word-spacing: 2px;
-  }
   @include mq($from: desktop) {
-    letter-spacing: -3px;
-    word-spacing: 3px;
-  }
-  @include mq($from: wide) {
-    letter-spacing: -5px;
-    word-spacing: 5px;
+    letter-spacing: -1px;
+    word-spacing: 1px;
   }
 }
 

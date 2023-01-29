@@ -2,25 +2,11 @@
 @charset "UTF-8";
 .title-post {
   font-family: "Brando ExtraLight", AvenirNext-UltraLight, AvenirNext-Regular, Corbel, "Segoe Ui", "Lucida Grande", "Lucida Unicode", "Trebuchet Ms", Verdana, "DejaVu Sans", "Bitstream Vera Sans", "Liberation Sans", sans-serif;
-  letter-spacing: -1px;
-  word-spacing: 1px;
-}
-@media (min-width: 40em) {
-  .title-post {
-    letter-spacing: -2px;
-    word-spacing: 2px;
-  }
 }
 @media (min-width: 61.25em) {
   .title-post {
-    letter-spacing: -3px;
-    word-spacing: 3px;
-  }
-}
-@media (min-width: 81.25em) {
-  .title-post {
-    letter-spacing: -5px;
-    word-spacing: 5px;
+    letter-spacing: -1px;
+    word-spacing: 1px;
   }
 }
 
@@ -284,11 +270,11 @@ a:hover {
 }
 
 .page a {
-  box-shadow: inset 0 -3px 0 #b9d6ee;
+  box-shadow: inset 0 -2px 0 #b9d6ee;
   transition: all 0.3s ease-out;
 }
 .theme-dark .page a {
-  box-shadow: inset 0 -3px 0 #25679c;
+  box-shadow: inset 0 -2px 0 #25679c;
 }
 
 .page a:hover,
@@ -410,6 +396,7 @@ p {
 
 .page h3 {
   font-size: 2em;
+  line-height: 1;
 }
 
 img,
@@ -763,20 +750,19 @@ h4,
 .read-more,
 h3,
 h5,
-.nav ul,
 .prevnext h5,
 footer small {
   font-family: brandosans-semibold-v100, AvenirNext-DemiBold, Corbel, "Lucida Grande", "Trebuchet Ms", "Segoe Ui", "DejaVu Sans Condensed", sans-serif;
   font-weight: normal;
 }
 
+.nav ul,
 .theme-dark blockquote dt,
 .theme-dark .publication-list__item__title,
 .theme-dark h4,
 .theme-dark .read-more,
 .theme-dark h3,
 .theme-dark h5,
-.theme-dark .nav ul,
 .theme-dark .prevnext h5,
 .theme-dark footer small,
 [id=examples] ~ ul li,
