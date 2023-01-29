@@ -1,6 +1,6 @@
 @charset "utf-8";
 .title-post {
-  font-family: brandosans-semibold-v100, AvenirNext-DemiBold, Corbel, "Lucida Grande", "Trebuchet Ms", "Segoe Ui", "DejaVu Sans Condensed", sans-serif !important;
+  font-family: "Brando ExtraLight", AvenirNext-UltraLight, AvenirNext-Regular, Corbel, "Segoe Ui", "Lucida Grande", "Lucida Unicode", "Trebuchet Ms", Verdana, "DejaVu Sans", "Bitstream Vera Sans", "Liberation Sans", sans-serif;
   letter-spacing: -1px;
   word-spacing: 1px;
 }

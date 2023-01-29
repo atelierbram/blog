@@ -1,6 +1,6 @@
 # [Documenting a Learning Curve](//atelierbram.github.io/blog/)
 
-Webdesign-related blogposts [hosted here on Github](//atelierbram.github.io/blog/): a place to conveniently post some of the things I learn along the way with `HTML`, `CSS` and `Javascript`. These articles are also published on [Codepen](//codepen.io/atelierbram/blog), you can  _[subscribe to the RSS-feed](//codepen.io/atelierbram/blog/feed/) there_.
+Webdesign-related blogposts [hosted here on Github](//atelierbram.github.io/blog/): a place to conveniently post some of the things I learn along the way with `HTML`, `CSS` and `Javascript`.
 
 <details>
 <summary>Table of contents</summary>
