@@ -21,7 +21,7 @@ Webdesign-related blogposts [hosted here on Github](//atelierbram.github.io/blog
 
 </details>
 
-<br>Build with [Sculpin](//sculpin.io).
+<br>Build with [Jigsaw](//jigsaw.tighten.com/).
 
 #### License
 
