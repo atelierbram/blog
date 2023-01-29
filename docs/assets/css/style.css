@@ -411,14 +411,15 @@ h4 {
 }
 
 .nav_list li:first-child a {
-  width: 2.5em;
-  height: 2.5em;
+  box-sizing: content-box;
+  width: 2.5rem;
+  height: 2.5rem;
   overflow: hidden;
   color: #fff;
   color: transparent !important;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 2.5em;
+  background-size: 2.5rem;
 }
 
 .theme-switch {
