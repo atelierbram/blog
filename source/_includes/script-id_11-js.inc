@@ -1,1 +1,0 @@
-function insert(){"use strict";document.getElementById("lazy-loading").classList.add("fs-desktop-vw-10","fs-3_5")}insert();

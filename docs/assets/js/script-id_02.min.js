@@ -1,1 +1,0 @@
-function insert(){"use strict";document.getElementById("select-menu-hashchange").classList.add("fs-desktop-vw-10")}insert();

@@ -1,1 +1,0 @@
-function insert(){"use strict";document.getElementById("switching-color-modes").classList.add("fs-desktop-vw-7","fs-4")}insert();
