@@ -1,0 +1,45 @@
+@import
+// "components/settings",
+// "components/color-vars";
+"components/mq",
+"components/mq-show-breakpoints";
+
+.server-local.theme-dark body::before {
+  color: #606885;
+}
+// .server-local .site:before {
+// .server-local body:before {
+//   color: #ccc;
+//   font-size: .65rem;
+//   line-height: 1;
+//   font-family: inherit;
+//   padding: 2px;
+//   pointer-events: none;
+//   position: fixed;
+//   top: 0;
+//   right: 0;
+//   z-index: 1001;
+// }
+
+// .server-local body:before {
+//   right: 0;
+// }
+//
+// .server-local .site:before {
+//   left: .25rem;
+//   @media (min-aspect-ratio: 16/16) {
+//     content: "min-aspect-ratio 16:16 = 1:1";
+//   }
+//   @media (min-aspect-ratio: 16/12) {
+//     content: "min-aspect-ratio 16:12 = 4:3";
+//   }
+//   @media (min-aspect-ratio: 16/10) {
+//     content: "min-aspect-ratio 16:10 = 8:5";
+//   }
+//   @media (min-aspect-ratio: 16/9) {
+//     content: "min-aspect-ratio 16:9";
+//   }
+//   @media (min-aspect-ratio: 2/1) {
+//     content: "min-aspect-ratio 16:8 = 2:1";
+//   }
+// }

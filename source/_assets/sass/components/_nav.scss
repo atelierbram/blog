@@ -1,0 +1,15 @@
+.nav {
+  padding: 0;
+  height: 0;
+  transition: height, padding .3s;
+  overflow: hidden;
+}
+.nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  flex-wrap: wrap;
+}

@@ -1,0 +1,158 @@
+.prevnext {
+  clear: both;
+  margin-bottom: 2em;
+  padding-top: 8em;
+  overflow: auto;
+
+  li,
+  a {
+    display: inline-block;
+  }
+  a {
+    color: $dark03;
+    padding: 0.125em 0.65em;
+
+    &:hover {
+      color: $red;
+      box-shadow: none !important;
+      svg {
+        fill: $red;
+      }
+    }
+  }
+  .theme-dark & {
+    a {
+      color: $dark07;
+      &:hover {
+        color: $light_red;
+        svg {
+          fill: $light_red;
+        }
+      }
+    }
+  }
+
+  &_pagenumbers {
+    list-style: none;
+    text-align: center;
+    border-top: 1px solid adjust-color($base05,$lightness:15%);
+    padding-top: 2em;
+
+  }
+  .theme-dark & {
+    &_pagenumbers {
+      border-top-color: $dark05;
+    }
+  }
+  &_pagenumbers_item-number {
+    margin: 0 .25em;
+  }
+  &_pagenumbers_item-number {
+    a {
+      border: 1px solid transparent;
+
+      &:hover,
+      &.selected {
+        border-color:  adjust-color($base05,$lightness:15%);
+      }
+      &.selected {
+        cursor: default;
+        pointer-events: none;
+      }
+    }
+  }
+
+  .theme-dark & {
+    &_pagenumbers_item-number {
+      a {
+        &:hover,
+        &.selected {
+          border-color: $dark05;
+        }
+      }
+    }
+
+  }
+}
+
+.page-type-index .prevnext {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.prevnext h5 {
+  // font-family: AvenirNextCondensed-Regular, Corbel, "Lucida Grande", "Trebuchet Ms", "Segoe Ui", "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", sans-serif;
+  // width: 50%;
+  font-size: 1em;
+  font-weight: normal;
+  .page-type-post & {
+    @include mq($from: desktop) {
+      width: 50%;
+    }
+  }
+}
+.page-type-post {
+  @include mq($from: desktop) {
+    .prevnext .prevnext_left {
+      float: left;
+    }
+    .prevnext .prevnext_right {
+      float: right;
+    }
+  }
+}
+
+
+.prevnext .prevnext_right,
+.prevnext h5:nth-of-type(2) {
+  text-align: right;
+}
+
+.prevnext h5 a {
+  position: relative;
+  display: block;
+  padding: .25em 0;
+  text-decoration: none;
+  transition: color .3s;
+  border-bottom: none;
+  box-shadow: none !important;
+
+  // .theme-dark & {
+  //   color: $dark07;
+  //   &:hover {
+  //     color: $light_red;
+  //     svg {
+  //       fill: $light_red;
+  //     }
+  //   }
+  // }
+
+  // &:hover {
+  //   color: $red;
+  //   box-shadow: none !important;
+  //   svg {
+  //     fill: $red;
+  //   }
+  // }
+}
+
+.shape-icon {
+  fill: $base01;
+  .theme-dark & {
+    fill: $dark07;
+  }
+}
+
+.icon-8 {
+  width: 10px;
+  height: 15px;
+  margin-top: -1px;
+  vertical-align: top;
+}
+.icon-arrow-left {
+  margin-right: .25em;
+}
+.icon-arrow-right {
+  margin-left: .25em;
+}
+

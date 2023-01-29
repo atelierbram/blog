@@ -1,0 +1,1 @@
+function insert(){"use strict";var e=document.getElementById("h-airfan"),t=document.getElementById("note-1").cloneNode(!0);document.getElementById("supLink1").appendChild(t),t.id="clonedNode1",e.classList.add("fs-desktop-vw-10","fs-4")}insert();

@@ -1,0 +1,93 @@
+@font-face {
+  font-family: 'Source Code Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Source Code Pro'), local('SourceCodePro-Regular'), url(//fonts.gstatic.com/s/sourcecodepro/v6/mrl8jkM18OlOQN8JLgasD5bPFduIYtoLzwST68uhz_Y.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+p code,
+ul code,
+ol code,
+pre[class*="language-"],
+code,
+pre {
+  font-family: $wf-monospace;
+}
+
+.small-caps,
+body,
+header h1,
+h2,
+i,
+em,
+strong em,
+b,
+strong {
+  font-family: $wf-bodytext;
+  font-weight: normal;
+  font-style: normal;
+}
+.theme-dark .small-caps,
+.theme-dark body,
+.theme-dark header h1,
+.theme-dark h2,
+.theme-dark i,
+.theme-dark em,
+.theme-dark strong em,
+.theme-dark b,
+.theme-dark strong {
+  font-family: $wf-bodytext-lightweight;
+}
+
+blockquote,
+blockquote::after,
+i,
+em {
+  font-family: $wf-bodytext-italic;
+  font-style: normal;
+}
+
+blockquote dt,
+.publication-list__item__title,
+h4,
+.read-more,
+h3,
+h5,
+.nav ul,
+.prevnext h5,
+footer small {
+  font-family: $wf-subheader;
+  font-weight: normal;
+}
+
+.theme-dark blockquote dt,
+.theme-dark .publication-list__item__title,
+.theme-dark h4,
+.theme-dark .read-more,
+.theme-dark h3,
+.theme-dark h5,
+.theme-dark .nav ul,
+.theme-dark .prevnext h5,
+.theme-dark footer small,
+[id="examples"] ~ ul li,
+[id="resources"] ~ ul li,
+[id="demo"] ~ ul li,
+.note,
+footer small a {
+  font-family: $wf-sans-regular;
+  font-weight: normal;
+}
+
+// .theme-dark .note,
+.theme-dark [id="examples"] ~ ul li,
+.theme-dark [id="resources"] ~ ul li,
+.theme-dark [id="demo"] ~ ul li,
+.theme-dark footer small a {
+  letter-spacing: 1px;
+}
+
+.publication-list__item__content p:first-of-type:first-letter,
+.page > p:first-of-type:first-letter {
+  font-family: $wf-heavy;
+}

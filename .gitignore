@@ -1,46 +1,15 @@
-.DS_Store
-lib-cov
-*.seed
-*.log
-*.csv
-*.dat
-*.out
-*.pid
-*.gz
-*.rar
-*.ai
-*.map
-
-# Logs
-npm-debug.log
-node_modules
-pids
-logs
-*.log
-
-#sass cache files
-.sass-cache
-
-release
-/tmp/
-/temp/
-dist
-sitemap-ignore.json
-
-# Docs, etc in underscore directory
-_
-
-# ignore page folder for pagination for now
-/docs/page/
-
-# copied assets for local development
-/assets
-
-# Sculpin
-/app/cache/*
-/app/config/sculpin_kernel_*.yml
-/app/config/sculpin_site_*.yml
-/app/logs/*
+/build_local/
+/cache/
+/node_modules/
 /vendor/
-/source/components/
-/output_*
+/.idea/
+/.vscode/
+npm-debug.log
+_/
+.DS_Store
+scratch.txt
+
+# Optional ignores
+/build_staging/
+# /build_production/
+/source/assets/build/
