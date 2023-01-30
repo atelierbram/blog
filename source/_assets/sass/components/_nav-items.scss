@@ -33,10 +33,10 @@
   height: auto;
   padding: 1rem 0 2rem;
   overflow: visible;
-  background-color: #fff;
+  background-color: $base06;
 
   .theme-dark & {
-    background-color: #000;
+    background-color:  adjust-color($base00, $lightness: -4%);
   }
 }
 .has-nav-active .nav {
@@ -70,6 +70,11 @@
 .nav .active {
   pointer-events: none;
   cursor: default;
+  background-color: #fff;
+
+  .theme-dark & {
+    background-color: adjust-color($base00, $lightness: -10%);
+  }
 }
 // home icon
 .nav_list li:first-child a {
