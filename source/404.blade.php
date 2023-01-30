@@ -7,6 +7,7 @@ description: 404 - This page is not found
 page_type: 404
 slug: 404
 id: "id_404"
+permalink: 404.html
 ---
 
 @section('body')
