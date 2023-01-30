@@ -78,7 +78,7 @@ Now when, for whatever reason, the page takes too long to load on a clients brow
 
 Note the inline style-tag on the `text` attribute, with values for basic typographic properties applied. The `x` and `y` attributes are for the positioning of the text.
 
-Go see the demo:
+#### Demo
 
 - [here on Github](https://atelierbram.github.io/lazy-loading-logos/)
 - [on Codepen](http://codepen.io/atelierbram/pen/YNoNZw)

@@ -1,11 +1,5 @@
 <!DOCTYPE html>
-<html class="no-js core
-  @if ($page->server === "local")
-    server-local
-  @else
-    server-remote
-  @endif
-" lang="en">
+<html class="no-js core @if ($page->server === "local") server-local @else server-remote @endif" lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -34,7 +28,13 @@
   <body class="page-type-{{ $page->page_type }}" id="id-{{ $page->id }}">
     @include('_partials.icons-svg')
     @include('_partials.header')
-    @yield('body')
+    <div class="page-wrap" id="pageWrap">
+      <div class="inner-wrap" id="innerWrap">
+        @yield('body')
+      </div><!-- .inner-wrap -->
+
+      @include('_partials.footer')
+    </div><!-- page-wrap -->
 
     <div class="theme-switch">
       <input class="theme-switch_toggle" id="themeSwitchToggle" type="checkbox">

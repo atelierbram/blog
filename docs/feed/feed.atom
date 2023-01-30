@@ -1,0 +1,1142 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title>Atelierbram Blog</title>
+    <link href="https://atelierbram.github.io/blog/blog" />
+    <link type="application/atom+xml" rel="self" href="https://atelierbram.github.io/blog/feed/feed.atom" />
+    <updated>2023-01-30T19:13:03+00:00</updated>
+    <id>https://atelierbram.github.io/blog/feed/feed.atom</id>
+    <author>
+        <name></name>
+    </author>
+          <entry>
+    <id>https://atelierbram.github.io/blog/template-sculpin-netlify</id>
+    <link type="text/html" rel="alternate" href="https://atelierbram.github.io/blog/template-sculpin-netlify" />
+    <title>Template Sculpin Netlify</title>
+    <published>2017-08-10T00:00:00+00:00</published>
+    <updated>2017-08-10T00:00:00+00:00</updated>
+    <author>
+        <name>Bram de Haan</name>
+    </author>
+    <summary type="html">On the look out for available templates on the interwebs for deployment of a static site on Netlify build with Sculpin and Grunt I stumbled on some intriguing templates but none with that exact combination. There are templates available for different......</summary>
+    <content type="html"><![CDATA[
+        <p>On the look out for available templates on the interwebs for deployment of a static site on Netlify build with Sculpin and Grunt I stumbled on some intriguing templates but none with that exact combination. There are templates available for different static site builders and build tools on <a href='https://github.com/netlify-templates'>Netlify’s dedicated repository of templates</a>, like a lot with Hugo, typically integrated in a Gulp workflow.</p>
+
+<p class="publication-list__item__meta"><time datetime=""></time></p>
+
+<p>One template, the <a href="https://github.com/netlify-templates/kaldi-hugo-cms-template">Kaldi Hugo Template</a> which itself is based on the <a href="https://github.com/netlify/victor-hugo">Victor Hugo</a> template has Netlify <span class="small-caps">CMS</span> as an npm dependency. This allows for a local installment of the <span class="small-caps">CMS</span>, which is funny but can also be a bit confusing, and in my experience unnecessary. <sup><a href="#note-1" class="sup-link" id="supLink1"> 1 </a></sup></p>
+
+<p>Hugo is a static site builder rapidly growing in popularity with very fast performance due to the Go rendering engine. But the Go language is also making it difficult to debug for someone new to the language. And we all make typos and syntax errors so this can be an issue. I just had to make my own template with Sculpin –  which I love –  but where to start?</p>
+
+<h3>Static Site build with Sculpin</h3>
+
+<p>I thought about it for a while and in the end it made more sense to me combining the Kaldi Hugo Template with the skeleton template for Sculpin, rather than to start from scratch. Sculpin works out of the box when following the instruction from the <a href="https://sculpin.io/getstarted/">quick start guide</a>. Sculpin comes with all you need for a website, complete with pagination, blogposts with categories and tags, which in itself is already impressive. It is also a reliable tool, making it a joy to work with. It is written in <span class="small-caps">PHP</span> and uses Twig templates that can give feedback in the terminal on syntax errors, which can be quite helpful from time to time. The syntax for the Twig template tags doesn’t differ <em>that much</em> from any other templating language, it can be inside markdown files with Yaml front matter for metadata on top, so converting the templates from the Kaldi <em>Hugo</em> template to the new <a href="https://github.com/atelierbram/kaldi-sculpin-netlify-template">Kaldi <em>Sculpin</em> template</a> was really quite straight forward.</p>
+
+<h3>Grunt workflow</h3>
+
+<p>Using Grunt in stead of Gulp was what I wanted, so that’s what I used for the compiling of the Sass into <span class="small-caps">CSS</span>, the concatenation and minification of javaScript, and for the concatenation of several <span class="small-caps">SVG</span> icons into one partial. I can work much faster in Grunt, doing anything really, and I like the more declarative syntax.</p>
+
+<h3>Deployment on Netlify: <span class="small-caps" style="font-family:brandosans-semibold-v100">CMS</span> Integration</h3>
+
+<p>Trickiest bit was to integrate Netlify <span class="small-caps">CMS</span> by editing the <code>source/cms/config.yml</code> file: any syntax error can trip you up and make the <span class="small-caps">CMS</span> show an empty space where the entry in the admin should be. But ones you get the setup right the rest of the workflow, editing – deploying, can be a smooth process.</p>
+
+<h3>Simplicity</h3>
+
+<p>It’s exciting and beautiful to be able to edit those blogposts written in markdown right in the browser within an admin complete with preview panel. In the end the template I baked can be seen as a simplification of the Kaldi Hugo template, (<em>but also with some additions like a collapsible navigation for small screens, pagination, categories and tags</em>). It’s more like simplification-in-the-sense-of templating without too much fancy functions, ending up maybe a little less <abbr title="Don’t repeat yourselve" style="text-decoration:none"><span class="small-caps">DRY</span></abbr> than the original Hugo template because of this &hellip;. Also the implementation of the integration of Netlify <span class="small-caps">CMS</span> into the setup was done in the most minimal way: I really do prefer simplicity over complication.</p>
+
+<blockquote>
+  <p>There is smartness all around but it’s simplicity that lacks too often in webdevelopment, but that’s the way I like it!</p>
+</blockquote>
+
+<p>As far as I can see the easiest way to get started with Sculpin deployed with Netlify <a href="#time">at the time of writing</a> is to download this <a href="https://github.com/atelierbram/kaldi-sculpin-netlify-template">Kaldi Sculpin Netlify Template</a> and make it your own. You can see a preview how it looks <a href="http://kaldi-sculpin-template.netlify.com/">over here on Netlify</a>.</p>
+
+<p>If you follow the instructions in the <a href="https://github.com/atelierbram/kaldi-sculpin-netlify-template#README.md">readme</a>, edit the <code>package.json</code> and config files to reflect the name of your own new repo and so on, one should be able to kickstart a Sculpin project with Netlify <span class="small-caps">CMS</span> in considerable less time than it took me initially.</p>
+
+<h4>NOTES</h4>
+
+<ol>
+<li><span id="note-1">A local install of the admin only reflects the local website, so you have to do a <code>git pull origin master</code> to see the edits made on the remote server, which makes sense, but can add up to the confusion when by accident you would edit posts locally in the admin in stead of on the remote server. So yeah, I don’t know, I think I can live without that part &hellip;.</span></li>
+</ol>
+
+<h4>RESOURCES</h4>
+
+<ul>
+<li><a href="https://github.com/netlify-templates/kaldi-hugo-cms-template">Kaldi Hugo CMS Template</a></li>
+<li><a href="https://github.com/sculpin/sculpin-blog-skeleton">Sculpin’s Blog Skeleton</a></li>
+<li><a href="https://www.netlify.com/tags/tutorial/">Tutorials on Netlify</a></li>
+<li><a href="https://github.com/netlify/netlify-cms/blob/master/docs/test-drive.md">Authenticate with GitHub</a></li>
+<li><a href="https://sculpin.io/">Sculpin</a></li>
+<li><a href="https://sculpin.io/getstarted/">Sculpin’s quick start guide</a></li>
+</ul>
+
+<p><span class="note">This article was also published on <a href="https://codepen.io/atelierbram/post/template-sculpin-netlify">Codepen</a></span></p>
+    ]]></content>
+</entry>
+      <entry>
+    <id>https://atelierbram.github.io/blog/create-custom-unicase-webfont</id>
+    <link type="text/html" rel="alternate" href="https://atelierbram.github.io/blog/create-custom-unicase-webfont" />
+    <title>Unicase Webfont</title>
+    <published>2017-04-13T00:00:00+00:00</published>
+    <updated>2017-04-13T00:00:00+00:00</updated>
+    <author>
+        <name>Bram de Haan</name>
+    </author>
+    <summary type="html">Unicase fonts are a bit special; they provide uppercase glyphs for lowercase characters, which means lowercase glyphs are rendered with glyphs which look just like uppercase glyphs. One should be careful using these fonts, but they have their place. If......</summary>
+    <content type="html"><![CDATA[
+        <p>Unicase fonts are a bit special; they provide uppercase glyphs for lowercase characters, which means lowercase glyphs are rendered with glyphs which look just like uppercase glyphs. One should be careful using these fonts, but they have their place. If you want to create the same effect with any other font then there is the <span class='small-caps'>CSS</span> property-value pair <code>font-variant-caps: small-caps</code> to the rescue <sup><a href='#note-1' class='sup-link' id='supLink1'>1</a></sup>.</p>
+
+<p class="publication-list__item__meta"><time datetime=""></time></p>
+
+<pre><code class="language-css">
+.small-caps {
+  font-variant-caps: small-caps;
+}
+</code></pre>
+
+<p>This <code>font-variant-caps: small-caps</code> basically makes all lowercase characters appear in a smaller uppercase version, unlike <code>text-transform: uppercase</code> which scales the height of the glyphs up. It has to be mentioned though that this likely will only <em>approach</em> the look of a font with true small caps though. Because uppercase characters in a regular font often are a tiny bit thinner, they may look fragile when scaled down to small caps size compared with lowercase characters of the same size. One way to fight this is to choose a medium weight font to begin with; more on this later. Adding some letter-spacing also makes them look better in my eyes.</p>
+
+<blockquote><dl class="quote"><dt>small-caps</dt><dd>This keyword forces the use of small capitals letters for lower case characters. It corresponds to the OpenType value <code>smcp</code>; if the font doesn't support them, it synthesizes the glyphs.</dd></dl></blockquote>
+
+<p class="clear"><span class="note">Note that following instructions on sub-setting webfonts are an <i>additional option</i>, not required at all to create these small-caps: one can try using just system fonts as well with `font-variant-caps: small-caps` applied.</span></p>
+
+<p>It is possible to generate your own light-weight unicase webfont with the <span class="small-caps">CSS</span> property-value pair <code>font-variant-caps: small-caps</code>, combined with the sub-setting technique when generating a web-font.</p>
+
+<p>Download a free font from <a href="//fontsquirrel.com">FontSquirrel</a>, in my experience medium weights work best, because scaled down uppercase characters tend to look too fragile. Go to the "generator"-tab, hit "upload fonts", choose the just downloaded <code>.ttf</code> font and check the option "expert".</p>
+
+<ul>
+<li>Font-formats: only woff and woff2</li>
+<li>Truetype Hinting: Keep Existing</li>
+<li>Subsetting: Custom Subsetting</li>
+<li>Character Type:
+
+<ul>
+<li>Uppercase</li>
+<li>Numbers</li>
+<li>Punctuation</li>
+</ul></li>
+<li>CSS: when wanting to embed the font as a Base64 string in your stylesheet, check: Base64 Encode</li>
+<li>Advanced Options:
+
+<ul>
+<li>Font Name Suffix: make field empty (no need for <code>-webfont</code> suffix)</li>
+</ul></li>
+</ul>
+
+<p>Leave the rest of the options as default and check the Agreement checkbox.</p>
+
+<p>Now you can download your own custom unicase font, only containing the glyphs for uppercase, numbers and punctuation, which also makes it very light-weight. Conveniently FontSquirrel generates additional <span class="small-caps">CSS</span> with the <code>@fontface</code> rule <sup><a href="#note-2" class="sup-link" id="supLink2">2</a></sup> applied.</p>
+
+<blockquote>
+  <p>Never use capital letters to accentuate words in running copy. They stick out far too much spoiling the look of the column or page. Use italics instead. If you have to set words in capitals, use proper small caps with or without initial capitals. <small class="author">Erik Spiekermann</small></p>
+</blockquote>
+
+<h3>Examples</h3>
+
+<pre><code class="language-html">
+Ninety &lt;span class="small-caps"&gt;JPG&lt;/span&gt; files on &lt;span class="small-caps"&gt;CD-ROM&lt;/span&gt;.
+&lt;span class="small-caps"&gt;HTML&lt;/span&gt;, &lt;span class="small-caps"&gt;CSS&lt;/span&gt; and javaScript.
+</code></pre>
+
+<pre><code class="language-css">
+@supports (font-variant-caps:  small-caps) {
+  .small-caps {
+    text-transform: lowercase;
+    font-variant-caps: small-caps;
+  }
+}
+</code></pre>
+
+<p>Ninety <span class="small-caps">JPG</span> files on <span class="small-caps">CD-ROM</span>.</p>
+
+<p><span class="small-caps">HTML</span>, <span class="small-caps">CSS</span> and javaScript.</p>
+
+<p data-height="300" data-theme-id="71" data-slug-hash="RVwmpd" data-default-tab="css,result" data-user="atelierbram" data-embed-version="2" data-pen-title="RVwmpd" class="codepen">See the Pen <a href="http://codepen.io/atelierbram/pen/RVwmpd/">RVwmpd</a> by Bram de Haan (<a href="http://codepen.io/atelierbram">@atelierbram</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+
+<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+
+<h4>Notes</h4>
+
+<ol>
+<li><span id="note-1">There is <code>font-variant: small-caps</code> too: this is the shorthand for all ‘font-variant’ subproperties. Like other shorthands, using ‘font-variant’ resets unspecified ‘font-variant’ subproperties to their initial values.</span></li>
+<li><span id="note-2">This will also solve any syntax issues with the <code>@fontface</code> rule, for it comes with a demo <span class="small-caps">HTML</span> - and <span class="small-caps">CSS</span> file with those rules applied. You can take those rules, maybe adept the url paths, and paste them into your <span class="small-caps">CSS</span>.</span></li>
+</ol>
+
+<h4>Resources</h4>
+
+<ul>
+<li><a href="https://css-tricks.com/almanac/properties/f/font-variant/">font-variant on CSS-Tricks Almanac</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-variant-caps">font-variant-caps on MDN</a></li>
+<li><a href="https://drafts.csswg.org/css-fonts-3/#propdef-font-variant-caps">the specs on font-variant-caps</a></li>
+<li><a href="https://drafts.csswg.org/css-fonts-3/#propdef-font-variant">the specs on font-variant</a></li>
+<li><a href="http://ilovetypography.com/2008/02/20/small-caps/">I Love Typograhpy on small caps</a></li>
+<li><a href="http://practicaltypography.com/small-caps.html">Practical Typograhpy on small caps</a></li>
+<li><a href="http://fontfeed.com/archives/erik-spiekermanns-typo-tips/">Erik Spiekermann’s Typo Tips</a></li>
+</ul>
+
+<p class="clear"><span class="note">This article was also published on <a href="http://codepen.io/atelierbram/post/create-custom-unicase-webfont">Codepen</a></span></p>
+    ]]></content>
+</entry>
+      <entry>
+    <id>https://atelierbram.github.io/blog/lazy-loading</id>
+    <link type="text/html" rel="alternate" href="https://atelierbram.github.io/blog/lazy-loading" />
+    <title>Lazy Loading</title>
+    <published>2017-02-19T00:00:00+00:00</published>
+    <updated>2017-02-19T00:00:00+00:00</updated>
+    <author>
+        <name>Bram de Haan</name>
+    </author>
+    <summary type="html">Tweaking a method for the lazy loading of images made me think the result could be described as progressively enhancing images. By replacing – with javaScript – a small inline SVG data URI with only embedded text inside on the src-tag with the url of......</summary>
+    <content type="html"><![CDATA[
+        <p>Tweaking a method for the lazy loading of images made me think the result could be described as progressively enhancing images. By replacing – with javaScript – a small inline <span class='small-caps'>SVG</span> data <span class='small-caps'>URI</span> with only embedded text inside on the src-tag with the url of the external image stored in a data-attribute.</p>
+
+<p class="publication-list__item__meta"><time datetime=""></time></p>
+
+<p>Keep in mind this is about loading <span class="small-caps">SVG</span> (vector) images, like in a logo.</p>
+
+<p>The original technique would use a 1px square transparent url-encoded inline image, which would be replaced with the url of the full-sized image <strong>on page load</strong> with javaScript. The url of the latter image is stored in a data-attribute of that same image:</p>
+
+<pre><code class="language-html">
+ &lt;img data-src="assets/img/svg/logo-lll_456x60.svg"
+      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+      alt="logo for Lazy Loading Logos"
+      class="logo" width="456" height="60"&gt;
+</code></pre>
+
+<p>We will need an <code>addLoadEvent</code> function:</p>
+
+<pre><code class="language-javascript">
+/*
+ * http://blog.simonwillison.net/post/57956760515/addloadevent
+ * http://www.sitepoint.com/closures-and-executing-javascript-on-page-load/
+ */
+function addLoadEvent(func) {
+  var oldonload = window.onload;
+  if (typeof window.onload != 'function') {
+    window.onload = func;
+  } else {
+    window.onload = function() {
+      oldonload();
+      func();
+    }
+  }
+}
+</code></pre>
+
+<p>The javaScript function will look for elements in the <abbr title="Document Object Model" class="small-caps">DOM</abbr> with the <code>data-src</code> attribute, and replace the value for the <code>src</code> attribute with the value stored in the <code>data-src</code> attribute on that same <code>img</code> element.</p>
+
+<pre><code class="language-javascript">
+function loadImg() {
+  var imgDefer = document.querySelectorAll('[data-src]')
+    for (var i=0; iw&lt;imgDefer.length; i++) {
+      if(imgDefer[i].getAttribute('data-src')) {
+        imgDefer[i].setAttribute('src',imgDefer[i].getAttribute('data-src'));
+      }
+    }
+}
+addLoadEvent(loadImg);
+</code></pre>
+
+<p>Now when, for whatever reason, the page takes too long to load on a clients browser, or when javaScript isn’t working, this would result in leaving a blank space at the place where the image should be. But instead of the 1px square transparent <span class="small-caps">PNG</span>, we can use an (url encoded) inline <span class="small-caps">SVG</span> with just a text-attribute inside. In that way, even with javaScript disabled, there will always be visual information on the subject there.</p>
+
+<pre><code class="language-html">
+ &lt;img data-src="assets/img/svg/logo-lll_456x60.svg"
+      src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'
+      width='456' height='60'
+      viewBox='0 0 456 60'%3E%3Ctext x='16' y='43'
+      style='text-anchor:start;font-size:44px;font-family:Calibri,AvenirNextCondensed-DemiBold,Segoe UI,Tahoma,sans-serif;font-weight:bold;letter-spacing:-.4px;fill:rgb(34,34,34)'%3ELazy Loading Logos%3C/text%3E%3C/svg%3E"
+      alt="logo for Lazy Loading Logos" class="logo"
+      width="456" height="60"&gt;
+</code></pre>
+
+<p>Note the inline style-tag on the <code>text</code> attribute, with values for basic typographic properties applied. The <code>x</code> and <code>y</code> attributes are for the positioning of the text.</p>
+
+<h4>Demo</h4>
+
+<ul>
+<li><a href="https://atelierbram.github.io/lazy-loading-logos/">here on Github</a></li>
+<li><a href="http://codepen.io/atelierbram/pen/YNoNZw">on Codepen</a></li>
+</ul>
+
+<h4>Resources</h4>
+
+<ul>
+<li><a href="http://blog.simonwillison.net/post/57956760515/addloadevent">addLoadEvent</a></li>
+<li><a href="http://www.sitepoint.com/closures-and-executing-javascript-on-page-load/">closures-and-executing-javascript-on-page-load</a></li>
+<li><a href="https://css-tricks.com/probably-dont-base64-svg/">Probaly Don’t Base64 SVG</a></li>
+<li><a href="https://codepen.io/tigt/post/optimizing-svgs-in-data-uris">Optimizing SVGs in data URIs</a></li>
+<li><a href="http://png-pixel.com/">Create a 1px url encoded PNG</a></li>
+</ul>
+
+<p><span class="note">This article was also published on <a href="http://codepen.io/atelierbram/post/lazy-loading">Codepen</a></span></p>
+    ]]></content>
+</entry>
+      <entry>
+    <id>https://atelierbram.github.io/blog/alpha-transparency-in-hex</id>
+    <link type="text/html" rel="alternate" href="https://atelierbram.github.io/blog/alpha-transparency-in-hex" />
+    <title>Alpha Transparency</title>
+    <published>2016-07-15T00:00:00+00:00</published>
+    <updated>2016-07-15T00:00:00+00:00</updated>
+    <author>
+        <name>Bram de Haan</name>
+    </author>
+    <summary type="html">Maybe early days, but coming to a browser near you some day: alpha transparency in 8 digits hex notation; currently supported in Chrome Canary and Firefox Nightly. Some thoughts here on how and why this could be useful.
+
+{{ $page-&gt;date_human }}
+
+Now HEXA......</summary>
+    <content type="html"><![CDATA[
+        <p>Maybe early days, but coming to a browser near you some day: alpha transparency in 8 digits hex notation; currently supported in Chrome Canary and Firefox Nightly. Some thoughts here on how and why this could be useful.</p>
+
+<p class="publication-list__item__meta"><time datetime=""></time></p>
+
+<p>Now <span class="small-caps">HEXA</span> doesn’t have the most intuitive syntax, <span class="small-caps"><a href="https://css-tricks.com/yay-for-hsla/">HSLA</a></span> has, and the alpha transparency isn’t making live easier. But we have tools for this build right into the browser: you can check this out in Chrome Canary or in Firefox Nightly DevTools:</p>
+
+<div class="container-media container-media-square">
+<video width="512" controls autoplay>
+  <source src="//atelierbram.github.io/video/color-formats-firefox-devtools.mp4" type="video/mp4">
+  <source src="//atelierbram.github.io/video/color-formats-firefox-devtools.ogg" type="video/ogg">
+  Your browser doesn't support HTML5 video tag.
+</video>
+</div>
+
+<h3>Use case in color templating</h3>
+
+<p>So what could use cases for <span class="small-caps">HEXA</span> be? Maybe easier color manipulation in javaScript for some, but also templating. Consider this code snippet in a template for Prism syntax-highlighting in <a href="https://github.com/base16-builder/base16-builder/">Base16 Builder</a>:</p>
+
+<pre><code class="language-css">
+.line-highlight {
+  background: #<%- base["D0"]["hex"] %>33;
+  background: linear-gradient(to right, #<%- base["D0"]["hex"] %>33 70%, #<%- base["D0"]["hex"] %>00);
+}
+</code></pre>
+
+<p>Which (for one colorscheme) would compile to this <span class="small-caps">CSS</span>:</p>
+
+<pre><code class="language-css">
+.line-highlight {
+  background: #bc672f33;
+  background: linear-gradient(to right, #bc672f33 70%, #bc672f00);
+}
+</code></pre>
+
+<p>Because Base16 schemes only allows color-values for variables to be defined in <span class="small-caps">HEX</span> notation <em>in schemes</em>, these color-variables can now be manipulated by adding 2 digits after the variables <em>in templates</em>, and by doing so give those colors alpha transparency (in browsers that support it).</p>
+
+<p>To see if your browser supports alpha transparency in 8 digits hex notation: <span style="font-size:2em;background-color:#263573f2;color:hsla(228, 50%, 30%, 0.5);display:inline-block;margin-top:.5em">Unfortunately your browser does not support alpha transparency in <span class="small-caps">HEX</span> yet</span><br><span style="color:#fff;color:#808080;display:inline-block;margin-top:1em;font-size:1.25em">Your browser supports alpha transparency in <span class="small-caps">HEX</span>!</span> <br>And/or checkout <a href="http://codepen.io/atelierbram/full/bZAGmW/">this demo</a>.</p>
+
+<h4>Resources</h4>
+
+<ul>
+<li><a href="https://drafts.csswg.org/css-color/#hex-notation">the spec</a></li>
+<li><a href="https://googlechrome.github.io/samples/css-alpha-channel/">demo on github by Google Chrome</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/color_value#rgba">on MDN</a></li>
+<li><a href="https://twitter.com/patrickbrosset/status/732859240147243008">in Firefox DevTools</a></li>
+<li><a href="http://thenewcode.com/1081/CSS-alpha#hexalpha">Alpha Transparency in CSS</a></li>
+<li><a href="http://thenewcode.com/1108/Using-Hexadecimal-Colors-in-CSS">Using Hexadecimal Colors in CSS</a></li>
+</ul>
+
+<p><span class="note">This article was also published on <a href="http://codepen.io/atelierbram/post/alpha-transparency-in-hex">Codepen</a></span></p>
+    ]]></content>
+</entry>
+      <entry>
+    <id>https://atelierbram.github.io/blog/switching-color-modes</id>
+    <link type="text/html" rel="alternate" href="https://atelierbram.github.io/blog/switching-color-modes" />
+    <title>Switching Modes</title>
+    <published>2016-05-15T00:00:00+00:00</published>
+    <updated>2016-05-15T00:00:00+00:00</updated>
+    <author>
+        <name>Bram de Haan</name>
+    </author>
+    <summary type="html">Common practice with showing a serie of logos in an attractive way in a webpage, is to present gray scaled – or monochrome versions, to neutralize the (potentially clashing) distracting colors from the images. One way of doing this could be to......</summary>
+    <content type="html"><![CDATA[
+        <p>Common practice with showing a serie of logos in an attractive way in a webpage, is to present gray scaled – or monochrome versions, to neutralize the (<i>potentially clashing</i>) distracting colors from the images. One way of doing this could be to manipulate the full-color images in photo-editing software and save copies in gray scaled versions. An even quicker way would be to use css– or svg-filters.</p>
+
+<p class="publication-list__item__meta"><time datetime=""></time></p>
+
+<p>With <span class="small-caps">CSS</span>-filters one is limited to the grayscale- or sepia filters, which will be sufficient in most use-cases. <span class="small-caps">SVG</span> filters are more powerful and have more options, while being more complex in a syntax which may have to be studied to be used well (<em>in a more customized way</em>).</p>
+
+<h3>Alternative approach with SVG</h3>
+
+<p>In this article I like to explore a different workflow, and suggest an alternative approach. It won’t be harder to  accomplish but it will be more work, and harder to maintain. But it can be better suitable for let’s say a logo gallery for a graphic designer on a portpolio website, where demands on (the quality and appearance of) the images will be of more outspoken nature, because graphic designers are of a separate species; they have ink flowing through their veins.</p>
+
+<blockquote>
+  <p>Graphic designers are of a separate species; they have ink flowing through their veins</p>
+</blockquote>
+
+<p>In using the <code>currentColor</code> keyword in <span class="small-caps">CSS</span> combined with <code>opacity</code> for logos we can get monochrome images in just one color but keep the possibility to have gradations in tonality, like it is done <a href="http://logomono.com/">at Logomoon</a>. <code>Data-attributes</code><sup><a href="#note-1" class="sup-link" id="supLink1">1</a></sup> (for values of colors and opacity on <span class="small-caps">SVG</span> shapes) combined with javaScript can make switching between the monochrome-and full-color mode happen by the click of a button.</p>
+
+<p>The flexibility of the <span class="small-caps">CSS</span> keyword <code>currentColor</code> can be used here to our advantage; <code>currentColor</code> picks up whatever value for color is set on – or is inherited by – the element in <span class="small-caps">CSS</span>, and behaves in that way like a variable. Whenever the color of the monochrome images needs to be changed, this can be done by editing just one value in the <span class="small-caps">CSS</span>.</p>
+
+<pre><code class="language-markup">
+&lt;polygon
+  opacity="0.56"
+  fill="currentColor"
+  data-color="#E44D26"
+  data-opacity="0.56"
+  points="107.644,470.877 74.633,100.62 437.367,100.62 404.321,470.819 255.778,512"/&gt;
+</code></pre>
+
+<p data-height="750" data-theme-id="71" data-slug-hash="xVXWWR" data-default-tab="result" data-user="atelierbram" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/atelierbram/pen/xVXWWR/">Monochrome SVG Logo Gallery</a> by Bram de Haan (<a href="http://codepen.io/atelierbram">@atelierbram</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+
+<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+
+<p>How this color-mode switching works in the demo: the default mode is monochrome, and the values for <code>fill</code> are stored in custom data-attributes.</p>
+
+<h3>DIY tinkering</h3>
+
+<p>One trick to get the right values for opacity is to have another instance of your <span class="small-caps">SVG</span> image temporarily on the page, or a copy of the whole page, but now with using <span class="small-caps">CSS</span>-filter grayscale, like <code>-webkit-filter: grayscale(1);</code>. When setting a <code>background-color: hsl(0,0%,0%)</code> on the page and moving the last value for lightness up and down with the arrow keys of your keyboard within DevTools, in comparison to the grayness of the <span class="small-caps">SVG</span>-image, this will give you the right number, when you subtract it from 100.</p>
+
+<h4>Notes</h4>
+
+<ol>
+<li><span id="note-1">It seems <code>data-*</code> attributes on <span class="small-caps">SVG</span> elements are officially supported <a href="https://github.com/w3c/svgwg/commit/1cb4ee9e165b3d777d33828da8fa757e67d019ff">in the current draft of <span class="small-caps">SVG2</span></a>. The current spec allows the xml methods of custom name-spaces, but these are <a href="https://www.youtube.com/watch?v=1ZxN9iQM7OY">hard to handle</a> and a pain to use for targeting elements with javaScript. As far as I know all major browsers tolerate data-attributes in <span class="small-caps">SVG</span>.</span></li>
+</ol>
+
+<h4>Resources</h4>
+
+<ul>
+<li><a href="http://logomono.com/">Logomono</a></li>
+<li><a href="http://docs.webplatform.org/wiki/svg/tutorials/smarter_svg_filters">Smarter SVG filters</a></li>
+<li><a href="https://css-tricks.com/currentcolor/">currentColor on CSS-tricks</a></li>
+<li><a href="http://osvaldas.info/keeping-css-short-with-currentcolor">Keeping CSS short with currentColor</a></li>
+<li><a href="http://blogs.adobe.com/dreamweaver/2015/02/extending-the-color-cascade-with-the-css-currentcolor-variable.html">Extending the Color Cascade</a></li>
+</ul>
+
+<p><span class="note">This article was also published on <a href="http://codepen.io/atelierbram/post/switching-color-modes">Codepen</a></span></p>
+    ]]></content>
+</entry>
+      <entry>
+    <id>https://atelierbram.github.io/blog/colorschemes-sublime</id>
+    <link type="text/html" rel="alternate" href="https://atelierbram.github.io/blog/colorschemes-sublime" />
+    <title>Sublime</title>
+    <published>2016-01-11T00:00:00+00:00</published>
+    <updated>2016-01-11T00:00:00+00:00</updated>
+    <author>
+        <name>Bram de Haan</name>
+    </author>
+    <summary type="html">Somewhat suprised to see how scarces the available information is, around the interwebs and in the docs, on the subject of creating colorschemes for Sublime Text, for such a popular text-editor. Here are some notes that may come handy when doing this......</summary>
+    <content type="html"><![CDATA[
+        <p>Somewhat suprised to see how scarces the available information is, around the interwebs and in the docs, on the subject of creating colorschemes for Sublime Text, for such a popular text-editor. Here are some notes that may come handy when doing this yourself. Down at the bottom of this post one will find links to other resources.</p>
+
+<p class="publication-list__item__meta"><time datetime=""></time></p>
+
+<p>On Mac OS X the <code>colorschemes.tmTheme</code> files can be found in the following directory from the terminal:</p>
+
+<pre><code class="language-bash">
+  $ cd /Users/USERNAME/Library/Application\ Support/Sublime\ Text\ 2/Packages/
+</code></pre>
+
+<p>Where <code>&lt;USERNAME&gt;</code> is the folder with your own (user)name.</p>
+
+<p>I have this alias in my <code>.bashrc</code> for easy access from the terminal.</p>
+
+<pre><code class="language-bash">
+alias zsubl='cd  /Users/bram/Library/Application\ Support/Sublime\ Text\ 2/Packages/'
+</code></pre>
+
+<h3>Workflow</h3>
+
+<p>First of all, having a visual reference for the colorscheme you are working on at hand is indispensable. Something which works really well in my experience is <a href="//codepen.io/atelierbram/pen/JnbIt">these kind of colorscheme labs</a>, which basically are just simple webpages containing colorscheme color-tiles (<em>using sixteen Sass variables for colors</em>), and some syntax-highlighted code-samples. In order to make editing the colors less cumbersome, it helps to tweak the values for hue, saturation and lightness in the <span class="small-caps">HSL</span> format. Ones one is happy with the overall balance in the colorvalues, it's not that difficult to convert them to hex-values, (<em>either from DevTools or some other trustworthy colortool,</em>) and then manually copy those hex-values over to Base16-schemes.</p>
+
+<p><em>Base16?</em> A helpful tool <a href="//tmtheme-editor.herokuapp.com/">can be this webapp on Heroku</a>, but this will only get you so far. My workflow for editing the <code>tmTheme</code> colorscheme for Sublime continues with editing template files that come with <a href="//github.com/base16-builder/base16-builder/">Base16-builder</a>, of which I host several versions for <a href="https://github.com/atelierbram/base2tone/tree/master/db/templates">Base2Tone</a> and other variations as well. After running the <code>base16</code> command in the folder with the <code>base16</code> executable bash-file, a whole lot of syntax-highlighting themes are generated from the commandline in the <code>output</code>-folder, as many as there are template files. Next copy those files over from the <code>output</code> folder (from the commandline) to the Packages/Color Scheme - folder. (<em>Also not to forget removing the <code>*.cache</code> files in that same folder</em>).</p>
+
+<h3>Helpful Hints</h3>
+
+<p>What you really want when editing, or iterating over an existing colorscheme, is hints for syntax-names which are used by the syntax-highlighting engine. This can be achieved when the command <code>displayName</code> is activated, and the function keys <code>&lt;Ctrl&gt;&lt;Shift&gt;&lt;P&gt;</code> are simultaneously pressed, while being with the cursor on a specific tag. This now will show the syntax-name in the left-bottom corner of the Sublime Text app-frame. Which makes me wonder how else one could know that the syntax-name for the “dot” in front of a class-name in <span class="small-caps">CSS</span> belongs to the syntax-group <code>punctuation.definition.entity.css</code>.</p>
+
+<p>I have this line <code>"command": "displayName"</code> in my <code>Preferences.sublime-settings</code> file:</p>
+
+<pre><code class="language-javascript">
+"color_scheme": "Packages/Color Scheme - Duotone/base16-duotone-darkspace.dark.tmTheme",
+  "command": "displayName",
+  "font_face": "FiraMono-Regular",
+  "vintage_start_in_command_mode": true,
+  "font_size": 14,
+  "ignored_packages": [""],
+  "theme": "Soda Dark.sublime-theme"
+  }
+</code></pre>
+
+<p>One thing I found out is that you can be more or less specific with leaving out or adding those suffixes, so <code>keyword</code> selects also <code>keyword.operator</code>, but <code>keyword.operator.sass</code> will override both, which makes sense.</p>
+
+<h3>Screenshots</h3>
+
+<p><img src="//atelierbram.github.io/syntax-highlighting/assets/img/duotones-dark_sublime_960x640.png" alt="screenshot of javaScript file syntax-highlighted with DuoTone Dark colorscheme" />
+Screenshot of javaScript file, syntax-highlighted with DuoTone Dark colorscheme.</p>
+
+<ul>
+<li><a href="//atelierbram.github.io/syntax-highlighting/assets/img/duotones-darkSea_sublime_960x640.png">darkSea</a></li>
+<li><a href="//atelierbram.github.io/syntax-highlighting/assets/img/duotones-darkSpace_sublime_960x640.png">darkSpace</a></li>
+<li><a href="//atelierbram.github.io/syntax-highlighting/assets/img/duotones-darkEarth_sublime_960x640.png">darkEarth</a></li>
+<li><a href="//atelierbram.github.io/syntax-highlighting/assets/img/duotones-darkForest_sublime_960x640.png">darkForest</a></li>
+<li><a href="//atelierbram.github.io/syntax-highlighting/assets/img/duotones-darkPool_sublime_960x640.png">darkPool</a></li>
+</ul>
+
+<h4>Demo</h4>
+
+<ul>
+<li><a href="//github.com/atelierbram/Base2Tone/">Base2Tone on Github</a></li>
+<li><a href="//base2t.one">Base2Tone demos</a></li>
+<li><a href="//atelierbram.github.io/Base2Tone-prism/demo/evening/dark/">Base2Tone demos for Prism</a></li>
+<li><a href="//codepen.io/atelierbram/pen/WrjVyv">Base2Tone demo for Prism on Codepen</a></li>
+</ul>
+
+<h4>Resources</h4>
+
+<ul>
+<li><a href="//www.sublimetext.com/docs/commands">commands for Sublime</a></li>
+<li><a href="https://www.sublimetext.com/docs/3/settings.html">info on setting for Sublime</a></li>
+<li><a href="//simurai.com/projects/2016/01/01/duotone-themes/">Original DuoTone Themes for Atom on simurai.com</a></li>
+<li><a href="https://github.com/atelierbram/duotones-sublime-colorschemes">DuoTones Sublime Colorschemes on Github</a></li>
+</ul>
+
+<p><span class="note">This article was also published on <a href="//codepen.io/atelierbram/post/colorschemes-sublime/">Codepen</a></span></p>
+    ]]></content>
+</entry>
+      <entry>
+    <id>https://atelierbram.github.io/blog/differentiate</id>
+    <link type="text/html" rel="alternate" href="https://atelierbram.github.io/blog/differentiate" />
+    <title>Differentiate</title>
+    <published>2015-09-04T00:00:00+00:00</published>
+    <updated>2015-09-04T00:00:00+00:00</updated>
+    <author>
+        <name>Bram de Haan</name>
+    </author>
+    <summary type="html">Let’s say one is writing a tutorial with code-examples showing code-snippets from the command-line, and code-snippets from javascript files. One could use screenshots from the commandline with, for example, a dark theme and javascript snippets in plain......</summary>
+    <content type="html"><![CDATA[
+        <p>Let’s say one is writing a tutorial with code-examples showing code-snippets from the command-line, <em>and</em> code-snippets from javascript files. One <em>could</em> use <b>screenshots</b> from the commandline with, for example, a <em>dark</em> theme and javascript snippets in plain text within a <code>pre</code> tag syntax-highlighted with a <em>light</em> theme, in order to differentiate between the two in a clear manner.</p>
+
+<p class="publication-list__item__meta"><time datetime=""></time></p>
+
+<p>Screenshots can work well when done right, even when displaying text; like code-snippets. Adept them, have arrows with additional explaining text next to it. Craft them well and you can get <a href="https://jakearchibald.com/2015/anatomy-of-responsive-images/">something like this</a> which gets it’s point across in an hands-on manner: considering this complicated matter.</p>
+
+<h3>Combining a colorscheme’s dark– and light version</h3>
+
+<p>But <em>even when</em> working with screenshots of code-snippets, one can mix it up with plain text in <code>pre</code>-tags. To keep consistency in design, one would want those themes to be related in color, or better use <em>the same</em> colors of a colorscheme in a dark and light version (<em>dark being in a way “inverted”</em>), have the commandline code-snippets be informed by the <em>dark</em> version of the colorscheme and, visa versa, the javascript examples colors informed by the <em>light</em> version. You may go about it like this:</p>
+
+<div class="example">
+<pre><code class="language-bash">
+$ npm install gulp gulp-sass --save-dev
+</code></pre>
+
+<span class="text">This line tells [npm](http://npmjs.com) to install both `gulp` and `gulp-sass` packages as development dependencies. You can now find them in the `devDependencies` object of your `package.json`. And the `Gulpfile.js`:</span>
+
+<pre><code class="language-javascript">
+var gulp = require('gulp');
+var sass = require('gulp-sass');
+</code></pre>
+</div>
+
+<p>This is not difficult to achieve with <a href="http://prismjs.com">Prism syntax-hightlighter</a> combined with Sass-variables for colors.</p>
+
+<p>Check out <a href="http://codepen.io/atelierbram/pen/ZbYrRJ">this demo at Codepen</a> to see how the <code>&lt;pre class="language-bash"&gt;</code> is targeted in the <code>CSS</code> You can see how this works out in <a href="http://atelierbram.github.io/Starter-Assemble-Gulp/">a different example here</a>.</p>
+
+<p><span class="note">This article was also published on <a href="http://codepen.io/atelierbram/post/differentiate/">Codepen</a></span></p>
+    ]]></content>
+</entry>
+      <entry>
+    <id>https://atelierbram.github.io/blog/colorscheming</id>
+    <link type="text/html" rel="alternate" href="https://atelierbram.github.io/blog/colorscheming" />
+    <title>Colorscheming</title>
+    <published>2015-05-14T00:00:00+00:00</published>
+    <updated>2015-05-14T00:00:00+00:00</updated>
+    <author>
+        <name>Bram de Haan</name>
+    </author>
+    <summary type="html">For the last couple of years, whenever I was in the mood for it and found the time, I build colorschemes for syntax highlighting. The idea, that triggered this kind of an academic exercise in colorscheming, was to build a serie of colorschemes that would......</summary>
+    <content type="html"><![CDATA[
+        <p>For the last couple of years, whenever I was in the mood for it and found the time, I build colorschemes for syntax highlighting. The idea, that triggered this kind of an academic exercise in colorscheming, was to build a serie of colorschemes that would comprise the whole color gamut, each with it’s own base-color.</p>
+
+<p class="publication-list__item__meta"><time datetime=""></time></p>
+
+<blockquote>
+  <p>music is centered around a tonal center, the tonic, which also determines a key. The vast majority of western music is tonal.</p>
+</blockquote>
+
+<p>Like <a href="http://elements-of-music.com/tonality.html#theelement">in music</a>, an illustration or painting can have a “tonal centre” too: I call this the “base color” <sup><a href="#note-1" class="sup-link" id="supLink1">1</a></sup>. This became the conceptual starting-point for the colorschemes I was going to create. It made sense to me to name them after general places, like Dune, Lakeside, or Savanna, to reflect a sense of place or atmosphere, if only for myself as a touchstone, and ended up creating <a href="http://atelierbram.github.io/syntax-highlighting/atelier-schemes/">ten different schemes</a>, each with their own character.</p>
+
+<p><img src="http://atelierbram.github.io/syntax-highlighting/assets/img/svg/atelierschemes-demotiles-sulphurpool_1200x300.svg" alt="demotiles for Sulphurpool colorscheme" />
+<a href="http://atelierbram.github.io/syntax-highlighting/atelier-schemes/sulphurpool">demotiles for Sulphurpool colorscheme</a></p>
+
+<p>When making a colorscheme; and thus picking colors that work well together, and maybe share a common uniting characteristic <sup><a href="#note-2" class="sup-link" id="supLink2">2</a></sup>, there are a few things to consider. Here are some of the things I learned, or reconfirmed my knowledge along the way.</p>
+
+<h3>Contrast in tonality</h3>
+
+<p>I wanted to make colorschemes that work, like <em>Solarized</em>, both in a light <em>and</em> in a dark background variation. One colorscheme, two versions, light and dark, for a sensible restriction. For text-colors to work on those different backgrounds, their <em>“lightness value”</em> should be somewhere in the mid-tonal range, meaning neither to light nor to dark. Yellow by itself is obviously a very light color, and red, blue and violet quite dark, so moving the lightness value for yellow <em>down</em>, and for the latter <em>up</em>, is one of the things to try <sup><a href="#note-3" class="sup-link" id="supLink3">3</a></sup>. A good example where you can find this principle effectively used is the <a href="http://ethanschoonover.com/solarized">Solarized colorscheme</a>, which stood as a model for me, <em>especially</em> in <strong>this</strong> regard, while creating these schemes.</p>
+
+<h3>Contrast in color-values</h3>
+
+<p>When evaluating color-contrast between colors <em>(foreground and background colors)</em> some basic knowledge of the colorwheel comes in handy, because a screaming color-contrast between the text-colors and background-color can be very distracting. You don’t want the colors to draw <em>(unnecessary)</em> attention to themselves nor to distract anyway, but rather you want the colors to serve the need for direction; to create distinction and clarity, like in a painting or illustration with pictural unity. So colors that are opposite to each other on the colorwheel <sup><a href="#note-4" class="sup-link" id="supLink4">4</a></sup> can be called <em>“complimentary”</em>, meaning they have the highest possible color contrast.</p>
+
+<p><img src="http://atelierbram.github.io/img/svg/colorwheel.svg" alt="Colorwheel" /></p>
+
+<h3>Saturation in color</h3>
+
+<p>In the colorscheme for <a href="http://atelierbram.github.io/syntax-highlighting/atelier-schemes/estuary">Estuary</a>, which is based on yellow/green, I tried hard to avoid this foreground/background complementary colorclash, by desaturating the values in the red – violet gamut, but also to <em>not</em> use violet–purple at all. Note also the value for red that is used goes to the yellow, and is more of an orange, but in this yellow-green context it really works as a red. Related to this issue: in some of the first colorschemes (<em>made a few years back,</em>) I felt the need to change some of the values over there as well. For anyone who is interested in the documentation of these changes, <a href="http://atelierbram.github.io/syntax-highlighting/atelier-schemes/demo/changes-03-2015.html">they can be found here</a>.</p>
+
+<p><img src="http://atelierbram.github.io/syntax-highlighting/assets/img/svg/atelierschemes-demotiles-estuary_1200x300.svg" alt="demotiles for Estuary colorscheme" />
+<a href="http://atelierbram.github.io/syntax-highlighting/atelier-schemes/estuary">demotiles for Estuary colorscheme</a></p>
+
+<h3>Helpfull Tools</h3>
+
+<p>On <a href="http://codepen.io/atelierbram/pen/JnbIt">Codepen</a> you can find a template for the colorscheming playground I used while creating these themes.</p>
+
+<p data-height="672" data-theme-id="71" data-slug-hash="ogXNjj" data-default-tab="result" data-user="atelierbram" class='codepen'>See the Pen <a href='http://codepen.io/atelierbram/pen/ogXNjj/'>Colorscheme Template Variables</a> by Bram de Haan (<a href='http://codepen.io/atelierbram'>@atelierbram</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+
+<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+
+<p>Above <a href="http://codepen.io/atelierbram/pen/ogXNjj">a different one</a>, which might be helpfull. Some tools not created by me, but which I use all the time, <em>(besides Chrome DevTools,)</em> is <a href="http://hslpicker.com/">HSL Color Picker</a> which is integrated in a <a href="http://atelierbram.github.io/c-tiles16/colorscheming/#7b8a8e">DIY tool I assembled myself</a>, and sometimes the <a href="http://meyerweb.com/eric/tools/color-blend/">golden-oldie Color Blender</a>, in fact I have local copies of these tools, each in a tab of the browser from startup. I know there are other tools as well, like <a href="https://coolors.co/app/">Coolors</a> or <a href="https://www.canva.com/colors/">Canva</a>, but these are the ones I feel most comfortable with.</p>
+
+<h3>Using Variables for Flexibility</h3>
+
+<p>Using variables for colornames and values is great too, and Sass is my preprocessor of choice. To import a color palette with color-variables settings in your main Sass files, is just something I do all the time now. Makes it also trivial to change the colorscheme of an entire website, by just swapping this <code>colorvars.scss</code> file with another, so yeah: a colorscheme can be quite flexible and versatile, not just for syntax-highlighting! In fact, on this very blog on Github I use the same colorscheme, which informs the syntax-highlighting for Prism, for all of the other colors on the page as well, creating unity within the page I feel.</p>
+
+<pre><code class="language-scss">
+// http://atelierbram.github.io/syntax-highlighting/atelier-schemes/sulphurpool
+
+// Sulphurpool
+$base00: #202746;
+$base01: #293256;
+$base02: #5e6687;
+$base03: #6b7394;
+$base04: #898ea4;
+$base05: #979db4;
+$base06: #dfe2f1;
+$base07: #f5f7ff;
+$base08: #c94922;
+$base09: #c76b29;
+$base0a: #c08b30;
+$base0b: #ac9739;
+$base0c: #22a2c9;
+$base0d: #3d8fd1;
+$base0e: #6679cc;
+$base0f: #9c637a;
+
+$red:     $base08;
+$orange:  $base09;
+$yellow:  $base0a;
+$green:   $base0b;
+$cyan:    $base0c;
+$blue:    $base0d;
+$violet:  $base0e;
+$magenta: $base0f;
+</code></pre>
+
+<pre><code class="language-scss">
+@import
+"mq",
+"color-vars",
+"settings";
+</code></pre>
+
+<p>Those same variables can be used in another build tool called <a href="https://github.com/chriskempson/base16-builder">Base16 Builder</a>, which I started using for converting these colorschemes to syntax highlighting schemes for different applications, see also <em><a href="https://github.com/chriskempson/base16">Base16 on Github</a></em>. Base16 Builder enables you to create syntax highlighting colorschemes in dark and light background variations, for many applications. It is constructed as a bash-script that can be triggered from the terminal; <em>checkout the dependencies on Github though ...</em>.</p>
+
+<h4>Examples</h4>
+
+<p><img src="https://atelierbram.github.io/syntax-highlighting/assets/img/sulphurpool-dark_sublime_640x425.png" alt="Screenshot – dark version – Sulphurpool in Sublime Text" /> Screenshot of a working colorscheme as syntax-highlighting (<em><a href="http://atelierbram.github.io/syntax-highlighting/atelier-schemes/sulphurpool">Sulphurpool color-scheme</a> in Sublime Text</em>).</p>
+
+<h4>Notes</h4>
+
+<ol>
+<li><span id="note-1">Like in music where there can be a “tonal centre” which also can determine a key in a piece of music, likewise one can translate this to the visual medium and color. So for each colorscheme, a different color from the colorwheel represented this “tonal centre”, or base color which is to be thought of as being right in the middle of the color-gamut that is being used in the colorscheme.</span></li>
+<li><span id="note-2">These “characteristics” don’t have to be obvious; art can have “secrets” </span></li>
+<li><span id="note-3">In Chrome DevTools you can, with Shift-Click on a selected color, move from HEX to RGB to HSL. Using HSL, you can conveniently use the arrow keys on your keyboard to see the effect of hue, saturation, and lightness change.</span></li>
+<li><span id="note-4">The colorwheel, and the color-theory of someone like <a href="http://www.worqx.com/color/itten.htm">Johannes Itten</a> is, (<em>if very useable in education; even today,</em>) superseded by updated (scientifical) theories that bring in <a href="http://physics.info/color/">physics</a>, stating that color is in fact <a href="http://www.marktaw.com/design/ColorTheorya.html">frequency</a>. Although fascinating material, the more recent scientific discoveries are a lot harder to teach in educating art-students I find, but please someone prove me wrong.</span></li>
+</ol>
+
+<p><span class="note">This article was also published on <a href="http://codepen.io/atelierbram/post/colorscheming">Codepen</a></span></p>
+    ]]></content>
+</entry>
+      <entry>
+    <id>https://atelierbram.github.io/blog/airfan</id>
+    <link type="text/html" rel="alternate" href="https://atelierbram.github.io/blog/airfan" />
+    <title>Airfan</title>
+    <published>2015-05-14T00:00:00+00:00</published>
+    <updated>2015-05-14T00:00:00+00:00</updated>
+    <author>
+        <name>Bram de Haan</name>
+    </author>
+    <summary type="html">In the heyday of strict modernism, when Xerox PARC invented the air vent menu in the early seventies, it was the doctrine of “form follows function” that ruled the art – and design–world. From architecture to applied graphical user interfaces;......</summary>
+    <content type="html"><![CDATA[
+        <p>In the heyday of strict modernism, when Xerox <span class='small-caps'>PARC</span> <a href='https://vimeo.com/61556918#t=1265s'>invented the air vent menu</a> in the early seventies, it was the doctrine of <i>“form follows function”</i> that ruled the art – and design–world. From architecture to applied graphical user interfaces; nothing could escape <a href='https://www.dukeupress.edu/Modern-Inquisitions'>the modernist inquisition</a>.</p>
+
+<p class="publication-list__item__meta"><time datetime=""></time></p>
+
+<h3>Intimidation on the Scene</h3>
+
+<p>In their attempt to stifle free expression and impose only <em>the most rigorous</em> treatment of the formal properties of art <em>(– shape, color, line, texture and so on)</em>, upon every artistic expression that dared to raise it’s ugly head on the scene, the modernistic critics went to great lenghts to establish their authority, not only on the artistical output, but went so far as to also intimidate individual artists themselves.</p>
+
+<p data-height="500" data-theme-id="71" data-slug-hash="QjwYXd" data-default-tab="result" data-user="atelierbram" data-embed-version="2" class='codepen'>See the Pen <a href='http://codepen.io/atelierbram/pen/bdwxrx/'>Airfan Icon with Hamburger Grate</a> by Bram de Haan (<a href='http://codepen.io/atelierbram'>@atelierbram</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+
+<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+
+<h3>Form Follows Fact</h3>
+
+<p>It is a <a href="https://www.evernote.com/shard/s207/sh/022f2237-4b4f-4096-87f2-053acd228c2d/ede2672bc3f39a1b0232f84e01ca0a83">well established fact</a> that the function of <em>the air vent</em> in graphical interfaces is to keep the window <sup><a href="#note-1" class="sup-link" id="supLink1">1</a></sup> cool. Translated into the modernistic jargon of the day the <em>form follows function</em> doctrine demands nothing less than straight lines: horizontal and vertical, <em>(only diagonal if it can not be avoided)</em>. The shape just <strong>has to be geometrical</strong>, preferably a rectangle. That is how <em>the air vent</em>, back in the day, transformed into the <a href="http://codepen.io/tag/hamburger">hamburger menu icon</a>.</p>
+
+<blockquote>
+  <p>Where the Old Masters created an illusion of space into which one could imagine walking, the illusion created by a Modernist is one into which one can look, can travel through, only with the eye. <small class="small author">Clement Greenberg</small></p>
+</blockquote>
+
+<h3>If You Can’t Beat Them</h3>
+
+<p>The inescapable hamburger; it’s ubiquitous, on so many websites now that you kind of miss it when it’s <em>not</em> there. But does it really has to be like this? The inventor of the icon himself, Norm Cox, deliberately left the hamburger out on <a href="http://www.coxhall.com/product-folio.html">his own website</a> and so <strong>you should too!</strong></p>
+
+<h3>Let’s Move On</h3>
+
+<p>This is the twentyfirst century and we survived modernism, post-modernism, and are right in the middle of hyper-modernism. It is time to move on and <a href="http://frankchimero.com/writing//make-it-homely/">make it homely</a> for ourselves and our families now. I propose the reinstatement of the airfan icon. The computer screen <a href="http://hanselminutes.com/">still needs fresh air</a>, and what better icon than <em>the airfan</em> to provide for this? But more importantly, we need to <a href="https://medium.com/cool-code-pal/how-node-js-is-going-to-replace-javascript-cf72b588b1b">break free from the chains of ingrained habits</a>, and embrace the round spinning fan.</p>
+
+<p data-height="128" data-theme-id="71" data-slug-hash="eNzKgE" data-default-tab="result" data-user="atelierbram" data-embed-version="2" class='codepen'>See the Pen <a href='http://codepen.io/atelierbram/pen/eNzKgE/'>Airfan Icon</a> by Bram de Haan (<a href='http://codepen.io/atelierbram'>@atelierbram</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+
+<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+
+<p><span class="note"><span class="small-caps">NOTE</span>: A minor point of warning for little children on touch devices: don’t stick the finger between the blades of the fan!</span></p>
+
+<p>So alternatively, put a grate on top for safety.</p>
+
+<p data-height="128" data-theme-id="71" data-slug-hash="RWNvqz" data-default-tab="result" data-user="atelierbram" data-embed-version="2" class='codepen'>See the Pen <a href='http://codepen.io/atelierbram/pen/bdwxrx/'>Airfan Icon with Hamburger Grate</a> by Bram de Haan (<a href='http://codepen.io/atelierbram'>@atelierbram</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+
+<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+
+<h4>Notes</h4>
+
+<ol>
+<li><span id="note-1">The window that you are looking at <strong>right now</strong>: that monitor or tablet screen!</span></li>
+</ol>
+
+<p><span class="note">This article was also published on <a href="http://codepen.io/atelierbram/post/airfan">Codepen</a></span></p>
+    ]]></content>
+</entry>
+      <entry>
+    <id>https://atelierbram.github.io/blog/assembling</id>
+    <link type="text/html" rel="alternate" href="https://atelierbram.github.io/blog/assembling" />
+    <title>Assembling</title>
+    <published>2015-02-18T00:00:00+00:00</published>
+    <updated>2015-02-18T00:00:00+00:00</updated>
+    <author>
+        <name>Bram de Haan</name>
+    </author>
+    <summary type="html">The advantages of having a static site-generator integrated in one and the same build-tool (that you may already be using) is huge: Assemble itself is a Grunt- (also Yeoman and Node, and soon to be Gulp-) plugin. At the same time, Assemble assumes very......</summary>
+    <content type="html"><![CDATA[
+        <p>The advantages of having a static site-generator integrated in one and the same build-tool <em>(that you may already be using)</em> is huge: <a href="//github.com/assemble/assemble">Assemble itself</a> is a Grunt- <em>(also Yeoman and Node, and soon to be Gulp-)</em> plugin. At the same time, Assemble assumes very little about <em>“what it is that you are trying to do”</em>; making it fun to use <em>(if you are also the kind of person that tends to want to make things their own &hellip;)</em>.</p>
+
+<p class="publication-list__item__meta"><time datetime=""></time></p>
+
+<p>For an example with the alpha version of Assemble 6.0, using Gulp <span class="small-caps">ISO</span> Grunt,  go to <a href="//github.com/atelierbram/Starter-Assemble-Gulp">this repo</a></p>
+
+<h3>Static Site Generator</h3>
+
+<p>One of the first problems to solve, when wanting to generate a website from flat files <em>(without a database)</em>, is to come up with a flexible solution for site-wide navigation. In <a href="//assemble.io">Assemble</a> this could be tackled like this in a <em>“partial”</em> handlebars file, here <code>nav.hbs</code>:</p>
+
+<pre><code class="language-markup">
+&lt;nav class=&quot;nav&quot; id=&quot;nav&quot;&gt;
+  &lt;ul&gt;
+    &#x7b;&#x7b;#withSort pages &#39;data.sortOrder&#39;&#x7d;&#x7d;
+      &lt;li&gt;&lt;a href=&quot;&#x7b;&#x7b;autolink&#x7d;&#x7d;&quot; &#x7b;&#x7bisActive&#x7d;&#x7d;&gt;&#x7b;&#x7b;data.title&#x7d;&#x7d;&lt;/a&gt;&lt;/li&gt;
+    &#x7b;&#x7b/withSort&#x7d;&#x7d;
+  &lt;/ul&gt;
+&lt;/nav&gt;
+</code></pre>
+
+<p>HTML mixed with handlebars’ template tags, spitting out <sup><a href="#note-1" class="sup-link" id="supLink1">1</a></sup> a complete <em>“ordered”</em> unordered list of the content folder files in the <span class="small-caps">HTML</span>-output.  In the markup are references to these two handlebar-helper plugins: “handlebars-helper-autolink” and “handlebars-helper-isActive”. The sort-order of the linked files can be set in the versatile <a href="//assemble.io/docs/YAML-front-matter.html">Yaml front matter</a> in the content-file itself. So when generating pages from markdown,  let’s say <code>index.md</code>, in the YFM <sup><a href="#note-2" class="sup-link" id="supLink2">2</a></sup>, right in the head of the file, one can set these variables:</p>
+
+<pre><code class="language-markup">
+---
+title:       Homepage
+type:        home-page
+sortOrder:   0
+description: My Homepage
+---
+</code></pre>
+
+<p><a href="//assemble.io/docs/Built-in-Variables.html">Built in variables</a> can be used too.</p>
+
+<h3>Templating</h3>
+
+<p>Besides that you can put variables in the top of your content-files as <span class="small-caps">YMF</span> another way to get data into your templates is to <a href="//assemble.io/docs/options-data.html">store custom variables as “key-value-pairs” in an external file</a>, for example a <span class="small-caps">JSON</span> or <span class="small-caps">YML</span> - file. The way to let the javascript rendering-engine know about this file, is to link it up (as a value for <code>data</code>) in the options-section for Assemble within the Gruntfile.</p>
+
+<pre><code class="language-javascript">
+grunt.initConfig({
+ pkg: grunt.file.readJSON('package.json'),
+ assemble: {
+  options: {
+    data: 'src/data/*.json',
+    assets: 'dist/static',
+    layout: 'layout.hbs',
+    partials: 'src/templates/partials/**/*.hbs',
+    layoutdir: 'src/templates/layouts',
+    helpers: ['handlebars-helper-autolink','handlebars-helper-isActive','src/helpers/**.js']
+  },
+</code></pre>
+
+<p>So when I have a file called <code>var.json</code> in the <code>src/data</code> folder, then the variables within those files can be called with, for example in template partials files.</p>
+
+<pre><code class="language-markup">
+&lt;!-- footer.hbs --&gt;
+&lt;footer&gt;&lt;small&gt;by &lt;a href=&quot;&#x7b;&#x7b;var.site-url&#x7d;&#x7d;&quot;&gt;&#x7b;&#x7b;var.org&#x7d;&#x7d;&lt;/a&gt; &amp;middot; &lt;a href=&quot;&#x7b;&#x7b;var.license-url&#x7d;&#x7d;&quot;&gt;&amp;copy; &#x7b;&#x7b;var.year&#x7d;&#x7d;&lt;/a&gt;&lt;/small&gt;&lt;/footer&gt;
+</code></pre>
+
+<p>Alongside build in Handlebar-helpers <sup><a href="#note-3" class="sup-link" id="supLink3">3</a></sup>, this becomes powerful templating at your disposal.</p>
+
+<h3>Make it your own</h3>
+
+<p>When I suffer from <em>“horror vacui”</em>, indecision or what not, from all these possibilities and options that can be set in tools like these, I like to fight this by baking a boilerplate <sup><a href="#note-4" class="sup-link" id="supLink4">4</a></sup>: get a feeling for what it is like to, for example, use handlebar-templates, and partials with handlebar-tags within a small project.</p>
+
+<p>At <a href="//assemble.io/docs/Resources.html#boilerplates">Assemble’s website</a> you can find some very instructive boilerplates, and at the bottom of this article are some links to examples, but make sure to also look at implementations in Github repo’s made by Zurb’s Foundation, and the <a href="//github.com/h5bp/Effeckt.css/blob/master/Gruntfile.js">Gruntfile for h5bp-Effeckt.css</a>, which may have even more minimal and up to date implementations.</p>
+
+<h3>Optimization</h3>
+
+<p>To be able to have the minified <span class="small-caps">CSS</span> within style-tags in the <code>head</code> of your <span class="small-caps">HTML</span>, for optimization, one can use the grunt-plugin <code>grunt-contrib-copy</code> to automate the hard work. Copy the contents of a minified <span class="small-caps">CSS</span>-file to a handlebars-file as a Grunt-task &hellip;</p>
+
+<pre><code class="language-javascript">
+copy: {
+  main: {
+    src: 'dist/static/prefixed/home.min.css',
+    dest: 'src/templates/partials/homeheadstyles.hbs',
+    flatten: true,
+    filter: 'isFile',
+  },
+},
+</code></pre>
+
+<p>&hellip; can do conditional tags as well in the base-layout template:</p>
+
+<pre><code class="language-markup">
+&#x7b;&#x7b;#is type &quot;home&quot; &#x7d;&#x7d;&lt;style&gt;&#x7b;&#x7b;&gt; homeheadstyles&#x7d;&#x7d;&lt;/style&gt;&#x7b;&#x7b;/is&#x7d;&#x7d;
+</code></pre>
+
+<p>Nice!</p>
+
+<h3>Publishing</h3>
+
+<p>Grunt-plugin <a href="//www.npmjs.com/package/grunt-gh-pages">grunt-gh-pages</a> makes a gh-pages branch and commits and pushes the output of the <code>dist</code> folder to a remote gh-pages branch on Github. Still find it magical how that works from this command in the terminal: <code>grunt gh-pages</code>.</p>
+
+<h3>Styleguides</h3>
+
+<p>When you have read the next quote, (from the <a href="//devchat.tv/js-jabber/098-jsj-assemble-io-with-brian-woodward-and-jon-schlinkert">Javascript Jabber podcast</a> featuring the creators of Assemble; Brian Woodward and Jon Schlinkert), it will not come as a suprise that there is also a <a href="//github.com/assemble/assemble-pattern-lab">converted implementation of Brad Frost’s Patternlab</a> (originally in <span class="small-caps">PHP</span>), made with Assemble. Creating live styleguides on top of boilerplates like this are one of those things static site generators are made for.</p>
+
+<blockquote>
+  <p>We built a bunch of models and lorem ipsum type things for the buttons and for placeholder text with all the different components. And Assemble can just essentially iterate over all of those components and build the actual final components. But at the same time, it can also build all of the pages for demoing the components. So, you could for instance build a website with Assemble that is mostly text, like a blog or a regular website. But also then have a component showcase where you’re taking all of the partials or includes that you’ve created for the site and just create another destination path essentially for Assemble to build all of those components individually to showcase them. So, in one build you can build a component showcase and use those same components in the actual site &hellip;</p>
+</blockquote>
+
+<h4>Notes</h4>
+
+<ol>
+<li><span id="note-1">on the <code>grunt build</code> command, depending on the existing files in your <code>src/content</code> folder _(or whatever the name of that folder is: can be anything you like), also: can have subfolders too, it’s smart about that)_</span></li>
+<li><span id="note-2"><span class="small-caps">YAML</span>-front-matter</span></li>
+<li><span id="note-3">The <a href="//handlebarsjs.com/builtin_helpers.html">build in handlebar helpers</a>; there is <code>if</code>, <code>unless</code>, <code>each</code>, <code>with</code> and <code>lookup</code>. For an example of <code>each</code>, checkout the tutorial on <a href="//maddesigns.de/assemble-static-site-generator-grunt-2625.html">maddesigns</a> <em>(in german)</em>.</span></li>
+<li><span id="note-4">By <em>“boilerplate”</em>, I mean a complete folder structure with a <code>Gruntfile.js</code> and <code>package.json</code> files. With this being a Grunt-plugin, this also means a git-repo, <em>(you can do yourself a big favor by making yourself familiar with that as well, if you haven't already)</em>. In the <code>.gitignore</code> file <em>(in the root of the project-folder)</em>  you can add the output-folder, often called <code>dist</code>, to the list there: no need to keep this in the repo.</span></li>
+</ol>
+
+<h4>Examples</h4>
+
+<ul>
+<li><a href="//github.com/bdadam/static-site-boilerplate">static-site-boilerplate</a> by Adam Beres-Deak</li>
+<li><a href="//github.com/atelierbram/build-boilerplate">build-boilerplate</a> fork of static-site-boilerplate by Adam Beres-Deak, with some modifications</li>
+<li><a href="//gist.github.com/atelierbram/e425ad7238af56925f7f">Basic Example of using Assemble</a></li>
+<li>Beast of a <a href="//github.com/buildingblocks/bb-prototype-website/blob/master/Gruntfile.js">Gruntfile with Assemble</a> for <a href="//github.com/buildingblocks/bb-prototype-website">bb-prototype-website</a> by <a href="//github.com/buildingblocks">BuildingBlocks</a></li>
+</ul>
+
+<h4>Resources</h4>
+
+<ul>
+<li><a href="//assemble.io/docs/">Assemble Docs</a></li>
+<li><a href="//assemble.github.io/assemble-gist-blog/">Embed Github Gists</a></li>
+<li><a href="//github.com/assemble/boilerplate-sitemap">Create a Sitemap</a></li>
+<li><a href="//www.gpmd.co.uk/blog/front-end-process-flat-builds-and-automation-part-3-grunt-tasks/">Front-End Process - Flat Builds and Automation, part 3: Grunt Tasks</a></li>
+<li><a href="//maddesigns.de/assemble-static-site-generator-grunt-2625.html">Assemble – erste Schritte mit dem Static Site Generator für Grunt</a></li>
+</ul>
+
+<p><span class="note">This article was also published on <a href="//codepen.io/atelierbram/post/assembling">Codepen</a></span></p>
+    ]]></content>
+</entry>
+      <entry>
+    <id>https://atelierbram.github.io/blog/interplay-css-javascript</id>
+    <link type="text/html" rel="alternate" href="https://atelierbram.github.io/blog/interplay-css-javascript" />
+    <title>Interplay</title>
+    <published>2014-09-23T00:00:00+00:00</published>
+    <updated>2014-09-23T00:00:00+00:00</updated>
+    <author>
+        <name>Bram de Haan</name>
+    </author>
+    <summary type="html">Animating the height of an element with only CSS is possible with the &lt;code&gt;max-height&lt;/code&gt; property, giving the begin value a &lt;code&gt;max-height&lt;/code&gt; of zero and (let&#039;s say) the &#039;hovered&#039; value some high number “that will always be higher then the......</summary>
+    <content type="html"><![CDATA[
+        <p>Animating the height of an element with only <span class='small-caps'>CSS</span> is possible with the <code>max-height</code> property, giving the begin value a <code>max-height</code> of zero and (<i>let's say</i>) the 'hovered' value some high number <i>“that will always be higher then the real height of the highest animated element”</i>. The outcome of the results can vary quite a bit, depending on the differences between all these values: not satisfying in all scenarios. An alternative way is using <code>height: 0</code> in combination with a set value for <code>padding-bottom</code>.</p>
+
+<p class="publication-list__item__meta"><time datetime=""></time></p>
+
+<h3>Animating padding-bottom with CSS-Transitions</h3>
+
+<p>But to know these values for <code>padding-bottom</code> <sup><a href="#note-1" class="sup-link" id="supLink1">1</a></sup> one will have to know the height of each element. With only a small amount of dropdown-lists to be styled, one might be tempted to hardcode those values in. But what if someone (, and maybe even not you) wants to add an item to one of these lists in the future? Now one will have to change this value in the <span class="small-caps">CSS</span> <em>every time again</em> when the number of items in the <span class="small-caps">HTML</span> changes, which can be anoying.</p>
+
+<h3>Javascript to the rescue</h3>
+
+<p>Since one can know the height of one individual list-item in the dropdown, (because we have a set <code>font-size</code>, <code>padding</code>, and even use a web-font), one can calculate the height of each list by multiplying this value with the number of list-items that are in the list. To count the number of list-items in each dropdown list with javascript one can use the <code>length</code> method.</p>
+
+<pre><code class="language-javascript">
+var itms = {
+home    : $("#tt-home li").length),
+blog    : $("#tt-blog li").length),
+books   : $("#tt-books li").length),
+goodies : $("#tt-goodies li").length),
+media   : $("#tt-media li").length),
+news    : $("#tt-news li").length),
+contact : $("#tt-contact li").length)
+};
+</code></pre>
+
+<p>Now one can add the outcome: this number, on a class, which is then added with javascript on each parent dropdown list-item. In jQuery we can use <code>$each</code> in a function to get the number of list-items in each list:</p>
+
+<pre><code class="language-javascript">
+$.each( itms, function( i, val ) {
+  $( "#tt-" + i ).addClass('tt-nav__itemcount-'+val);
+});
+</code></pre>
+
+<p>Switching to Sass, we can make a function there which will output the values for <code>padding-bottom</code> on every matching “submenu-parent” like so:</p>
+
+<pre><code class="language-javascript">
+$item-count-list: 1 2 3 4 5 6 7 8 9 10;
+$item-value-list: 46px 92px 138px 184px 230px 276px 322px 368px 414px 460px;
+for $i from 1 through length($item-count-list) {
+  [class*="itemcount-#{$i}"]:hover .tt-nav__submenu {
+    padding-bottom: nth($item-value-list, $i);
+   }
+}
+</code></pre>
+
+<p>The generated <span class="small-caps">CSS</span> <sup><a href="#note-2" class="sup-link" id="supLink2">2</a></sup>:</p>
+
+<pre><code class="language-css">
+[class*="itemcount-5"]:hover .tt-nav__submenu {
+  padding-bottom: 230px;
+}
+</code></pre>
+
+<h3>Minimal transition in CSS</h3>
+
+<p>In the <span class="small-caps">CSS</span> one should have declarations for the different ‘states’, but the definition can be quite minimal:</p>
+
+<pre><code class="language-scss">
+/* Submenu - shared properties and values */
+.tt-nav__submenu {
+  transition: padding-bottom .75s cubic-bezier(0.6, 0.4, 0.25, 0.75);
+  height: 0;
+  padding: 0;
+}
+
+.tt-nav__item:hover .tt-nav__submenu {
+// maybe include a fallback for padding-bottom when javascript is not available:
+  padding-bottom: 460px;
+}
+
+// Sass function after this,
+// outputting the different values for `padding-bottom`
+// as explained above:
+// $item-count-list: 1 2 3 4 5 6 7 8 9 10;
+// $item-value-list: 46px 92px ... and so on;
+</code></pre>
+
+<p>One can also provide a fall-back value for <code>padding-bottom</code> on the active/hover state (<em>value should be matching the highest current element, which will then be overridden by the values outputted by the <code>Sass</code>-function</em>) in order to make it always appear, even without javascript (, as shown above).</p>
+
+<h3>Interplay</h3>
+
+<p>Then there it is: a <span class="small-caps">DIY</span> <sup><a href="#note-3" class="sup-link" id="supLink3">3</a></sup> cooperation between <span class="small-caps">CSS</span> and Javascript, responding fast and snappy, because it benefits from modern browser’s native capabilities with using <span class="small-caps">CSS</span>-transitions.</p>
+
+<h4>Examples</h4>
+
+<ul>
+<li><a href="//codepen.io/atelierbram/pen/AHwyr">responsive dropdown demo</a> - Disclaimer: this is a prototype: there will be more robust javascript implementations for dropdown menu’s tested on multiple devices out there (like Foundation/Bootstrap).</li>
+<li><a href="//codepen.io/atelierbram/pen/vymHL/">example build on Bootstrap-3</a> -  extended with <a href="//github.com/CWSpear/bootstrap-hover-dropdown">hover-dropdown-plugin</a> by <a href="//cameronspear.com/blog/bootstrap-dropdown-on-hover-plugin/">Cameron Spear</a> - <a href="//github.com/atelierbram/bootstrap-hover-dropdown">fork of repo on Github</a> - toggle links are clickable, as far as I know works on mobile, but javascript could be improved upon (I am aware that the animation could be done with jQuery <code>slideDown()</code> too, I just like the <span class="small-caps">DIY</span> <sup>3</sup> aspect: the tinkering, and the fact the transitions are done by the `<span class="small-caps">CSS</span>, which has it's own (long-term) advantage.)</li>
+</ul>
+
+<h4>Notes</h4>
+
+<ol>
+<li><span id="note-1">Probably can also use <code>height</code> instead of <code>padding-bottom</code> since we are not using <code>height: auto</code> here, which (<em>used to?</em>)
+require <code>max-height</code> instead of <code>height</code>, but I wanted to be carefull here, avoid confusion by not mixing those concepts.</span></li>
+<li><span id="note-2">One of them declarations: it outputs 10 of those, see also <a href="//gist.github.com/atelierbram/a88e3811173bb9d75b40">this Github Gist</a>, or this <a href="//codepen.io/atelierbram/pen/CBLaw">reduced testcase here on CodePen</a></span></li>
+<li><span id="note-3">do it yourself</span></li>
+</ol>
+
+<p><span class="note">This article was also published on <a href="//codepen.io/atelierbram/post/interplay-css-javascript">Codepen</a>.</span></p>
+    ]]></content>
+</entry>
+      <entry>
+    <id>https://atelierbram.github.io/blog/css-shapes-in-multi-column-layout</id>
+    <link type="text/html" rel="alternate" href="https://atelierbram.github.io/blog/css-shapes-in-multi-column-layout" />
+    <title>CSS-Shapes</title>
+    <published>2014-09-07T00:00:00+00:00</published>
+    <updated>2014-09-07T00:00:00+00:00</updated>
+    <author>
+        <name>Bram de Haan</name>
+    </author>
+    <summary type="html">In order to avoid breaking up a css-shape from the surrounding wrapping text to another column, (&amp;hellip; which is far from pretty), when using CSS-Shapes (to make text flow around an image or an object) within a multi-column layout: one can use the......</summary>
+    <content type="html"><![CDATA[
+        <p>In order to avoid breaking up a css-shape from the surrounding wrapping text to another column, (<em>&hellip; which is far from pretty</em>), when using <span class='small-caps'>CSS</span>-Shapes (<em>to make text flow around an image or an object</em>) within a <strong>multi-column layout</strong>: one can use the property <code>break-inside</code> with the value <code>avoid-column</code> on the wrapping element:</p>
+
+<p class="publication-list__item__meta"><time datetime=""></time></p>
+
+<pre><code class="language-css">
+.wrap-module {
+  break-inside: avoid-column;
+}
+</code></pre>
+
+<p>Consider the following <span class="small-caps">HTML</span>-markup one would need in order to achieve this:</p>
+
+<pre><code class="language-markup">
+&lt;div class="wrap-module"&gt;
+&lt;div class="shape-rect"&gt;&lt;/div&gt;
+  &lt;p class="has-pullquote" data-pullquote="Eligendi cumque ..."&gt;
+     Lorem ipsum ...
+   &lt;/p&gt;
+&lt;/div&gt;
+</code></pre>
+
+<p>That is quite some extra <span class="small-caps">HTML</span>-markup for pretty decoration. In <a href="//codepen.io/atelierbram/pen/Iujdi">this example</a> <sup><a href="#note-1" class="sup-link" id="supLink1">1</a></sup> those elements are inserted into the page with (jQuery) javascript, to keep the <span class="small-caps">HTML</span> clean (here is <a href="//codepen.io/atelierbram/pen/aoKus/">a fork of this pen in plain-vanilla javascript</a>, with <em>slightly different</em> nesting of elements). Here the <span class="small-caps">CSS</span>-Shape is combined with the classic <a href="//codepen.io/aarongustafson/pen/zxKdh">pullquote with data-attributes trick</a>, which will even make more sense in the near future. <sup><a href="#note-2" class="sup-link" id="supLink2">2</a></sup></p>
+
+<p>Here the <code>.shape-rect</code> could be a rectangle made with the property <code>shape-outside</code> with the <code>polygon</code> values:</p>
+
+<pre><code class="language-css">
+.shape-rect {
+  shape-outside: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  float: right;
+  shape-margin: 1em;
+  width: 16em;
+  height: 16em;
+}
+</code></pre>
+
+<p>This is what makes it all work: wrapping the text around the shape.</p>
+
+<h4>Examples</h4>
+
+<ul>
+<li><a href="//codepen.io/atelierbram/pen/Iujdi">example markup inserted with jQuery</a></li>
+<li><a href="//codepen.io/atelierbram/pen/aoKus/">example markup inserted with plain-vanilla javascript</a></li>
+</ul>
+
+<h4>Notes</h4>
+
+<ol>
+<li><span id="note-1">Disclaimer: the example has many pullquotes: normally one wouldn’t use this many pullquotes on one page, but this is just in order to show it <em>not breaking the layout</em>. One can test this by dragging the browser-window, and maybe also see what happens when removing the <code>.wrap-module</code> declaration from the <span class="small-caps">CSS</span>.</span></li>
+<li><span id="note-2">One day we will be able to use <a href="//alistapart.com/article/css-shapes-101#section8"><code>shape-inside</code> and css exclusions</a> for this, but here and now, the pullquote-text pseudo-element is positioned <code>absolute</code> right on top of the css-shape itself.</span></li>
+</ol>
+
+<p><span class="note">This article was also published on <a href="//codepen.io/atelierbram/post/css-shapes-in-multi-column-layout">Codepen</a></span></p>
+    ]]></content>
+</entry>
+      <entry>
+    <id>https://atelierbram.github.io/blog/select-menu-hashchange</id>
+    <link type="text/html" rel="alternate" href="https://atelierbram.github.io/blog/select-menu-hashchange" />
+    <title>Select Menu</title>
+    <published>1970-08-22T02:41:58+00:00</published>
+    <updated>1970-08-22T02:41:58+00:00</updated>
+    <author>
+        <name>Bram de Haan</name>
+    </author>
+    <summary type="html">When one is already using jQuery, easiest way is to use Ben Alman&#039;s great hashchange plugin to get a select-menu to display the right &lt;code&gt;option&lt;/code&gt; when using a select-menu for site-wide navigation (maybe for small screens), for otherwise, with......</summary>
+    <content type="html"><![CDATA[
+        <p>When one is already using jQuery, easiest way is to use Ben Alman's great <a href='//github.com/cowboy/jquery-hashchange'>hashchange plugin</a> to get a select-menu to display the right <code>option</code> when using a select-menu for site-wide navigation (<i>maybe for small screens</i>), for otherwise, with each page refresh, the <code>select</code> will always jump to the top option when there is no <code>selected</code> attribute with a value of <code>selected</code> set for the corresponding page on that corresponding option. This is how I would do it, probably could me less verbose, but it works:</p>
+
+<p class="publication-list__item__meta"><time datetime=""></time></p>
+
+<ul>
+<li>set an <code>id</code> on all the individual option items, something like <code>&lt;option id="sm-home"&gt;</code> for the homepage <code>&lt;option id="sm-blog"&gt;</code>  for the blog-page, and so on</li>
+<li>for the next bit to work, we will have to add the page#target (to the id) to the end of the <code>url</code> of the <code>href</code>s <code>option</code> values, like so <code>blog/index.html#sm-blog</code>, or maybe <code>blog/index.php#sm-blog</code></li>
+</ul>
+
+<pre><code class="language-markup">
+&lt;select name="menu-items" onchange="location = this.options[this.selectedIndex].value;" id="menu-select-menu" class="select-menu"&gt;
+  &lt;option id="sm-menu" value="">Menu&lt;/option>
+  &lt;option id="sm-home" value="//mydomain.com/index.html#sm-home"&gt;Home&lt;/option&gt;
+  &lt;option id="sm-blog" value="//mydomain.com/blog/index.html#sm-blog"&gt;Blog&lt;/option&gt;
+</code></pre>
+
+<ul>
+<li>Bind an event to window.onhashchange (with the help of the plugin) that, when the hash changes, sets a class on the body with the same name as the #hash-tag</li>
+<li>target the option which has the same/corresponding id as the class set on the body, setting the "selected" attribute as-appropriate.</li>
+</ul>
+
+<pre class="language-javascript"><code class="language-javascript">
+$(function(){
+
+  // Bind an event to window.onhashchange that, when the hash changes, sets the
+  // class on the body with the same name as the #hash-tag
+  $(window).hashchange( function(){
+    var hash = location.hash;
+
+    // add an class on the body with the same name as the #hash-tag
+    $('body').addClass(' ' + ( hash.replace( /^#/, '' ) || 'blank' ));
+
+    // target the option which has the same/corresponding id as the class set on the body, setting the "selected" attribute as-appropriate.
+    $('.sm-home #sm-home').attr('selected',true).siblings('option').removeAttr('selected');
+    $('.sm-blog #sm-blog').attr('selected',true).siblings('option').removeAttr('selected');
+  })
+
+  // Since the event is only triggered when the hash changes, we need to trigger
+  // the event now, to handle the hash the page may have loaded with.
+  $(window).hashchange();
+
+});
+</code></pre>
+
+<h3>Simplifying</h3>
+
+<p>Maybe one is overcomplicating things a bit when doing it like above, because if it is possible to set a class on the pages’ <code>body</code>-tags, and give the <code>select</code> <code>option</code>’s <code>id</code>’s like so:</p>
+
+<pre><code class="language-markup">
+&lt;option id="sm-blog" value="//mydomain.com/blog"&gt;Blog&lt;/option&gt;
+</code></pre>
+
+<p>Then in that case you don't need the hashchange plugin after all, for you can target those options on the corresponding pages like this:</p>
+
+<pre><code class="language-javascript">
+$(function(){
+  $('.home-page #sm-home').attr('selected',true).siblings('option').removeAttr('selected');
+  $('.blog-page #sm-blog').attr('selected',true).siblings('option').removeAttr('selected');
+    .....
+});
+</code></pre>
+
+<p>When on WordPress, one should really use the classes that are set by WordPress on the different <code>body</code>-tags. (<em>one can check for this in Devtools/Firebug</em>) ...</p>
+
+<p>For example a blogroll-page can have this <code>page-id-882</code> class set on the <code>body</code>-tag, so with jQuery javascript you can set the <code>selected</code> attribute on the <code>option id="sm-blog"</code> like this:</p>
+
+<pre><code class="language-javascript">
+$(function(){
+  $('.page-id-882 #sm-blog').attr('selected',true).siblings('option').removeAttr('selected');
+});
+</code></pre>
+
+<h3>Fix for iOS</h3>
+
+<p>This doesn't seem to work on iOS, at least on my iPad it will always show the most top option, even if there <strong>is</strong> a <code>selected</code> attribute set. To make this work in our advantage I tried the following: leave the top option (, where it used to say <em>"Menu"</em>,) empty, and also give that one an <code>id</code> :</p>
+
+<pre><code class="language-markup">
+&lt;option id="sm-top" value="#!"&gt;&lt;/option&gt;
+</code></pre>
+
+<p>Now we can insert some text in this option with javascript, using the same classes on the <code>body</code>-tags we set earlier, with jQuery's <code>.prepend</code> method for "<em>inside DOM Insertion</em>":</p>
+
+<pre><code class="language-javascript">
+  $('.home-page #sm-top').prepend('Home');
+  $('.blog-page #sm-top').prepend('Blog');
+</code></pre>
+
+<p>Now also on iOS, we have our current page right in the top of the <code>select</code>-menu. On desktop it still goes to the <code>option</code> with the <code>selected</code> attribute, so having this extra option on top there may be redundant, but it wouldn't bother me that much.</p>
+
+<p><del>P.S. This doesn't seem to work on iOS, at least on my iPad it always shows the most top option ... but there are all kinds of issues with select-menus on iOS, so well ...</del> Fixed, see above.</p>
+
+<h4>Examples</h4>
+
+<ul>
+<li><a href="//codepen.io/atelierbram/pen/GjLvw">demo on Codepen</a></li>
+<li><a href="//bramdeh.home.xs4all.nl/playground/ui-patterns/select-nav/">a demo with the jQuery hashtag plugin</a> parked on my provider's site.</li>
+<li><a href="//bramdeh.home.xs4all.nl/playground/ui-patterns/sitewide-selectnav/">a simplified version with some small Jquery javascript</a> parked on provider's site.</li>
+<li><a href="//gist.github.com/atelierbram/18d7489b81dc9acf0747">a Github Gist</a></li>
+</ul>
+
+<p><span class="note">This article was also published on <a href="//codepen.io/atelierbram/post/select-menu-hashchange">Codepen</a></span></p>
+    ]]></content>
+</entry>
+  </feed>

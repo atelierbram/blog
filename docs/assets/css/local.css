@@ -45,6 +45,21 @@
     z-index: 1001;
   }
 }
+@media (min-width: 70.25em) {
+  .server-local body:before {
+    content: "desktop-xl ≥ 1124px (70.25em)";
+    color: #b5b9c9;
+    font-size: 0.65rem;
+    line-height: 1;
+    font-family: inherit;
+    padding: 2px;
+    pointer-events: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1001;
+  }
+}
 @media (min-width: 81.25em) {
   .server-local body:before {
     content: "wide ≥ 1300px (81.25em)";

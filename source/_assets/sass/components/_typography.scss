@@ -2,7 +2,9 @@
 .page p:first-of-type em {
   font-weight: normal;
 }
+
 .page p:first-of-type {
+  line-height: 1.33334;
   @include mq($from: tablet) {
     font-size: 1.75em;
   }
@@ -15,6 +17,9 @@
 //     margin-top: -2rem;
 //   }
 // }
+
+.page h4 + ul,
+.page h4 + ol,
 .page h3 + p {
   margin-top: -6px;
   // border-top: 1px solid $base01;

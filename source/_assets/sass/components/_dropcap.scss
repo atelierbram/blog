@@ -1,12 +1,11 @@
 // Dropcap
 .publication-list__item__content p:first-of-type:first-letter,
 .page > p:first-of-type:first-letter {
-  font-family: AvenirNext-DemiBold, Corbel, "Lucida Grande", "Trebuchet Ms", "Segoe Ui", "DejaVu Sans Condensed", sans-serif;
+  // font-family: AvenirNext-DemiBold, Corbel, "Lucida Grande", "Trebuchet Ms", "Segoe Ui", "DejaVu Sans Condensed", sans-serif;
   color: $base01;
   margin: 16px 4px 0.5rem 1px;
   padding: 4px 0 0 0;
   float: left;
-  font-size: 174px;
   line-height: .65;
   height: 127px;
   -webkit-font-smoothing: antialiased;
@@ -14,6 +13,12 @@
   .theme-dark & {
     color: $light07;
   }
+}
+.page > p:first-of-type:first-letter {
+  font-size: 147px;
+}
+.page-type-index .publication-list__item__content p:first-of-type:first-letter {
+  font-size: 129px;
 }
 
 .publication-list__item__content p:first-of-type:first-letter,

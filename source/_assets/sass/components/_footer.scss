@@ -1,12 +1,12 @@
 @import "color-vars";
-.page-wrap:after,
-footer {
-  height: 4em;
-}
+
 footer {
   color: $dark_green-yellow;
   background-color: $ui-bg-color;
   border-top: 1px solid $base04;
+  position: absolute;
+  right:0;bottom:0;left:0;
+  min-height: 4em;
   .theme-dark & {
     color: $light06;
     background-color: $dark04;

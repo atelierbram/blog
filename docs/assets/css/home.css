@@ -47,12 +47,10 @@ h2 {
 
 .publication-list__item__content p:first-of-type:first-letter,
 .page > p:first-of-type:first-letter {
-  font-family: AvenirNext-DemiBold, Corbel, "Lucida Grande", "Trebuchet Ms", "Segoe Ui", "DejaVu Sans Condensed", sans-serif;
   color: #293256;
   margin: 16px 4px 0.5rem 1px;
   padding: 4px 0 0 0;
   float: left;
-  font-size: 174px;
   line-height: 0.65;
   height: 127px;
   -webkit-font-smoothing: antialiased;
@@ -60,6 +58,14 @@ h2 {
 .theme-dark .publication-list__item__content p:first-of-type:first-letter,
 .theme-dark .page > p:first-of-type:first-letter {
   color: hsl(229deg, 23%, 68%);
+}
+
+.page > p:first-of-type:first-letter {
+  font-size: 147px;
+}
+
+.page-type-index .publication-list__item__content p:first-of-type:first-letter {
+  font-size: 129px;
 }
 
 .publication-list__item__content p:first-of-type:first-letter,
@@ -89,7 +95,6 @@ header h1 a {
   display: flex;
   justify-content: space-around;
   flex-flow: row wrap;
-  row-gap: 3rem;
 }
 @media (min-width: 40em) {
   .publication-list {
@@ -116,8 +121,7 @@ header h1 a {
 }
 
 .publication-list__item__title {
-  font-family: AvenirNextCondensed-DemiBold, Corbel, "Trebuchet Ms", "Segoe Ui", "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", sans-serif;
-  margin: 1em 0 0.25em;
+  margin: 1.75em 0 0.25em;
 }
 
 h3 a {
@@ -142,9 +146,9 @@ h3 a:hover {
 }
 
 .publication-list__item__content p {
-  line-height: 1.4;
+  line-height: 1.33334;
 }
-@media (min-width: 40em) {
+@media (min-width: 70.25em) {
   .publication-list__item__content > p:first-child {
     flex-basis: 14rem;
   }
@@ -160,7 +164,7 @@ h3 a:hover {
   display: block;
   position: relative;
   padding: 0.5em 0 0.5em 0.5em;
-  margin-top: 1rem;
+  margin-top: 0.4rem;
   font-size: 1rem;
   border-radius: 3px;
   clear: both;
@@ -262,6 +266,7 @@ a:hover {
   margin-bottom: -4em;
   padding-bottom: 4em;
   overflow: auto;
+  position: relative;
 }
 
 .page-wrap:after {
@@ -392,6 +397,7 @@ p {
 
 .content-home h3 {
   font-size: 1.5rem;
+  margin-bottom: 1px;
 }
 
 .page h3 {
@@ -470,7 +476,7 @@ svg:not(:root) {
 }
 
 .page .publication-list__item__meta {
-  margin: 3em 0 4em;
+  margin: 0.15em 0 4.25em;
 }
 
 .publication-list__item__meta:after {
@@ -498,7 +504,7 @@ time {
 
 .prevnext {
   clear: both;
-  margin-bottom: 2em;
+  margin-bottom: 1.125em;
   padding-top: 8em;
   overflow: auto;
 }
@@ -553,13 +559,14 @@ time {
 }
 
 .page-type-index .prevnext {
-  padding-left: 5%;
-  padding-right: 5%;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .prevnext h5 {
   font-size: 1em;
   font-weight: normal;
+  margin: 0;
 }
 @media (min-width: 61.25em) {
   .page-type-post .prevnext h5 {
@@ -584,7 +591,7 @@ time {
 .prevnext h5 a {
   position: relative;
   display: block;
-  padding: 0.25em 0;
+  padding: 0.25em 0 0.65em;
   text-decoration: none;
   transition: color 0.3s;
   border-bottom: none;
@@ -613,15 +620,15 @@ time {
   margin-left: 0.25em;
 }
 
-.page-wrap:after,
-footer {
-  height: 4em;
-}
-
 footer {
   color: #133913;
   background-color: #979db4;
   border-top: 1px solid #898ea4;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  min-height: 4em;
 }
 .theme-dark footer {
   color: hsl(229deg, 25%, 74%);

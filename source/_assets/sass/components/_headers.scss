@@ -22,6 +22,9 @@ h3 {
     color: $light06;
     letter-spacing: .75px;
   }
+  @include mq($from: tablet) {
+    margin-top: 2.385rem;
+  }
 }
 h4 {
   font-family: AvenirNextCondensed-DemiBold, Corbel, "Lucida Grande", "Trebuchet Ms", "Segoe Ui", "DejaVu Sans Condensed", sans-serif;

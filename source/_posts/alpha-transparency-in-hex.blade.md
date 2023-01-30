@@ -49,7 +49,7 @@ Which (for one colorscheme) would compile to this <span class="small-caps">CSS</
 
 Because Base16 schemes only allows color-values for variables to be defined in <span class="small-caps">HEX</span> notation _in schemes_, these color-variables can now be manipulated by adding 2 digits after the variables _in templates_, and by doing so give those colors alpha transparency (in browsers that support it).
 
-To see if your browser supports alpha transparency in 8 digits hex notation: <span style="font-size:2em;background-color:#263573f2;color:hsla(228, 50%, 30%, 0.5);display:inline-block;margin-top:.5em">Unfortunately your browser does not support alpha transparency in <span class="small-caps">HEX</span> yet</span><br><span style="color:#fff;color:#263573f2;display:inline-block;margin-top:1em;font-size:1.25em">Your browser supports alpha transparency in <span class="small-caps">HEX</span>!</span> <br>And/or checkout [this demo](http://codepen.io/atelierbram/full/bZAGmW/).
+To see if your browser supports alpha transparency in 8 digits hex notation: <span style="font-size:2em;background-color:#263573f2;color:hsla(228, 50%, 30%, 0.5);display:inline-block;margin-top:.5em">Unfortunately your browser does not support alpha transparency in <span class="small-caps">HEX</span> yet</span><br><span style="color:#fff;color:#808080;display:inline-block;margin-top:1em;font-size:1.25em">Your browser supports alpha transparency in <span class="small-caps">HEX</span>!</span> <br>And/or checkout [this demo](http://codepen.io/atelierbram/full/bZAGmW/).
 
 #### Resources
 - [the spec](https://drafts.csswg.org/css-color/#hex-notation)

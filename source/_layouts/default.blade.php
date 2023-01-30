@@ -1,12 +1,5 @@
 <!doctype html>
-<html class="no-js core
-  @if ($page->server === "local")
-    server-local
-  @else
-    server-remote
-  @endif
-" lang="en">
-
+<html class="no-js core @if ($page->server === "local") server-local @else server-remote @endif" lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -35,18 +28,23 @@
  @else
     <style id="fontfaceRemoteCss">@include('_partials.fontface-remote-css')</style>
     <style id="criticalCss">@include('_partials.critical-css')</style>
-    <link href="{{ $page->baseUrl }}{{ ('assets/css/style.min.css?v5') }}" rel="stylesheet" media="print" onload="this.media='all'">
-    <noscript><link href="{{ $page->baseUrl }}{{ ('assets/css/style.min.css?v5') }}" rel="stylesheet"></noscript>
+    <link href="{{ $page->baseUrl }}{{ ('assets/css/style.min.css?v6') }}" rel="stylesheet" media="print" onload="this.media='all'">
+    <noscript><link href="{{ $page->baseUrl }}{{ ('assets/css/style.min.css?v6') }}" rel="stylesheet"></noscript>
   @endif
   </head>
   <body class="page-{{ $page->slug }} page-type-{{ $page->page_type }}" id="id-{{ $page->id }}">
     @include('_partials.icons-svg')
     @include('_partials.header')
-    @include('_partials.nav')
-    <h2 id="h-{{ $page->slug }}" class="title-post">{{ $page->index_title }}</h2>
+    <div class="page-wrap" id="pageWrap">
+      <div class="inner-wrap" id="innerWrap">
+        @include('_partials.nav')
+        <h2 id="h-{{ $page->slug }}" class="title-post">{{ $page->index_title }}</h2>
 
-    @yield('body')
-    @include('_partials.footer')
+        @yield('body')
+      </div><!-- .inner-wrap -->
+
+        @include('_partials.footer')
+    </div><!-- page-wrap -->
 
     @if ($page->id === "id_01")
     <script id="insertScriptJs">@include('_partials.script-id_01-js')</script>
@@ -74,6 +72,8 @@
     <script id="insertScriptJs">@include('_partials.script-id_12-js')</script>
     @elseif ($page->id === "id_13")
     <script id="insertScriptJs">@include('_partials.script-id_13-js')</script>
+    @elseif ($page->id === "id_404")
+    <script id="insertScriptJs">@include('_partials.script-id_404-js')</script>
     @endif
 
       <script id="insertSVGJs">@include ('_partials.insert-svg-js')</script>

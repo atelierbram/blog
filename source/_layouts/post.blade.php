@@ -2,10 +2,6 @@
 
 @section('body')
   <article class="content page" id="page">
-    <!-- https://stackoverflow.com/questions/29253979/displaying-html-with-blade-shows-the-html-code -->
-    <!-- <p class="intro">{! ! $page->intro !!}</p> -->
-    <!-- <p class="publication-list__item__meta"><time date time="{ !! $ page ->date_machine !!}">{ { $page->date_human }}</time></p> -->
-
     @yield('content')
 
     <nav class="prevnext">
@@ -18,5 +14,4 @@
     @endif
     </nav>
   </article>
-</div><!-- .inner-wrap -->
 @endsection
