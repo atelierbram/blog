@@ -192,8 +192,15 @@ p {
 }
 
 .content-home h3 {
-  font-size: 1.5rem;
-  margin-bottom: 1px;
+  font-size: 1.125em;
+  line-height: 1.25;
+  margin-bottom: 0.15em;
+}
+@media (min-width: 40em) {
+  .content-home h3 {
+    font-size: 1.25em;
+    margin-bottom: 0.25em;
+  }
 }
 
 .page h3 {
@@ -276,7 +283,7 @@ pre {
   padding: 4px 0 0 0;
   float: left;
   line-height: 0.65;
-  height: 127px;
+  height: 0.71317em;
   -webkit-font-smoothing: antialiased;
 }
 .theme-dark .publication-list__item__content p:first-of-type:first-letter,
@@ -289,7 +296,12 @@ pre {
 }
 
 .page-type-index .publication-list__item__content p:first-of-type:first-letter {
-  font-size: 129px;
+  font-size: 83px;
+}
+@media (min-width: 40em) {
+  .page-type-index .publication-list__item__content p:first-of-type:first-letter {
+    font-size: 129px;
+  }
 }
 
 .publication-list__item__content p:first-of-type:first-letter,

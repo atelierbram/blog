@@ -21,6 +21,8 @@ Webdesign-related blogposts [hosted here on Github](//atelierbram.github.io/blog
 
 </details>
 
+Subscribe to the [RSS feed](https://atelierbram.github.io/blog/feed/feed.atom).
+
 <br>Build with [Jigsaw](//jigsaw.tighten.com/).
 
 #### License

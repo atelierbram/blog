@@ -180,15 +180,23 @@ p {
   margin: 0;
   padding: .5em 0;
   .theme-dark & {
-    word-spacing: 0.05em;
-    letter-spacing: 0.05em;
+    word-spacing: .05em;
+    letter-spacing: .05em;
   }
 }
 
 .content-home h3 {
-  font-size: 1.5rem;
-  margin-bottom: 1px;
+  font-size: 1.125em;
+  line-height: 1.25;
+  margin-bottom: .15em;
+
+  @include mq($from: tablet) {
+    font-size: 1.25em;
+    margin-bottom: .25em;
+  }
+
 }
+
 .page h3 {
   font-size: 2em;
   line-height: 1;

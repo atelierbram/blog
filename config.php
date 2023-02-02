@@ -12,6 +12,7 @@ return [
   'title' => 'Atelierbram blog',
   'siteName' => 'Atelierbram Blog',
   'webName' => 'Atelierbram',
+  'author' => 'Bram de Haan',
   'siteDescription' => 'Documenting a learning curve in front-end development',
   'description' => 'Documenting a Learning Curve',
   'tagline' => 'Documenting a learning curve',

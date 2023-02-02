@@ -7,7 +7,8 @@
   padding: 4px 0 0 0;
   float: left;
   line-height: .65;
-  height: 127px;
+  // height: 59px;
+  height: .71317em;
   -webkit-font-smoothing: antialiased;
 
   .theme-dark & {
@@ -18,7 +19,15 @@
   font-size: 147px;
 }
 .page-type-index .publication-list__item__content p:first-of-type:first-letter {
-  font-size: 129px;
+  font-size: 83px;
+  // height: 59px;
+  // height: .71317em;
+
+  @include mq($from: tablet) {
+    font-size: 129px;
+    // height: 92px;
+  }
+
 }
 
 .publication-list__item__content p:first-of-type:first-letter,

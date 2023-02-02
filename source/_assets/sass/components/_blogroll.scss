@@ -40,6 +40,10 @@ header h1 a {
 
   @include mq($from: tablet) {
     font-size: 1.125rem;
+    row-gap: 3.35rem;
+  }
+  @include mq($from: desktop-xl) {
+    row-gap: 4.5rem;
   }
 }
 .publication-list__item {
@@ -100,13 +104,26 @@ h3 a:hover {
 .read-more {
   display: block;
   position: relative;
-  padding: .5em 0 .5em .5em;
+  padding: .5em 0.5em .5em;
+  text-align: right;
   margin-top: 0.4rem;
-  font-size: 1rem;
+  font-size: .875em;
   border-radius: 3px;
   clear: both;
   transition: all .4s;
-  color: $base01;
+  color: $base04;
+
+  &:hover,
+  &:active {
+    text-decoration: none;
+    color: $base01;
+    background-color: $base06;
+    // padding-left: 1em;
+    // max-width: 100%;
+  }
+  &:focus {
+    outline: 1px dotted $base05;
+  }
 
   .theme-dark & {
     color: $dark07;
@@ -116,23 +133,18 @@ h3 a:hover {
     }
   }
 
-  &:hover,
-  &:active {
-    text-decoration: none;
-    background-color: $base06;
-    // padding-left: 1em;
-    // max-width: 100%;
-  }
-  &:focus {
-    outline: 1px dotted $base05;
+
+  @include mq($from: tablet) {
+    text-align: left;
+    padding-right: 0;
   }
 }
 
 .icon-arrow-right {
-  width: 16px;
-  height: 16px;
-  top: -1px;
-  left: .25em;
+  width: .875em;
+  height: .875em;
+  // top: -1px;
+  // left: .25em;
   transition: margin .6s;
 }
 .read-more:hover .icon-arrow-right {

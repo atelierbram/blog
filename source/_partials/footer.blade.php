@@ -1,1 +1,1 @@
-<footer><small>&copy; <a href="//atelierbram.github.io/">{{ $page->webName }}</a> &middot; <a href="//github.com/atelierbram">GitHub</a> &middot; <a href="//atelierbramdehaan.nl">Portfolio</a></small></footer>
+<footer><small>&copy; <a href="//atelierbram.github.io/">{{ $page->webName }}</a> &middot; <a href="//github.com/atelierbram">GitHub</a> &middot; <a href="//atelierbramdehaan.nl">Portfolio</a> &middot; <a href="https://atelierbram.github.io/blog/feed/feed.atom">RSS</a></small></footer>
