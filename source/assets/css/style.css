@@ -203,15 +203,23 @@ p {
   }
 }
 
-.page h3 {
-  font-size: 2em;
+.page h3,
+.page h4 {
+  font-size: 1.25em;
   line-height: 1;
+}
+@media (min-width: 40em) {
+  .page h3,
+  .page h4 {
+    font-size: 1.35em;
+  }
 }
 
 img,
 svg {
   border: 0;
   max-width: 100%;
+  height: auto;
 }
 
 svg {
@@ -274,6 +282,21 @@ pre {
 }
 .theme-dark pre {
   border-color: hsl(229deg, 29%, 14%);
+}
+
+figure {
+  margin: 3em 0;
+  max-width: 43em;
+}
+
+h3 + figure,
+h4 + figure {
+  margin-top: 1em;
+}
+
+figcaption {
+  color: #5e6687;
+  font-size: 0.75em;
 }
 
 .publication-list__item__content p:first-of-type:first-letter,
@@ -354,7 +377,7 @@ h4 {
   padding: 1rem 0 0;
   text-transform: uppercase;
   color: hsl(229deg, 23%, 32%);
-  font-size: 1.25rem;
+  font-size: 1.25em;
 }
 .theme-dark h4 {
   color: hsl(229deg, 27%, 80%);
@@ -542,10 +565,8 @@ time {
   margin-top: 3rem;
 }
 
-.page h4 + ul,
-.page h4 + ol,
 .page h3 + p {
-  margin-top: -6px;
+  margin-top: -0.2em;
 }
 
 .no-flexbox p {
@@ -567,6 +588,7 @@ time {
 h4 + ul,
 h4 + ol {
   padding-top: 0.25em;
+  margin-top: 0.2em;
   margin-bottom: -2em;
 }
 
@@ -997,7 +1019,7 @@ footer a {
 }
 
 .cp_embed_iframe {
-  margin: 1em 0 2em;
+  margin: 4em 0 3em;
   max-width: 43em;
 }
 
@@ -1072,18 +1094,15 @@ code.language-bash::selection, code.language-bash ::selection {
 }
 
 pre[class*=language-] {
-  padding: 1.5em;
+  padding: 1.5em 1.5em 3em;
   margin: 3em 0;
   overflow: auto;
   max-width: 49em;
 }
 
-@media (min-width: 40em) {
-  pre.language-bash {
-    margin-left: 1em;
-    margin-right: 1em;
-    max-width: 43em;
-  }
+h3 + pre[class*=language-],
+h4 + pre[class*=language-] {
+  margin-top: 1em;
 }
 
 :not(pre) > code[class*=language-] {
@@ -1267,6 +1286,7 @@ footer small {
   font-weight: normal;
 }
 
+figcaption,
 .nav ul,
 .theme-dark blockquote dt,
 .theme-dark .publication-list__item__title,
@@ -1280,6 +1300,7 @@ footer small {
 [id=resources] ~ ul li,
 [id=demo] ~ ul li,
 .note,
+.note i,
 footer small a {
   font-family: brandosans-regular-v100, AvenirNext-Regular, Corbel, "Lucida Grande", "Trebuchet Ms", "Segoe Ui", "DejaVu Sans", sans-serif;
   font-weight: normal;

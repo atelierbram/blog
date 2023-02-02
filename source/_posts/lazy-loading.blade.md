@@ -34,8 +34,8 @@ We will need an `addLoadEvent` function:
 
 <pre><code class="language-javascript">
 /*
- * http://blog.simonwillison.net/post/57956760515/addloadevent
- * http://www.sitepoint.com/closures-and-executing-javascript-on-page-load/
+ * //blog.simonwillison.net/post/57956760515/addloadevent
+ * //www.sitepoint.com/closures-and-executing-javascript-on-page-load/
  */
 function addLoadEvent(func) {
   var oldonload = window.onload;
@@ -80,15 +80,15 @@ Note the inline style-tag on the `text` attribute, with values for basic typogra
 
 #### Demo
 
-- [here on Github](https://atelierbram.github.io/lazy-loading-logos/)
-- [on Codepen](http://codepen.io/atelierbram/pen/YNoNZw)
+- [here on Github](//atelierbram.github.io/lazy-loading-logos/)
+- [on Codepen](//codepen.io/atelierbram/pen/YNoNZw)
 
 #### Resources
 
-- [addLoadEvent](http://blog.simonwillison.net/post/57956760515/addloadevent)
-- [closures-and-executing-javascript-on-page-load](http://www.sitepoint.com/closures-and-executing-javascript-on-page-load/)
-- [Probaly Don’t Base64 SVG](https://css-tricks.com/probably-dont-base64-svg/)
-- [Optimizing SVGs in data URIs](https://codepen.io/tigt/post/optimizing-svgs-in-data-uris)
-- [Create a 1px url encoded PNG](http://png-pixel.com/)
+- [addLoadEvent](//blog.simonwillison.net/post/57956760515/addloadevent)
+- [closures-and-executing-javascript-on-page-load](//www.sitepoint.com/closures-and-executing-javascript-on-page-load/)
+- [Probaly Don’t Base64 SVG](//css-tricks.com/probably-dont-base64-svg/)
+- [Optimizing SVGs in data URIs](//codepen.io/tigt/post/optimizing-svgs-in-data-uris)
+- [Create a 1px url encoded PNG](//png-pixel.com/)
 
-<span class="note">This article was also published on [Codepen](http://codepen.io/atelierbram/post/lazy-loading)</span>
+<span class="note">This article was also published on [Codepen](//codepen.io/atelierbram/post/lazy-loading)</span>

@@ -52,17 +52,17 @@
         <h2 id="h-template-sculpin-netlify" class="title-post">Template for Sculpin and Netlify</h2>
 
           <article class="content page" id="page">
-    <p>On the look out for available templates on the interwebs for deployment of a static site on Netlify build with Sculpin and Grunt I stumbled on some intriguing templates but none with that exact combination. There are templates available for different static site builders and build tools on <a href='https://github.com/netlify-templates'>Netlify’s dedicated repository of templates</a>, like a lot with Hugo, typically integrated in a Gulp workflow.</p>
+    <p>On the look out for available templates on the interwebs for deployment of a static site on Netlify build with Sculpin and Grunt I stumbled on some intriguing templates but none with that exact combination. There are templates available for different static site builders and build tools on <a href='//github.com/netlify-templates'>Netlify’s dedicated repository of templates</a>, like a lot with Hugo, typically integrated in a Gulp workflow.</p>
 
 <p class="publication-list__item__meta"><time datetime="2017-08-10">August 2017</time></p>
 
-<p>One template, the <a href="https://github.com/netlify-templates/kaldi-hugo-cms-template">Kaldi Hugo Template</a> which itself is based on the <a href="https://github.com/netlify/victor-hugo">Victor Hugo</a> template has Netlify <span class="small-caps">CMS</span> as an npm dependency. This allows for a local installment of the <span class="small-caps">CMS</span>, which is funny but can also be a bit confusing, and in my experience unnecessary. <sup><a href="#note-1" class="sup-link" id="supLink1"> 1 </a></sup></p>
+<p>One template, the <a href="//github.com/netlify-templates/kaldi-hugo-cms-template">Kaldi Hugo Template</a> which itself is based on the <a href="//github.com/netlify/victor-hugo">Victor Hugo</a> template has Netlify <span class="small-caps">CMS</span> as an npm dependency. This allows for a local installment of the <span class="small-caps">CMS</span>, which is funny but can also be a bit confusing, and in my experience unnecessary. <sup><a href="#note-1" class="sup-link" id="supLink1"> 1 </a></sup></p>
 
 <p>Hugo is a static site builder rapidly growing in popularity with very fast performance due to the Go rendering engine. But the Go language is also making it difficult to debug for someone new to the language. And we all make typos and syntax errors so this can be an issue. I just had to make my own template with Sculpin –  which I love –  but where to start?</p>
 
 <h3>Static Site build with Sculpin</h3>
 
-<p>I thought about it for a while and in the end it made more sense to me combining the Kaldi Hugo Template with the skeleton template for Sculpin, rather than to start from scratch. Sculpin works out of the box when following the instruction from the <a href="https://sculpin.io/getstarted/">quick start guide</a>. Sculpin comes with all you need for a website, complete with pagination, blogposts with categories and tags, which in itself is already impressive. It is also a reliable tool, making it a joy to work with. It is written in <span class="small-caps">PHP</span> and uses Twig templates that can give feedback in the terminal on syntax errors, which can be quite helpful from time to time. The syntax for the Twig template tags doesn’t differ <em>that much</em> from any other templating language, it can be inside markdown files with Yaml front matter for metadata on top, so converting the templates from the Kaldi <em>Hugo</em> template to the new <a href="https://github.com/atelierbram/kaldi-sculpin-netlify-template">Kaldi <em>Sculpin</em> template</a> was really quite straight forward.</p>
+<p>I thought about it for a while and in the end it made more sense to me combining the Kaldi Hugo Template with the skeleton template for Sculpin, rather than to start from scratch. Sculpin works out of the box when following the instruction from the <a href="//sculpin.io/getstarted/">quick start guide</a>. Sculpin comes with all you need for a website, complete with pagination, blogposts with categories and tags, which in itself is already impressive. It is also a reliable tool, making it a joy to work with. It is written in <span class="small-caps">PHP</span> and uses Twig templates that can give feedback in the terminal on syntax errors, which can be quite helpful from time to time. The syntax for the Twig template tags doesn’t differ <em>that much</em> from any other templating language, it can be inside markdown files with Yaml front matter for metadata on top, so converting the templates from the Kaldi <em>Hugo</em> template to the new <a href="//github.com/atelierbram/kaldi-sculpin-netlify-template">Kaldi <em>Sculpin</em> template</a> was really quite straight forward.</p>
 
 <h3>Grunt workflow</h3>
 
@@ -80,9 +80,9 @@
   <p>There is smartness all around but it’s simplicity that lacks too often in webdevelopment, but that’s the way I like it!</p>
 </blockquote>
 
-<p>As far as I can see the easiest way to get started with Sculpin deployed with Netlify <a href="#time">at the time of writing</a> is to download this <a href="https://github.com/atelierbram/kaldi-sculpin-netlify-template">Kaldi Sculpin Netlify Template</a> and make it your own. You can see a preview how it looks <a href="http://kaldi-sculpin-template.netlify.com/">over here on Netlify</a>.</p>
+<p>As far as I can see the easiest way to get started with Sculpin deployed with Netlify <a href="#time">at the time of writing</a> is to download this <a href="//github.com/atelierbram/kaldi-sculpin-netlify-template">Kaldi Sculpin Netlify Template</a> and make it your own. You can see a preview how it looks <a href="//kaldi-sculpin-template.netlify.com/">over here on Netlify</a>.</p>
 
-<p>If you follow the instructions in the <a href="https://github.com/atelierbram/kaldi-sculpin-netlify-template#README.md">readme</a>, edit the <code>package.json</code> and config files to reflect the name of your own new repo and so on, one should be able to kickstart a Sculpin project with Netlify <span class="small-caps">CMS</span> in considerable less time than it took me initially.</p>
+<p>If you follow the instructions in the <a href="//github.com/atelierbram/kaldi-sculpin-netlify-template#README.md">readme</a>, edit the <code>package.json</code> and config files to reflect the name of your own new repo and so on, one should be able to kickstart a Sculpin project with Netlify <span class="small-caps">CMS</span> in considerable less time than it took me initially.</p>
 
 <h4>NOTES</h4>
 
@@ -93,15 +93,15 @@
 <h4>RESOURCES</h4>
 
 <ul>
-<li><a href="https://github.com/netlify-templates/kaldi-hugo-cms-template">Kaldi Hugo CMS Template</a></li>
-<li><a href="https://github.com/sculpin/sculpin-blog-skeleton">Sculpin’s Blog Skeleton</a></li>
-<li><a href="https://www.netlify.com/tags/tutorial/">Tutorials on Netlify</a></li>
-<li><a href="https://github.com/netlify/netlify-cms/blob/master/docs/test-drive.md">Authenticate with GitHub</a></li>
-<li><a href="https://sculpin.io/">Sculpin</a></li>
-<li><a href="https://sculpin.io/getstarted/">Sculpin’s quick start guide</a></li>
+<li><a href="//github.com/netlify-templates/kaldi-hugo-cms-template">Kaldi Hugo CMS Template</a></li>
+<li><a href="//github.com/sculpin/sculpin-blog-skeleton">Sculpin’s Blog Skeleton</a></li>
+<li><a href="//www.netlify.com/tags/tutorial/">Tutorials on Netlify</a></li>
+<li><a href="//github.com/netlify/netlify-cms/blob/master/docs/test-drive.md">Authenticate with GitHub</a></li>
+<li><a href="//sculpin.io/">Sculpin</a></li>
+<li><a href="//sculpin.io/getstarted/">Sculpin’s quick start guide</a></li>
 </ul>
 
-<p><span class="note">This article was also published on <a href="https://codepen.io/atelierbram/post/template-sculpin-netlify">Codepen</a></span></p>
+<p><span class="note">This article was also published on <a href="//codepen.io/atelierbram/post/template-sculpin-netlify">Codepen</a></span></p>
 
     <nav class="prevnext">
               <h5 class="prevnext_right"><a href="https://atelierbram.github.io/blog/create-custom-unicase-webfont" rel="next">Create Custom Unicase Webfont<i class="icon icon-8 icon-arrow-right"><svg class="shape-icon" viewBox="0 0 8 12" width="10" height="15"><use xlink:href="#shape-arrow-point-right"></use></svg></i></a></h5>

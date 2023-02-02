@@ -61,6 +61,7 @@ footer small {
   font-weight: normal;
 }
 
+figcaption,
 .nav ul,
 .theme-dark blockquote dt,
 .theme-dark .publication-list__item__title,
@@ -75,6 +76,7 @@ footer small {
 [id="resources"] ~ ul li,
 [id="demo"] ~ ul li,
 .note,
+.note i,
 footer small a {
   font-family: $wf-sans-regular;
   font-weight: normal;

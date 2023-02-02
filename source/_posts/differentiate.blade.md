@@ -19,7 +19,7 @@ Let’s say one is writing a tutorial with code-examples showing code-snippets f
 
 <p class="publication-list__item__meta"><time datetime="{!! $page->date_machine !!}">{{ $page->date_human }}</time></p>
 
-Screenshots can work well when done right, even when displaying text; like code-snippets. Adept them, have arrows with additional explaining text next to it. Craft them well and you can get [something like this](https://jakearchibald.com/2015/anatomy-of-responsive-images/) which gets it’s point across in an hands-on manner: considering this complicated matter.
+Screenshots can work well when done right, even when displaying text; like code-snippets. Adept them, have arrows with additional explaining text next to it. Craft them well and you can get [something like this](//jakearchibald.com/2015/anatomy-of-responsive-images/) which gets it’s point across in an hands-on manner: considering this complicated matter.
 
 ### Combining a colorscheme’s dark– and light version
 But _even when_ working with screenshots of code-snippets, one can mix it up with plain text in `pre`-tags. To keep consistency in design, one would want those themes to be related in color, or better use _the same_ colors of a colorscheme in a dark and light version (_dark being in a way “inverted”_), have the commandline code-snippets be informed by the _dark_ version of the colorscheme and, visa versa, the javascript examples colors informed by the _light_ version. You may go about it like this:
@@ -29,7 +29,7 @@ But _even when_ working with screenshots of code-snippets, one can mix it up wit
 $ npm install gulp gulp-sass --save-dev
 </code></pre>
 
-<span class="text">This line tells [npm](http://npmjs.com) to install both `gulp` and `gulp-sass` packages as development dependencies. You can now find them in the `devDependencies` object of your `package.json`. And the `Gulpfile.js`:</span>
+<span class="text">This line tells [npm](//npmjs.com) to install both `gulp` and `gulp-sass` packages as development dependencies. You can now find them in the `devDependencies` object of your `package.json`. And the `Gulpfile.js`:</span>
 
 <pre><code class="language-javascript">
 var gulp = require('gulp');
@@ -37,9 +37,9 @@ var sass = require('gulp-sass');
 </code></pre>
 </div>
 
-This is not difficult to achieve with [Prism syntax-hightlighter](http://prismjs.com) combined with Sass-variables for colors.
+This is not difficult to achieve with [Prism syntax-hightlighter](//prismjs.com) combined with Sass-variables for colors.
 
-Check out [this demo at Codepen](http://codepen.io/atelierbram/pen/ZbYrRJ) to see how the `<pre class="language-bash">` is targeted in the `CSS` You can see how this works out in [a different example here](http://atelierbram.github.io/Starter-Assemble-Gulp/).
+Check out [this demo at Codepen](//codepen.io/atelierbram/pen/ZbYrRJ) to see how the `<pre class="language-bash">` is targeted in the `CSS` You can see how this works out in [a different example here](//atelierbram.github.io/Starter-Assemble-Gulp/).
 
-<span class="note">This article was also published on [Codepen](http://codepen.io/atelierbram/post/differentiate/)</span>
+<span class="note">This article was also published on [Codepen](//codepen.io/atelierbram/post/differentiate/)</span>
 

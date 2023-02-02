@@ -79,19 +79,24 @@ code.language-bash::selection, code.language-bash ::selection {
 
 // Code blocks */
 pre[class*="language-"] {
-  padding: 1.5em;
+  padding: 1.5em 1.5em 3em;
   margin: 3em 0;
   overflow: auto;
   max-width: 49em;
 }
-// dark theme overrides
-pre.language-bash {
-  @include mq($from: tablet) {
-    margin-left: 1em;
-    margin-right: 1em;
-    max-width: 43em;
-  }
+
+h3 + pre[class*="language-"],
+h4 + pre[class*="language-"] {
+  margin-top: 1em;
 }
+// dark theme overrides
+// pre.language-bash {
+//   @include mq($from: tablet) {
+//     margin-left: 1em;
+//     margin-right: 1em;
+//     max-width: 43em;
+//   }
+// }
 // Inline code */
 :not(pre) > code[class*="language-"] {
   padding: .1em;

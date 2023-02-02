@@ -3,7 +3,7 @@
     <title>Atelierbram Blog</title>
     <link href="https://atelierbram.github.io/blog/blog" />
     <link type="application/atom+xml" rel="self" href="https://atelierbram.github.io/blog/feed/feed.atom" />
-    <updated>2023-02-02T12:53:30+00:00</updated>
+    <updated>2023-02-02T21:06:04+00:00</updated>
     <id>https://atelierbram.github.io/blog/feed/feed.atom</id>
     <author>
         <name></name>
@@ -19,17 +19,17 @@
     </author>
     <summary type="html">On the look out for available templates on the interwebs for deployment of a static site on Netlify build with Sculpin and Grunt I stumbled on some intriguing templates but none with that exact combination. There are templates available for different......</summary>
     <content type="html"><![CDATA[
-        <p>On the look out for available templates on the interwebs for deployment of a static site on Netlify build with Sculpin and Grunt I stumbled on some intriguing templates but none with that exact combination. There are templates available for different static site builders and build tools on <a href='https://github.com/netlify-templates'>Netlify’s dedicated repository of templates</a>, like a lot with Hugo, typically integrated in a Gulp workflow.</p>
+        <p>On the look out for available templates on the interwebs for deployment of a static site on Netlify build with Sculpin and Grunt I stumbled on some intriguing templates but none with that exact combination. There are templates available for different static site builders and build tools on <a href='//github.com/netlify-templates'>Netlify’s dedicated repository of templates</a>, like a lot with Hugo, typically integrated in a Gulp workflow.</p>
 
 <p class="publication-list__item__meta"><time datetime=""></time></p>
 
-<p>One template, the <a href="https://github.com/netlify-templates/kaldi-hugo-cms-template">Kaldi Hugo Template</a> which itself is based on the <a href="https://github.com/netlify/victor-hugo">Victor Hugo</a> template has Netlify <span class="small-caps">CMS</span> as an npm dependency. This allows for a local installment of the <span class="small-caps">CMS</span>, which is funny but can also be a bit confusing, and in my experience unnecessary. <sup><a href="#note-1" class="sup-link" id="supLink1"> 1 </a></sup></p>
+<p>One template, the <a href="//github.com/netlify-templates/kaldi-hugo-cms-template">Kaldi Hugo Template</a> which itself is based on the <a href="//github.com/netlify/victor-hugo">Victor Hugo</a> template has Netlify <span class="small-caps">CMS</span> as an npm dependency. This allows for a local installment of the <span class="small-caps">CMS</span>, which is funny but can also be a bit confusing, and in my experience unnecessary. <sup><a href="#note-1" class="sup-link" id="supLink1"> 1 </a></sup></p>
 
 <p>Hugo is a static site builder rapidly growing in popularity with very fast performance due to the Go rendering engine. But the Go language is also making it difficult to debug for someone new to the language. And we all make typos and syntax errors so this can be an issue. I just had to make my own template with Sculpin –  which I love –  but where to start?</p>
 
 <h3>Static Site build with Sculpin</h3>
 
-<p>I thought about it for a while and in the end it made more sense to me combining the Kaldi Hugo Template with the skeleton template for Sculpin, rather than to start from scratch. Sculpin works out of the box when following the instruction from the <a href="https://sculpin.io/getstarted/">quick start guide</a>. Sculpin comes with all you need for a website, complete with pagination, blogposts with categories and tags, which in itself is already impressive. It is also a reliable tool, making it a joy to work with. It is written in <span class="small-caps">PHP</span> and uses Twig templates that can give feedback in the terminal on syntax errors, which can be quite helpful from time to time. The syntax for the Twig template tags doesn’t differ <em>that much</em> from any other templating language, it can be inside markdown files with Yaml front matter for metadata on top, so converting the templates from the Kaldi <em>Hugo</em> template to the new <a href="https://github.com/atelierbram/kaldi-sculpin-netlify-template">Kaldi <em>Sculpin</em> template</a> was really quite straight forward.</p>
+<p>I thought about it for a while and in the end it made more sense to me combining the Kaldi Hugo Template with the skeleton template for Sculpin, rather than to start from scratch. Sculpin works out of the box when following the instruction from the <a href="//sculpin.io/getstarted/">quick start guide</a>. Sculpin comes with all you need for a website, complete with pagination, blogposts with categories and tags, which in itself is already impressive. It is also a reliable tool, making it a joy to work with. It is written in <span class="small-caps">PHP</span> and uses Twig templates that can give feedback in the terminal on syntax errors, which can be quite helpful from time to time. The syntax for the Twig template tags doesn’t differ <em>that much</em> from any other templating language, it can be inside markdown files with Yaml front matter for metadata on top, so converting the templates from the Kaldi <em>Hugo</em> template to the new <a href="//github.com/atelierbram/kaldi-sculpin-netlify-template">Kaldi <em>Sculpin</em> template</a> was really quite straight forward.</p>
 
 <h3>Grunt workflow</h3>
 
@@ -47,9 +47,9 @@
   <p>There is smartness all around but it’s simplicity that lacks too often in webdevelopment, but that’s the way I like it!</p>
 </blockquote>
 
-<p>As far as I can see the easiest way to get started with Sculpin deployed with Netlify <a href="#time">at the time of writing</a> is to download this <a href="https://github.com/atelierbram/kaldi-sculpin-netlify-template">Kaldi Sculpin Netlify Template</a> and make it your own. You can see a preview how it looks <a href="http://kaldi-sculpin-template.netlify.com/">over here on Netlify</a>.</p>
+<p>As far as I can see the easiest way to get started with Sculpin deployed with Netlify <a href="#time">at the time of writing</a> is to download this <a href="//github.com/atelierbram/kaldi-sculpin-netlify-template">Kaldi Sculpin Netlify Template</a> and make it your own. You can see a preview how it looks <a href="//kaldi-sculpin-template.netlify.com/">over here on Netlify</a>.</p>
 
-<p>If you follow the instructions in the <a href="https://github.com/atelierbram/kaldi-sculpin-netlify-template#README.md">readme</a>, edit the <code>package.json</code> and config files to reflect the name of your own new repo and so on, one should be able to kickstart a Sculpin project with Netlify <span class="small-caps">CMS</span> in considerable less time than it took me initially.</p>
+<p>If you follow the instructions in the <a href="//github.com/atelierbram/kaldi-sculpin-netlify-template#README.md">readme</a>, edit the <code>package.json</code> and config files to reflect the name of your own new repo and so on, one should be able to kickstart a Sculpin project with Netlify <span class="small-caps">CMS</span> in considerable less time than it took me initially.</p>
 
 <h4>NOTES</h4>
 
@@ -60,15 +60,15 @@
 <h4>RESOURCES</h4>
 
 <ul>
-<li><a href="https://github.com/netlify-templates/kaldi-hugo-cms-template">Kaldi Hugo CMS Template</a></li>
-<li><a href="https://github.com/sculpin/sculpin-blog-skeleton">Sculpin’s Blog Skeleton</a></li>
-<li><a href="https://www.netlify.com/tags/tutorial/">Tutorials on Netlify</a></li>
-<li><a href="https://github.com/netlify/netlify-cms/blob/master/docs/test-drive.md">Authenticate with GitHub</a></li>
-<li><a href="https://sculpin.io/">Sculpin</a></li>
-<li><a href="https://sculpin.io/getstarted/">Sculpin’s quick start guide</a></li>
+<li><a href="//github.com/netlify-templates/kaldi-hugo-cms-template">Kaldi Hugo CMS Template</a></li>
+<li><a href="//github.com/sculpin/sculpin-blog-skeleton">Sculpin’s Blog Skeleton</a></li>
+<li><a href="//www.netlify.com/tags/tutorial/">Tutorials on Netlify</a></li>
+<li><a href="//github.com/netlify/netlify-cms/blob/master/docs/test-drive.md">Authenticate with GitHub</a></li>
+<li><a href="//sculpin.io/">Sculpin</a></li>
+<li><a href="//sculpin.io/getstarted/">Sculpin’s quick start guide</a></li>
 </ul>
 
-<p><span class="note">This article was also published on <a href="https://codepen.io/atelierbram/post/template-sculpin-netlify">Codepen</a></span></p>
+<p><span class="note">This article was also published on <a href="//codepen.io/atelierbram/post/template-sculpin-netlify">Codepen</a></span></p>
     ]]></content>
 </entry>
       <entry>
@@ -96,7 +96,7 @@
 
 <blockquote><dl class="quote"><dt>small-caps</dt><dd>This keyword forces the use of small capitals letters for lower case characters. It corresponds to the OpenType value <code>smcp</code>; if the font doesn't support them, it synthesizes the glyphs.</dd></dl></blockquote>
 
-<p class="clear"><span class="note">Note that following instructions on sub-setting webfonts are an <i>additional option</i>, not required at all to create these small-caps: one can try using just system fonts as well with `font-variant-caps: small-caps` applied.</span></p>
+<p class="clear"><span class="note">Note that following instructions on sub-setting webfonts are an <i>additional option</i>, not required at all to create these small-caps: one can try using just system fonts as well with <code>font-variant-caps: small-caps</code> applied.</span></p>
 
 <p>It is possible to generate your own light-weight unicase webfont with the <span class="small-caps">CSS</span> property-value pair <code>font-variant-caps: small-caps</code>, combined with the sub-setting technique when generating a web-font.</p>
 
@@ -149,9 +149,9 @@ Ninety &lt;span class="small-caps"&gt;JPG&lt;/span&gt; files on &lt;span class="
 
 <p><span class="small-caps">HTML</span>, <span class="small-caps">CSS</span> and javaScript.</p>
 
-<p data-height="300" data-theme-id="71" data-slug-hash="RVwmpd" data-default-tab="css,result" data-user="atelierbram" data-embed-version="2" data-pen-title="RVwmpd" class="codepen">See the Pen <a href="http://codepen.io/atelierbram/pen/RVwmpd/">RVwmpd</a> by Bram de Haan (<a href="http://codepen.io/atelierbram">@atelierbram</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<p data-height="300" data-theme-id="71" data-slug-hash="RVwmpd" data-default-tab="css,result" data-user="atelierbram" data-embed-version="2" data-pen-title="RVwmpd" class="codepen">See the Pen <a href="//codepen.io/atelierbram/pen/RVwmpd/">RVwmpd</a> by Bram de Haan (<a href="//codepen.io/atelierbram">@atelierbram</a>) on <a href="//codepen.io">CodePen</a>.</p>
 
-<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+<script async src="//production-assets.codepen.io/assets/embed/ei.js"></script>
 
 <h4>Notes</h4>
 
@@ -163,16 +163,16 @@ Ninety &lt;span class="small-caps"&gt;JPG&lt;/span&gt; files on &lt;span class="
 <h4>Resources</h4>
 
 <ul>
-<li><a href="https://css-tricks.com/almanac/properties/f/font-variant/">font-variant on CSS-Tricks Almanac</a></li>
-<li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-variant-caps">font-variant-caps on MDN</a></li>
-<li><a href="https://drafts.csswg.org/css-fonts-3/#propdef-font-variant-caps">the specs on font-variant-caps</a></li>
-<li><a href="https://drafts.csswg.org/css-fonts-3/#propdef-font-variant">the specs on font-variant</a></li>
-<li><a href="http://ilovetypography.com/2008/02/20/small-caps/">I Love Typograhpy on small caps</a></li>
-<li><a href="http://practicaltypography.com/small-caps.html">Practical Typograhpy on small caps</a></li>
-<li><a href="http://fontfeed.com/archives/erik-spiekermanns-typo-tips/">Erik Spiekermann’s Typo Tips</a></li>
+<li><a href="//css-tricks.com/almanac/properties/f/font-variant/">font-variant on CSS-Tricks Almanac</a></li>
+<li><a href="//developer.mozilla.org/en-US/docs/Web/CSS/font-variant-caps">font-variant-caps on MDN</a></li>
+<li><a href="//drafts.csswg.org/css-fonts-3/#propdef-font-variant-caps">the specs on font-variant-caps</a></li>
+<li><a href="//drafts.csswg.org/css-fonts-3/#propdef-font-variant">the specs on font-variant</a></li>
+<li><a href="//ilovetypography.com/2008/02/20/small-caps/">I Love Typograhpy on small caps</a></li>
+<li><a href="//practicaltypography.com/small-caps.html">Practical Typograhpy on small caps</a></li>
+<li><a href="//fontfeed.com/archives/erik-spiekermanns-typo-tips/">Erik Spiekermann’s Typo Tips</a></li>
 </ul>
 
-<p class="clear"><span class="note">This article was also published on <a href="http://codepen.io/atelierbram/post/create-custom-unicase-webfont">Codepen</a></span></p>
+<p class="clear"><span class="note">This article was also published on <a href="//codepen.io/atelierbram/post/create-custom-unicase-webfont">Codepen</a></span></p>
     ]]></content>
 </entry>
       <entry>
@@ -205,8 +205,8 @@ Ninety &lt;span class="small-caps"&gt;JPG&lt;/span&gt; files on &lt;span class="
 
 <pre><code class="language-javascript">
 /*
- * http://blog.simonwillison.net/post/57956760515/addloadevent
- * http://www.sitepoint.com/closures-and-executing-javascript-on-page-load/
+ * //blog.simonwillison.net/post/57956760515/addloadevent
+ * //www.sitepoint.com/closures-and-executing-javascript-on-page-load/
  */
 function addLoadEvent(func) {
   var oldonload = window.onload;
@@ -252,21 +252,21 @@ addLoadEvent(loadImg);
 <h4>Demo</h4>
 
 <ul>
-<li><a href="https://atelierbram.github.io/lazy-loading-logos/">here on Github</a></li>
-<li><a href="http://codepen.io/atelierbram/pen/YNoNZw">on Codepen</a></li>
+<li><a href="//atelierbram.github.io/lazy-loading-logos/">here on Github</a></li>
+<li><a href="//codepen.io/atelierbram/pen/YNoNZw">on Codepen</a></li>
 </ul>
 
 <h4>Resources</h4>
 
 <ul>
-<li><a href="http://blog.simonwillison.net/post/57956760515/addloadevent">addLoadEvent</a></li>
-<li><a href="http://www.sitepoint.com/closures-and-executing-javascript-on-page-load/">closures-and-executing-javascript-on-page-load</a></li>
-<li><a href="https://css-tricks.com/probably-dont-base64-svg/">Probaly Don’t Base64 SVG</a></li>
-<li><a href="https://codepen.io/tigt/post/optimizing-svgs-in-data-uris">Optimizing SVGs in data URIs</a></li>
-<li><a href="http://png-pixel.com/">Create a 1px url encoded PNG</a></li>
+<li><a href="//blog.simonwillison.net/post/57956760515/addloadevent">addLoadEvent</a></li>
+<li><a href="//www.sitepoint.com/closures-and-executing-javascript-on-page-load/">closures-and-executing-javascript-on-page-load</a></li>
+<li><a href="//css-tricks.com/probably-dont-base64-svg/">Probaly Don’t Base64 SVG</a></li>
+<li><a href="//codepen.io/tigt/post/optimizing-svgs-in-data-uris">Optimizing SVGs in data URIs</a></li>
+<li><a href="//png-pixel.com/">Create a 1px url encoded PNG</a></li>
 </ul>
 
-<p><span class="note">This article was also published on <a href="http://codepen.io/atelierbram/post/lazy-loading">Codepen</a></span></p>
+<p><span class="note">This article was also published on <a href="//codepen.io/atelierbram/post/lazy-loading">Codepen</a></span></p>
     ]]></content>
 </entry>
       <entry>
@@ -288,7 +288,7 @@ Now HEXA......</summary>
 
 <p class="publication-list__item__meta"><time datetime=""></time></p>
 
-<p>Now <span class="small-caps">HEXA</span> doesn’t have the most intuitive syntax, <span class="small-caps"><a href="https://css-tricks.com/yay-for-hsla/">HSLA</a></span> has, and the alpha transparency isn’t making live easier. But we have tools for this build right into the browser: you can check this out in Chrome Canary or in Firefox Nightly DevTools:</p>
+<p>Now <span class="small-caps">HEXA</span> doesn’t have the most intuitive syntax, <span class="small-caps"><a href="//css-tricks.com/yay-for-hsla/">HSLA</a></span> has, and the alpha transparency isn’t making live easier. But we have tools for this build right into the browser: you can check this out in Chrome Canary or in Firefox Nightly DevTools:</p>
 
 <div class="container-media container-media-square">
 <video width="512" controls autoplay>
@@ -300,7 +300,7 @@ Now HEXA......</summary>
 
 <h3>Use case in color templating</h3>
 
-<p>So what could use cases for <span class="small-caps">HEXA</span> be? Maybe easier color manipulation in javaScript for some, but also templating. Consider this code snippet in a template for Prism syntax-highlighting in <a href="https://github.com/base16-builder/base16-builder/">Base16 Builder</a>:</p>
+<p>So what could use cases for <span class="small-caps">HEXA</span> be? Maybe easier color manipulation in javaScript for some, but also templating. Consider this code snippet in a template for Prism syntax-highlighting in <a href="//github.com/base16-builder/base16-builder/">Base16 Builder</a>:</p>
 
 <pre><code class="language-css">
 .line-highlight {
@@ -320,20 +320,20 @@ Now HEXA......</summary>
 
 <p>Because Base16 schemes only allows color-values for variables to be defined in <span class="small-caps">HEX</span> notation <em>in schemes</em>, these color-variables can now be manipulated by adding 2 digits after the variables <em>in templates</em>, and by doing so give those colors alpha transparency (in browsers that support it).</p>
 
-<p>To see if your browser supports alpha transparency in 8 digits hex notation: <span style="font-size:2em;background-color:#263573f2;color:hsla(228, 50%, 30%, 0.5);display:inline-block;margin-top:.5em">Unfortunately your browser does not support alpha transparency in <span class="small-caps">HEX</span> yet</span><br><span style="color:#fff;color:#808080;display:inline-block;margin-top:1em;font-size:1.25em">Your browser supports alpha transparency in <span class="small-caps">HEX</span>!</span> <br>And/or checkout <a href="http://codepen.io/atelierbram/full/bZAGmW/">this demo</a>.</p>
+<p>To see if your browser supports alpha transparency in 8 digits hex notation: <span style="font-size:2em;background-color:#263573f2;color:hsla(228, 50%, 30%, 0.5);display:inline-block;margin-top:.5em">Unfortunately your browser does not support alpha transparency in <span class="small-caps">HEX</span> yet</span><br><span style="color:#fff;color:#808080;display:inline-block;margin-top:1em;font-size:1.25em">Your browser supports alpha transparency in <span class="small-caps">HEX</span>!</span> <br>And/or checkout <a href="//codepen.io/atelierbram/full/bZAGmW/">this demo</a>.</p>
 
 <h4>Resources</h4>
 
 <ul>
-<li><a href="https://drafts.csswg.org/css-color/#hex-notation">the spec</a></li>
-<li><a href="https://googlechrome.github.io/samples/css-alpha-channel/">demo on github by Google Chrome</a></li>
-<li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/color_value#rgba">on MDN</a></li>
-<li><a href="https://twitter.com/patrickbrosset/status/732859240147243008">in Firefox DevTools</a></li>
-<li><a href="http://thenewcode.com/1081/CSS-alpha#hexalpha">Alpha Transparency in CSS</a></li>
-<li><a href="http://thenewcode.com/1108/Using-Hexadecimal-Colors-in-CSS">Using Hexadecimal Colors in CSS</a></li>
+<li><a href="//drafts.csswg.org/css-color/#hex-notation">the spec</a></li>
+<li><a href="//googlechrome.github.io/samples/css-alpha-channel/">demo on github by Google Chrome</a></li>
+<li><a href="//developer.mozilla.org/en-US/docs/Web/CSS/color_value#rgba">on MDN</a></li>
+<li><a href="//twitter.com/patrickbrosset/status/732859240147243008">in Firefox DevTools</a></li>
+<li><a href="//thenewcode.com/1081/CSS-alpha#hexalpha">Alpha Transparency in CSS</a></li>
+<li><a href="//thenewcode.com/1108/Using-Hexadecimal-Colors-in-CSS">Using Hexadecimal Colors in CSS</a></li>
 </ul>
 
-<p><span class="note">This article was also published on <a href="http://codepen.io/atelierbram/post/alpha-transparency-in-hex">Codepen</a></span></p>
+<p><span class="note">This article was also published on <a href="//codepen.io/atelierbram/post/alpha-transparency-in-hex">Codepen</a></span></p>
     ]]></content>
 </entry>
       <entry>
@@ -361,7 +361,7 @@ Now HEXA......</summary>
   <p>Graphic designers are of a separate species; they have ink flowing through their veins</p>
 </blockquote>
 
-<p>In using the <code>currentColor</code> keyword in <span class="small-caps">CSS</span> combined with <code>opacity</code> for logos we can get monochrome images in just one color but keep the possibility to have gradations in tonality, like it is done <a href="http://logomono.com/">at Logomoon</a>. <code>Data-attributes</code><sup><a href="#note-1" class="sup-link" id="supLink1">1</a></sup> (for values of colors and opacity on <span class="small-caps">SVG</span> shapes) combined with javaScript can make switching between the monochrome-and full-color mode happen by the click of a button.</p>
+<p>In using the <code>currentColor</code> keyword in <span class="small-caps">CSS</span> combined with <code>opacity</code> for logos we can get monochrome images in just one color but keep the possibility to have gradations in tonality, like it is done <a href="//logomono.com/">at Logomoon</a>. <code>Data-attributes</code><sup><a href="#note-1" class="sup-link" id="supLink1">1</a></sup> (for values of colors and opacity on <span class="small-caps">SVG</span> shapes) combined with javaScript can make switching between the monochrome-and full-color mode happen by the click of a button.</p>
 
 <p>The flexibility of the <span class="small-caps">CSS</span> keyword <code>currentColor</code> can be used here to our advantage; <code>currentColor</code> picks up whatever value for color is set on – or is inherited by – the element in <span class="small-caps">CSS</span>, and behaves in that way like a variable. Whenever the color of the monochrome images needs to be changed, this can be done by editing just one value in the <span class="small-caps">CSS</span>.</p>
 
@@ -374,7 +374,7 @@ Now HEXA......</summary>
   points="107.644,470.877 74.633,100.62 437.367,100.62 404.321,470.819 255.778,512"/&gt;
 </code></pre>
 
-<p data-height="750" data-theme-id="71" data-slug-hash="xVXWWR" data-default-tab="result" data-user="atelierbram" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/atelierbram/pen/xVXWWR/">Monochrome SVG Logo Gallery</a> by Bram de Haan (<a href="http://codepen.io/atelierbram">@atelierbram</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<p data-height="750" data-theme-id="71" data-slug-hash="xVXWWR" data-default-tab="result" data-user="atelierbram" data-embed-version="2" class="codepen">See the Pen <a href="//codepen.io/atelierbram/pen/xVXWWR/">Monochrome SVG Logo Gallery</a> by Bram de Haan (<a href="//codepen.io/atelierbram">@atelierbram</a>) on <a href="//codepen.io">CodePen</a>.</p>
 
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
@@ -387,20 +387,20 @@ Now HEXA......</summary>
 <h4>Notes</h4>
 
 <ol>
-<li><span id="note-1">It seems <code>data-*</code> attributes on <span class="small-caps">SVG</span> elements are officially supported <a href="https://github.com/w3c/svgwg/commit/1cb4ee9e165b3d777d33828da8fa757e67d019ff">in the current draft of <span class="small-caps">SVG2</span></a>. The current spec allows the xml methods of custom name-spaces, but these are <a href="https://www.youtube.com/watch?v=1ZxN9iQM7OY">hard to handle</a> and a pain to use for targeting elements with javaScript. As far as I know all major browsers tolerate data-attributes in <span class="small-caps">SVG</span>.</span></li>
+<li><span id="note-1">It seems <code>data-*</code> attributes on <span class="small-caps">SVG</span> elements are officially supported <a href="//github.com/w3c/svgwg/commit/1cb4ee9e165b3d777d33828da8fa757e67d019ff">in the current draft of <span class="small-caps">SVG2</span></a>. The current spec allows the xml methods of custom name-spaces, but these are <a href="//www.youtube.com/watch?v=1ZxN9iQM7OY">hard to handle</a> and a pain to use for targeting elements with javaScript. As far as I know all major browsers tolerate data-attributes in <span class="small-caps">SVG</span>.</span></li>
 </ol>
 
 <h4>Resources</h4>
 
 <ul>
-<li><a href="http://logomono.com/">Logomono</a></li>
-<li><a href="http://docs.webplatform.org/wiki/svg/tutorials/smarter_svg_filters">Smarter SVG filters</a></li>
-<li><a href="https://css-tricks.com/currentcolor/">currentColor on CSS-tricks</a></li>
-<li><a href="http://osvaldas.info/keeping-css-short-with-currentcolor">Keeping CSS short with currentColor</a></li>
-<li><a href="http://blogs.adobe.com/dreamweaver/2015/02/extending-the-color-cascade-with-the-css-currentcolor-variable.html">Extending the Color Cascade</a></li>
+<li><a href="//logomono.com/">Logomono</a></li>
+<li><a href="//docs.webplatform.org/wiki/svg/tutorials/smarter_svg_filters">Smarter SVG filters</a></li>
+<li><a href="//css-tricks.com/currentcolor/">currentColor on CSS-tricks</a></li>
+<li><a href="//osvaldas.info/keeping-css-short-with-currentcolor">Keeping CSS short with currentColor</a></li>
+<li><a href="//blogs.adobe.com/dreamweaver/2015/02/extending-the-color-cascade-with-the-css-currentcolor-variable.html">Extending the Color Cascade</a></li>
 </ul>
 
-<p><span class="note">This article was also published on <a href="http://codepen.io/atelierbram/post/switching-color-modes">Codepen</a></span></p>
+<p><span class="note">This article was also published on <a href="//codepen.io/atelierbram/post/switching-color-modes">Codepen</a></span></p>
     ]]></content>
 </entry>
       <entry>
@@ -436,7 +436,7 @@ alias zsubl='cd  /Users/bram/Library/Application\ Support/Sublime\ Text\ 2/Packa
 
 <p>First of all, having a visual reference for the colorscheme you are working on at hand is indispensable. Something which works really well in my experience is <a href="//codepen.io/atelierbram/pen/JnbIt">these kind of colorscheme labs</a>, which basically are just simple webpages containing colorscheme color-tiles (<em>using sixteen Sass variables for colors</em>), and some syntax-highlighted code-samples. In order to make editing the colors less cumbersome, it helps to tweak the values for hue, saturation and lightness in the <span class="small-caps">HSL</span> format. Ones one is happy with the overall balance in the colorvalues, it's not that difficult to convert them to hex-values, (<em>either from DevTools or some other trustworthy colortool,</em>) and then manually copy those hex-values over to Base16-schemes.</p>
 
-<p><em>Base16?</em> A helpful tool <a href="//tmtheme-editor.herokuapp.com/">can be this webapp on Heroku</a>, but this will only get you so far. My workflow for editing the <code>tmTheme</code> colorscheme for Sublime continues with editing template files that come with <a href="//github.com/base16-builder/base16-builder/">Base16-builder</a>, of which I host several versions for <a href="https://github.com/atelierbram/base2tone/tree/master/db/templates">Base2Tone</a> and other variations as well. After running the <code>base16</code> command in the folder with the <code>base16</code> executable bash-file, a whole lot of syntax-highlighting themes are generated from the commandline in the <code>output</code>-folder, as many as there are template files. Next copy those files over from the <code>output</code> folder (from the commandline) to the Packages/Color Scheme - folder. (<em>Also not to forget removing the <code>*.cache</code> files in that same folder</em>).</p>
+<p><em>Base16?</em> A helpful tool <a href="//tmtheme-editor.herokuapp.com/">can be this webapp on Heroku</a>, but this will only get you so far. My workflow for editing the <code>tmTheme</code> colorscheme for Sublime continues with editing template files that come with <a href="//github.com/base16-builder/base16-builder/">Base16-builder</a>, of which I host several versions for <a href="//github.com/atelierbram/base2tone/tree/master/db/templates">Base2Tone</a> and other variations as well. After running the <code>base16</code> command in the folder with the <code>base16</code> executable bash-file, a whole lot of syntax-highlighting themes are generated from the commandline in the <code>output</code>-folder, as many as there are template files. Next copy those files over from the <code>output</code> folder (from the commandline) to the Packages/Color Scheme - folder. (<em>Also not to forget removing the <code>*.cache</code> files in that same folder</em>).</p>
 
 <h3>Helpful Hints</h3>
 
@@ -459,8 +459,8 @@ alias zsubl='cd  /Users/bram/Library/Application\ Support/Sublime\ Text\ 2/Packa
 
 <h3>Screenshots</h3>
 
-<p><img src="//atelierbram.github.io/syntax-highlighting/assets/img/duotones-dark_sublime_960x640.png" alt="screenshot of javaScript file syntax-highlighted with DuoTone Dark colorscheme" />
-Screenshot of javaScript file, syntax-highlighted with DuoTone Dark colorscheme.</p>
+<figure><img src="//atelierbram.github.io/syntax-highlighting/assets/img/duotones-dark_sublime_960x640.png" alt="screenshot of javaScript file syntax-highlighted with DuoTone Dark colorscheme" width="960" height="640" />
+<figcaption>Screenshot of javaScript file, syntax-highlighted with DuoTone Dark colorscheme.</figcaption></figure>
 
 <ul>
 <li><a href="//atelierbram.github.io/syntax-highlighting/assets/img/duotones-darkSea_sublime_960x640.png">darkSea</a></li>
@@ -483,9 +483,9 @@ Screenshot of javaScript file, syntax-highlighted with DuoTone Dark colorscheme.
 
 <ul>
 <li><a href="//www.sublimetext.com/docs/commands">commands for Sublime</a></li>
-<li><a href="https://www.sublimetext.com/docs/3/settings.html">info on setting for Sublime</a></li>
+<li><a href="//www.sublimetext.com/docs/3/settings.html">info on setting for Sublime</a></li>
 <li><a href="//simurai.com/projects/2016/01/01/duotone-themes/">Original DuoTone Themes for Atom on simurai.com</a></li>
-<li><a href="https://github.com/atelierbram/duotones-sublime-colorschemes">DuoTones Sublime Colorschemes on Github</a></li>
+<li><a href="//github.com/atelierbram/duotones-sublime-colorschemes">DuoTones Sublime Colorschemes on Github</a></li>
 </ul>
 
 <p><span class="note">This article was also published on <a href="//codepen.io/atelierbram/post/colorschemes-sublime/">Codepen</a></span></p>
@@ -506,7 +506,7 @@ Screenshot of javaScript file, syntax-highlighted with DuoTone Dark colorscheme.
 
 <p class="publication-list__item__meta"><time datetime=""></time></p>
 
-<p>Screenshots can work well when done right, even when displaying text; like code-snippets. Adept them, have arrows with additional explaining text next to it. Craft them well and you can get <a href="https://jakearchibald.com/2015/anatomy-of-responsive-images/">something like this</a> which gets it’s point across in an hands-on manner: considering this complicated matter.</p>
+<p>Screenshots can work well when done right, even when displaying text; like code-snippets. Adept them, have arrows with additional explaining text next to it. Craft them well and you can get <a href="//jakearchibald.com/2015/anatomy-of-responsive-images/">something like this</a> which gets it’s point across in an hands-on manner: considering this complicated matter.</p>
 
 <h3>Combining a colorscheme’s dark– and light version</h3>
 
@@ -517,7 +517,7 @@ Screenshot of javaScript file, syntax-highlighted with DuoTone Dark colorscheme.
 $ npm install gulp gulp-sass --save-dev
 </code></pre>
 
-<span class="text">This line tells [npm](http://npmjs.com) to install both `gulp` and `gulp-sass` packages as development dependencies. You can now find them in the `devDependencies` object of your `package.json`. And the `Gulpfile.js`:</span>
+<span class="text">This line tells [npm](//npmjs.com) to install both `gulp` and `gulp-sass` packages as development dependencies. You can now find them in the `devDependencies` object of your `package.json`. And the `Gulpfile.js`:</span>
 
 <pre><code class="language-javascript">
 var gulp = require('gulp');
@@ -525,11 +525,11 @@ var sass = require('gulp-sass');
 </code></pre>
 </div>
 
-<p>This is not difficult to achieve with <a href="http://prismjs.com">Prism syntax-hightlighter</a> combined with Sass-variables for colors.</p>
+<p>This is not difficult to achieve with <a href="//prismjs.com">Prism syntax-hightlighter</a> combined with Sass-variables for colors.</p>
 
-<p>Check out <a href="http://codepen.io/atelierbram/pen/ZbYrRJ">this demo at Codepen</a> to see how the <code>&lt;pre class="language-bash"&gt;</code> is targeted in the <code>CSS</code> You can see how this works out in <a href="http://atelierbram.github.io/Starter-Assemble-Gulp/">a different example here</a>.</p>
+<p>Check out <a href="//codepen.io/atelierbram/pen/ZbYrRJ">this demo at Codepen</a> to see how the <code>&lt;pre class="language-bash"&gt;</code> is targeted in the <code>CSS</code> You can see how this works out in <a href="//atelierbram.github.io/Starter-Assemble-Gulp/">a different example here</a>.</p>
 
-<p><span class="note">This article was also published on <a href="http://codepen.io/atelierbram/post/differentiate/">Codepen</a></span></p>
+<p><span class="note">This article was also published on <a href="//codepen.io/atelierbram/post/differentiate/">Codepen</a></span></p>
     ]]></content>
 </entry>
       <entry>
@@ -551,46 +551,44 @@ var sass = require('gulp-sass');
   <p>music is centered around a tonal center, the tonic, which also determines a key. The vast majority of western music is tonal.</p>
 </blockquote>
 
-<p>Like <a href="http://elements-of-music.com/tonality.html#theelement">in music</a>, an illustration or painting can have a “tonal centre” too: I call this the “base color” <sup><a href="#note-1" class="sup-link" id="supLink1">1</a></sup>. This became the conceptual starting-point for the colorschemes I was going to create. It made sense to me to name them after general places, like Dune, Lakeside, or Savanna, to reflect a sense of place or atmosphere, if only for myself as a touchstone, and ended up creating <a href="http://atelierbram.github.io/syntax-highlighting/atelier-schemes/">ten different schemes</a>, each with their own character.</p>
+<p>Like <a href="//elements-of-music.com/tonality.html#theelement">in music</a>, an illustration or painting can have a “tonal centre” too: I call this the “base color” <sup><a href="#note-1" class="sup-link" id="supLink1">1</a></sup>. This became the conceptual starting-point for the colorschemes I was going to create. It made sense to me to name them after general places, like Dune, Lakeside, or Savanna, to reflect a sense of place or atmosphere, if only for myself as a touchstone, and ended up creating <a href="//atelierbram.github.io/syntax-highlighting/atelier-schemes/">ten different schemes</a>, each with their own character.</p>
 
-<p><img src="http://atelierbram.github.io/syntax-highlighting/assets/img/svg/atelierschemes-demotiles-sulphurpool_1200x300.svg" alt="demotiles for Sulphurpool colorscheme" />
-<a href="http://atelierbram.github.io/syntax-highlighting/atelier-schemes/sulphurpool">demotiles for Sulphurpool colorscheme</a></p>
+<figure><img src="//atelierbram.github.io/syntax-highlighting/assets/img/svg/atelierschemes-demotiles-sulphurpool_1200x300.svg" alt="demotiles for Sulphurpool colorscheme" width="1200" height="300" /><figcaption><a href="//atelierbram.github.io/syntax-highlighting/atelier-schemes/sulphurpool">demotiles for Sulphurpool colorscheme</a></figcaption></figure>
 
 <p>When making a colorscheme; and thus picking colors that work well together, and maybe share a common uniting characteristic <sup><a href="#note-2" class="sup-link" id="supLink2">2</a></sup>, there are a few things to consider. Here are some of the things I learned, or reconfirmed my knowledge along the way.</p>
 
 <h3>Contrast in tonality</h3>
 
-<p>I wanted to make colorschemes that work, like <em>Solarized</em>, both in a light <em>and</em> in a dark background variation. One colorscheme, two versions, light and dark, for a sensible restriction. For text-colors to work on those different backgrounds, their <em>“lightness value”</em> should be somewhere in the mid-tonal range, meaning neither to light nor to dark. Yellow by itself is obviously a very light color, and red, blue and violet quite dark, so moving the lightness value for yellow <em>down</em>, and for the latter <em>up</em>, is one of the things to try <sup><a href="#note-3" class="sup-link" id="supLink3">3</a></sup>. A good example where you can find this principle effectively used is the <a href="http://ethanschoonover.com/solarized">Solarized colorscheme</a>, which stood as a model for me, <em>especially</em> in <strong>this</strong> regard, while creating these schemes.</p>
+<p>I wanted to make colorschemes that work, like <em>Solarized</em>, both in a light <em>and</em> in a dark background variation. One colorscheme, two versions, light and dark, for a sensible restriction. For text-colors to work on those different backgrounds, their <em>“lightness value”</em> should be somewhere in the mid-tonal range, meaning neither to light nor to dark. Yellow by itself is obviously a very light color, and red, blue and violet quite dark, so moving the lightness value for yellow <em>down</em>, and for the latter <em>up</em>, is one of the things to try <sup><a href="#note-3" class="sup-link" id="supLink3">3</a></sup>. A good example where you can find this principle effectively used is the <a href="//ethanschoonover.com/solarized">Solarized colorscheme</a>, which stood as a model for me, <em>especially</em> in <strong>this</strong> regard, while creating these schemes.</p>
 
 <h3>Contrast in color-values</h3>
 
 <p>When evaluating color-contrast between colors <em>(foreground and background colors)</em> some basic knowledge of the colorwheel comes in handy, because a screaming color-contrast between the text-colors and background-color can be very distracting. You don’t want the colors to draw <em>(unnecessary)</em> attention to themselves nor to distract anyway, but rather you want the colors to serve the need for direction; to create distinction and clarity, like in a painting or illustration with pictural unity. So colors that are opposite to each other on the colorwheel <sup><a href="#note-4" class="sup-link" id="supLink4">4</a></sup> can be called <em>“complimentary”</em>, meaning they have the highest possible color contrast.</p>
 
-<p><img src="http://atelierbram.github.io/img/svg/colorwheel.svg" alt="Colorwheel" /></p>
+<figure style="text-align:center"><img src="//atelierbram.github.io/img/svg/colorwheel.svg" alt="colorwheel" width="382" height="382" /></figure>
 
 <h3>Saturation in color</h3>
 
-<p>In the colorscheme for <a href="http://atelierbram.github.io/syntax-highlighting/atelier-schemes/estuary">Estuary</a>, which is based on yellow/green, I tried hard to avoid this foreground/background complementary colorclash, by desaturating the values in the red – violet gamut, but also to <em>not</em> use violet–purple at all. Note also the value for red that is used goes to the yellow, and is more of an orange, but in this yellow-green context it really works as a red. Related to this issue: in some of the first colorschemes (<em>made a few years back,</em>) I felt the need to change some of the values over there as well. For anyone who is interested in the documentation of these changes, <a href="http://atelierbram.github.io/syntax-highlighting/atelier-schemes/demo/changes-03-2015.html">they can be found here</a>.</p>
+<p>In the colorscheme for <a href="//atelierbram.github.io/syntax-highlighting/atelier-schemes/estuary">Estuary</a>, which is based on yellow/green, I tried hard to avoid this foreground/background complementary colorclash, by desaturating the values in the red – violet gamut, but also to <em>not</em> use violet–purple at all. Note also the value for red that is used goes to the yellow, and is more of an orange, but in this yellow-green context it really works as a red. Related to this issue: in some of the first colorschemes (<em>made a few years back,</em>) I felt the need to change some of the values over there as well. For anyone who is interested in the documentation of these changes, <a href="//atelierbram.github.io/syntax-highlighting/atelier-schemes/demo/changes-03-2015.html">they can be found here</a>.</p>
 
-<p><img src="http://atelierbram.github.io/syntax-highlighting/assets/img/svg/atelierschemes-demotiles-estuary_1200x300.svg" alt="demotiles for Estuary colorscheme" />
-<a href="http://atelierbram.github.io/syntax-highlighting/atelier-schemes/estuary">demotiles for Estuary colorscheme</a></p>
+<figure><img src="//atelierbram.github.io/syntax-highlighting/assets/img/svg/atelierschemes-demotiles-estuary_1200x300.svg" alt="demotiles for Estuary colorscheme" width="1200" height="300" /><figcaption>demotiles for Estuary colorscheme</figcaption></figure>
 
 <h3>Helpfull Tools</h3>
 
-<p>On <a href="http://codepen.io/atelierbram/pen/JnbIt">Codepen</a> you can find a template for the colorscheming playground I used while creating these themes.</p>
+<p>On <a href="//codepen.io/atelierbram/pen/JnbIt">Codepen</a> you can find a template for the colorscheming playground I used while creating these themes.</p>
 
-<p data-height="672" data-theme-id="71" data-slug-hash="ogXNjj" data-default-tab="result" data-user="atelierbram" class='codepen'>See the Pen <a href='http://codepen.io/atelierbram/pen/ogXNjj/'>Colorscheme Template Variables</a> by Bram de Haan (<a href='http://codepen.io/atelierbram'>@atelierbram</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<p data-height="672" data-theme-id="71" data-slug-hash="ogXNjj" data-default-tab="result" data-user="atelierbram" class='codepen'>See the Pen <a href='//codepen.io/atelierbram/pen/ogXNjj/'>Colorscheme Template Variables</a> by Bram de Haan (<a href='//codepen.io/atelierbram'>@atelierbram</a>) on <a href='//codepen.io'>CodePen</a>.</p>
 
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
-<p>Above <a href="http://codepen.io/atelierbram/pen/ogXNjj">a different one</a>, which might be helpfull. Some tools not created by me, but which I use all the time, <em>(besides Chrome DevTools,)</em> is <a href="http://hslpicker.com/">HSL Color Picker</a> which is integrated in a <a href="http://atelierbram.github.io/c-tiles16/colorscheming/#7b8a8e">DIY tool I assembled myself</a>, and sometimes the <a href="http://meyerweb.com/eric/tools/color-blend/">golden-oldie Color Blender</a>, in fact I have local copies of these tools, each in a tab of the browser from startup. I know there are other tools as well, like <a href="https://coolors.co/app/">Coolors</a> or <a href="https://www.canva.com/colors/">Canva</a>, but these are the ones I feel most comfortable with.</p>
+<p>Above <a href="//codepen.io/atelierbram/pen/ogXNjj">a different one</a>, which might be helpfull. Some tools not created by me, but which I use all the time, <em>(besides Chrome DevTools,)</em> is <a href="//hslpicker.com/">HSL Color Picker</a> which is integrated in a <a href="//atelierbram.github.io/c-tiles16/colorscheming/#7b8a8e">DIY tool I assembled myself</a>, and sometimes the <a href="//meyerweb.com/eric/tools/color-blend/">golden-oldie Color Blender</a>, in fact I have local copies of these tools, each in a tab of the browser from startup. I know there are other tools as well, like <a href="//coolors.co/app/">Coolors</a> or <a href="//www.canva.com/colors/">Canva</a>, but these are the ones I feel most comfortable with.</p>
 
 <h3>Using Variables for Flexibility</h3>
 
 <p>Using variables for colornames and values is great too, and Sass is my preprocessor of choice. To import a color palette with color-variables settings in your main Sass files, is just something I do all the time now. Makes it also trivial to change the colorscheme of an entire website, by just swapping this <code>colorvars.scss</code> file with another, so yeah: a colorscheme can be quite flexible and versatile, not just for syntax-highlighting! In fact, on this very blog on Github I use the same colorscheme, which informs the syntax-highlighting for Prism, for all of the other colors on the page as well, creating unity within the page I feel.</p>
 
 <pre><code class="language-scss">
-// http://atelierbram.github.io/syntax-highlighting/atelier-schemes/sulphurpool
+// //atelierbram.github.io/syntax-highlighting/atelier-schemes/sulphurpool
 
 // Sulphurpool
 $base00: #202746;
@@ -627,11 +625,11 @@ $magenta: $base0f;
 "settings";
 </code></pre>
 
-<p>Those same variables can be used in another build tool called <a href="https://github.com/chriskempson/base16-builder">Base16 Builder</a>, which I started using for converting these colorschemes to syntax highlighting schemes for different applications, see also <em><a href="https://github.com/chriskempson/base16">Base16 on Github</a></em>. Base16 Builder enables you to create syntax highlighting colorschemes in dark and light background variations, for many applications. It is constructed as a bash-script that can be triggered from the terminal; <em>checkout the dependencies on Github though ...</em>.</p>
+<p>Those same variables can be used in another build tool called <a href="//github.com/chriskempson/base16-builder">Base16 Builder</a>, which I started using for converting these colorschemes to syntax highlighting schemes for different applications, see also <em><a href="//github.com/chriskempson/base16">Base16 on Github</a></em>. Base16 Builder enables you to create syntax highlighting colorschemes in dark and light background variations, for many applications. It is constructed as a bash-script that can be triggered from the terminal; <em>checkout the dependencies on Github though ...</em>.</p>
 
 <h4>Examples</h4>
 
-<p><img src="https://atelierbram.github.io/syntax-highlighting/assets/img/sulphurpool-dark_sublime_640x425.png" alt="Screenshot – dark version – Sulphurpool in Sublime Text" /> Screenshot of a working colorscheme as syntax-highlighting (<em><a href="http://atelierbram.github.io/syntax-highlighting/atelier-schemes/sulphurpool">Sulphurpool color-scheme</a> in Sublime Text</em>).</p>
+<figure><img src="//atelierbram.github.io/syntax-highlighting/assets/img/sulphurpool-dark_sublime_640x425.png" alt="Screenshot – dark version – Sulphurpool in Sublime Text" width="640" height="425" /><figcaption>Screenshot of a working colorscheme as syntax-highlighting (Sulpherpool coloscheme in Sublime Text).</figcaption></figure>
 
 <h4>Notes</h4>
 
@@ -639,10 +637,10 @@ $magenta: $base0f;
 <li><span id="note-1">Like in music where there can be a “tonal centre” which also can determine a key in a piece of music, likewise one can translate this to the visual medium and color. So for each colorscheme, a different color from the colorwheel represented this “tonal centre”, or base color which is to be thought of as being right in the middle of the color-gamut that is being used in the colorscheme.</span></li>
 <li><span id="note-2">These “characteristics” don’t have to be obvious; art can have “secrets” </span></li>
 <li><span id="note-3">In Chrome DevTools you can, with Shift-Click on a selected color, move from HEX to RGB to HSL. Using HSL, you can conveniently use the arrow keys on your keyboard to see the effect of hue, saturation, and lightness change.</span></li>
-<li><span id="note-4">The colorwheel, and the color-theory of someone like <a href="http://www.worqx.com/color/itten.htm">Johannes Itten</a> is, (<em>if very useable in education; even today,</em>) superseded by updated (scientifical) theories that bring in <a href="http://physics.info/color/">physics</a>, stating that color is in fact <a href="http://www.marktaw.com/design/ColorTheorya.html">frequency</a>. Although fascinating material, the more recent scientific discoveries are a lot harder to teach in educating art-students I find, but please someone prove me wrong.</span></li>
+<li><span id="note-4">The colorwheel, and the color-theory of someone like <a href="//www.worqx.com/color/itten.htm">Johannes Itten</a> is, (<em>if very useable in education; even today,</em>) superseded by updated (scientifical) theories that bring in <a href="//physics.info/color/">physics</a>, stating that color is in fact <a href="//www.marktaw.com/design/ColorTheorya.html">frequency</a>. Although fascinating material, the more recent scientific discoveries are a lot harder to teach in educating art-students I find, but please someone prove me wrong.</span></li>
 </ol>
 
-<p><span class="note">This article was also published on <a href="http://codepen.io/atelierbram/post/colorscheming">Codepen</a></span></p>
+<p><span class="note">This article was also published on <a href="//codepen.io/atelierbram/post/colorscheming">Codepen</a></span></p>
     ]]></content>
 </entry>
       <entry>
@@ -656,7 +654,7 @@ $magenta: $base0f;
     </author>
     <summary type="html">In the heyday of strict modernism, when Xerox PARC invented the air vent menu in the early seventies, it was the doctrine of “form follows function” that ruled the art – and design–world. From architecture to applied graphical user interfaces;......</summary>
     <content type="html"><![CDATA[
-        <p>In the heyday of strict modernism, when Xerox <span class='small-caps'>PARC</span> <a href='https://vimeo.com/61556918#t=1265s'>invented the air vent menu</a> in the early seventies, it was the doctrine of <i>“form follows function”</i> that ruled the art – and design–world. From architecture to applied graphical user interfaces; nothing could escape <a href='https://www.dukeupress.edu/Modern-Inquisitions'>the modernist inquisition</a>.</p>
+        <p>In the heyday of strict modernism, when Xerox <span class='small-caps'>PARC</span> <a href='//vimeo.com/61556918#t=1265s'>invented the air vent menu</a> in the early seventies, it was the doctrine of <i>“form follows function”</i> that ruled the art – and design–world. From architecture to applied graphical user interfaces; nothing could escape <a href='//www.dukeupress.edu/Modern-Inquisitions'>the modernist inquisition</a>.</p>
 
 <p class="publication-list__item__meta"><time datetime=""></time></p>
 
@@ -664,13 +662,13 @@ $magenta: $base0f;
 
 <p>In their attempt to stifle free expression and impose only <em>the most rigorous</em> treatment of the formal properties of art <em>(– shape, color, line, texture and so on)</em>, upon every artistic expression that dared to raise it’s ugly head on the scene, the modernistic critics went to great lenghts to establish their authority, not only on the artistical output, but went so far as to also intimidate individual artists themselves.</p>
 
-<p data-height="500" data-theme-id="71" data-slug-hash="QjwYXd" data-default-tab="result" data-user="atelierbram" data-embed-version="2" class='codepen'>See the Pen <a href='http://codepen.io/atelierbram/pen/bdwxrx/'>Airfan Icon with Hamburger Grate</a> by Bram de Haan (<a href='http://codepen.io/atelierbram'>@atelierbram</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<p data-height="500" data-theme-id="71" data-slug-hash="QjwYXd" data-default-tab="result" data-user="atelierbram" data-embed-version="2" class='codepen'>See the Pen <a href='//codepen.io/atelierbram/pen/bdwxrx/'>Airfan Icon with Hamburger Grate</a> by Bram de Haan (<a href='//codepen.io/atelierbram'>@atelierbram</a>) on <a href='//codepen.io'>CodePen</a>.</p>
 
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
 <h3>Form Follows Fact</h3>
 
-<p>It is a <a href="https://www.evernote.com/shard/s207/sh/022f2237-4b4f-4096-87f2-053acd228c2d/ede2672bc3f39a1b0232f84e01ca0a83">well established fact</a> that the function of <em>the air vent</em> in graphical interfaces is to keep the window <sup><a href="#note-1" class="sup-link" id="supLink1">1</a></sup> cool. Translated into the modernistic jargon of the day the <em>form follows function</em> doctrine demands nothing less than straight lines: horizontal and vertical, <em>(only diagonal if it can not be avoided)</em>. The shape just <strong>has to be geometrical</strong>, preferably a rectangle. That is how <em>the air vent</em>, back in the day, transformed into the <a href="http://codepen.io/tag/hamburger">hamburger menu icon</a>.</p>
+<p>It is a <a href="//www.evernote.com/shard/s207/sh/022f2237-4b4f-4096-87f2-053acd228c2d/ede2672bc3f39a1b0232f84e01ca0a83">well established fact</a> that the function of <em>the air vent</em> in graphical interfaces is to keep the window <sup><a href="#note-1" class="sup-link" id="supLink1">1</a></sup> cool. Translated into the modernistic jargon of the day the <em>form follows function</em> doctrine demands nothing less than straight lines: horizontal and vertical, <em>(only diagonal if it can not be avoided)</em>. The shape just <strong>has to be geometrical</strong>, preferably a rectangle. That is how <em>the air vent</em>, back in the day, transformed into the <a href="//codepen.io/tag/hamburger">hamburger menu icon</a>.</p>
 
 <blockquote>
   <p>Where the Old Masters created an illusion of space into which one could imagine walking, the illusion created by a Modernist is one into which one can look, can travel through, only with the eye. <small class="small author">Clement Greenberg</small></p>
@@ -678,13 +676,13 @@ $magenta: $base0f;
 
 <h3>If You Can’t Beat Them</h3>
 
-<p>The inescapable hamburger; it’s ubiquitous, on so many websites now that you kind of miss it when it’s <em>not</em> there. But does it really has to be like this? The inventor of the icon himself, Norm Cox, deliberately left the hamburger out on <a href="http://www.coxhall.com/product-folio.html">his own website</a> and so <strong>you should too!</strong></p>
+<p>The inescapable hamburger; it’s ubiquitous, on so many websites now that you kind of miss it when it’s <em>not</em> there. But does it really has to be like this? The inventor of the icon himself, Norm Cox, deliberately left the hamburger out on <a href="//www.coxhall.com/product-folio.html">his own website</a> and so <strong>you should too!</strong></p>
 
 <h3>Let’s Move On</h3>
 
-<p>This is the twentyfirst century and we survived modernism, post-modernism, and are right in the middle of hyper-modernism. It is time to move on and <a href="http://frankchimero.com/writing//make-it-homely/">make it homely</a> for ourselves and our families now. I propose the reinstatement of the airfan icon. The computer screen <a href="http://hanselminutes.com/">still needs fresh air</a>, and what better icon than <em>the airfan</em> to provide for this? But more importantly, we need to <a href="https://medium.com/cool-code-pal/how-node-js-is-going-to-replace-javascript-cf72b588b1b">break free from the chains of ingrained habits</a>, and embrace the round spinning fan.</p>
+<p>This is the twentyfirst century and we survived modernism, post-modernism, and are right in the middle of hyper-modernism. It is time to move on and <a href="//frankchimero.com/writing//make-it-homely/">make it homely</a> for ourselves and our families now. I propose the reinstatement of the airfan icon. The computer screen <a href="//hanselminutes.com/">still needs fresh air</a>, and what better icon than <em>the airfan</em> to provide for this? But more importantly, we need to <a href="//medium.com/cool-code-pal/how-node-js-is-going-to-replace-javascript-cf72b588b1b">break free from the chains of ingrained habits</a>, and embrace the round spinning fan.</p>
 
-<p data-height="128" data-theme-id="71" data-slug-hash="eNzKgE" data-default-tab="result" data-user="atelierbram" data-embed-version="2" class='codepen'>See the Pen <a href='http://codepen.io/atelierbram/pen/eNzKgE/'>Airfan Icon</a> by Bram de Haan (<a href='http://codepen.io/atelierbram'>@atelierbram</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<p data-height="128" data-theme-id="71" data-slug-hash="eNzKgE" data-default-tab="result" data-user="atelierbram" data-embed-version="2" class='codepen'>See the Pen <a href='//codepen.io/atelierbram/pen/eNzKgE/'>Airfan Icon</a> by Bram de Haan (<a href='//codepen.io/atelierbram'>@atelierbram</a>) on <a href='//codepen.io'>CodePen</a>.</p>
 
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
@@ -692,7 +690,7 @@ $magenta: $base0f;
 
 <p>So alternatively, put a grate on top for safety.</p>
 
-<p data-height="128" data-theme-id="71" data-slug-hash="RWNvqz" data-default-tab="result" data-user="atelierbram" data-embed-version="2" class='codepen'>See the Pen <a href='http://codepen.io/atelierbram/pen/bdwxrx/'>Airfan Icon with Hamburger Grate</a> by Bram de Haan (<a href='http://codepen.io/atelierbram'>@atelierbram</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<p data-height="128" data-theme-id="71" data-slug-hash="RWNvqz" data-default-tab="result" data-user="atelierbram" data-embed-version="2" class='codepen'>See the Pen <a href='//codepen.io/atelierbram/pen/bdwxrx/'>Airfan Icon with Hamburger Grate</a> by Bram de Haan (<a href='//codepen.io/atelierbram'>@atelierbram</a>) on <a href='//codepen.io'>CodePen</a>.</p>
 
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
@@ -702,7 +700,7 @@ $magenta: $base0f;
 <li><span id="note-1">The window that you are looking at <strong>right now</strong>: that monitor or tablet screen!</span></li>
 </ol>
 
-<p><span class="note">This article was also published on <a href="http://codepen.io/atelierbram/post/airfan">Codepen</a></span></p>
+<p><span class="note">This article was also published on <a href="//codepen.io/atelierbram/post/airfan">Codepen</a></span></p>
     ]]></content>
 </entry>
       <entry>

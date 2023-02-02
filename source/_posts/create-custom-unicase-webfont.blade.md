@@ -29,7 +29,7 @@ This `font-variant-caps: small-caps` basically makes all lowercase characters ap
 
 <blockquote><dl class="quote"><dt>small-caps</dt><dd>This keyword forces the use of small capitals letters for lower case characters. It corresponds to the OpenType value <code>smcp</code>; if the font doesn't support them, it synthesizes the glyphs.</dd></dl></blockquote>
 
-<p class="clear"><span class="note">Note that following instructions on sub-setting webfonts are an <i>additional option</i>, not required at all to create these small-caps: one can try using just system fonts as well with `font-variant-caps: small-caps` applied.</span></p>
+<p class="clear"><span class="note">Note that following instructions on sub-setting webfonts are an <i>additional option</i>, not required at all to create these small-caps: one can try using just system fonts as well with <code>font-variant-caps: small-caps</code> applied.</span></p>
 
 It is possible to generate your own light-weight unicase webfont with the <span class="small-caps">CSS</span> property-value pair `font-variant-caps: small-caps`, combined with the sub-setting technique when generating a web-font.
 
@@ -72,20 +72,20 @@ Ninety <span class="small-caps">JPG</span> files on <span class="small-caps">CD-
 
 <span class="small-caps">HTML</span>, <span class="small-caps">CSS</span> and javaScript.
 
-<p data-height="300" data-theme-id="71" data-slug-hash="RVwmpd" data-default-tab="css,result" data-user="atelierbram" data-embed-version="2" data-pen-title="RVwmpd" class="codepen">See the Pen <a href="http://codepen.io/atelierbram/pen/RVwmpd/">RVwmpd</a> by Bram de Haan (<a href="http://codepen.io/atelierbram">@atelierbram</a>) on <a href="http://codepen.io">CodePen</a>.</p>
-<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+<p data-height="300" data-theme-id="71" data-slug-hash="RVwmpd" data-default-tab="css,result" data-user="atelierbram" data-embed-version="2" data-pen-title="RVwmpd" class="codepen">See the Pen <a href="//codepen.io/atelierbram/pen/RVwmpd/">RVwmpd</a> by Bram de Haan (<a href="//codepen.io/atelierbram">@atelierbram</a>) on <a href="//codepen.io">CodePen</a>.</p>
+<script async src="//production-assets.codepen.io/assets/embed/ei.js"></script>
 
 #### Notes
 1. <span id="note-1">There is `font-variant: small-caps` too: this is the shorthand for all ‘font-variant’ subproperties. Like other shorthands, using ‘font-variant’ resets unspecified ‘font-variant’ subproperties to their initial values.</span>
 1. <span id="note-2">This will also solve any syntax issues with the `@fontface` rule, for it comes with a demo <span class="small-caps">HTML</span> - and <span class="small-caps">CSS</span> file with those rules applied. You can take those rules, maybe adept the url paths, and paste them into your <span class="small-caps">CSS</span>.</span>
 
 #### Resources
-- [font-variant on CSS-Tricks Almanac](https://css-tricks.com/almanac/properties/f/font-variant/)
-- [font-variant-caps on MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/font-variant-caps)
-- [the specs on font-variant-caps](https://drafts.csswg.org/css-fonts-3/#propdef-font-variant-caps)
-- [the specs on font-variant](https://drafts.csswg.org/css-fonts-3/#propdef-font-variant)
-- [I Love Typograhpy on small caps](http://ilovetypography.com/2008/02/20/small-caps/)
-- [Practical Typograhpy on small caps](http://practicaltypography.com/small-caps.html)
-- [Erik Spiekermann’s Typo Tips](http://fontfeed.com/archives/erik-spiekermanns-typo-tips/)
+- [font-variant on CSS-Tricks Almanac](//css-tricks.com/almanac/properties/f/font-variant/)
+- [font-variant-caps on MDN](//developer.mozilla.org/en-US/docs/Web/CSS/font-variant-caps)
+- [the specs on font-variant-caps](//drafts.csswg.org/css-fonts-3/#propdef-font-variant-caps)
+- [the specs on font-variant](//drafts.csswg.org/css-fonts-3/#propdef-font-variant)
+- [I Love Typograhpy on small caps](//ilovetypography.com/2008/02/20/small-caps/)
+- [Practical Typograhpy on small caps](//practicaltypography.com/small-caps.html)
+- [Erik Spiekermann’s Typo Tips](//fontfeed.com/archives/erik-spiekermanns-typo-tips/)
 
-<p class="clear"><span class="note">This article was also published on <a href="http://codepen.io/atelierbram/post/create-custom-unicase-webfont">Codepen</a></span></p>
+<p class="clear"><span class="note">This article was also published on <a href="//codepen.io/atelierbram/post/create-custom-unicase-webfont">Codepen</a></span></p>

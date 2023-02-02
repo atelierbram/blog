@@ -60,46 +60,44 @@
   <p>music is centered around a tonal center, the tonic, which also determines a key. The vast majority of western music is tonal.</p>
 </blockquote>
 
-<p>Like <a href="http://elements-of-music.com/tonality.html#theelement">in music</a>, an illustration or painting can have a “tonal centre” too: I call this the “base color” <sup><a href="#note-1" class="sup-link" id="supLink1">1</a></sup>. This became the conceptual starting-point for the colorschemes I was going to create. It made sense to me to name them after general places, like Dune, Lakeside, or Savanna, to reflect a sense of place or atmosphere, if only for myself as a touchstone, and ended up creating <a href="http://atelierbram.github.io/syntax-highlighting/atelier-schemes/">ten different schemes</a>, each with their own character.</p>
+<p>Like <a href="//elements-of-music.com/tonality.html#theelement">in music</a>, an illustration or painting can have a “tonal centre” too: I call this the “base color” <sup><a href="#note-1" class="sup-link" id="supLink1">1</a></sup>. This became the conceptual starting-point for the colorschemes I was going to create. It made sense to me to name them after general places, like Dune, Lakeside, or Savanna, to reflect a sense of place or atmosphere, if only for myself as a touchstone, and ended up creating <a href="//atelierbram.github.io/syntax-highlighting/atelier-schemes/">ten different schemes</a>, each with their own character.</p>
 
-<p><img src="http://atelierbram.github.io/syntax-highlighting/assets/img/svg/atelierschemes-demotiles-sulphurpool_1200x300.svg" alt="demotiles for Sulphurpool colorscheme" />
-<a href="http://atelierbram.github.io/syntax-highlighting/atelier-schemes/sulphurpool">demotiles for Sulphurpool colorscheme</a></p>
+<figure><img src="//atelierbram.github.io/syntax-highlighting/assets/img/svg/atelierschemes-demotiles-sulphurpool_1200x300.svg" alt="demotiles for Sulphurpool colorscheme" width="1200" height="300" /><figcaption><a href="//atelierbram.github.io/syntax-highlighting/atelier-schemes/sulphurpool">demotiles for Sulphurpool colorscheme</a></figcaption></figure>
 
 <p>When making a colorscheme; and thus picking colors that work well together, and maybe share a common uniting characteristic <sup><a href="#note-2" class="sup-link" id="supLink2">2</a></sup>, there are a few things to consider. Here are some of the things I learned, or reconfirmed my knowledge along the way.</p>
 
 <h3>Contrast in tonality</h3>
 
-<p>I wanted to make colorschemes that work, like <em>Solarized</em>, both in a light <em>and</em> in a dark background variation. One colorscheme, two versions, light and dark, for a sensible restriction. For text-colors to work on those different backgrounds, their <em>“lightness value”</em> should be somewhere in the mid-tonal range, meaning neither to light nor to dark. Yellow by itself is obviously a very light color, and red, blue and violet quite dark, so moving the lightness value for yellow <em>down</em>, and for the latter <em>up</em>, is one of the things to try <sup><a href="#note-3" class="sup-link" id="supLink3">3</a></sup>. A good example where you can find this principle effectively used is the <a href="http://ethanschoonover.com/solarized">Solarized colorscheme</a>, which stood as a model for me, <em>especially</em> in <strong>this</strong> regard, while creating these schemes.</p>
+<p>I wanted to make colorschemes that work, like <em>Solarized</em>, both in a light <em>and</em> in a dark background variation. One colorscheme, two versions, light and dark, for a sensible restriction. For text-colors to work on those different backgrounds, their <em>“lightness value”</em> should be somewhere in the mid-tonal range, meaning neither to light nor to dark. Yellow by itself is obviously a very light color, and red, blue and violet quite dark, so moving the lightness value for yellow <em>down</em>, and for the latter <em>up</em>, is one of the things to try <sup><a href="#note-3" class="sup-link" id="supLink3">3</a></sup>. A good example where you can find this principle effectively used is the <a href="//ethanschoonover.com/solarized">Solarized colorscheme</a>, which stood as a model for me, <em>especially</em> in <strong>this</strong> regard, while creating these schemes.</p>
 
 <h3>Contrast in color-values</h3>
 
 <p>When evaluating color-contrast between colors <em>(foreground and background colors)</em> some basic knowledge of the colorwheel comes in handy, because a screaming color-contrast between the text-colors and background-color can be very distracting. You don’t want the colors to draw <em>(unnecessary)</em> attention to themselves nor to distract anyway, but rather you want the colors to serve the need for direction; to create distinction and clarity, like in a painting or illustration with pictural unity. So colors that are opposite to each other on the colorwheel <sup><a href="#note-4" class="sup-link" id="supLink4">4</a></sup> can be called <em>“complimentary”</em>, meaning they have the highest possible color contrast.</p>
 
-<p><img src="http://atelierbram.github.io/img/svg/colorwheel.svg" alt="Colorwheel" /></p>
+<figure style="text-align:center"><img src="//atelierbram.github.io/img/svg/colorwheel.svg" alt="colorwheel" width="382" height="382" /></figure>
 
 <h3>Saturation in color</h3>
 
-<p>In the colorscheme for <a href="http://atelierbram.github.io/syntax-highlighting/atelier-schemes/estuary">Estuary</a>, which is based on yellow/green, I tried hard to avoid this foreground/background complementary colorclash, by desaturating the values in the red – violet gamut, but also to <em>not</em> use violet–purple at all. Note also the value for red that is used goes to the yellow, and is more of an orange, but in this yellow-green context it really works as a red. Related to this issue: in some of the first colorschemes (<em>made a few years back,</em>) I felt the need to change some of the values over there as well. For anyone who is interested in the documentation of these changes, <a href="http://atelierbram.github.io/syntax-highlighting/atelier-schemes/demo/changes-03-2015.html">they can be found here</a>.</p>
+<p>In the colorscheme for <a href="//atelierbram.github.io/syntax-highlighting/atelier-schemes/estuary">Estuary</a>, which is based on yellow/green, I tried hard to avoid this foreground/background complementary colorclash, by desaturating the values in the red – violet gamut, but also to <em>not</em> use violet–purple at all. Note also the value for red that is used goes to the yellow, and is more of an orange, but in this yellow-green context it really works as a red. Related to this issue: in some of the first colorschemes (<em>made a few years back,</em>) I felt the need to change some of the values over there as well. For anyone who is interested in the documentation of these changes, <a href="//atelierbram.github.io/syntax-highlighting/atelier-schemes/demo/changes-03-2015.html">they can be found here</a>.</p>
 
-<p><img src="http://atelierbram.github.io/syntax-highlighting/assets/img/svg/atelierschemes-demotiles-estuary_1200x300.svg" alt="demotiles for Estuary colorscheme" />
-<a href="http://atelierbram.github.io/syntax-highlighting/atelier-schemes/estuary">demotiles for Estuary colorscheme</a></p>
+<figure><img src="//atelierbram.github.io/syntax-highlighting/assets/img/svg/atelierschemes-demotiles-estuary_1200x300.svg" alt="demotiles for Estuary colorscheme" width="1200" height="300" /><figcaption>demotiles for Estuary colorscheme</figcaption></figure>
 
 <h3>Helpfull Tools</h3>
 
-<p>On <a href="http://codepen.io/atelierbram/pen/JnbIt">Codepen</a> you can find a template for the colorscheming playground I used while creating these themes.</p>
+<p>On <a href="//codepen.io/atelierbram/pen/JnbIt">Codepen</a> you can find a template for the colorscheming playground I used while creating these themes.</p>
 
-<p data-height="672" data-theme-id="71" data-slug-hash="ogXNjj" data-default-tab="result" data-user="atelierbram" class='codepen'>See the Pen <a href='http://codepen.io/atelierbram/pen/ogXNjj/'>Colorscheme Template Variables</a> by Bram de Haan (<a href='http://codepen.io/atelierbram'>@atelierbram</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<p data-height="672" data-theme-id="71" data-slug-hash="ogXNjj" data-default-tab="result" data-user="atelierbram" class='codepen'>See the Pen <a href='//codepen.io/atelierbram/pen/ogXNjj/'>Colorscheme Template Variables</a> by Bram de Haan (<a href='//codepen.io/atelierbram'>@atelierbram</a>) on <a href='//codepen.io'>CodePen</a>.</p>
 
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
-<p>Above <a href="http://codepen.io/atelierbram/pen/ogXNjj">a different one</a>, which might be helpfull. Some tools not created by me, but which I use all the time, <em>(besides Chrome DevTools,)</em> is <a href="http://hslpicker.com/">HSL Color Picker</a> which is integrated in a <a href="http://atelierbram.github.io/c-tiles16/colorscheming/#7b8a8e">DIY tool I assembled myself</a>, and sometimes the <a href="http://meyerweb.com/eric/tools/color-blend/">golden-oldie Color Blender</a>, in fact I have local copies of these tools, each in a tab of the browser from startup. I know there are other tools as well, like <a href="https://coolors.co/app/">Coolors</a> or <a href="https://www.canva.com/colors/">Canva</a>, but these are the ones I feel most comfortable with.</p>
+<p>Above <a href="//codepen.io/atelierbram/pen/ogXNjj">a different one</a>, which might be helpfull. Some tools not created by me, but which I use all the time, <em>(besides Chrome DevTools,)</em> is <a href="//hslpicker.com/">HSL Color Picker</a> which is integrated in a <a href="//atelierbram.github.io/c-tiles16/colorscheming/#7b8a8e">DIY tool I assembled myself</a>, and sometimes the <a href="//meyerweb.com/eric/tools/color-blend/">golden-oldie Color Blender</a>, in fact I have local copies of these tools, each in a tab of the browser from startup. I know there are other tools as well, like <a href="//coolors.co/app/">Coolors</a> or <a href="//www.canva.com/colors/">Canva</a>, but these are the ones I feel most comfortable with.</p>
 
 <h3>Using Variables for Flexibility</h3>
 
 <p>Using variables for colornames and values is great too, and Sass is my preprocessor of choice. To import a color palette with color-variables settings in your main Sass files, is just something I do all the time now. Makes it also trivial to change the colorscheme of an entire website, by just swapping this <code>colorvars.scss</code> file with another, so yeah: a colorscheme can be quite flexible and versatile, not just for syntax-highlighting! In fact, on this very blog on Github I use the same colorscheme, which informs the syntax-highlighting for Prism, for all of the other colors on the page as well, creating unity within the page I feel.</p>
 
 <pre><code class="language-scss">
-// http://atelierbram.github.io/syntax-highlighting/atelier-schemes/sulphurpool
+// //atelierbram.github.io/syntax-highlighting/atelier-schemes/sulphurpool
 
 // Sulphurpool
 $base00: #202746;
@@ -136,11 +134,11 @@ $magenta: $base0f;
 "settings";
 </code></pre>
 
-<p>Those same variables can be used in another build tool called <a href="https://github.com/chriskempson/base16-builder">Base16 Builder</a>, which I started using for converting these colorschemes to syntax highlighting schemes for different applications, see also <em><a href="https://github.com/chriskempson/base16">Base16 on Github</a></em>. Base16 Builder enables you to create syntax highlighting colorschemes in dark and light background variations, for many applications. It is constructed as a bash-script that can be triggered from the terminal; <em>checkout the dependencies on Github though ...</em>.</p>
+<p>Those same variables can be used in another build tool called <a href="//github.com/chriskempson/base16-builder">Base16 Builder</a>, which I started using for converting these colorschemes to syntax highlighting schemes for different applications, see also <em><a href="//github.com/chriskempson/base16">Base16 on Github</a></em>. Base16 Builder enables you to create syntax highlighting colorschemes in dark and light background variations, for many applications. It is constructed as a bash-script that can be triggered from the terminal; <em>checkout the dependencies on Github though ...</em>.</p>
 
 <h4>Examples</h4>
 
-<p><img src="https://atelierbram.github.io/syntax-highlighting/assets/img/sulphurpool-dark_sublime_640x425.png" alt="Screenshot – dark version – Sulphurpool in Sublime Text" /> Screenshot of a working colorscheme as syntax-highlighting (<em><a href="http://atelierbram.github.io/syntax-highlighting/atelier-schemes/sulphurpool">Sulphurpool color-scheme</a> in Sublime Text</em>).</p>
+<figure><img src="//atelierbram.github.io/syntax-highlighting/assets/img/sulphurpool-dark_sublime_640x425.png" alt="Screenshot – dark version – Sulphurpool in Sublime Text" width="640" height="425" /><figcaption>Screenshot of a working colorscheme as syntax-highlighting (Sulpherpool coloscheme in Sublime Text).</figcaption></figure>
 
 <h4>Notes</h4>
 
@@ -148,10 +146,10 @@ $magenta: $base0f;
 <li><span id="note-1">Like in music where there can be a “tonal centre” which also can determine a key in a piece of music, likewise one can translate this to the visual medium and color. So for each colorscheme, a different color from the colorwheel represented this “tonal centre”, or base color which is to be thought of as being right in the middle of the color-gamut that is being used in the colorscheme.</span></li>
 <li><span id="note-2">These “characteristics” don’t have to be obvious; art can have “secrets” </span></li>
 <li><span id="note-3">In Chrome DevTools you can, with Shift-Click on a selected color, move from HEX to RGB to HSL. Using HSL, you can conveniently use the arrow keys on your keyboard to see the effect of hue, saturation, and lightness change.</span></li>
-<li><span id="note-4">The colorwheel, and the color-theory of someone like <a href="http://www.worqx.com/color/itten.htm">Johannes Itten</a> is, (<em>if very useable in education; even today,</em>) superseded by updated (scientifical) theories that bring in <a href="http://physics.info/color/">physics</a>, stating that color is in fact <a href="http://www.marktaw.com/design/ColorTheorya.html">frequency</a>. Although fascinating material, the more recent scientific discoveries are a lot harder to teach in educating art-students I find, but please someone prove me wrong.</span></li>
+<li><span id="note-4">The colorwheel, and the color-theory of someone like <a href="//www.worqx.com/color/itten.htm">Johannes Itten</a> is, (<em>if very useable in education; even today,</em>) superseded by updated (scientifical) theories that bring in <a href="//physics.info/color/">physics</a>, stating that color is in fact <a href="//www.marktaw.com/design/ColorTheorya.html">frequency</a>. Although fascinating material, the more recent scientific discoveries are a lot harder to teach in educating art-students I find, but please someone prove me wrong.</span></li>
 </ol>
 
-<p><span class="note">This article was also published on <a href="http://codepen.io/atelierbram/post/colorscheming">Codepen</a></span></p>
+<p><span class="note">This article was also published on <a href="//codepen.io/atelierbram/post/colorscheming">Codepen</a></span></p>
 
     <nav class="prevnext">
         <h5 class="prevnext_left">

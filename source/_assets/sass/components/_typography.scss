@@ -12,30 +12,16 @@
 .page pre + h3 {
   margin-top: 3rem;
 }
-// .page blockquote + h3 {
-//   @include mq($from: tablet) {
-//     margin-top: -2rem;
-//   }
+
+.page h3 + p {
+  margin-top: -0.2em;
+}
+
+// .page h4 + ul,
+// .page h4 + ol {
+//   margin-top: 0.2em;
 // }
 
-.page h4 + ul,
-.page h4 + ol,
-.page h3 + p {
-  margin-top: -6px;
-  // border-top: 1px solid $base01;
-  // position: relative;
-}
-// cut a piece of the long line
-// .page h3 + p::after {
-//   content: "";
-//   position: absolute;
-//   top:0;right:0;
-//   width: 215px;
-//   height: .5rem;
-//   background-color: #fff;
-//   margin-right: -221px;
-//   margin-top: -5px;
-// }
 .no-flexbox p {
   max-width: 32em;
 }
@@ -53,6 +39,7 @@
 h4 + ul,
 h4 + ol {
   padding-top: .25em;
+  margin-top: 0.2em;
   margin-bottom: -2em;
 }
 .page ul li {

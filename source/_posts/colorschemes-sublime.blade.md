@@ -36,7 +36,7 @@ alias zsubl='cd  /Users/bram/Library/Application\ Support/Sublime\ Text\ 2/Packa
 ### Workflow
 First of all, having a visual reference for the colorscheme you are working on at hand is indispensable. Something which works really well in my experience is [these kind of colorscheme labs](//codepen.io/atelierbram/pen/JnbIt), which basically are just simple webpages containing colorscheme color-tiles (_using sixteen Sass variables for colors_), and some syntax-highlighted code-samples. In order to make editing the colors less cumbersome, it helps to tweak the values for hue, saturation and lightness in the <span class="small-caps">HSL</span> format. Ones one is happy with the overall balance in the colorvalues, it's not that difficult to convert them to hex-values, (_either from DevTools or some other trustworthy colortool,_) and then manually copy those hex-values over to Base16-schemes.
 
-_Base16?_ A helpful tool [can be this webapp on Heroku](//tmtheme-editor.herokuapp.com/), but this will only get you so far. My workflow for editing the `tmTheme` colorscheme for Sublime continues with editing template files that come with [Base16-builder](//github.com/base16-builder/base16-builder/), of which I host several versions for [Base2Tone](https://github.com/atelierbram/base2tone/tree/master/db/templates) and other variations as well. After running the `base16` command in the folder with the `base16` executable bash-file, a whole lot of syntax-highlighting themes are generated from the commandline in the `output`-folder, as many as there are template files. Next copy those files over from the `output` folder (from the commandline) to the Packages/Color Scheme - folder. (_Also not to forget removing the `*.cache` files in that same folder_).
+_Base16?_ A helpful tool [can be this webapp on Heroku](//tmtheme-editor.herokuapp.com/), but this will only get you so far. My workflow for editing the `tmTheme` colorscheme for Sublime continues with editing template files that come with [Base16-builder](//github.com/base16-builder/base16-builder/), of which I host several versions for [Base2Tone](//github.com/atelierbram/base2tone/tree/master/db/templates) and other variations as well. After running the `base16` command in the folder with the `base16` executable bash-file, a whole lot of syntax-highlighting themes are generated from the commandline in the `output`-folder, as many as there are template files. Next copy those files over from the `output` folder (from the commandline) to the Packages/Color Scheme - folder. (_Also not to forget removing the `*.cache` files in that same folder_).
 
 ### Helpful Hints
 What you really want when editing, or iterating over an existing colorscheme, is hints for syntax-names which are used by the syntax-highlighting engine. This can be achieved when the command `displayName` is activated, and the function keys `<Ctrl><Shift><P>` are simultaneously pressed, while being with the cursor on a specific tag. This now will show the syntax-name in the left-bottom corner of the Sublime Text app-frame. Which makes me wonder how else one could know that the syntax-name for the “dot” in front of a class-name in <span class="small-caps">CSS</span> belongs to the syntax-group `punctuation.definition.entity.css`.
@@ -57,8 +57,8 @@ I have this line `"command": "displayName"` in my `Preferences.sublime-settings`
 One thing I found out is that you can be more or less specific with leaving out or adding those suffixes, so `keyword` selects also `keyword.operator`, but `keyword.operator.sass` will override both, which makes sense.
 
 ### Screenshots
-![screenshot of javaScript file syntax-highlighted with DuoTone Dark colorscheme](//atelierbram.github.io/syntax-highlighting/assets/img/duotones-dark_sublime_960x640.png)
-Screenshot of javaScript file, syntax-highlighted with DuoTone Dark colorscheme.
+<figure><img src="//atelierbram.github.io/syntax-highlighting/assets/img/duotones-dark_sublime_960x640.png" alt="screenshot of javaScript file syntax-highlighted with DuoTone Dark colorscheme" width="960" height="640" />
+<figcaption>Screenshot of javaScript file, syntax-highlighted with DuoTone Dark colorscheme.</figcaption></figure>
 
 - [darkSea](//atelierbram.github.io/syntax-highlighting/assets/img/duotones-darkSea_sublime_960x640.png)
 - [darkSpace](//atelierbram.github.io/syntax-highlighting/assets/img/duotones-darkSpace_sublime_960x640.png)
@@ -74,8 +74,8 @@ Screenshot of javaScript file, syntax-highlighted with DuoTone Dark colorscheme.
 
 #### Resources
 - [commands for Sublime](//www.sublimetext.com/docs/commands)
-- [info on setting for Sublime](https://www.sublimetext.com/docs/3/settings.html)
+- [info on setting for Sublime](//www.sublimetext.com/docs/3/settings.html)
 - [Original DuoTone Themes for Atom on simurai.com](//simurai.com/projects/2016/01/01/duotone-themes/)
-- [DuoTones Sublime Colorschemes on Github](https://github.com/atelierbram/duotones-sublime-colorschemes)
+- [DuoTones Sublime Colorschemes on Github](//github.com/atelierbram/duotones-sublime-colorschemes)
 
 <span class="note">This article was also published on [Codepen](//codepen.io/atelierbram/post/colorschemes-sublime/)</span>
