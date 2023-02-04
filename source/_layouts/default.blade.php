@@ -28,8 +28,8 @@
  @else
     <style id="fontfaceRemoteCss">@include('_partials.fontface-remote-css')</style>
     <style id="criticalCss">@include('_partials.critical-css')</style>
-    <link href="{{ $page->baseUrl }}{{ ('assets/css/style.min.css?v9') }}" rel="stylesheet" media="print" onload="this.media='all'">
-    <noscript><link href="{{ $page->baseUrl }}{{ ('assets/css/style.min.css?v9') }}" rel="stylesheet"></noscript>
+    <link href="{{ $page->baseUrl }}{{ ('assets/css/style.min.css?v10') }}" rel="stylesheet" media="print" onload="this.media='all'">
+    <noscript><link href="{{ $page->baseUrl }}{{ ('assets/css/style.min.css?v10') }}" rel="stylesheet"></noscript>
   @endif
   </head>
   <body class="page-{{ $page->slug }} page-type-{{ $page->page_type }}" id="id-{{ $page->id }}">
