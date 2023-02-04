@@ -263,10 +263,6 @@ body {
   hyphens: auto;
 }
 
-article, figcaption, figure, footer, header, nav, section {
-  display: block;
-}
-
 a {
   background: transparent;
   color: inherit;

@@ -42,10 +42,6 @@ body {
   hyphens: auto;
 }
 
-article, figcaption, figure, footer, header, nav, section {
-  display: block;
-}
-
 a {
   background: transparent;
   color: inherit;
@@ -297,6 +293,9 @@ h4 + figure {
 figcaption {
   color: #5e6687;
   font-size: 0.75em;
+}
+.theme-dark figcaption a:hover {
+  color: #dfe2f1;
 }
 
 .publication-list__item__content p:first-of-type:first-letter,
