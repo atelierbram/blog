@@ -305,6 +305,7 @@ figcaption {
   padding: 4px 0 0 0;
   float: left;
   line-height: 0.65;
+  font-size: 83px;
   height: 0.65em;
   -webkit-font-smoothing: antialiased;
 }
@@ -313,13 +314,12 @@ figcaption {
   color: hsl(229deg, 23%, 68%);
 }
 
-.page > p:first-of-type:first-letter {
-  font-size: 147px;
+@media (min-width: 40em) {
+  .page > p:first-of-type:first-letter {
+    font-size: 147px;
+  }
 }
 
-.page-type-index .publication-list__item__content p:first-of-type:first-letter {
-  font-size: 83px;
-}
 @media (min-width: 40em) {
   .page-type-index .publication-list__item__content p:first-of-type:first-letter {
     font-size: 129px;

@@ -8,6 +8,7 @@
   float: left;
   line-height: .65;
   // height: 59px;
+  font-size: 83px;
   height: .65em;
   -webkit-font-smoothing: antialiased;
 
@@ -16,10 +17,12 @@
   }
 }
 .page > p:first-of-type:first-letter {
-  font-size: 147px;
+  @include mq($from: tablet) {
+    font-size: 147px;
+  }
 }
 .page-type-index .publication-list__item__content p:first-of-type:first-letter {
-  font-size: 83px;
+  // font-size: 83px;
   // height: 59px;
   // height: .71317em;
 
